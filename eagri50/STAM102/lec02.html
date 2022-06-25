@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STAM 102 :: Lecture 02</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM102/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+.style5 {font-weight: bold}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4"><span class="style5">STAM 102</span> :: Lecture 02 ::</span> Units of Memory, Hardware, Software and Classification of Computers</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h1><strong>Units  of Memory</strong></h1>
+				<p><strong>          </strong>The memory unit is the principal storage of  the computer. All the data and instructions that the computer needs at a moment  are stored here. All storage devices are characterized with  the following features:         </p>
+				<ul>
+				  <li>Speed</li>
+				  <li>Volatility</li>
+				  <li>Access       method</li>
+				  <li>Portability</li>
+				  <li>Cost       and capacity</li>
+			    </ul>
+				<p><strong>Linking  Memory with the other units</strong></p>
+                <p align="center"><img width="398" height="241" src="lec02_clip_image002.gif" /></p>
+				<p><strong>Basic  Units of Measurement</strong></p>
+				<p><strong>          </strong>The components of the computer can  recognize only two states that is presence or absence of an electrical signal.  Two symbols used to represent these two states are 0 and 1, and are known as  BITS (an abbreviation for BInary DigiTS). 0 represents the absence of a signal,  1 represents the presence of a signal. A BIT is, therefore, the smallest unit  of data in a computer and can either store a 0 or 1.</p>
+				<p>Since a single bit can store only one  of the two values, there can possibly be only four unique combinations:<br />
+				  00 01 10 11<br />
+				  Bits are, therefore, combined together  into larger units in order to hold greater range of values.<br />
+				  BYTES are typically a sequence of  eight bits put together to create a single computer alphabetical or numerical  character. More often referred to in larger multiples, bytes may appear as  Kilobytes (1,024 bytes), Megabytes (1,048,576 bytes), GigaBytes  (1,073,741,824), TeraBytes (approx. 1,099,511,000,000 bytes), or PetaBytes  (approx. 1,125,899,900,000,000 bytes).</p>
+				<p>Bytes are used to quantify the amount  of data digitally stored (on disks, tapes) or transmitted (over the internet),  and are also used to measure the memory and document size.</p>
+				
+				<p>&nbsp;</p>
+				<p><strong>Types  of memory</strong></p>
+				<p>       Computers use several  different types of memory. They are:</p>
+				<ol start="1" type="1">
+                  <li>Main       Memory / Primary Memory units</li>
+			    </ol>
+				<ul>
+				  <li> Two most important are
+				    <ol>
+				      <li>RAM (Random Access Memory)</li>
+				      <li>ROM (Read-only Memory)</li>
+			        </ol>
+				  </li>
+			      <li>They work in different  ways and perform distinct functions</li>
+				  <li> CPU Registers</li>
+				  <li> Cache Memory</li>
+				</ul>
+				<ol start="2" type="1">
+                  <li>Secondary       Memory/Auxiliary Memory</li>
+			    </ol>
+				<p>Also termed as ‘auxiliary’  or ‘backup’ storage, it is typically used as a supplement to main storage. It  is much cheaper than the main storage and stores large amount of data and  instructions permanently. Hardware devices like magnetic tapes, Floppy Disk, Hard Disk, Optical  disks, Compact Disk (CD), Digital Versatile Disk (DVD)  and Blu-ray Disc (BD) fall under this  category.</p>
+				<p>Computer’s memory can be  classified into two types – RAM and ROM.</p>
+				<p>         <strong>RAM or  Random Access Memory</strong> is the central storage unit in a  computer system. It is the place in a computer where the operating system,  application programs and the data in current use are kept temporarily so that  they can be accessed by the computer’s processor. The more RAM a computer has,  the more data a computer can manipulate.</p>
+				<p><strong>Random  access memory</strong>, also  called the Read/Write memory, is the temporary memory of a computer. It is said  to be ‘volatile’ since its contents are accessible only as long as the computer  is on. The contents of RAM are cleared once the computer is turned off.</p>
+				<p>ROM or Read Only Memory is a special  type of memory which can only be read and contents of which are not lost even  when the computer is switched off. It typically contains manufacturer’s  instructions. Among other things, ROM also stores an initial program called the  ‘bootstrap loader’ whose function is to start the computer software operating,  once the power is turned on.</p>
+				<h1><strong>Hardware</strong></h1><br />
+				  Hardware, in the  computer world, refers to the physical components that make up a computer  system.  There are many, many different  kinds of hardware that can be installed inside and connected to the outside of  a computer. However, there are several standard pieces of hardware that can be  found as part of nearly every computer:
+				<ol>
+				  <li>Input Devices - Key board, Mouse.. </li>
+				  <li>CPU - (Brain) Named on model: 80286, 80386, 80486, Pentium, P-II, Core 2  Duo.. </li>
+				  <li>Output Devices - VDU/Screen, Printer </li>
+				  <li>Memory - RAM - Active, temporary ROM - Permanent. </li>
+				  <li>Ancillary Storage devices: Floppy, Hard Disk, CD ROM, Tapes etc. </li>
+				  <li>Scanner, Modem, Digital Camera, Video adopter, Computer Projector, Slide  maker, etc. </li>
+			    </ol>
+				<h1><strong>Software</strong></h1><br />
+				  Software is a general term for the  various kinds of programs used to operate computers and related devices.  Software is classified as follows:<br />
+			    
+				<p align="center"><img width="341" height="189" src="lec02_clip_image002.jpg" /></p>
+				<p><strong>System software</strong><br />
+System  software refers to the operating system and all utility programs that manage  computer resources at a low level. Operating system controls and manages the  computing resources. Examples of operating system: Windows, Unix, MSDOS, Linux,  Mac.</p>
+                <p align="center"><img width="112" height="112" src="lec02_clip_image002_0000.jpg" alt="inetOS1" />   <img width="104" height="83" src="lec02_clip_image004.jpg" alt="windows" />     <img width="157" height="134" src="lec02_clip_image006.jpg" /><img width="90" height="112" src="lec02_clip_image008.jpg" alt="crass.on.ru/images/unsorted/logo/msdos(cm.gif" /></p>
+                <p>Systems  software includes compilers, loaders, linkers, and debuggers.<br />
+                  Applications  software comprises programs designed for an end user, such as word processors,  database systems, and spreadsheet programs.  Application software makes computer popular  and easy to use. Common application software:</p>
+                <ol>
+                  <li>Microsoft Word, WordPerfect</li>
+                  <li>PowerPoint</li>
+                  <li>Netscape, Internet Explorer</li>
+                  <li>PhotoShop, Photo-Paint</li>
+                  <li>Quick Time</li>
+                  <li>Dreamweave</li>
+                </ol>
+                <p><img width="250" height="60" src="lec02_clip_image009.gif" alt="office_logo" /><img width="80" height="56" src="lec02_clip_image011.jpg" alt="backoffice" /><img width="200" height="40" src="lec02_clip_image012.gif" alt="banner_office2k" /><img width="48" height="48" src="lec02_clip_image014.jpg" alt="ielogo" /><img width="82" height="112" src="lec02_clip_image016.jpg" alt="office" /><img width="219" height="148" src="lec02_clip_image018.jpg" alt="1_1" /><img width="176" height="59" src="lec02_clip_image020.jpg" alt="netnow" /></p>
+                <p><strong>Classification  of Computers</strong><br />
+                Computers  are available in different shapes, sizes and weights, due to these different  shapes and sizes they perform different sorts of jobs from one another. They  can also be classified in different ways. All the computers are designed by the  qualified computer architectures that design these machines as their  requirements.</p>
+                <p>A  computer that is used in a home differs in size and shape from the computer  being used in a hospital. Computers act as a server in large buildings, while  the computer also differs in size and shape performing its job as a weather  forecaster.</p>
+                <p>A  student carrying a laptop with him to his college is different in shape and  size from all the computers mentioned above. Computers are classified as follows:<br />
+                <strong>Super computer</strong></p>
+                  <p align="center"><a href="http://www.google.co.in/imgres?imgurl=http://news.com.com/i/ne/p/2004/110504IBM2PB016598x600x450.jpg&amp;imgrefurl=http://oxygyan.wordpress.com/category/hardware/&amp;h=450&amp;w=600&amp;sz=76&amp;tbnid=k8W9JXFzf0gh2M:&amp;tbnh=101&amp;tbnw=135&amp;prev=/images%3Fq%3Dsuper%2Bcomputers%2Bimages&amp;hl=en&amp;usg=__tyXkK4OnrivKSsRDYtCPOxsGhrE=&amp;ei=XMadS8-iCpKxrAee4LCOBA&amp;sa=X&amp;oi=image_result&amp;resnum=1&amp;ct=image&amp;ved=0CAsQ9QEwAA"><img border="0" width="181" height="160" src="lec02_clip_image002_0001.jpg" /></a></p>
+                <p>The biggest in size, the most expensive in price  than any other is classified and known as super computer. It can process  trillions of instructions in seconds. Governments specially use this type of  computer for their different calculations and heavy jobs. Different industries  also use this huge computer for designing their products. In most of the  Hollywood's movies it is used for animation purposes. This kind of computer is  also helpful for forecasting weather reports worldwide.</p>
+                <p><strong>Mainframes</strong></p>
+                <p align="center"><img width="186" height="178" src="lec02_clip_image002_0002.jpg" /></p>
+                <p>Another giant in computers after the super  computer is Mainframe, which can also process millions of instruction per  second and capable of accessing billions of data. This computer is commonly  used in big hospitals, air line reservations companies, and many other huge  companies prefer mainframe because of its capability of retrieving data on a  huge basis.
+                </p>
+                <p><strong>Minicomputer</strong></p>
+                <p align="center"><img width="181" height="178" src="lec02_clip_image002_0003.jpg" /></p>
+                <p>This computer is next in the line but less  offers less than mainframe in work and performance. These are the computers,  which are mostly preferred by the small type of business personals, colleges,  etc.
+                  <br /></p>
+                  <p><strong>Personal  computers</strong><br />
+                </p>
+                  <p align="center"><img width="179" height="210" src="lec02_clip_image002_0004.jpg" /></p>
+<p>Personal  computer is the computer mostly preferred by the home users. These computers  are lesser in cost than the computers given above and also, small in size; they  are also called PCs in short for Personal computers. This computer is small in  size. Today this is thought to be the most popular computer in all.</p>
+                <P><strong>Notebook  computers</strong><br /></P>
+                <p align="center"><img width="183" height="179" src="lec02_clip_image002_0005.jpg" /></p>
+<p>Having  a small size and low weight the notebook is easy to carry to anywhere. A  student can take it with him/her to his/her school in his/her bag with his/her  book. This is easy to carry around and preferred by students and business  people to meet their assignments and other necessary tasks. The approach of  this computer is also the same as the Personal computer. It can store the same  amount of data and having a memory of the same size as that of a personal  computer. </P>
+                <table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec02.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec02.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+			    <br />
+			    <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+		        </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

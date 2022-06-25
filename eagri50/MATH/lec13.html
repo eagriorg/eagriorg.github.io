@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS :: Lecture 13</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS :: Lecture 13 :: </span>Maxima & Minima of several variables</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p>PHYSICAL AND ECONOMIC OPTIMUM FOR  SINGLE INPUT<br />
+            Let y = f(x) be a  response function. Here x stands for the input that is kgs of fertilizer  applied per hectare and y the corresponding output that is kgs of yield per  hectare. <br />
+            We know that the maximum  is only when <img width="52" height="41" src="lec13_clip_image002.gif" /> and<img width="59" height="44" src="lec13_clip_image004.gif" />.<br />
+This optimum is called physical optimum. We are not considering the  profit with respect to the investment, we are interested only in maximizing the  profit.<br />
+Economic optimum<br />
+            The optimum which takes  into consideration the amount invested and returns is called the economic  optimum.<br />
+                                        <img width="63" height="49" src="lec13_clip_image006.gif" /><br />
+where  Px → stands for  the per unit price of input that is price of fertilizer per kgs.<br />
+           Py → stands  for the per unit price of output that is price of yield per kgs.<br />
+Problem<br />
+            The response function of  paddy is y = 1400 + 14.34x -0.05 x2 where x represents kgs of  nitrogen/hectare and y represents yield in kgs/hectare. 1 kg of paddy is Rs. 2  and 1 kg of nitrogen is Rs. 5. Find the physical and economic optimum. Also  find the corresponding yield.<br />
+Solution<br />
+ y = 1400 + 14.34x -0.05 x2<br />
+<img width="117" height="41" src="lec13_clip_image008.gif" /><br />
+<img width="79" height="44" src="lec13_clip_image010.gif" />= negative value <br />
+ie. <img width="59" height="44" src="lec13_clip_image012.gif" /> <br />
+Therefore the given function has a maximum point.<br />
+Physical Optimum<br />
+<img width="52" height="41" src="lec13_clip_image002_0000.gif" /> <br />
+i.e 14.34-0.1x = 0<br />
+ -0.1 x = -14.34<br />
+x = <img width="93" height="41" src="lec13_clip_image014.gif" /> kgs/hectare<br />
+therefore the physical optimum level of nitrogen is 143.4 kgs/hectare.<br />
+Therefore the maximum yield is <br />
+Y = 1400 + 14.34(143.4) -0.05(143.4)2<br />
+    = 2428.178 kgs/ hectare.<br />
+Economic optimum <br />
+<img width="63" height="49" src="lec13_clip_image006_0000.gif" /> <br />
+Given <br />
+Price of nitrogen per kg = Px = 5 <br />
+ Price of yield  per kg     = Py = 2<br />
+Therefore <img width="44" height="41" src="lec13_clip_image016.gif" /> 14.34-0.1x = <img width="24" height="41" src="lec13_clip_image018.gif" /> <br />
+<img width="9" height="9" src="lec13_clip_image020.gif" />28.68 - 0.2 x = 5<br />
+- 0.2 x = 5 - 28.68<br />
+x = <img width="95" height="41" src="lec13_clip_image022.gif" /> kgs/hectare<br />
+therefore the economic optimum level of nitrogen is 118.4  kgs/hectare.<br />
+Therefore the maximum yield is <br />
+Y = 1400 + 14.34(118.4) -0.05(118.4)2<br />
+    = 2396.928 kgs/ hectare.<br />
+Maxima and Minima of several  variables with constraints and without constraints<br />
+Consider the function of  several variables<br />
+                        y = f (x1, x2……….xn)<br />
+where x­1, x2  …………..xn  are n independent  variables and y is the dependent variable.</p>
+				<h1>Working  Rule</h1>
+				<p><strong>Step 1:</strong> Find  all the first order partial derivatives of y with respect to x1, x2,  x3 ……xn..<strong><u></u></strong><br />
+				  (ie)       <img width="63" height="45" src="lec13_clip_image024.gif" /> <br />
+				  <img width="67" height="45" src="lec13_clip_image026.gif" /></p>
+				<p><img width="65" height="45" src="lec13_clip_image028.gif" /><br />
+                    <strong>.</strong><br />
+                    <strong>.</strong><br />
+                    <strong>.</strong><br />
+                    <strong>.</strong><br />
+                    <img width="72" height="45" src="lec13_clip_image030.gif" /></p>
+				<h1>Step  2 </h1>
+				<p>            Find all the second order partial  derivatives of y with respect to x1, x2, x3  ….xn and they are given as follows.<br />
+                    <img width="72" height="49" src="lec13_clip_image032.gif" /><br />
+                    <img width="93" height="48" src="lec13_clip_image034.gif" /><br />
+                    <img width="81" height="49" src="lec13_clip_image036.gif" /><br />
+                    <img width="100" height="48" src="lec13_clip_image038.gif" /><br />
+                    <img width="80" height="49" src="lec13_clip_image040.gif" /><br />
+                    <img width="99" height="48" src="lec13_clip_image042.gif" /><br />
+                    <img width="99" height="48" src="lec13_clip_image044.gif" /> and so  on </p>
+				<h2>Step: 3</h2>
+				<h2>Construct an Hessian matrix which is  formed by taking all the second order partial derivatives is given by </h2>
+				<p><img width="245" height="195" src="lec13_clip_image046.gif" /></p>
+				<p>H is  a symmetric matrix.</p>
+				<h3>Step:  4</h3>
+				<p>            Consider the following minors of  order 1, 2, 3 ……….<br />
+				  <img width="116" height="25" src="lec13_clip_image048.gif" /><br />
+  <img width="140" height="51" src="lec13_clip_image050.gif" /><br />
+  <img width="263" height="368" src="lec13_clip_image052.gif" /><br />
+  <img width="12" height="23" src="lec13_clip_image054.gif" alt="*" />   </p>
+				<h3>Steps:  5</h3>
+				<p>            <strong><u>The  necessary condition for finding the maximum or minimum</u></strong><br />
+				  Equate the first order derivative to  zero (i.e) f1 = f2 = ……..fn = 0 and find the  value of x1, x2, ……..xn.</p>
+				<h3>Steps:  6</h3>
+				<p>            Substitute the values x1,  x2 ……..xn in the Hessian matrix.  Find the values of <img width="209" height="27" src="lec13_clip_image056.gif" />    <br />
+				  If  <img width="187" height="107" src="lec13_clip_image058.gif" /><br />
+				  Then  the function is <strong>maximum</strong> at x1,  x2 ……..xn.<br />
+				  If <img width="304" height="27" src="lec13_clip_image060.gif" />   then the function is <strong>minimum </strong> at  x1,  x2……. xn.</p>
+				<h4>Steps: 7  </h4>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><h5>         Conditions</h5></td>
+                    <td valign="top"><p align="center"><strong>Maximum</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Minimum</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">&nbsp;</p>
+                        <p align="center">First</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p>
+                        <p align="center">f1    = f2 =  f3  = fn = 0</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p>
+                        <p align="center">f1    = 0, f2 = 0 ……. fn = 0</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">&nbsp;</p>
+                        <p align="center">Second</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p>
+                        <p align="center"><img width="67" height="80" src="lec13_clip_image062.gif" /><br />
+                          ……….</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p>
+                        <p align="center"><img width="67" height="152" src="lec13_clip_image064.gif" /></p></td>
+                  </tr>
+                </table>
+				<p><strong>Note  :</strong><br />
+				  If  the second order conditions are not satisfied then they are called <strong>saddle point.</strong></p>
+				<h3>Problem</h3>
+				<p>            Find the maxima (or) minima if any  of the following function.<br />
+                    <img width="551" height="41" src="lec13_clip_image066.gif" /><strong>Solution</strong><br />
+                    <strong>Step  1:</strong> The first order partial derivatives are <img width="135" height="45" src="lec13_clip_image002_0001.gif" /><br />
+                    <img width="133" height="45" src="lec13_clip_image004_0000.gif" /><br />
+                    <strong>Step  2:</strong>  The second order partial derivatives are<br />
+                    <img width="111" height="49" src="lec13_clip_image006_0001.gif" /><br />
+                    <img width="119" height="48" src="lec13_clip_image008_0000.gif" /><br />
+                    <img width="103" height="49" src="lec13_clip_image010_0000.gif" /><br />
+                    <img width="123" height="48" src="lec13_clip_image012_0000.gif" /><br />
+                    <strong>Step  3:</strong>  The Hessian matrix is  <img width="124" height="51" src="lec13_clip_image014_0000.gif" /></p>
+				<p>                                      <img width="108" height="49" src="lec13_clip_image016_0000.gif" /><br />
+				  4. Equate         f1,  f2  =  0<br />
+				  f1       Þ     4x12 - 4  = 0    <br />
+				  x12  = 1                  <br />
+				  x1  = <img width="15" height="16" src="lec13_clip_image018_0000.gif" />1<img width="12" height="23" src="lec13_clip_image020_0000.gif" /><br />
+				  x1 = 1,  x1 = -1<br />
+				  f2       Þ   2 x 2 + 8=0<br />
+				  2 x2    = - 8<br />
+				  x2  = - 4<br />
+				  The stationary points are  (1,- 4) &amp; (-1, - 4)<br />
+  <u>At the point (1, - 4</u>)  the Hessian matrix will be <br />
+				  H = <img width="76" height="48" src="lec13_clip_image022_0000.gif" /><br />
+				  <br />
+				  | H1|    =  | 8|  &gt;  0<br />
+				  | H2|    = <img width="76" height="48" src="lec13_clip_image022_0001.gif" />=  16 &gt;  0<br />
+				  Since the determinant H1 and H2  are   positive the function is minimum at (1,- 4).<br />
+				  The  minimum   value  at x1 = 1  &amp;   x2 = - 4  is   obtained   by  substituting  the   values    <br />
+				  in (1)<br />
+				  y = <img width="16" height="41" src="lec13_clip_image025.gif" /> (1) 3  +   (- 4)2 –  4 (1)  + 8 (- 4)<br />
+				  y  = <img width="16" height="41" src="lec13_clip_image025_0000.gif" />  + 16 – 4 - 32<br />
+				  y = <img width="16" height="41" src="lec13_clip_image025_0001.gif" /> - 20<br />
+				  y = <img width="48" height="41" src="lec13_clip_image027.gif" /> = <img width="36" height="41" src="lec13_clip_image029.gif" /><img width="12" height="23" src="lec13_clip_image020_0001.gif" /><br />
+				  The minimum value is  <img width="36" height="41" src="lec13_clip_image029_0000.gif" /><br />
+  <u>At the point (-1, - 4)</u><br />
+				  H =  <img width="72" height="49" src="lec13_clip_image032_0000.gif" /><br />
+				  | H1 |   =  | - 8  |   = -  8 &lt; 0 <br />
+				  | H 2|   = - 16 &lt; 0<br />
+				  Both the conditions are not  satisfied.  Hence the point (-1, - 4)  gives a saddle point.</p>
+				<h6><strong>Economic Optimum</strong></h6>
+				<p>            For finding the Economic Optimum we equate the first  order derivative <br />
+				  f1  .  f 2 . . . . fn    to the inverse ratio of the unit prices.<br />
+				  (ie) f1 =  <img width="73" height="49" src="lec13_clip_image034_0000.gif" /><br />
+				  f2 = <img width="75" height="51" src="lec13_clip_image036_0000.gif" />…………..<br />
+				  fn = <img width="79" height="51" src="lec13_clip_image038_0000.gif" /></p>
+				<p>                where  Px1 , Px2,… Pxn and Py are the unit prices of  x1, x2 ….. xn    and y. These are the first  order condition.<br />
+				  The economic optimum &amp; the  physical optimum differ only in the first order conditions.  The other procedures are the same.<br />
+  <strong><u>Maxima  &amp; Minima of several variables under   certain condition with constraints.</u></strong><br />
+				  Consider   the response function<br />
+				  y = f (x1, x2  ….xn )  subject to the  constraint  f  (x1, x2…..xn )  =0<br />
+				  The objective function is Z=  f(x1, x2, …xn) + l[f(x1, x2, …xn)]<br />
+				  where l is called the Lagrange’s  multiplies.<br />
+				  The partial derivatives are <br />
+				  <img width="57" height="45" src="lec13_clip_image040_0000.gif" />                   for   i  = 1, 2 ….. n.  <br />
+				  <img width="88" height="48" src="lec13_clip_image042_0000.gif" />            i, j   =  1.,  2 ….  n.<br />
+				  <img width="64" height="45" src="lec13_clip_image044_0000.gif" />                       i   =   1,  2 ….. n.<br />
+				  Now form the Bordered Hessian  Matrix as follows.<br />
+  <img width="12" height="23" src="lec13_clip_image020_0002.gif" />Bordered Hessian <img width="12" height="23" src="lec13_clip_image020_0003.gif" /><img width="12" height="23" src="lec13_clip_image020_0004.gif" /><img width="243" height="152" src="lec13_clip_image046_0000.gif" /><br />
+				  [Since  this extra row &amp; column is on the border  of the matrix  <img width="149" height="75" src="lec13_clip_image048_0000.gif" />.So we call it as Bordered Hessian matrix  and it is denoted by <img width="20" height="20" src="lec13_clip_image050_0000.gif" />]<br />
+				  Here minor as are  <br />
+  <img width="327" height="77" src="lec13_clip_image052_0000.gif" /><img width="12" height="23" src="lec13_clip_image020_0005.gif" /><img width="12" height="23" src="lec13_clip_image020_0006.gif" /><br />
+			    </p>
+				<p><img width="247" height="99" src="lec13_clip_image054_0000.gif" />       and  so on.</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                      Conditions </td>
+                    <td valign="top"><p align="center">Maxima</p></td>
+                    <td valign="top"><p align="center">Minima</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>First Order</p></td>
+                    <td valign="top"><p>f1=f2= f3 =    ….fn =0</p></td>
+                    <td valign="top"><p>f1=  f2 = f3 …… fn    = 0</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Second Order </p></td>
+                    <td valign="top"><p><img width="238" height="29" src="lec13_clip_image056_0000.gif" /></p></td>
+                    <td valign="top"><p><img width="265" height="29" src="lec13_clip_image058_0000.gif" /></p></td>
+                  </tr>
+                </table>
+				<h6><strong>Problem  </strong></h6>
+				<p>Consider  a consumer with a simple utility function U = f(x, y)  =  4xy  – y2 . If this<u> </u>consumer can at most spend only Rs. 6/- on two  goods x and y and if the current prices are Rs. 2/- per unit of x and Rs.1/- per  unit of y. Maximize the function.</p>
+				<p>&nbsp; </p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec13.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec13.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

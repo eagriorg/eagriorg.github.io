@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 18</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101  :: Lecture 18 :: </span>Factorial experiments</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><span class="titlen style1"><strong>- factor and levels –  types – symmetrical and</strong> <strong>asymmetrical – simple, main and interaction  effects – advantages</strong> <strong>and  disadvantages</strong></span></p>
+				<p><strong>Factorial Experiments: </strong>When two or more number of factors are investigated simultaneously  in a single experiment such experiments are called as factorial experiments.</p>
+				<strong>Terminologies</strong>
+				<ol start="1" type="1">
+                  <li><strong>Factor</strong>: Factor refers to a set of related treatments. We may apply of       different doses of nitrogen to a crop. Hence nitrogen irrespective of       doses is a factor.</li>
+			    </ol>
+				<ol start="2" type="1">
+                  <li><strong>Levels of a factor</strong>: Different states or components making up a factor are known       as the levels of that factor. eg different doses of nitrogen.</li>
+			    </ol>
+				<p><strong>Types of factorial  Experiment</strong></p>
+				<p>A factorial experiment is named based on the number of factors and  levels of factors. For example, when there are 3 factors each at 2 levels the  experiment is known as 2 X 2 X 2 or 23 factorial experiments. </p>
+				<p>If there are 2 factors each at 3 levels then it is known as 3 X 3 or  32 factorial experiment.</p>
+				<ul>
+				  <li>In general if there are n  factors each with p levels then it is known as pn factorial  experiment.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<ul>
+				  <li>For varying number of levels  the arrangement is described by the product. For example, an experiment with 3  factors each at 2 levels, 3 levels and 4 levels respectively then it is known  as 2 X 3 X 4 factorial experiment. </li>
+			    </ul>
+				<ul>
+				  <li>If all the factors have the  same number of levels the experiment is known as symmetrical factorial otherwise  it is called as mixed factorial.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<ul>
+				  <li>Factors are represented by  capital letters. Treatment combinations are usually by small letters. </li>
+			    </ul>
+				<ul>
+				  <li>For example, if there are 2  varieties v0 and v1 and 2 dates of sowing d0 and d1 the treatment combinations  will be </li>
+			    </ul>
+				<p>&nbsp;</p>
+				<ul>
+				  <li>vodo, v1do, v1do and v1d1.</li>
+			    </ul>
+				<p><strong>Simple and Main Effects</strong></p>
+				<p><strong>Simple effect</strong> of a factor is the difference between its responses for a fixed  level of other factors. </p>
+				<p><strong>Main effect</strong> is defined as  the average of the simple effects.</p>
+				<p><strong>Interaction</strong> is defined as the dependence of factors in their responses.  Interaction is measured as the mean of the  differences between simple effects.</p>
+				<p><strong>Advantages</strong></p>
+				<ol start="1" type="1">
+                  <li>In such type of experiments we study       the individual effects of each factor and their interactions. </li>
+				  <li>In factorial experiments a wide       range of factor combinations are used. </li>
+				  <li>Factorial approach will result in       considerable saving of the experimental resources, experimental material       and time.</li>
+			    </ol>
+				<p><strong>Disadvantages</strong></p>
+				<ol start="1" type="1">
+                  <li>When number of factors or levels of       factors or both are increased, the number of treatment combinations       increases. Consequently block size increases. If block size increases it       may be difficult to maintain homogeneity of experimental material. This       will lead to increase in experimental error and loss of precision in the       experiment.</li>
+				  <li>All treatment combinations are to be       included for the experiment irrespective of its importance and hence this       results in wastage of experimental material and time.</li>
+				  <li>When many treatment combinations are       included the execution of the experiment and statistical analysis become       difficult.<br />
+			    </li>
+			    </ol>
+				<table width="27%" border="0">
+  <tr>
+    <td><strong><a href="pdf/lec18.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+    <td bgcolor="#A20807"><strong><a href="pdf/lec18.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+  </tr>
+</table>
+<br />
+<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+  </map>
+</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

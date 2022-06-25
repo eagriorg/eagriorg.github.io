@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS :: Lecture 21</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS :: Lecture 21 :: </span>Solving simulteneous equation and cramers rule</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong><u> </u></strong><br />
+                    <strong>INVERSE OF A MATRIX</strong><br />
+                    <strong>Definition</strong><br />
+				  <p>Let A be any square matrix.  If there exists another square matrix B Such  that AB = BA = I (I is a unit matrix) then B is called the inverse of the  matrix A and is denoted by A-1. <br />
+				  The cofactor method is used to find  the inverse of a matrix. Using matrices, the solutions of simultaneous  equations are found. <p align="center">Introduction to Vectors<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/vector/Introduction&#32;to&#32;Vectors.mp4" type="video/mp4">
+</video></p>
+<p align="center">Vector Transformations<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/vector/Vector&#32;Transformations.mp4" type="video/mp4">
+</video></p>
+<p align="center">Vector Dot Product and Vector Length<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/vector/Vector&#32;Dot&#32;Product&#32;and&#32;Vector&#32;Length.mp4" type="video/mp4">
+</video></p>
+<p align="center">Unit Vectors<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/vector/Unit&#32;Vectors.mp4" type="video/mp4">
+</video></p>
+<p align="center">Matrix Vector Products<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/vector/Matrix&#32;Vector&#32;Products.mp4" type="video/mp4">
+</video></p>
+<p align="center">Matrices to solve a vector combination problem<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/vector/Matrices&#32;to&#32;solve&#32;a&#32;vector&#32;combination&#32;problem.mp4" type="video/mp4">
+</video></p>
+<p align="center">Converting a line from Cartesian to vector form<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/vector/Converting&#32;a&#32;line&#32;from&#32;Cartesian&#32;to&#32;vector&#32;form.mp4" type="video/mp4">
+</video></p>
+<br />
+  <a name="workingrule" id="workingrule"></a>Working  Rule to find the inverse of the matrix <br />
+				  Step 1: Find the determinant of the matrix.<br />
+				  Step 2: If the value of the determinant is non zero proceed  to find the inverse of the matrix.<br />
+				  Step 3: Find the cofactor of each element and form the  cofactor matrix.<br />
+				  Step 4: The transpose of the cofactor matrix is the adjoint  matrix.<br />
+				  Step 5:  The inverse  of the matrix A-1 = <img border="0" width="51" height="47" src="lec21_clip_image002_0000.gif" /><br />
+				  Example<br />
+				  Find the  inverse of the matrix <img border="0" width="125" height="75" src="lec21_clip_image004_0001.gif" /><br />
+				  Solution<br />
+				  Let A =<img border="0" width="125" height="75" src="lec21_clip_image004_0002.gif" /><br />
+				  Step 1<br />
+  <img border="0" width="341" height="121" src="lec21_clip_image007_0000.gif" /><br />
+				  Step 2<br />
+				  The value  of the determinant is non zero<br />
+				  \A-1 exists.<br />
+				  Step 3<br />
+				  Let Aij denote the  cofactor of <em>aij</em> in <img border="0" width="20" height="27" src="lec21_clip_image009_0001.gif" /><br />
+  <img border="0" width="331" height="48" src="lec21_clip_image011_0000.gif" /><br />
+  <img border="0" width="345" height="48" src="lec21_clip_image013_0000.gif" /><br />
+  <img border="0" width="318" height="48" src="lec21_clip_image015_0000.gif" /><br />
+  <img border="0" width="346" height="48" src="lec21_clip_image017_0000.gif" /><br />
+  <img border="0" width="320" height="48" src="lec21_clip_image019_0000.gif" /><br />
+  <img border="0" width="348" height="48" src="lec21_clip_image021_0000.gif" /><br />
+  <img border="0" width="313" height="48" src="lec21_clip_image023_0000.gif" /><br />
+  <img border="0" width="348" height="48" src="lec21_clip_image025_0000.gif" /><br />
+  <img border="0" width="317" height="48" src="lec21_clip_image027_0000.gif" /><br />
+				  Step 4<br />
+				  The matrix  formed by cofactors of element of determinant <img border="0" width="20" height="27" src="lec21_clip_image009_0002.gif" /> is <img border="0" width="133" height="75" src="lec21_clip_image030_0000.gif" /><br />
+				  \adj A = <img border="0" width="133" height="75" src="lec21_clip_image032_0000.gif" /><br />
+				  Step 5<br />
+  <img border="0" width="240" height="75" src="lec21_clip_image034_0000.gif" /><br />
+				  = <img border="0" width="136" height="112" src="lec21_clip_image036_0000.gif" />                 <u></u></p>
+				<p>&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec21.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec21.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

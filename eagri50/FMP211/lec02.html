@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FMP 211  :: Lecture 02</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/FMP211/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+.style5 {font-weight: bold}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4"><span class="style5">FMP 211 </span> :: Lecture 02 ::</span>TWO STROKE AND FOUR STROKE ENGINES, WORKING PRINCIPLES, APPLICATIONS - TYPES, POWER AND EFFICIENCY</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p>Heat engine is a machine for converting heat, developed by burning fuel into useful work. It can be said that heat engine is equipment which generates thermal energy and transforms it into mechanical energy. <br />
+				  <strong>CLASSIFICATION OF HEAT ENGINES</strong><br />
+				  <strong>1. &nbsp;Based on combustion of fuel:</strong><br />
+				  (i) External combustion engine  (ii) Internal combustion engine.<br />
+  <strong>External combustion engine</strong> <br />
+				  Here, the working medium, the steam, is generated in a boiler, located out side the engine and allowed in to the cylinder to operate the piston to do mechanical work. <strong>Internal combustion engine</strong><br />
+				  In internal combustion engine, the combustion of fuel takes place inside the engine cylinder and heat is generated within the cylinder. This heat is added to the air inside the cylinder and thus the pressure of the air is increased tremendously. This high pressure air moves the piston which rotates the crank shaft and thus mechanical work is done<br />
+  <strong>2. Based on fuel used</strong><br />
+  <strong> </strong>1. Diesel engine 2. Petrol engine 3. Gas engine<br />
+  <strong>Diesel engine –</strong> Diesel is used as fuel<br />
+  <strong>Petrol engine –</strong> Petrol is used as fuel<br />
+  <strong>Gas engines</strong> – propane, butane or methane gases are used<br />
+  <strong>3. &nbsp;Based ignition of fuel</strong></p>
+                <ol>
+                  <li>Spark ignition engine (Carburetor type&nbsp; engines)</li>
+                  <li>Compression ignition engine ( injector type engines)</li>
+                </ol>
+                <p><strong>Spark ignition engine</strong> – a mixture of air and fuel is drawn in to the engine cylinder. Ignition of fuel is done by using a spark plug. The spark plug produces a spark and ignites the air- fuel mixture. Such combustion is called constant volume combustion (C.V.C.).<br />
+                  <strong>Compression ignition engine</strong> – In compression ignition engines air is compressed in to the engine cylinder,. Due to this the temperature of the compressed air rises to 700-900 C. At this stage diesel is sprayed in to the cylinder in fine particles. Due to a very high temperature, the fuel gets ignited. This type of combustion is called constant pressure combustion (CP.C.) because the pressure inside the cylinder is almost constant when combustion is taking place.<br />
+                  <strong>4. Based on working cycle</strong></p>
+                <ol>
+                  <li><strong>Four stroke cycle engine</strong> - When the cycle is completed in two revolutions of the crankshaft, it is called four stroke cycle engine<em>.</em></li>
+                  <li><strong>Two stroke cycle engine.</strong> - When the cycle is completed in one revolution of the crankshaft, it is called&nbsp; two stroke cycle engine</li>
+                </ol>
+                <p>&nbsp;<strong>CONSTRUCTION OF AN IC ENGINE</strong><br />
+                  I.C. engine converts the reciprocating motion of piston into rotary motion of the crankshaft by means of a connecting rod. The piston which reciprocating in the cylinder is very close fit in the cylinder. Rings are inserted in the circumferential grooves of the piston to prevent leakage of gases from sides of the piston. Usually a cylinder is bored in a cylinder block and a gasket, made of copper sheet or asbestos is inserted between the&nbsp; cylinder and the cylinder head to avoid ant leakage. The combustion space is provided at the top of the cylinder head where combustion takes place. The connecting rod connects the piston and the crankshaft. The end of the connecting rod connecting the piston is called small end. A pin called gudgeon pin or wrist pin is provided for connecting the piston and the connecting rod at the small end. . The other end of the connecting rod connecting the crank shaft is called big end. When piston is moved up and down, the motion is transmitted to the crank shaft by the connecting rod and the crank shaft makes rotary motion. The crankshaft rotates in main bearings which are fitted the crankcase. A flywheel is provided at one end of the crankshaft for smoothing the uneven torque produced by the engine. There is an oil sump at the bottom of the engine which contains lubricating oil for lubricating different parts of the engine. <strong></strong><br />
+  <strong>WORKING PRINCIPLE OF I.C. ENGINE/ FOUR STROKE CYCLE ENGINE / TWO STROKE CYCLE ENGINE</strong><br />
+                  A mixture of fuel with correct amount of air is exploded in an engine cylinder which is closed at one end. As a result of this explosion, heat is released and this heat causes the pressure of the burning gases to increase. This pressure forces a close fitting piston to move down the cylinder. The movement of piston is transmitted to a crankshaft by a connecting rod so that the crankshaft rotates and turns a flywheel connected to it. Power is taken from the rotating crank shaft to do mechanical work. To obtain continuous rotation of the crankshaft the explosion has to be repeated continuously. Before the explosion to take place, the used gases are expelled from the cylinder, fresh charge of fuel and air are admitted in to the cylinder and the piston moved back to its starting position. The sequences of events taking place in an engine is called the working cycle of the engine. The sequence of events taking place inside the engine are as follows<strong></strong></p>
+                <ol>
+                  <li>Admission of air or air-fuel mixture inside the engine cylinder ( suction )</li>
+                  <li>Compression of the air or air fuel mixture inside the engine (compression)</li>
+                  <li>Injection of fuel in compressed air for ignition of the fuel or ignition of air-fuel mixture by an electric spark using a spark plug to produce thermal power inside the cylinder (power )</li>
+                  <li>Removal of all the burnt gases from the cylinder to receive fresh charge ( exhaust)</li>
+                </ol>
+                <p>Note: Charge means admitting fresh air in to the cylinder in the case of compression <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ignition engines ( diesel engines ) or admitting a mixture of air and fuel in to the <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; cylinder in the case of spark ignition engines.<br />
+  <strong>FOUR STROKE CYCLE ENGINE ( DIESEL/ PETROL ENGINE)</strong> <br />
+                  In four stroke cycle engines the four events namely suction, compression, power and exhaust take place inside the engine cylinder. The four events are completed in four strokes of the piston (two revolutions of the crank shaft). This engine has got valves for controlling the inlet of charge and outlet of exhaust gases. The opening and closing of the valve is controlled by cams, fitted on camshaft. The camshaft is driven by crankshaft with the help of suitable gears or chains. The camshaft runs at half the speed of the crankshaft. The events taking place in I.C. engine are as follows:<br />
+                  1. Suction stroke   2. Compression stroke<br />
+                  3. Power stroke   4. Exhaust stroke</p>
+                <p><center><img width="196" height="202" src="lec02_clip_image002.png" alt="LEAD Technologies Inc. V1.01" /></center><br />
+                  <strong>&nbsp;&nbsp;&nbsp; Four stroke cycle engine</strong></p>
+                <p><center><img border="0" width="195" height="271" src="lec02_clip_image004.gif" alt="Four-stroke cycle (or Otto cycle)1. Intake2. compression3. power4. exhaust" title="'Four-stroke cycle (or Otto cycle)1. Intake2. compression3. power4. exhaust'" /></center><br />
+                  <strong>Four stroke cycle engine</strong><br />
+                  <strong>Suction stroke</strong> <br />
+                  During suction stroke inlet valve opens and the piston moves downward. Only air or a mixture of air and fuel are drawn inside the cylinder. The exhaust valve remains in closed position during this stroke. The pressure in the engine cylinder is less than atmospheric pressure during this stroke (Fig. 1a)</p>
+                <strong><br clear="all" />
+                </strong>
+                <p><strong>Compression stroke</strong> <br />
+                  During this stroke the piston moves upward. Both valves are in closed position. The charge taken in the cylinder is compressed by the upward movement of piston. If only air is compressed, as in case of diesel engine, diesel is injected at the end of the compression stroke and ignition of fuel takes place due to high pressure and temperature of the compressed air. If a mixture of air and fuel is compressed in the cylinder, as in case of petrol engine, the mixture is ignited by a spark plug. <br />
+  <strong>Power stroke</strong><br />
+                  After ignition of fuel, tremendous amount of heat is generated, causing very high pressure in the cylinder which pushes the piston downward (Fig.1b). The downward movement of the piston at this instant is called power stroke. The connecting rod transmits the power from piston to the crank shaft and crank shaft rotates. Mechanical work can be taped at the rotating crank shaft. Both valves remain closed during power stroke.<br />
+  <strong>Exhaust stroke</strong> <br />
+                  During this stroke piston moves upward. Exhaust valve opens and exhaust gases go out through exhaust valves opening. All the burnt gases go out of the engine and the cylinder becomes ready to receive the fresh charge. During this stroke inlet valve remains closed (Fig.1d).<br />
+                  Thus it is found that out of four strokes, there is only one power stroke and three idle strokes in four stroke cycle engine. The power stroke supplies necessary momentum for useful work.<br />
+  <strong>TWO STROKE CYCLE ENGINE (PETROL ENGINE)</strong> <br />
+                  In two stroke cycle engines, the whole sequence of events i.e., suction, compression, power and exhaust are completed in two strokes of the piston i.e. one revolution of the crankshaft. There is no valve in this type of engine. Gas movement takes place through holes called ports in the cylinder. The crankcase of the engine is air tight in which the crankshaft rotates.<br />
+  </p>
+                <p align="center"><img width="148" height="220" src="lec02_clip_image006.png" alt="LEAD Technologies Inc. V1.01" /><img width="191" height="254" src="lec02_clip_image008.gif" /></p><p>
+                  <strong>&nbsp;Two stroke cycle</strong><br />
+                  <strong>Upward stroke of the piston (Suction + Compression)</strong> <br />
+                  When the piston moves upward it covers two of the ports, the exhaust port and transfer port, which are normally almost opposite to each other. This traps the charge of air- fuel mixture drawn already in to the cylinder. Further upward movement of the piston compresses the charge and also uncovers the suction port. Now fresh mixture is drawn through this port into the crankcase. Just before the end of this stroke, the mixture in the cylinder is ignited by a spark plug (Fig 2 c &amp;d). Thus, during this stroke both suction and compression events are completed.<strong></strong><br />
+  <strong>Downward stroke (Power + Exhaust)</strong> <br />
+                  Burning of the fuel rises the temperature and pressure of the gases which forces the piston to move down the cylinder. When the piston moves down, it closes the suction port, trapping the fresh charge drawn into the crankcase during the previous upward stroke. Further downward movement of the piston uncovers first the exhaust port and then the transfer port. Now fresh charge in the crankcase moves in to the cylinder through the transfer port driving out the burnt gases through the exhaust port. Special shaped piston crown deflect the incoming mixture up around the cylinder so that it can help in driving out the exhaust gases . During the downward stroke of the piston power and exhaust events are completed. <br />
+  <strong>COMPARISON BETWEEN TWO STROKE AND FOUR STROKE ENGINES</strong></p>
+                <table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><strong>Four stroke engine</strong></td>
+                    <td><p><strong>Two stroke engine</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>One power stroke for every two revolutions of the crankshaft.</li>
+                    </ol></td>
+                    <td><p>One power stroke for each   revolution of the crankshaft.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>There are inlet and exhaust valves in the engine.</li>
+                    </ol></td>
+                    <td><p>There are inlet and exhaust   ports instead of valves.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>Crankcase is not fully closed and air tight.</li>
+                    </ol></td>
+                    <td><p>Crankcase is fully closed and   air tight.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>Top of the piston compresses the charge.</li>
+                    </ol></td>
+                    <td><p>Both sides of the piston   compress the charge.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>Size of the flywheel is comparatively larger.</li>
+                    </ol></td>
+                    <td><p>Size of the flywheel is   comparatively smaller.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>Fuel is fully consumed.</li>
+                    </ol></td>
+                    <td><p>Fuel is not fully consumed.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>Weight of engine per hp is high.</li>
+                    </ol></td>
+                    <td><p>Weight of engine per hp is   comparatively low.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>Thermal efficiency is high.</li>
+                    </ol></td>
+                    <td><p>Thermal efficiency is   comparatively low.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>Removal or exhaust gases easy.</li>
+                    </ol></td>
+                    <td><p>Removal of exhaust gases   comparatively difficult.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>Torque produced is even.</li>
+                    </ol></td>
+                    <td><p>Torque produced is less even.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>For a given weight, engine would give only half the power of two   stroke engine.</li>
+                    </ol></td>
+                    <td><p>For same weight, two stroke   engine gives twice the power that of four stroke engine.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>All types of speed are possible (high and low).</li>
+                    </ol></td>
+                    <td><p>Mostly high speed engines are   there.</p></td>
+                  </tr>
+                  <tr>
+                    <td><ol>
+                      <li>It can be operated in one direction only.</li>
+                    </ol></td>
+                    <td><p>It can be operated in both   direction (clockwise and counter clockwise).</p></td>
+                  </tr>
+                </table>
+                <p><strong>WORKING PRINCIPLE OF DIESEL ENGINE</strong> <br />
+                  The basic components of diesel engine are cylinder, piston, injector, valves, connecting rod and crankshaft. In diesel engines only &nbsp;air is drawn into the cylinder. The engine has high compression ratio hence the air in the cylinder attains very high temperature and pressure at the end of the compression stroke. At the end of the compression stroke, the fuel is sprayed into the cylinder in atomized form using injectors. Due to high temperature, the fuel gets ignited, begins to burn and produce lot of heat. Due to the heat the gases expand, move the piston downward and rotate the crank shaft. The torque available at the rotating crank shaft is used to do any mechanical work<br />
+  <strong>Special features of diesel engine</strong></p>
+                <ol>
+                  <li>Engine has high compression ratio ranging from 14:1 to 22:1.</li>
+                  <li>During compression stroke, the engine attains high pressure ranging from 30 to 45 kg/cm2 and high temperature of about 500°C.</li>
+                  <li>At the end of the compression stroke, fuel is injected into the cylinder through injectors (atomizers) at a very high pressure ranging from 120 to 200 kg/cm2.</li>
+                  <li>Ignition takes place due to heat of compression only.</li>
+                  <li>There is no external spark in diesel engine.</li>
+                  <li>Diesel engine has better slogging or lugging ability i.e. it maintains higher torque for a longer duration of time at a lower speed.</li>
+                </ol>
+                <p><strong>COMPARISON OF DIESEL ENGINE WITH PETROL ENGINE</strong></p>
+                <table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><strong>Diesel engine</strong></td>
+                    <td><p><strong>petrol engine</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td><p>It has got no carburetor,   ignition coil and spark plug.</p></td>
+                    <td><p>It has got carburetor, ignition   coil &amp; spark plug.</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Its compression ratio varies   from 14:1 to 22:1</p></td>
+                    <td><p>Its compression ratio varies   from 5:1 to 8:1.</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>It uses diesel oil as fuel.</p></td>
+                    <td><p>It uses petrol (gasoline) or   power kerosine as fuel.</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Only air is sucked in cylinder   in suction stroke.</p></td>
+                    <td><p>Mixture of fuel and air is   sucked in the cylinder in suction stroke.</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>It has got &lsquo;fuel injection   pump&rsquo; and injector</p></td>
+                    <td><p>It has got no fuel injection   pump and injector, instead it has got carburetor and ignition coil.</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Fuel is injected in combustion   chamber where burning of fuel takes places due to heat of compression. </p></td>
+                    <td><p>Air fuel mixture is compressed   in the combustion chamber when it is ignited by an electric spark.</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Thermal efficiency varies from   32 to 38%</p></td>
+                    <td><p>Thermal efficiency varies from   25 to 32%</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Engine weight per horse-power   is high.</p></td>
+                    <td><p>Engine weight per horsepower is   comparatively low.</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Operating cost is low.</p></td>
+                    <td><p>Operating cost is high.</p></td>
+                  </tr>
+                  <tr>
+                    <td><p>Compression pressure inside the   cylinder varies from 35 to 45 kg/cm2 and temperature is about   500°C.</p></td>
+                    <td><p>Compression pressure varies   from 6 to 10 kg/cm2 and temperature is above 260°C.</p></td>
+                  </tr>
+                </table>
+                <p><strong>ENGINE COMPONENTS</strong> <br />
+                  Internal combustion engine consists of a number of parts which are given below :</p>
+                <ol>
+                  <li><strong>Cylinder:</strong> It is a part of the engine which confines the expanding gases and forms the combustion space. It is the basic part of the engine. It provides space in which piston operates to suck the air or air-fuel mixture. The piston compresses the charge and the gas is allowed to expand in the cylinder, transmitting power for useful work. Cylinders are usually made of high grade cast iron.</li>
+                  <li><strong>Cylinder block:</strong> It is the solid casting body which includes the cylinder and water jackets (cooling fins in the air cooled engines).</li>
+                  <li><strong>Cylinder head:</strong> It is a detachable portion of an engine which covers the cylinder and includes the combustion chamber, spark plugs or injector and valves.</li>
+                  <li><strong>Cylinder liner or sleeve:</strong> It is a cylindrical lining either wet or dry type which is inserted in the cylinder block in which the piston slides. Liners are classified as : (1) Dry liner and (2) Wet liner.</li>
+
+               Dry liner makes metal to metal contact with the cylinder block casing. &nbsp;wet liners come in contact with the cooling water, whereas dry liners do not come in contact with the cooling water.
+
+                  <li><strong>Piston:</strong> It is a cylindrical part closed at one end which maintains a close sliding fit in the engine cylinder. It is connected to the connecting rod by a piston pin. The force of the expanding gases against the closed end of the piston, forces the piston down in the cylinder. This causes the connecting rod to rotate the crankshaft (Fig 3). Cast iron is chosen due to its high compressive strength. Aluminum and its alloys preferred mainly due to it lightness.</li>
+                </ol>
+                <ol>
+                  <li>due to it lightness.</li>
+                </ol>
+                <p align="center"><img width="324" height="382" src="lec02_clip_image002_0000.png" alt="LEAD Technologies Inc. V1.01" /> </p> <p>
+                  <strong>Engine components</strong></p>
+                <p><strong>Head (Crown) of piston</strong>: It is the top of the piston.<br />
+                  <strong>Skirt</strong>: It is that portion of the piston below the piston pin which is designed to adsorb the side movements of the piston. </p>
+                <ol>
+                  <li><strong>Piston ring:</strong> It is a split expansion ring, placed in the groove of the piston. They are usually made of cast iron or pressed steel alloy (Fig.3). The function of the ring are as follows :</li>
+                  <li>It forms a gas tight combustion chamber for all positions of piston.</li>
+                  <li>It reduces contact area between cylinder wall and piston wall preventing friction losses and excessive wear.</li>
+                  <li>It controls the cylinder lubrication.</li>
+                  <li>It transmits the heat away from the piston to the cylinder walls. </li>
+                </ol>
+                <p>Piston rings are of two types: (1) Compression ring and (2) Oil ring<br />
+                  <strong>vii) Compression ring</strong> <br />
+                  Compression rings are usually plain, single piece and are always placed in the grooves of the piston nearest to the piston head. They prevent leakage of gases from the cylinder and helps increasing compression pressure inside the cylinder.&nbsp; <br />
+  <strong>Oil ring:</strong> Oil rings are grooved or slotted and are located either in lowest groove above the piston pin or in a groove above the piston skirt. They control the distribution of lubrication oil in the cylinder and the piston.<br />
+  &nbsp;<strong>Piston Pin:</strong> It is also called wrist pin or gudgeon pin. Piston pin is used to join the connecting rod to the piston. <br />
+  <strong>viii) Connecting rod:</strong> It is special type of rod, one end of which is attached to the piston and the other end to the crankshaft (Fig.3). It transmits the power of combustion to the crankshaft and makes it rotate continuously. It is usually made of drop forged steel.<br />
+  <strong>ix)</strong> <strong>Crankshaft:</strong> It is the main shaft of an engine which converts the reciprocating motion of the piston into rotary motion of the flywheel (Fig.3). Usually the crankshaft is made of drop forged steel or cast steel. The space that supports the crankshaft in the cylinder block is called <em>main journal</em>, whereas the part to which connecting rod is attached is known as <em>crank journal</em>. Crankshaft is provided with counter weights throughout its length to have counter balance of the unit. <br />
+  <strong>x)</strong> <strong>Flywheel:</strong> Flywheel is made of cast iron. Its main functions are as follows :<strong></strong></p>
+                <ol>
+                  <li>It stores energy during power stroke and returns back the energy during the idle strokes, providing a uniform rotary motion of flywheel.</li>
+                  <li>The rear surface of the flywheel serves as one of the pressure surfaces for the clutch plate.</li>
+                  <li>Engine timing marks are usually stamped on the flywheel, which helps in adjusting the timing of the engine.</li>
+                  <li>Sometime the flywheel serves the purpose of a pulley for transmitting power.</li>
+                </ol>
+                <p><strong>Crankcase:</strong> The crankcase is that part of the engine which supports and encloses the crankshaft and camshaft. It provides a reservoir for the lubricating oil. It also serves as a mounting unit for such accessories as the oil pump, oil filter,, starting motor and ignition components. The upper portion of the crankcase is usually integral with cylinder block. The lower part of the crankcase is commonly called oil pan and is usually made of cast iron or cast aluminum<strong></strong><br />
+                  <strong>Camshaft:</strong> It is a shaft which raises and lowers the inlet and exhaust valves at proper times. Camshaft is driven by crankshaft by means of gears, chains or sprockets (Fig3). The speed of the camshaft is exactly half the speed of the crankshaft in four stroke engine. Camshaft operates the ignition timing mechanism, lubricating oil pump and fuel pump. It is mounted in the crankcase, parallel to the crankshaft.<strong></strong><br />
+                  <strong>Timing gear:</strong> Timing gear is a combination of gears, one gear of which is mounted at one end of the camshaft and the other gear at the crankshaft. Camshaft gear (fig. ) is bigger in size than that of the crankshaft gear and it has twice as many teeth as that of the crankshaft gear. For this reason, this gear is commonly called half time gear. Timing gear controls the timing of ignition, timing of opening and closing of valve as well as fuel injection timing.<strong></strong><br />
+                  <strong>Inlet manifold: </strong>It is that part of the engine through which air or air-fuel mixture enters into the engine cylinder. It is fitted by the side of the cylinder head.<strong></strong><br />
+                  <strong>Exhaust manifold:</strong> It is that part of the engine through which exhaust gases go out of the engine cylinder. It is capable of withstanding high temperature of burnt gases. It is fitted by the side of the cylinder head.<strong></strong><br />
+                  <strong>xiv) Top dead centre</strong> - When the piston is at the top of its stroke, it is said to be at the <em>top dead centre</em> (TDC), <br />
+                  <strong>xv) Bottom dead centre</strong> - when the piston is at the bottom of its stroke, it is said to be at its bottom dead centre (BDC).<br />
+  &nbsp;In two stroke cycle engine both the sides of the piston are effective which is not the case in four stroke cycle engine.<br />
+  <strong>xvi) Scavenging</strong> <br />
+                  The process of removal of burnt or exhaust gases from the engine cylinder is known as scavenging. Entire burnt gases do not go out in normal stroke, hence some type of blower or compressor is used to remove the exhaust gases in two stroke cycle engine.<strong></strong></p>
+                <p><strong>TERMINOLOGY CONNECTED WITH ENGINE POWER</strong> <br />
+                  <strong>Bore- </strong>Bore is the diameter of the engine cylinder.<br />
+                  <strong>Stroke</strong> - It is the linear distance traveled by the piston from Top dead centre (TDC) to Bottom dead centre (BDC).<br />
+                  <strong>Stroke-bore ratio</strong> -The ratio of length of stroke (L) and diameter of bore (D) of the cylinder is called stroke-bore ratio (L/D). In general, this ratio varies between 1 to 1.45 and for tractor engines, this ratio is about 1.25.<br />
+                  <strong>Swept volume </strong>-<strong> </strong>It is the volume (A x L) displaced by one stroke of the piston where A is the cross sectional area of piston and L is the length of stroke (Fig.4).<br />
+                 <center> <img src="lec02_clip_image002_0001.png" alt="" width="90" height="139" /></center><br />
+                  <strong>Bore and stroke of IC engine</strong><br />
+                  <strong>Compression ratio </strong>- It is the ratio of the volume of the cylinder &nbsp;at the beginning of the compression stroke to that at the end of compression stroke, i.e. ratio of total cylinder volume to clearance volume.<br />
+                  The Compression ratio of diesel engine varies from 14:1 to 22:1 and that of carburetor type engine (spark ignition engine) varies from 4:1 to 8:1.<br />
+  <strong>Power </strong>-<strong> </strong>It is the rate of doing work. S.I. unit of power is watt.<br />
+                  Watt = Joule/sec. (4.2 Joules = 1 Calorie).<br />
+  &nbsp;In metric unit the power can be expressed in kg.m/sec.<strong></strong><br />
+  <strong>Horse power (HP) </strong>- It is the rate of doing work. Expressed in horse power<br />
+                  Conversion factors from work to power<br />
+                  4500 kg m of work /minute = 1.0 hp<br />
+  &nbsp;75 kg. m of work&nbsp;&nbsp;&nbsp; /second = 1.0 hp.<br />
+  <strong>Indicated horse power (IHP) </strong>- It is the power generated in the engine cylinder and received by the piston. It is the power developed in a cylinder without accounting frictional losses.<br />
+                  PLAN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n<br />
+                  IHP = ---------&nbsp;&nbsp;&nbsp; x&nbsp; --- &nbsp;(for four stroke engine)<br />
+                  4500 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2</p>
+                <p> PLAN &nbsp;&nbsp;&nbsp;&nbsp; <br />
+                  IHP = --------- x n (for two stroke engine)<br />
+                  4500 &nbsp; &nbsp;<br />
+                  Where P = mean effective pressure, kg/cm2<br />
+                  L = stroke length, m<br />
+                  A = cross sectional area of piston, cm2<br />
+                  N = engine revolution per minute<br />
+                  n = number of cylinders<br />
+                  In SI unit, indicated horse power is given as below:</p>
+                <p> PLAN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n&nbsp;&nbsp; <br />
+                  Indicated horse power (IHP), kW = ------------- x ---- (for four strike engine)<br />
+                  60 x 1012&nbsp;&nbsp;&nbsp;&nbsp; 2</p>
+                <p> PLAN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+                  Indicated power (ip), kW = ------------- x n (for two strike engine)<br />
+                  60 x 1012&nbsp;&nbsp;&nbsp; </p>
+                <p> where P = mean effective pressure, Pa (pascal)<br />
+                  L = length of stroke, mm<br />
+                  A = area of piston, mm2<br />
+                  N = speed, RPM<br />
+  <strong>Brake horse power (BHP)</strong> - It is the power delivered by the engine at the end of the crankshaft. It is measured by a dynamometer.</p>
+                <p> &nbsp; 2ΠNT<br />
+  &nbsp;BHP = ----------- hp<br />
+  &nbsp; 4500<br />
+  &nbsp;&nbsp;&nbsp; where T = Torque in kg.m<br />
+                  N = speed, RPM<br />
+  <strong>Belt horse power </strong>-<strong> </strong>It is the power of the engine measured at a pulley receiving drive from the PTO shaft of the tractor.<br />
+  <strong>Power take-off horse power (PTO HP) </strong>-<strong> </strong>It is the power delivered by a tractor through its PTO shaft. In general, the belt and PTO horse power of a tractor will approximately be the same. The PTO hp is around 80-85% 0f tractor engine power<strong></strong><br />
+  <strong>Drawbar horse power (DBHP) </strong>-<strong> </strong>It is the power of a tractor measured at the drawbar of a tractor. It is that power which is available for pulling loads. It is around 50-55 % of engine power<br />
+  <strong>Frictional horse power (FHP) </strong>-<strong> </strong>It is the power required to run the engine at a given speed without producing any useful work. It represents the friction and pumping losses of an engine.<br />
+                  IHP = BHP + FHP</p>
+                <p><strong>MODEL QUESTIONS </strong></p>
+                <ol start="1" type="1">
+                  <li>List      the advantages of diesel engine</li>
+                  <li>Mention      the basic components of an IC Engine</li>
+                  <li>List the types of engine      classification</li>
+                  <li>Mention the four      strokes&nbsp; of IC engine with a neat sketch and explain their      role</li>
+                  <li>Differentiate&nbsp; petrol and diesel engine</li>
+                  <li>Mention merits and demerits of      different farm power sources.</li>
+                  <li>Differentiate IHP and BHP</li>
+                  <li>Write about the working of      four stroke cycle engine</li>
+                  <li>Write about the working of      two stroke cycle engine</li>
+                  <li>Compare four stroke cycle      engine with two stroke cycle engine</li>
+                  <li>Compare spark ignition&nbsp; engine with compression engine</li>
+                </ol>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec02.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec02.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+			    <br />
+			    <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                    </map>
+		        </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

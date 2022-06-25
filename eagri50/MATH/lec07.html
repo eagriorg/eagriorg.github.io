@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS :: Lecture 07</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS :: Lecture 07 :: </span>Differential Equations</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>Differential Equations</strong><br />
+			    <p>Differential  equation is an equation in which differential coefficients occur.<br />
+				  A differential equation is of two types<br />
+				  (1) Ordinary differential  equation<br />
+				  (2) Partial differential  equation<br />
+  <strong>An  ordinary differential equation</strong> is one which contains a  single independent variable.<br />
+  	<p align="center"><video width="320" height="240" controls="controls">
+  <source src="matvdo/diffequ/intro-Modeling&#32;with&#32;Differential&#32;Equations.m4v" type="video/mp4">
+</video></p>
+			    </p>
+				  <p>Example: <br />
+                    <img width="96" height="49" src="lec07_clip_image002.gif" />              <img width="108" height="50" src="lec07_clip_image004.gif" /><br />
+                    <strong>A  partial differential equation</strong> is one containing more than  one independent variable.<br />
+                    <strong>Examples</strong></p>
+			    <ol start="1" type="1">
+                  <li><img width="105" height="44" src="lec07_clip_image006.gif" /></li>
+				  <li><img width="100" height="48" src="lec07_clip_image008.gif" /> </li>
+			    </ol>
+				<p>Here we deal with only  ordinary differential equations.<br />
+                    <strong>Definitions</strong><br />
+                    <strong>Order</strong><br />
+				  The order of a differential equation is the order of the  highest order derivative appearing in it.<br />
+  <img width="110" height="51" src="lec07_clip_image010.gif" />                      Order 1<br />
+  <img width="172" height="54" src="lec07_clip_image012.gif" />         Order -2<br />
+  <strong>Degree</strong><br />
+				  The degree of a differential  equation is defined as the degree of highest ordered derivative occurring in it  after removing the radical sign.<br />
+                <p align="center"><a href="matvdo/diffequ/ode3.mp4">First-order linear ODEs3-Laplace transform</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/diffequ/ode3.mp4" type="video/mp4">
+</video></p>
+ <p align="center"><a href="matvdo/diffequ/ode2.mp4">First-order linear ODEs2- constant coefficients</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/diffequ/ode2.mp4" type="video/mp4">
+</video></p>
+ <p align="center"><a href="matvdo/diffequ/ode1.mp4">First-order linear ODEs1</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/diffequ/ode1.mp4" type="video/mp4">
+</video></p>
+  <strong>Example</strong> <br />
+				  Give  the degree and order of the following differential equation.<br />
+				  1) 5  (x+y) <img width="24" height="41" src="lec07_clip_image014.gif" />+ 3xy = x2      degree -1, order -1<br />
+				  <br />
+				  2) <img width="65" height="66" src="lec07_clip_image016.gif" />  - 6<img width="24" height="41" src="lec07_clip_image014_0000.gif" /> + xy = 20           degree -3, order -2<br />
+				  3) <img width="75" height="55" src="lec07_clip_image019.gif" /> = 3<img width="24" height="41" src="lec07_clip_image014_0001.gif" />+1<br />
+				  Squaring  on both sides<br />
+				  <img width="67" height="56" src="lec07_clip_image021.gif" /> = 9<img width="56" height="61" src="lec07_clip_image023.gif" />+6<img width="33" height="56" src="lec07_clip_image024.gif" />+1<br />
+				  degree  -1, order 2<br />
+				  4) <img width="67" height="49" src="lec07_clip_image026.gif" />=<img width="71" height="53" src="lec07_clip_image028.gif" /><br />
+				  1+3<img width="24" height="41" src="lec07_clip_image014_0002.gif" />+3<img width="45" height="49" src="lec07_clip_image030.gif" />+<img width="45" height="49" src="lec07_clip_image032.gif" />=<img width="71" height="53" src="lec07_clip_image028_0000.gif" /><br />
+				  degree  – 2, order – 2<br />
+  <strong>Note </strong><br />
+				  If  the degree of the differential equations is one. It is called a linear  differential equation.<br />
+  <strong>Formation  of differential equations</strong><br />
+  <strong>             </strong>Given the solution of  differential equation, we can form the corresponding differential equation.  Suppose the solution contains one arbitrary constant then differentiate the  solution once with respect to x and eliminating the arbitrary constant from the  two equations. We get the required equation.   Suppose the solution contains two arbitrary constant then differentiate  the solution twice  with respect to x and  eliminating the arbitrary constant between the three equations. <br />
+  <strong>Solution  of differential equations</strong></p>
+				<ol>
+				  <li>    Variable  separable method, </li>
+				  <li>Homogenous differential equation </li>
+			    </ol>
+				<p>iii)    Linear  differential equation <br />
+                    <strong>Variable  separable method</strong><br />
+				  Consider  a differential equation <img width="24" height="41" src="lec07_clip_image014_0003.gif" /> = f(x)<br />
+				  Here we separate the  variables in such a way that we take the terms containing variable x on one  side and the terms containing variable y on the other side. Integrating we get  the solution.<br />
+  <strong>Note </strong><br />
+				  The following formulae are  useful in solving the differential equations</p>
+				<ol>
+				  <li>d(xy) = xdy +ydx</li>
+				  <li><img width="141" height="58" src="lec07_clip_image036.gif" /></li>
+				  <li><img width="151" height="56" src="lec07_clip_image038.gif" /></li>
+			    </ol>
+				<p><strong>Homogenous  differential equation</strong><br />
+                    <img width="123" height="12" src="lec07_clip_image039.gif" /><strong>            </strong>Consider a  differential equation of the form                                       <br />
+				  <img width="103" height="55" src="lec07_clip_image041.gif" />                                       (i)</p>
+				<p>where  f1 and f2 are homogeneous functions of same degree in x  and y.<br />
+                    <img width="14" height="74" src="lec07_clip_image042.gif" />&nbsp;</p>
+				<br clear="all" />
+				<br />
+Here put    y = vx                                                <br />
+<img width="99" height="12" src="lec07_clip_image043.gif" />            <img width="15" height="13" src="lec07_clip_image045.gif" /><img width="91" height="41" src="lec07_clip_image047.gif" />                                      (ii)<br />
+Substitute  equation(ii) in equation (i) it reduces to a differential equation in the  variables v and x. Separating  the  variables and integrating we can find the solution.<br />
+<strong>Linear differential equation </strong><br />
+            A linear differential equation of  the first order is of the form <img width="80" height="41" src="lec07_clip_image049.gif" /> , Where p and Q are  functions of x only.<br />
+To  solve this equation first we find the integrating factor given by<br />
+            Integrating  factor =  I.F = <img width="35" height="28" src="lec07_clip_image051.gif" /><br />
+Then  the solution is given by<br />
+           <img width="155" height="35" src="lec07_clip_image053.gif" />  where c is an  arbitrary constant.
+<p>&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec07.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec07.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

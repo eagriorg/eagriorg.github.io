@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AMBE 101 :: Lecture 06</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/AMBE101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">AMBE 101 :: Lecture 06 ::</span> MICROBIAL METABOLISM - AUTOTROPHS</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p><strong>Overview of Autotrophy</strong></p>
+				<blockquote>
+				  <p>				  •	Imagine being hungry, walking outside, taking off your shirt, lying in the sun for a few hours, becoming totally full (fat even!), and being done eating. No stores, no lines, no choices, just sunlight --- and the machinery of an autotroph --- and some CO2 and a couple of other requirements (water --- and H2S or Hydrogen gas, if you happen to be an anerobe)<br />
+				    •	Autotroph = gets all carbon from CO2, organic C not required (for C-source). Use special metabolic cycle: Calvin-Benson cycle <br />
+				    •	Refers to C-source only; some organisms still require organic C as energy source</p>
+			    </blockquote>
+				<p><strong>Calvin-Benson cycle</strong></p>
+				<blockquote>
+				  <p>				  •	Each CO2 is added to a 5-C acceptor molecule (ribulose 1,5 bis-phosphate)<br />
+				    •	Immediately split into two 3-C molecules (3-phosphoglyceric acid)<br />
+				    •	Must add phosphate group (from ATP) and hydrogen (from NADPH) to get reduced product, 3 - phospho-glyceraldehyde (PGA)<br />
+				    •	Cannot take all (PGA) as product --- must regenerate some more acceptor to keep cycle going. How?<br />
+				    •	Take 5 PGA molecules (5 x 3C = 15 C atoms). Rearrange through series of reactions to make 3 5 - C molecules (still 15 C atoms). Add ATP to each, make 3 acceptor molecules (ribulose 1,5 bis-phosphate)<br />
+				    •	Net result: To get 1 PGA (3-C) as reduced product, need 3 CO2 molecules, added to 3 acceptor molecules ----&gt; six 3 - C molecules, use 6 ATP and 6 NADPH ----&gt; 6 PGA molecules; five of these are used to regenerate acceptor molecules (+ 3ATP), one PGA can leave cycle and be used by cell.</p>
+			    </blockquote>
+				<p><strong>Summary</strong></p>
+				<blockquote>
+				  <p>				  •	Actual cyce exports 3-C reduced molecules: look at balanced equation:<br />
+				    3 CO2 + 9 ATP + 6 NADPH -----&gt; 3-phospho-glyceraldehyde (PGA) + 9 ADP + 9 NADP+<br />
+				    •	Often want to look at balanced equation relative to 6C synthesis. Must multiply all terms in balanced equation above by two (since 2 PGA ~ 1 glucose)<br />
+				    6 CO2 + 18 ATP + 12 NADPH -----&gt; glucose + 18 ADP + 12 NADP+<br />
+				    •	Note for reaction: glucose + O2 ----&gt; 6CO2 + 6 H2O; delta Go'= - 688kcal/mole<br />
+				    •	If each ATP contains ~7.3 kcal/mole (from delta Go' for hydrolysis) and each NADPH contains ~54 kcal/mole (from delta Go' for oxidation), then to make glucose costs 780 kcal/mole, more than the energy available by oxidizing glucose.<br />
+				    •	Conclusion: making sugar is expensive! Cell needs to supply large quantities of ATP and NADPH.</p>
+			    </blockquote>
+				<p><strong>Chemolithotrophs</strong></p>
+				<blockquote>
+				  <p><strong>			      Hydrogen Bacteria</strong><br />
+				    •	Gain energy by oxidizing hydrogen gas:<br />
+				    •	H2 + NAD+ -------(hydrogenase enzyme)------&gt; NADH + H+<br />
+				    •	alternative: electrons can be donated directly to ETS chain, bypassing NAD<br />
+				    •	Note: only need one special enzyme to carry this step out: hydrogenase.<br />
+				    •	Many different genera of bacteria include members that can induce hydrogenase. When hydrogen disappears, back to heterotrophic life. Hydrogen bacteria are usually facultative chemolithotrophs.</p>
+			    </blockquote>
+				<p><strong>Sulfur Bacteria</strong></p>
+				<blockquote>
+				  <p> •	Called &quot;colorless&quot; in contrast to chlorophyll-containing sulfur bacteria, usually green or purple<br />
+				    <em><strong>•	Oxidize sulfur compounds:</strong></em> Example: Thiobacillus thiooxidans thiosulfate: S2O3= -----&gt; SO4=free sulfur: 2 So + 2 H2O + 3 O2 -----&gt; 2 H2SO4<br />
+				    •	Note product: sulfuric acid!! Cells can grow even in pH 0 (1M sulfuric acid). But cell internal pH is ~7, so difference across membrane can be 6 or 7 pH units.<br />
+				    <em><strong>•	Acid mine drainage:</strong></em> common in Western Penn., E. Ohio, W. Virginia. Rivers can run rust red. Mines have been major sources of pollution. Water seeps in, sulfur deposits exposed during coal mining allow microbial growth ------&gt; megatons of H2SO4<br />
+				    •	Sulfuric acid leaches out, dissolves iron, precipitates in river with bicarbonate to form rusty deposits.<br />
+				    <em><strong>•	Quantities involved:</strong></em> Ohio River carries 100 million tons of 98% conc. H2SO4 per year.<br />
+				    •	To cure problem, must seal up old mines, prevent oxygen access. Also strip mines must be promptly covered up once mining is done to block access of microbes and oxygen to sulfur.<br />
+				    <em><strong>•	Value of this reaction:</strong></em><br />
+				    (a) farmers or gardeners can dump free S on alkaline soil, bacteria will produce acid<br />
+				    (b) miners can use process to recover Cu from low grade ores, where smelting is not economical. Pile up mine &quot;tailings&quot; with copper ore; scrap shallow hole and fill with water. If tailings contain S, microbes will produce H2SO4. Now pump the acid over the tailings, Cu will be leached out and accumulate as soluble ions in acid pool. Eventually process the acid, recover Cu.</p>
+			    </blockquote>
+				<p><strong>Nitrifying Bacteria</strong></p>
+				<blockquote>
+				  <p> •	Very important soil organisms -- process all ammonia, nitrite in soils, break down amino acids, nitrogen bases ---&gt; ammonia (NH3)<br />
+				    <em><strong>•	Two different groups: </strong></em>one oxidizes ammonia, one oxidizes nitrite <br />
+				    <em><strong>•	Ex. 1: Nitrosomonas:</strong></em> 2 NH3 (ammonia) + 3 O2 -----&gt; 2 HNO2 (nitrite) + 2 H2O <br />
+				    <em><strong>•	Ex. 2: Nitrobacter: </strong></em>2 HNO2 (nitrite) + 2 O2 -----&gt; 2 HNO3 (nitrate)<br />
+				    •	Note potential problem: redox potential for nitrite as electron donor is + 0.42 v., so can easily pass electrons down to oxygen at + 0.82 v., reaction will be spontaneous. Electrons can be passed through an electron transport system, make ATP by chemiosmotic phosphorylation.<br />
+				    •	BUT --- how to make NADPH? (Remember, this an autotroph, needs both ATP and NADPH to grow). How to get NADPH? The redox potential is much higher than nitrite.<br />
+				    <em><strong>•	Solution:</strong></em> Reverse electron transport. Accumulate enough proton gradient by oxidation of nitrite to force electrons back to carriers with higher redox potentials, all the way back to NADH ---&gt; NADPH. This works as long as concentrations of reduced forms are kept very low, and NADPH is used up immediately to make glyceraldehyde-3-phosphate. See handout<br />
+				    •	This is very inefficient process. Nitrobacter can have 18 hour generation time. But it has no competition, so what's a little extra time?</p>
+			    </blockquote>
+				<p><strong>Iron Bacteria</strong></p>
+				<blockquote>
+				  <p> •	Curious discovery: Ferrobacillus ferrooxidans. Carries out oxidation of iron: Fe++ (ferrous) ----&gt; Fe+++ (ferric) + e-<br />
+				    •	Originally thought bacteria get energy from oxidation, make ATP. But redox potential of Fe oxidation is + 0.78 v., and redox potential for oxygen is + 0.86 v., so delta Eo' for aerobic respiration is only -0.08 v., calculated delta Go' is much less than the 7.3 kcal/mole needed to make ATP. How does this organism grow?<br />
+				    •	It only grows in very acidic habitats, pH less than 3. Found with Thiobacillus thiooxidans, bacterium that produces sulfuric acid. Ferrobacillus lives off the pH gradient created by acidic pH. This maintains very high proton gradient. As H+ flows in, ATP gets made. But need to get rid of H+ inside, keep internal pH at 7. Use Fe++ as electron donor to oxygen, combine with H+ to form water, get rid of outside cell. Iron functions as electron supplier to get rid of protons.<br />
+				    •	Cells process an enormous amount of iron for very small yields of energy. Fe+++ reacts with OH- ions to form insoluble precipitate, Fe(OH)3, reddish yellow color.</p>
+			    </blockquote>
+				<p><strong>Phototrophs</strong></p>
+				<blockquote>
+				  <p>				  •	Use energy from sunlight to get high energy electrons (attached to carriers high on redox tower). Use CO2 and Calvin-Benson cycle to make all organic molecules.<br />
+				    •	Critical molecules: photon absorbers = bacteriochlorophylls. Several different varieties. Light is trapped by a patch of pigments = &quot;antenna field&quot;, gets passed around to a &quot;reaction center&quot; where an electron is released from Mg++ ion with high energy, passed to electron transport system -- from this point, can use electron transport systems to generate proton gradients, make ATP.<br />
+				    •	Problem: need to make not only ATP (available from proton gradient), but also NADPH. How to obtain?<br />
+				    <em><strong>•	Two solutions:</strong></em><br />
+				    use a reduced molecule with high redox potential like hydrogen gas (H2) or hydrogen sulfide (H2S) to pass electrons to NADP+. Light not needed for this.<br />
+				    use a reduced molecule with low redox potential like water to release electrons and H+ ions. Need lots of energy to drive this reaction, so need an extra step. Light is needed for this.</p>
+			    </blockquote>
+				<p><strong>Anaerobic photosynthetic bacteria</strong></p>
+				<blockquote>
+				  <p><strong>			      •	Three common groups:</strong><br />
+				    Purple bacteria Exs: Chromatium vinosum, Thiospirillum jenense<br />
+				    Purple nonsulfur bacteria. Exs: Rhodospirillum rubrum, Rhodobacter sphaeroides vannielii<br />
+				    Green sulfur bacteria (many are actually brown) Exs: Chlorobium limicola, Prosthecochloris aestuarii,<br />
+				    •	Notes: in both groups, electrons released by light travel through electron transport systems back to the original photosystem = cyclic electron flow. Proton gradient is produced, ATP is made as protons flow back through ATP synthase molecules. Specific carriers are different.<br />
+				    •	To make NADPH, need reduced electron donor. (1) in purple bacteria, can use organic molecules (e.g. fumarate), or H2 for non-sulfur bacteria; or can use H2S or H2 for purple sulfur bacteria. Sulfur accumulates inside cells when H2S is used, hence the name. (2) in green sulfur bacteria, can use H2S, or H2. Sulfur accumulates outside cells.</p>
+			    </blockquote>
+				<p><strong>Aerobic photosynthetic bacteria = cyanobacteria</strong></p>
+				<blockquote>
+				  <p>				  •	includes both prokaryotes (cyanobacteria, formerly called blue-green bacteria) and eukaryotes (algae, green plants)<br />
+				    •	Two photosystems are needed, not one as in anoxygenic photosynthesis. Why?<br />
+				    •	Source of NADPH = electrons removed from photosystem I ---&gt; excited by light to high redox potential, passed to ferredoxin, then directly to NADP+ -----&gt; NADPH<br />
+				    •	Now photosystem I has + charge, can't supply any more electrons. Can't have this, so replace electrons from another photosystem II (see handout diagram), also energized by light. During this process, electrons flow through ETS system and make a proton gradient ( ------&gt; ATP by chemiosmotic phosphorylation). But electrons aren't flowing back to same place they started from --- this is non-cyclic electron flow. Path resembles a letter &quot;Z&quot;, so often called &quot;Z-scheme&quot; photosynthesis.</p>
+			    </blockquote>
+				<p><strong>FERMENTATION</strong></p>
+				<blockquote>
+				  <p>				  •	Fermentation -- oxidation of an organic compound in the absence of external electron acceptor (no oxygen required). Uses SLP (substrate-level phosphorylation).<br />
+				    •	Respiration -- oxidation of an organic compound where oxygen is the final electron acceptor. Uses ETS (electron transport system) as well as SLP.<br />
+				    •	Anaerobic respiration (unique to bacteria) -- oxidation of organic compounds where an external substrate other than oxygen serves as final electron acceptor. Exs: nitrate, sulfate, carbon dioxide.</p>
+			    </blockquote>
+				<p><strong>Lactic acid fermentation</strong></p>
+				<blockquote>
+				  <p>				  •	pyruvate + NADH  lactic acid + NAD+<br />
+				    •	found in many bacteria: lactic acid bacteria, Bacillus, also in some protozoa, water molds, even human skeletal muscle<br />
+				    •	Responsible for souring of milk products  yogurt, cheese, buttermilk, sour cream, etc. Excellent keeping properties.<br />
+				    •	Some bacteria produce only lactic acid = Homolactic fermenters<br />
+				    •	Other bacteria produce other products as well; ethanol, CO2, lactate, etc. = Heterolactic fermenters<br />
+			      </p>
+			    </blockquote>
+				<p><strong>Alcoholic fermentation </strong></p>
+				<blockquote>
+				  <p>				  •	pyruvate  acetaldehyde + CO2<br />
+				    •	acetaldehyde + NADH  ethanol + NAD+<br />
+				    •	Found in many fungi, yeasts, some bacteria.<br />
+				    •	Very important in human applications. Bread, alcoholic spirits</p>
+			    </blockquote>
+				<p><strong>Formic acid and mixed acid fermentations</strong></p>
+				<blockquote>
+				  <p>				  •	pyruvate (3-C) + CoA  Acetyl-CoA (2-C) + formic acid (1-C)<br />
+				    •	HCOOH  CO2 + H2<br />
+			      •	found in many bacteria, very common in enterics (Gram-negative facultative anaerobic rods, include E. coli and other common intestinal tract denizens) </p>
+			    </blockquote>
+				<p><em><strong>Useful in identification:</strong></em> 2 common variants</p>
+				<p><strong>Mixed acid fermentation</strong>: Some bacteria use several pathways, produce ethanol, formic acid, acetic acid, lactic acid, succinic acid, CO2, and H2. Note lots of acid, lower pH than many other fermentations.  Note: ATP yield via mixed acid is ~2.5 ATP/glucose, a bit higher than straight lactic acid fermentation<br />
+			    </p>
+				<p><strong>Butanediol fermentation</strong>: 
+				  Butanediol produced, also much more CO2, and H2<br />
+			    </p>
+				<p><strong>Roles of fermentation in nature</strong></p>
+				<blockquote>
+				  <p>				  •	Fermentations play major role.<br />
+				    •	large part of cellulose ingested by herbivores is excreted in undigested form.<br />
+				    •	Wherever organic matter accumulates, bacteria can grow and remove oxygen (by respiration), leading to anaerobic conditions that favor fermentation.<br />
+				    •	Even in lab cultures (test tubes of media), bacteria eat up all available oxygen, rely largely on fermentation unless vigorous aeration is maintained! Bacteria are pigs, gorge themselves at every opportunity!<br />
+				    •	Beside bacteria, fermentations also carried out be protozoa, fungi, even animal muscle tissues (only works as temporary energy supplement).<br />
+			      </p>
+			    </blockquote>
+				<p><strong>What substances can be fermented?</strong></p>
+				<blockquote>
+				  <p>				  •	must have intermediate oxidation state (o.s.)<br />
+				    •	if totally oxidized (-CO)n cannot be fermented<br />
+				    •	if totally reduced (-CH2)n, cannot be fermented<br />
+				    •	must be convertible to a substrate for substrate level phosphorylation (usually into some glycolytic step)<br />
+				    •	Many sugars can be fermented. Also amino acids (e.g. by Clostridia, oxidizing one amino acid and using a different amino acid as electron acceptor.)<br />
+			      </p>
+			    </blockquote>
+				<p><strong>Respiration</strong></p>
+				<blockquote>
+				  <p>				  •	Use an external electron acceptor. Oxygen as prototype.<br />
+				    •	The &quot;problem&quot; with fermentation is that, by using an organic molecule as a terminal electron acceptor to be discarded as waste, cell is losing out on potential to further oxidize organic molecule, get more energy.<br />
+				    •	Alternative solution is to use some non-organic molecule that has a low redox potential, can accept electrons and become some reduced molecule. Oxygen is perfect for this, has extremely low redox potential, and becomes reduced to water, the &quot;perfect&quot; waste product for an aqueous environment.<br />
+				    •	To transfer electrons (and protons, H+) to oxygen, need special oxidase enzyme. In mitochondria, this is a cytochrome, cyt a. In bacteria, different cytochromes; in E. coli, cyt o or d.</p>
+			    </blockquote>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec32.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec06.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<p></p>
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

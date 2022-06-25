@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 09</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 09 :: </span></strong><strong>Test of significance</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>Basic concepts – null hypothesis – alternative hypothesis – level of  significance – Standard error and its importance – steps in testing</strong></p>
+				<h3 align="center"><strong>Test of Significance</strong></h3>
+				<p><strong>Objective</strong><br />
+				  To  familiarize the students about the concept of testing of any hypothesis, the  different terminologies used in testing and application of different types of  tests.</p>
+				<h3><strong>Sampling Distribution</strong></h3>
+				<p>            By drawing all possible samples of same size from a  population we can calculate the statistic, for example, <img width="15" height="17" src="lec09_clip_image002.gif" />for all samples. Based on this we can construct a frequency  distribution and the probability distribution of <img width="15" height="17" src="lec09_clip_image002_0000.gif" />. Such probability distribution of a statistic is known a  sampling distribution of that statistic. In practice, the sampling  distributions can be obtained theoretically from the properties of random  samples.</p>
+                <table width="100%" border="0">
+  <tr>
+    <td>   <p align="center">Sampling Distribution of the Sample Mean<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Sampling&#32;Distribution&#32;of&#32;the&#32;Sample&#32;Mean.mp4" type="video/mp4">
+</video></p></td>
+    <td>   <p align="center">Sampling Distribution of the Sample Mean 2<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Sampling&#32;Distribution&#32;of&#32;the&#32;Sample&#32;Mean&#32;2.mp4" type="video/mp4">
+</video></p></td>
+  </tr>
+</table>
+				<h3><strong>Standard Error</strong></h3>
+				<p>            As in the case of population distribution the  characteristic of the sampling distributions are also described by some measurements  like mean &amp; standard deviation. Since a statistic is a random variable, the  mean of the sampling distribution of a statistic is called the expected valued  of the statistic.  The SD of the sampling  distributions of the statistic is called standard error of the Statistic.  The square of the standard error is known as  the variance of the statistic. It may be noted that the standard deviation is  for units whereas the standard error is for the statistic.</p>
+                 <p align="center">Standard Error of the Mean<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Standard&#32;Error&#32;of&#32;the&#32;Mean.mp4" type="video/mp4">
+</video></p>
+				<h2 align="left"><strong>Theory of Testing Hypothesis</strong></h2>
+				<h3><strong>Hypothesis</strong></h3>
+				<h4>            Hypothesis  is a statement or assumption that is yet to be proved.</h4>
+				<h4><strong>Statistical Hypothesis</strong></h4>
+				<p>            When the assumption or statement that occurs under  certain conditions is formulated as   scientific hypothesis, we can construct criteria by which a scientific  hypothesis is either rejected or provisionally accepted.  For this purpose, the scientific hypothesis  is translated into statistical language. If the hypothesis in given in a  statistical language it is called a statistical hypothesis.<br />
+				  For eg:-<br />
+				  The yield of a new paddy  variety will be 3500 kg per hectare – scientific hypothesis.<br />
+				  In Statistical language if may be stated as the random variable  (yield of paddy) is distributed normally with mean 3500 kg/ha.<br />
+  <strong>Simple  Hypothesis</strong><br />
+				  When a hypothesis specifies all the parameters of a  probability distribution, it is known as simple hypothesis. The hypothesis  specifies all the parameters, i.e µ and σ of a normal distribution. <br />
+				  Eg:-<br />
+				  The random variable x is distributed normally with mean µ=0  &amp; SD=1 is a simple hypothesis.  The  hypothesis specifies all the parameters (µ &amp; σ) of a normal distributions.<br />
+  <strong>Composite  Hypothesis</strong><br />
+				  If the hypothesis specific only some of the parameters of  the probability distribution, it is known as composite hypothesis. In the above  example if only the µ is specified or only the σ is specified it is a composite  hypothesis.</p>
+				<h3><strong>Null Hypothesis - Ho</strong></h3>
+				<p>            Consider for example, the hypothesis  may be put in a form ‘paddy variety A will  give the same yield per hectare as that of variety B’ or there is no difference  between the average yields of paddy varieties A and B.  These hypotheses are in definite terms.  Thus these hypothesis form a basis to work  with.  Such a working hypothesis in known  as null hypothesis.  It is called null  hypothesis because if nullities the original hypothesis, that variety A will  give more yield than variety B.<br />
+				  The null hypothesis is stated as ‘there is no difference  between the effect of two treatments or there is no association between two  attributes (ie) the two attributes are independent. Null hypothesis is denoted  by Ho.<br />
+				  Eg:-<br />
+				  There  is no significant difference between the yields of two paddy varieties (or)  they give same yield per unit area. Symbolically, Ho: µ1=µ2.</p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>Alternative  Hypothesis</strong><br />
+				  When the original hypothesis is µ1&gt;µ2 stated as an  alternative to the null hypothesis is known as alternative hypothesis.  Any hypothesis which is complementary to null  hypothesis is called alternative hypothesis, usually denoted by H1.<br />
+				  Eg:-<br />
+				  There is a significance difference between the yields of two  paddy varieties. Symbolically,<br />
+				  H1:  µ1≠µ2 (two sided or directionless alternative)<br />
+				  If the statement is that A  gives significantly less yield than B (or) A gives significantly more yield  than B. Symbolically,<br />
+				  H1: µ1 &lt; µ2 (one  sided alternative-left tailed)<br />
+				  H1: µ1 &gt; µ2 (one  sided alternative-right tailed)<br />
+  <strong>Testing of  Hypothesis</strong><br />
+				  Once the hypothesis is formulated we have to make a  decision on it.  A statistical procedure  by which we decide to accept or reject a statistical hypothesis is called  testing of hypothesis.<br />
+  <strong>Sampling  Error</strong><br />
+				  From sample data, the statistic is computed and the  parameter is estimated through the statistic.   The difference between the parameter and the statistic is known as the  sampling error.<br />
+  <strong>Test of  Significance</strong><br />
+				  Based on the sampling  error the sampling distributions are derived. The observed results are then  compared with the expected results on the basis of sampling distribution. If  the difference between the observed and expected results is more than specified  quantity of the standard error of the statistic, it is said to be significant  at a specified probability level. The process up to this stage is known as test  of significance.<br /> <p align="center">STATISTICS - INTRODUCTION<br />
+  <strong>Decision  Errors</strong><br />
+				  By performing a test we make a decision on the hypothesis  by accepting or rejecting the null hypothesis Ho.  In the process we may make a correct decision  on Ho or commit one of two kinds of error.</p>
+				<ul>
+				  <li>We may reject Ho based on sample data when in fact it is  true.  This error in decisions is known  as Type I error.</li>
+				  <li>We may accept Ho based on sample data when in fact it is not  true.  It is known as Type II error.</li>
+			    </ul>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p>&nbsp;</p></td>
+                      <td valign="top"><p align="center"><strong>Accept Ho</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Reject Ho</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">Ho is true</p></td>
+                      <td valign="top"><p align="center">Correct Decision</p></td>
+                      <td valign="top"><p align="center">Type I error</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">Ho is false</p></td>
+                      <td valign="top"><p align="center">Type II error</p></td>
+                      <td valign="top"><p align="center">Correct Decision</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p>The relationship between  type I &amp; type II errors is that if one increases the other will decrease.<br />
+				  The probability of type I  error is denoted by α. The probability of type II error is denoted by β.  The correct decision of rejecting the null  hypothesis when it is false is known as the power of the test.  The probability of the power is given by 1-β.</p>
+				<p><strong>Critical  Region</strong><br />
+				  The testing of statistical hypothesis involves the choice  of a region on the sampling distribution of statistic.  If the statistic falls within this region,  the null hypothesis is rejected: otherwise it is accepted.  This region is called critical region.<br />
+				  Let the null hypothesis be Ho: µ1 = µ2 and its  alternative be H1: µ1 ≠ µ2.   Suppose Ho is true.  Based on  sample data it may be observed that statistic <img width="60" height="25" src="lec09_clip_image005.gif" /> follows a normal  distribution given by<br />
+				  <img width="165" height="51" src="lec09_clip_image007.gif" /></p>
+				<p>We know that 95% values of  the statistic from repeated samples will fall in the range <img width="60" height="25" src="lec09_clip_image005_0000.gif" />±1.96 times SE<img width="60" height="25" src="lec09_clip_image005_0001.gif" />.  This is represented  by a diagram.<br />
+				</p>
+				<br clear="all" />
+				<br />
+            Region of                                                                 Region of<br />
+             rejection<img width="32" height="49" src="lec09_clip_image009.gif" /><img width="27" height="48" src="lec09_clip_image010.gif" />                                                                    rejection<br />
+                                             Region of acceptance
+<p>&nbsp;</p>
+<p>The border  line value ±1.96 is the critical value or tabular value of Z.  The area beyond the critical values (shaded  area) is known as critical region or region of rejection.  The remaining area is known as region of  acceptance.<br />
+  If the statistic falls in the critical region we reject  the null hypothesis and, if it falls in the region of acceptance we accept the  null hypothesis.</p>
+<p>            In other words if the calculated value of a test  statistic (Z, t, χ2 etc) is more than the critical value in  magnitude it is said to be significant and we reject Ho and otherwise we accept  Ho. The critical values for the   t and <img width="23" height="24" src="lec09_clip_image012.gif" /> are given<strong> </strong>in the form of readymade tables. Since  the criticval values are given in the form of table it is commonly referred as  table value. The table value depends on the level of significance and degrees  of freedom.<br />
+  Example:  Z cal &lt; Z tab -We accept the Ho and  conclude that there is no significant difference between the means  </p>
+<p><strong>Test  Statistic</strong><br />
+  The sampling distribution of a statistic like Z, t, &amp;  χ2   are known as test statistic.<br />
+  Generally, in case of quantitative  data<br />
+  <img width="255" height="44" src="lec09_clip_image014.gif" /><br />
+  <strong>Note</strong><br />
+  The choice of the test statistic depends on the nature of  the variable (ie) qualitative or quantitative, the statistic involved (i.e)  mean or variance and the sample size, (i.e) large or small.<br />
+  <strong>Level of  Significance</strong><br />
+  The probability that the statistic will fall in the  critical region is <img width="75" height="41" src="lec09_clip_image016.gif" />.  This α is nothing  but the probability of committing type I error.  Technically the probability of committing type  I error is known as level of Significance.  <br />
+  <strong>One and two  tailed test</strong><br />
+  The nature of  the alternative hypothesis determines the position of the critical region. For  example, if H1 is µ1≠µ2 it does not show the direction and hence the  critical region falls on either end of the sampling distribution. If H1  is µ1 &lt; µ2 or µ1 &gt; µ2 the direction is  known. In the first case the critical region falls on the left of the  distribution whereas in the second case it falls on the right side.</p>
+<p><strong>One tailed test</strong> – When the critical region falls on one end of the  sampling distribution, it is called one tailed test.<br />
+    <strong>Two tailed test</strong> – When the critical region falls on either end of the  sampling distribution, it is called two tailed test.</p>
+<p>For example, consider the  mean yield of new paddy variety (µ1) is compared with that of a ruling variety (µ2).  Unless the new variety is more promising that the ruling variety in terms of  yield we are not going to accept the new variety. In this case H1 :  µ1 &gt; µ2 for which one tailed test is  used. If both the varieties are new our interest will be to choose the best of  the two. In this case H1: µ1 ≠ µ2 for which we use two tailed test.</p>
+<p><strong>Degrees of  freedom</strong><br />
+  The number of  degrees of freedom is the number of observations that are free to vary after  certain restriction have been placed on the data. If there are n observations  in the sample, for each restriction imposed upon the original observation the  number of degrees of freedom is reduced by one. <br />
+  The number of independent variables which make up the  statistic is known as the degrees of freedom and is denoted by <img width="13" height="17" src="lec09_clip_image018.gif" />(Nu)</p>
+<p align="center"><a href="videos/Degrees&#32;of&#32;Freedom&#32;in&#32;Statistics.mp4" target="_blank">Degrees of Freedom in Statistics</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Degrees&#32;of&#32;Freedom&#32;in&#32;Statistics.mp4" type="video/mp4">
+</video></p><p> 
+  <strong>Steps in testing  of hypothesis</strong><br />
+  The  process of testing a hypothesis involves following steps.</p>
+<ul>
+  <li>Formulation of null &amp; alternative hypothesis.</li>
+  <li>Specification of level of significance.</li>
+  <li>Selection of test statistic and its computation.</li>
+  <li>Finding out the critical value from tables using the level of  significance, sampling distribution and its degrees of freedom.</li>
+  <li>Determination of the significance of the test statistic.</li>
+  <li>Decision about the null hypothesis based on the significance  of the test statistic.</li>
+  <li>Writing the conclusion in such a way that it answers the  question on hand.</li>
+</ul>
+<br clear="all" />
+<p><strong>Large sample  theory</strong><br />
+  The sample size n is greater than 30 (n≥30) it is known  as large sample. For large samples the sampling distributions of statistic are  normal(Z test). A study of sampling distribution of statistic for large sample  is known as large sample theory.</p>
+<p><strong>Small sample  theory</strong><br />
+  If the sample  size n ils less than 30 (n&lt;30), it is known as small sample. For small  samples the sampling distributions are t, F and χ2 distribution. A study of sampling  distributions for small samples is known as small sample theory.</p>
+<p><strong>Test of Significance</strong><br />
+  The theory of test of  significance consists of various test statistic. The theory had been developed  under two broad heading</p>
+<ul>
+  <li>Test of significance for  large sample</li>
+</ul>
+<p>Large sample test or  Asymptotic test or Z test (n≥30)</p>
+<ul>
+  <li>Test of significance for  small samples(n&lt;30)</li>
+</ul>
+<p>Small sample test or Exact  test-t, F and χ2.<br />
+  It may be noted that small sample  tests can be used in case of large samples also.<br />
+  <strong>Large sample  test</strong><br />
+  Large sample test are<br />
+</p>
+<ul>
+  <li>Sampling from attributes</li>
+  <li>Sampling from variables</li>
+</ul>
+<p><strong>Sampling  from attributes</strong><br />
+  There are two types of test for  attributes</p>
+<ul>
+  <li>Test for single proportion</li>
+  <li>Test for equality of two  proportions</li>
+</ul>
+<p><strong>Test for  single proportion</strong> <br />
+  In a sample of large size n, we may examine whether the  sample would have come from a population having a specified proportion P=Po.  For testing<br />
+  We may proceed as follows</p>
+<ul>
+  <li><strong>Null Hypothesis (Ho)</strong></li>
+</ul>
+<p>Ho: The given sample would  have come from a population with specified proportion P=Po</p>
+<ul>
+  <li><strong>Alternative Hypothesis(H1)</strong></li>
+</ul>
+<p>        H1 : The given sample may  not be from a population with specified proportion<br />
+  P≠Po  (Two Sided)<br />
+  P&gt;Po(One  sided-right sided)<br />
+  P&lt;Po(One  sided-left sided)</p>
+<ul>
+  <li><strong>Test statistic</strong></li>
+</ul>
+<p><img width="89" height="73" src="lec09_clip_image020.gif" /><br />
+  It follows a standard normal  distribution with µ=0 and s2=1</p>
+<ul>
+  <li><strong>Level of Significance</strong></li>
+</ul>
+<p>The level of significance  may be fixed at either 5% or 1%</p>
+<ul>
+  <li><strong>Expected vale or critical  value</strong></li>
+</ul>
+<p>In case of test statistic  Z, the expected value is <br />
+    <img width="12" height="36" src="lec09_clip_image021.gif" />     Ze =           1.96 at 5% level                     <br />
+    <img width="53" height="12" src="lec09_clip_image022.gif" />                      2.58 at 1% level                            Two tailed test<br />
+  <br />
+  <img width="13" height="36" src="lec09_clip_image023.gif" />            Ze  =         1.65 at 5% level                         <br />
+  <img width="53" height="12" src="lec09_clip_image024.gif" />                            2.33  at 1% level                          One tailed  test                           <br />
+</p>
+<ul>
+  <li><strong>Inference</strong></li>
+</ul>
+<p>If the observed value of  the test statistic Zo exceeds the table value Ze we  reject the Null Hypothesis Ho otherwise accept it.</p>
+<p><strong>Test for equality of two proportions</strong><br />
+  Given two sets  of sample data of large size n1 and n2  from attributes. We may examine whether  the two samples come from the populations having the same proportion. We may  proceed as follows:<br />
+  <strong> 1. Null Hypothesis (Ho)</strong><br />
+  Ho: The given two sample  would have come from a population having the same proportion P1=P2<br />
+  <strong>2. Alternative Hypothesis (H1)</strong><br />
+  H1 : The given two sample  may not be from a population with specified proportion<br />
+  P1≠P2  (Two Sided)<br />
+  P1&gt;P2(One  sided-right sided)<br />
+  P1&lt;P2(One  sided-left sided)<br />
+  <strong>  3. Test statistic</strong><br />
+  <img width="184" height="75" src="lec09_clip_image026.gif" /></p>
+<p>When P1and P2   are not known, then<br />
+    <img width="129" height="75" src="lec09_clip_image028.gif" />       for heterogeneous  population <br />
+  Where q1 = 1-p1   and q2 = 1-p2<br />
+  <img width="127" height="75" src="lec09_clip_image030.gif" />       for homogeneous  population</p>
+<p>p= combined or pooled  estimate.<br />
+  <img width="111" height="47" src="lec09_clip_image032.gif" /><br />
+  <strong>4. Level of  Significance</strong><br />
+  The level may be fixed at  either 5% or 1%<br />
+  <strong>5. Expected  vale</strong><br />
+  The expected value is  given by</p>
+<p><img width="12" height="36" src="lec09_clip_image033.gif" />     Ze =          1.96 at 5% level<br />
+    <img width="53" height="12" src="lec09_clip_image034.gif" />                      2.58 at 1% level                         Two tailed test</p>
+<p><img width="13" height="36" src="lec09_clip_image035.gif" />            Ze  =         1.65 at 5% level                         <br />
+    <img width="53" height="12" src="lec09_clip_image024_0000.gif" />                            2.33  at 1% level                          One tailed  test<br />
+    <strong>6. Inference</strong><br />
+  If the observed value of  the test statistic Z exceeds the table value Ze we may reject the  Null Hypothesis Ho otherwise accept it.</p>
+<p><strong>Sampling from variable</strong><br />
+  In sampling for variables,  the test are as follows</p>
+<ul>
+  <li>Test for single Mean</li>
+  <li>Test for single Standard  Deviation</li>
+  <li>Test for equality of two  Means</li>
+  <li>Test for equality of two  Standard Deviation</li>
+</ul>
+<p><strong>Test for single Mean</strong><br />
+  In a sample of large size n, we examine whether the sample  would have come from a population having a specified mean<br />
+  <br />
+  <strong> 1. Null Hypothesis (Ho)</strong><br />
+  Ho: There is no  significance difference between the sample mean ie., µ=µo <br />
+  or<br />
+  The given sample would have come from a  population having a specified mean<br />
+  ie.,   µ=µo </p>
+<p><strong>2. Alternative Hypothesis(H1)</strong><br />
+  H1 : There is significance  difference between the sample mean <br />
+  ie.,   µ≠µo or µ&gt;µo or µ&lt;µo</p>
+<p>&nbsp;</p>
+<p><strong>3. Test statistic</strong><br />
+  <img width="88" height="75" src="lec09_clip_image037.gif" /><br />
+  When population variance is not known, it may  be replaced by its estimate</p>
+<p>                   <img width="95" height="75" src="lec09_clip_image039.gif" /></p>
+<p><img width="183" height="73" src="lec09_clip_image041.gif" /><br />
+    <strong>4. Level of  Significance</strong><br />
+  The level may be fixed at  either 5% or 1%</p>
+ <p align="center"> <a href="videos/P&#32;Value.mp4" target="_blank">P-Value</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/P&#32;Value.mp4" type="video/mp4">
+</video></p>
+<p><strong>5.Expected  value</strong><br />
+  The expected value is  given by</p>
+<p><img width="12" height="36" src="lec09_clip_image033_0000.gif" />     Ze =          1.96 at 5% level<br />
+    <img width="53" height="12" src="lec09_clip_image034_0000.gif" />                      2.58 at 1% level                         Two tailed test</p>
+<p>&nbsp;</p>
+<p><img width="13" height="36" src="lec09_clip_image035_0000.gif" />            Ze  =         1.65 at 5% level                         <br />
+    <img width="53" height="12" src="lec09_clip_image024_0001.gif" />                            2.33  at 1% level                          One tailed  test<br />
+  <br />
+  <strong>6. Inference</strong><br />
+  If the observed value of  the test statistic Z exceeds the table value Ze we may reject the  Null Hypothesis Ho otherwise accept it.</p>
+<p>           <br />
+    <strong>Test for equality of two Means</strong><br />
+  Given two sets of sample data of  large size n1 and n2 from variables. We may examine  whether the two samples come from the populations having the same mean. We may  proceed as follows<br />
+  <br />
+  <strong> 1. Null Hypothesis (Ho)</strong><br />
+  Ho: There is no  significance difference between the sample mean ie., µ=µo <br />
+  or<br />
+  The given sample would have come from a  population having a specified mean<br />
+  ie., µ1=µ2 <br />
+  <strong>2. Alternative Hypothesis (H1)</strong><br />
+  H1: There is significance  difference between the sample mean ie., µ=µo <br />
+  ie., µ1≠µ2 or µ1&lt;µ2  or µ1&gt;µ2<br />
+  <strong> 3. Test statistic </strong><br />
+  When the population variances are  known and unequal (i.e) <img width="59" height="24" src="lec09_clip_image043.gif" /><br />
+  <img width="183" height="84" src="lec09_clip_image045.gif" /><br />
+  When               <img width="59" height="24" src="lec09_clip_image047.gif" />,<br />
+  <img width="109" height="83" src="lec09_clip_image049.gif" /><br />
+  where <img width="116" height="48" src="lec09_clip_image051.gif" /><br />
+  The equality of variances can be  tested by using F test.<br />
+  When population variance is unknown,  they may be replaced by their estimates s12   and s22<br />
+  <img width="107" height="84" src="lec09_clip_image053.gif" />          when s12≠   s22<br />
+  when s12 =  s22<br />
+  <img width="105" height="80" src="lec09_clip_image055.gif" />       </p>
+<p>                where <img width="121" height="49" src="lec09_clip_image057.gif" /><br />
+    <strong>4. Level of  Significance</strong><br />
+  The level may be fixed at  either 5% or 1%<br />
+  <strong>5. Expected  vale</strong><br />
+  The expected value is  given by</p>
+<p><img width="12" height="36" src="lec09_clip_image033_0001.gif" />     Ze =          1.96 at 5% level<br />
+    <img width="53" height="12" src="lec09_clip_image034_0001.gif" />                     2.58 at 1% level                         Two tailed  test<br />
+    <img width="13" height="36" src="lec09_clip_image035_0001.gif" />            Ze  =         1.65 at 5% level                         <br />
+    <img width="53" height="12" src="lec09_clip_image024_0002.gif" />                            2.33  at 1% level                          One tailed  test<br />
+    <strong>6. Inference</strong><br />
+  If the  observed value of the test statistic Z exceeds the table value Ze we  may reject the Null Hypothesis Ho otherwise accept it.</p>
+<p align="left">&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec09.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec09.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

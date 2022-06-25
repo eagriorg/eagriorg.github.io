@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STAM 102 :: Lecture 11</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM102/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM 102 :: Lecture 12 :: </span></strong><strong>CREATING GRAPHS</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h1><strong>CREATING GRAPHS</strong></h1>
+				<p><strong>Graphs or Charts</strong></p>
+				<ul type="disc">
+                  <li>The       graphical representation of data is called graph or chart.</li>
+				  <li>The       data entered in the excel sheet can be represented by a graph or a chart.</li>
+				  <li>MSEXCEL       supports a wide variety of graphs.</li>
+				  <li>Example       of graphs:</li>
+				  <ul type="circle">
+                    <li>Column,        Line, Bar, Pie, Area, Doughnut, Radar, Surface, Bubble, Stock etc.</li>
+			      </ul>
+			    </ul>
+				<p><strong> </strong><strong>Column Graph</strong></p>
+				<ul type="disc">
+                  <li>It shows data change over a       period of time or illustrates comparisons among items.</li>
+				  <li>Categories are organized horizontally and values       vertically. </li>
+				  <li>It is an idel chart for showing the variation in the       value of an item over period of time.<u> </u></li>
+			    </ul>
+				<p><strong>Bar Graph</strong></p>
+				<ul type="disc">
+                  <li>Bar graph illustrates       comparison among individual items.</li>
+				  <li>Categories       are vertically organized and values horizontally.</li>
+			    </ul>
+				<p><strong>Line Graph</strong></p>
+				<ul type="disc">
+                  <li>A line graph shows trends in       data at equal intervals.</li>
+				  <li>It is very useful to show the       change in the value over a period of time.</li>
+				  <li>It will show very clearly       whether a value is ascending or descending.</li>
+			    </ul>
+				<p><strong>Pie Chart</strong></p>
+				<ul type="disc">
+                  <li>Pie chart is used to plot data       for a single data series.</li>
+				  <li>Each data point is represented       by one piece of the circular pie chart.</li>
+				  <li>The size of each piece is       proportional to the value it represents, so all the data points taken       together will form circle.</li>
+			    </ul>
+				<p><strong>Area Graph</strong></p>
+				<ul type="disc">
+                  <li>Area chart is similar to line       chart.</li>
+				  <li>But plots series one above the       other with different colors and shades.</li>
+				  <li>It emphasizes the magnitude of       change over a period of time.</li>
+			    </ul>
+				<p><strong>XY (Scatter) Graph</strong></p>
+				<ul type="disc">
+                  <li>It plots each point with a mark       of two groups of numbers as one series of XY coordinates.</li>
+				  <li>It shows uneven intervals of       data and it is commonly used for scientific data.</li>
+			    </ul>
+				<p><strong>CREATING  GRAPHS</strong></p>
+				<ul type="disc">
+                  <li>Create       a spreadsheet with data rice yield in tones from the year 1998 to 2004 as       shown below:</li>
+			    </ul>
+				<p align="center"><img width="366" height="300" src="lec12_clip_image002.jpg" />.</p>
+				<ul type="disc">
+                  <li>Go       to Insert Menu select Chart and click.</li>
+			    </ul>
+				<p align="center"><img width="205" height="409" src="lec12_clip_image004.jpg" /></p>
+				<p>&nbsp;</p>
+				<p><strong>First  Step</strong></p>
+				<ul type="disc">
+                  <li>A dialog box of chart wizard will appear, select the       required type of chart from the chart type.</li>
+			    </ul>
+				<p align="center"><img width="416" height="368" src="lec12_clip_image006.jpg" /></p>
+				<ul type="disc">
+                  <li>Then select the chart sub type according to your       requirement.</li>
+			    </ul>
+				<p><strong>Second Step</strong></p>
+				<ul type="disc">
+                  <li>Select the data range in this step.</li>
+				  <li>To give enter data range move the cursor on excel sheet       and </li>
+				  <ul type="circle">
+                    <li>by clicking select the data area you want or </li>
+				    <li>type cells position if you know exactly which area you        want.</li>
+			      </ul>
+				  <li>Click on the Next button.</li>
+				  <li>the data range selected in our example is <strong>Sheet1!$A$1:$B$9</strong><strong> </strong></li>
+				  <li>Sheet1 we are in sheet1 in MS Excel.<strong> </strong></li>
+				  <li>$ Sign is used to represent the       absolute position of the data in MS Excel.<strong> </strong></li>
+				  <li>The range is to conform that the chart       is being prepared of the proper sheet of the file.<strong> </strong></li>
+				  <li>On confirming click on Next button.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<p align="center"><img width="624" height="461" src="lec12_clip_image008.jpg" /></p>
+				<p><strong>Third  Step</strong></p>
+				<ul type="disc">
+                  <li>Here the Chart title, Category and Value information       are entered, which will be displayed when the chart is viewed.</li>
+			    </ul>
+				<p align="center"><img width="485" height="327" src="lec12_clip_image010.jpg" /></p>
+				<ul type="disc">
+                  <li>Click Next button.</li>
+			    </ul>
+				<p><strong>Fourth Step</strong></p>
+				<ul type="disc">
+                  <li>This step will provide in the way you want to place the       chart.</li>
+				  <li>Select the appropriate option available in the chart       wizaerd.</li>
+			    </ul>
+				<p align="center"><img width="473" height="232" src="lec12_clip_image012.jpg" /></p>
+				<ul type="disc">
+                  <li>Click the Finish button.</li>
+				  <li>The chart will be as shown below:</li>
+			    </ul>
+				<p align="center"><img width="615" height="427" src="lec12_clip_image014.jpg" /></p>
+				<p><strong>Moving  Chart</strong></p>
+				<ul type="disc">
+                  <li>If the chart needs to be placed in different position,       then we can move the chart wherever we want.</li>
+				  <li>To move the chart select the chart by clicking on it       without leving the mouse button, drag in the direction you want.</li>
+				  <li>The chart will move and then release it where you want.</li>
+			    </ul>
+				<p><strong>Changing the Chart Size</strong></p>
+				<ul type="disc">
+                  <li>To change the chart size, select the chart by clicking       on it.</li>
+				  <li>You will get eight small rectangular boxes around the       chart.</li>
+				  <li>Now move the cursor to the border of the chart and the       mouse pointer changes to double headed arrow cursor.</li>
+				  <li>Then press the left mouse button and drag.</li>
+				  <li>If you want to reduce the size, drag towards the centre       of the chart, else in opposite direction to increase the size of the       chart.</li>
+			    </ul>
+				<p><strong>Changing the Chart Type</strong></p>
+				<ul type="disc">
+                  <li>Select the chart</li>
+				  <li>Click the right mouse button</li>
+				  <li>From the right context menu select Chat type</li>
+			    </ul>
+				<p align="center"><img width="624" height="335" src="lec12_clip_image016.jpg" /></p>
+				<ul type="disc">
+                  <li>Select the required chart type from the chart type       window.</li>
+			    </ul>
+				<p align="center"><img width="623" height="370" src="lec12_clip_image018.jpg" /></p>
+				<ul type="disc">
+                  <li>Click OK.</li>
+				  <li>If the selected chart type is Area type then the chart       will be as shown below:</li>
+			    </ul>
+				<p align="center"><img width="625" height="380" src="lec12_clip_image020.jpg" /></p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec12.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec12.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

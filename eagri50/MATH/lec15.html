@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS :: Lecture 15</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS:: Lecture 15 :: </span>Partial Differentiation</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="left">Chain Rule differentiation <br />
+				  If y is a function of  u ie y = f(u) and u is a function of x ie u = g(x) then y is related to x  through the intermediate function u ie y =f(g(x) )<br />
+				  \y is differentiable  with respect to x<br />
+				  Furthermore, let y=f(g(x)) and u=g(x), then <br />
+				  <img width="24" height="41" src="lec15_clip_image002.gif" /> =<img width="24" height="41" src="lec15_clip_image004.gif" /> <img width="24" height="41" src="lec15_clip_image006.gif" />                                      <br />
+				  There are a number of related results that  also go under the name of &quot;chain rules.&quot; For example, if   y=f(u)   u=g(v), and  v=h(x),<br />
+				  then                            <img width="21" height="37" src="lec15_clip_image008.gif" /> =   <img width="67" height="37" src="lec15_clip_image010.gif" />        <br />
+  <strong>Problem</strong><br />
+				  Differentiate the following  with respect to x</p>
+				<ul>
+				  <li>y =  (3x2+4)3</li>
+				  <li>y = <img width="27" height="24" src="lec15_clip_image012.gif" /></li>
+			    </ul>
+				<p>&nbsp;<strong>Marginal Analysis</strong><br />
+				  Let us assume that the total cost C is represented  as a function total output q.                      (i.e) C= f(q).<br />
+				  Then marginal cost is denoted by MC=<img width="21" height="40" src="lec15_clip_image014.gif" /><br />
+				  The average cost = <img width="24" height="40" src="lec15_clip_image016.gif" /><br />
+				  Similarly if U = u(x) is the utility function of the  commodity x then <br />
+				  the marginal  utility  MU = <img width="25" height="37" src="lec15_clip_image018.gif" /><br />
+				  The total revenue function TR is the product of  quantity demanded Q and the price P per unit of that commodity then TR = Q.P =  f(Q)<br />
+				  Then the marginal revenue denoted by MR is given by <img width="24" height="40" src="lec15_clip_image020.gif" /><br />
+				  The average revenue = <img width="23" height="40" src="lec15_clip_image022.gif" /></p>
+				<strong><br clear="all" />
+                </strong>
+                <p><strong>Problem</strong><br />
+                  1. If the total cost function is C = Q3 -  3Q2 + 15Q. Find Marginal cost and average cost.<br />
+  <strong>Solution:</strong><br />
+                  MC = <img width="21" height="40" src="lec15_clip_image014_0000.gif" /><br />
+                  AC = <img width="24" height="40" src="lec15_clip_image016_0000.gif" /><br />
+                  2. The demand function for a commodity is P= (a -  bQ). Find marginal revenue. <br />
+                  (the demand function is generally known as Average  revenue function). Total revenue TR = P.Q = Q. (a - bQ) and marginal revenue  MR= <img width="76" height="44" src="lec15_clip_image024.gif" /><br />
+  <strong>Growth rate and relative growth rate</strong><br />
+                  The  growth of the plant is usually measured in terms of dry mater production and as  denoted by W. Growth is a function of time t and is denoted by W=g(t) it is  called a growth function. Here t is the independent variable and w is the  dependent variable. <br />
+                  The  derivative <img width="27" height="41" src="lec15_clip_image026.gif" />is the growth rate (or) the absolute growth rate gr=<img width="27" height="41" src="lec15_clip_image026_0000.gif" />. GR = <img width="27" height="41" src="lec15_clip_image026_0001.gif" /><br />
+                  The  relative growth rate i.e defined as the absolute growth rate divided by the  total <br />
+                  dry  matter production and is denoted by RGR.<br />
+                  i.e  RGR = <img width="19" height="41" src="lec15_clip_image028.gif" />. <img width="27" height="41" src="lec15_clip_image026_0002.gif" /> = <img width="180" height="45" src="lec15_clip_image030.gif" /><br />
+                  <strong>Problem </strong></p>
+                <ol start="1" type="1">
+                  <li>If G = at2+b sin t +5 is the       growth function function the growth rate and relative growth rate.</li>
+                </ol>
+                <p>            GR = <img width="25" height="37" src="lec15_clip_image032.gif" /><br />
+                  RGR = <img width="17" height="37" src="lec15_clip_image034.gif" />. <img width="25" height="37" src="lec15_clip_image032_0000.gif" /> <br />
+  <strong>Implicit Functions</strong><br />
+                  If  the variables x and y are related with each other such that f (x, y) = 0 then  it is called Implicit function. A function is said to be <strong>explicit</strong> when  one variable can be expressed completely in terms of the other variable.<br />
+                  For  example,   y = x3 + 2x2  + 3x + 1 is an Explicit function<br />
+                  xy2 + 2y  +x = 0  is an implicit function<br />
+  <strong>Problem</strong><br />
+                  For example, the implicit equation xy=1 can  be solved by differentiating implicitly gives <br />
+  <img width="44" height="41" src="lec15_clip_image037.gif" />=<img width="33" height="41" src="lec15_clip_image039.gif" /><br />
+  <img width="88" height="37" src="lec15_clip_image040.gif" /><br />
+  <img width="71" height="37" src="lec15_clip_image041.gif" /><br />
+                  Implicit differentiation is especially useful  when y’(x)is needed, but it is difficult or inconvenient to solve for y in  terms of x. <br />
+  <strong>Example:</strong><em> &nbsp;Differentiate the following function with respect to x </em><img width="161" height="20" src="lec15_clip_image042.gif" /><img width="1" height="1" src="lec15_clip_image044.gif" /><br />
+  <strong>Solution</strong> <br />
+                  So, just differentiate as  normal and tack on an appropriate derivative at each step.&nbsp; Note as well  that the first term will be a product rule.<br />
+  <img width="287" height="20" src="lec15_clip_image045.gif" /><img width="1" height="28" src="lec15_clip_image046.gif" /><img width="1" height="1" src="lec15_clip_image044_0000.gif" /><img width="1" height="1" src="lec15_clip_image044_0001.gif" /><strong></strong><br />
+  <strong>Example:<em> &nbsp;</em></strong>Find <img width="11" height="15" src="lec15_clip_image047.gif" /><img width="12" height="14" src="lec15_clip_image048.gif" /><img width="1" height="22" src="lec15_clip_image049.gif" /><img width="1" height="1" src="lec15_clip_image044_0002.gif" /><img width="1" height="1" src="lec15_clip_image044_0003.gif" />&nbsp;for the following function.<br />
+  <img width="67" height="17" src="lec15_clip_image050.gif" /><img width="1" height="25" src="lec15_clip_image051.gif" /><img width="1" height="1" src="lec15_clip_image044_0004.gif" /><img width="1" height="1" src="lec15_clip_image044_0005.gif" /><br />
+  <strong>Solution</strong> <br />
+                  In this example we really  are going to need to do implicit differentiation of <em>x</em> and write <em>y</em> as <em>y(x)</em>.<br />
+  <img width="181" height="66" src="lec15_clip_image052.gif" /><img width="1" height="74" src="lec15_clip_image053.gif" /><img width="1" height="1" src="lec15_clip_image044_0006.gif" /><img width="1" height="1" src="lec15_clip_image044_0007.gif" />&nbsp;<br />
+  &nbsp;Notice that when we  differentiated the <em>y</em> term we used the <a href="http://tutorial.math.lamar.edu/AllBrowsers/2413/ChainRule.asp#Ex3_Start">chain  rule</a>.&nbsp; <br />
+  <strong>Example:</strong><br />
+  <strong><em>&nbsp;</em></strong>Find <img border="0" width="11" height="15" src="lec15_clip_image047_0000.gif" /><img border="0" width="12" height="14" src="lec15_clip_image048_0000.gif" /><img border="0" width="1" height="22" src="lec15_clip_image049_0000.gif" /><img border="0" width="1" height="1" src="lec15_clip_image044_0008.gif" /><img border="0" width="1" height="1" src="lec15_clip_image044_0009.gif" />&nbsp;for the following. <img border="0" width="115" height="17" src="lec15_clip_image054.gif" /><img border="0" width="1" height="25" src="lec15_clip_image051_0000.gif" /><img border="0" width="1" height="1" src="lec15_clip_image044_0010.gif" /><img border="0" width="1" height="1" src="lec15_clip_image044_0011.gif" /><br />
+  <strong>Solutio</strong><br />
+                  First differentiate both  sides with respect to <em>x</em> and notice that the first time on left side will  be a product rule.<br />
+  <img border="0" width="180" height="17" src="lec15_clip_image055.gif" /><img border="0" width="1" height="25" src="lec15_clip_image051_0001.gif" /><img border="0" width="1" height="1" src="lec15_clip_image044_0012.gif" /><img border="0" width="1" height="1" src="lec15_clip_image044_0013.gif" /></p>
+                <p>&nbsp;Remember that very time  we differentiate a <em>y</em> we also multiply that term by <img width="11" height="15" src="lec15_clip_image002_0000.gif" /><img width="12" height="14" src="lec15_clip_image003.gif" /><img width="12" height="14" src="lec15_clip_image005.gif" /><img width="1" height="22" src="lec15_clip_image006_0000.gif" /><img width="1" height="1" src="lec15_clip_image007.gif" /><img width="1" height="1" src="lec15_clip_image007_0000.gif" />&nbsp;since we are just using the chain  rule.&nbsp; Now solve for the derivative.<br />
+                    <img width="182" height="96" src="lec15_clip_image008_0000.gif" /><img width="1" height="104" src="lec15_clip_image009.gif" /><img width="1" height="1" src="lec15_clip_image007_0001.gif" /><img width="1" height="1" src="lec15_clip_image007_0002.gif" /></p>
+                <p>The algebra in these can be  quite messy so be careful with that.<br />
+                    <strong>Example</strong><br />
+                  Find <img width="11" height="15" src="lec15_clip_image002_0001.gif" /><img width="12" height="14" src="lec15_clip_image003_0000.gif" /><img width="1" height="22" src="lec15_clip_image006_0001.gif" /><img width="1" height="1" src="lec15_clip_image007_0003.gif" /><img width="1" height="1" src="lec15_clip_image007_0004.gif" />&nbsp;for the following<strong> </strong><img width="169" height="20" src="lec15_clip_image010_0000.gif" /><img width="1" height="28" src="lec15_clip_image011.gif" /><img width="1" height="1" src="lec15_clip_image007_0005.gif" /><img width="1" height="1" src="lec15_clip_image007_0006.gif" /><br />
+                  Here we’ve got two product  rules to deal with this time.<br />
+  <img width="404" height="20" src="lec15_clip_image012_0000.gif" /><img width="1" height="28" src="lec15_clip_image011_0000.gif" /><img width="1" height="1" src="lec15_clip_image007_0007.gif" /><img width="1" height="1" src="lec15_clip_image007_0008.gif" />&nbsp;<br />
+  &nbsp;Notice the derivative  tacked onto the secant.&nbsp; We differentiated a <em>y</em> to get to that point  and so we needed to tack a derivative on. <br />
+  &nbsp;Now, solve for the  derivative.<br />
+  <img width="408" height="74" src="lec15_clip_image013.gif" /><img width="1" height="82" src="lec15_clip_image014_0001.gif" /><img width="1" height="1" src="lec15_clip_image007_0009.gif" /><img width="1" height="1" src="lec15_clip_image007_0010.gif" /></p>
+                <h6>&nbsp;Logarithmic Differentiation</h6>
+                <h1>              For some problems, first by  taking logarithms and then differentiating,</h1>
+                <p>               it is easier to find  <img width="24" height="41" src="lec15_clip_image016_0001.gif" />. Such process is called <u>Logarithmic differentiation</u>.</p>
+                <ol>
+                  <li>If the function appears as a product of many  simple functions then by </li>
+                </ol>
+                <p>taking  logarithm so that the product is converted into a sum. It is now <br />
+                  easier  to differentiate them.</p>
+                <ol>
+                  <li>If the variable x occurs in the exponent then  by taking logarithm it is</li>
+                </ol>
+                <p>reduced  to a familiar form to differentiate.<strong></strong><br />
+  &nbsp;  ExampleBegin(); <strong>Example<em> &nbsp;</em></strong>Differentiate  the function.<br />
+                  MPSetEqnAttrs('eq0001','',3,[[100,34,16,-1,-1],[133,45,21,-1,-1],[166,56,26,-1,-1],[],[],[],[415,139,67,-3,-3]])    	MPEquation() <img width="133" height="45" src="lec15_clip_image017.gif" /><img width="1" height="53" src="lec15_clip_image018_0000.gif" /><img width="1" height="1" src="lec15_clip_image007_0011.gif" /><img width="1" height="1" src="lec15_clip_image007_0012.gif" /></p>
+                <p> MPSetEqnAttrs('eq0001','',3,[[100,34,16,-1,-1],[133,45,21,-1,-1],[166,56,26,-1,-1],[],[],[],[415,139,67,-3,-3]]); <strong>Solution</strong>Differentiating  this function could be done with a product rule and a quotient rule.&nbsp;We  can simplify things somewhat by taking logarithms of both sides.<br />
+                  MPSetEqnAttrs('eq0002','',3,[[134,40,17,-1,-1],[177,53,22,-1,-1],[221,67,29,-1,-1],[],[],[],[554,165,70,-3,-3]])    	MPEquation() <img width="177" height="53" src="lec15_clip_image019.gif" /><img width="1" height="61" src="lec15_clip_image020_0000.gif" /><img width="1" height="1" src="lec15_clip_image007_0013.gif" /><img width="1" height="1" src="lec15_clip_image007_0014.gif" /><br />
+                  MPSetEqnAttrs('eq0002','',3,[[134,40,17,-1,-1],[177,53,22,-1,-1],[221,67,29,-1,-1],[],[],[],[554,165,70,-3,-3]]);  &nbsp;  	MPSetEqnAttrs('eq0003','',3,[[190,49,22,-1,-1],[253,67,30,-1,-1],[316,84,37,-1,-1],[],[],[],[792,215,95,-3,-3]])    	MPEquation() <img width="253" height="67" src="lec15_clip_image021.gif" /><img width="1" height="75" src="lec15_clip_image022_0000.gif" /><img width="1" height="1" src="lec15_clip_image007_0015.gif" /><img width="1" height="1" src="lec15_clip_image007_0016.gif" />&nbsp;<br />
+                  MPSetEqnAttrs('eq0003','',3,[[190,49,22,-1,-1],[253,67,30,-1,-1],[316,84,37,-1,-1],[],[],[],[792,215,95,-3,-3]]);  &nbsp;  	MPSetEqnAttrs('eq0004','',3,[[175,89,42,-1,-1],[233,118,55,-1,-1],[291,148,69,-1,-1],[],[],[],[729,368,173,-3,-3]])    	MPEquation() <img width="233" height="118" src="lec15_clip_image023.gif" /><img width="1" height="126" src="lec15_clip_image024_0000.gif" /><img width="1" height="1" src="lec15_clip_image007_0017.gif" /><img width="1" height="1" src="lec15_clip_image007_0018.gif" /><br />
+                  ExampleBegin(); <strong>Example<em> &nbsp;</em></strong>Differentiate    	MPSetEqnAttrs('eq0007','',3,[[30,11,3,-1,-1],[39,15,3,-1,-1],[47,17,3,-1,-1],[],[],[],[119,44,9,-3,-3]])    	MPEquation() <img width="38" height="16" src="lec15_clip_image025.gif" /><img width="39" height="15" src="lec15_clip_image026_0003.gif" /><img width="1" height="23" src="lec15_clip_image027.gif" /><img width="1" height="1" src="lec15_clip_image007_0019.gif" /><img width="1" height="1" src="lec15_clip_image007_0020.gif" /><br />
+                  MPSetEqnAttrs('eq0007','',3,[[30,11,3,-1,-1],[39,15,3,-1,-1],[47,17,3,-1,-1],[],[],[],[119,44,9,-3,-3]]); <strong>Solution</strong><br />
+                  First take the logarithm of both sides as we did in the  first example and use the logarithm properties to simplify things a little.<br />
+                  MPSetEqnAttrs('eq0009','',3,[[54,30,13,-1,-1],[73,39,16,-1,-1],[90,48,20,-1,-1],[],[],[],[227,120,52,-3,-3]])    	MPEquation() <img width="73" height="39" src="lec15_clip_image028_0000.gif" /><img width="1" height="47" src="lec15_clip_image029.gif" /><img width="1" height="1" src="lec15_clip_image007_0021.gif" /><br />
+                  MPSetEqnAttrs('eq0009','',3,[[54,30,13,-1,-1],[73,39,16,-1,-1],[90,48,20,-1,-1],[],[],[],[227,120,52,-3,-3]]);  &nbsp;Differentiate both sides using implicit differentiation.<br />
+                  MPSetEqnAttrs('eq0010','',3,[[121,30,12,-1,-1],[162,39,16,-1,-1],[203,49,20,-1,-1],[],[],[],[507,124,50,-3,-3]])    	MPEquation() <img width="162" height="39" src="lec15_clip_image030_0000.gif" /><img width="1" height="47" src="lec15_clip_image029_0000.gif" /><img width="1" height="1" src="lec15_clip_image007_0022.gif" /><img width="1" height="1" src="lec15_clip_image007_0023.gif" /><br />
+                  MPSetEqnAttrs('eq0010','',3,[[121,30,12,-1,-1],[162,39,16,-1,-1],[203,49,20,-1,-1],[],[],[],[507,124,50,-3,-3]]);  &nbsp;As with the first example multiply by <em>y</em> and substitute  back in for <em>y</em>.<br />
+                  MPSetEqnAttrs('eq0011','',3,[[75,34,14,-1,-1],[99,45,19,-1,-1],[123,57,23,-1,-1],[],[],[],[310,145,61,-3,-3]])    	MPEquation() <img width="99" height="45" src="lec15_clip_image031.gif" /><img width="1" height="53" src="lec15_clip_image018_0001.gif" /><img width="1" height="1" src="lec15_clip_image007_0024.gif" /><img width="1" height="1" src="lec15_clip_image007_0025.gif" /></p>
+                <h1>PARAMETRIC FUNCTIONS </h1>
+                <p>Sometimes  variables x and y are expressed in terms of a third variable called <strong>parameter. </strong>We find <img width="24" height="41" src="lec15_clip_image016_0002.gif" /> without eliminating  the third variable.<br />
+                  Let  x = f(t) and y = g(t) then </p>
+                <p>                      <img width="24" height="41" src="lec15_clip_image016_0003.gif" /> =  <img width="56" height="41" src="lec15_clip_image034_0000.gif" /><br />
+                  =      <img width="59" height="63" src="lec15_clip_image036.gif" /> =  <img width="39" height="65" src="lec15_clip_image038.gif" />  <br />
+  <strong>Problem</strong></p>
+                <h1>1. Find  for the parametric function x =a cos<img width="12" height="16" src="lec15_clip_image040_0000.gif" /> , y = b sin<img width="12" height="16" src="lec15_clip_image040_0001.gif" /> </h1>
+                <p>Solution<br />
+                    <strong><img width="139" height="49" src="lec15_clip_image043.gif" />          <img width="73" height="37" src="lec15_clip_image045_0000.gif" /></strong> <br />
+                    <img width="24" height="41" src="lec15_clip_image016_0004.gif" /> =  <img width="37" height="56" src="lec15_clip_image047_0001.gif" /><br />
+                  =<img width="53" height="37" src="lec15_clip_image049_0001.gif" /><br />
+                  =<img width="59" height="37" src="lec15_clip_image051_0002.gif" /><br />
+  <strong>Inference  of the differentiation</strong><br />
+                  Let  y = f(x) be a given function then the first order derivative is <img width="24" height="41" src="lec15_clip_image016_0005.gif" />.<br />
+                  The  geometrical meaning of the first order derivative is that it represents the  slope of the curve y = f(x) at x.<br />
+                  The  physical meaning of the first order derivative is that it represents the rate  of change  of y with respect to x.<br />
+                  PROBLEMS  ON HIGHER ORDER DIFFERENTIATION<br />
+                  The rate of change of y with  respect x is denoted by <img width="24" height="41" src="lec15_clip_image016_0006.gif" />and called as the  first order derivative of function y with respect to x.<br />
+                  The first order derivative of y with respect to x is  again a function of x, which again be differentiated with respect to x and it  is called second order derivative of y = f(x) and is  denoted by  <img width="33" height="44" src="lec15_clip_image054_0000.gif" /> which is equal to  <img width="59" height="45" src="lec15_clip_image056.gif" /> <br />
+                  In  the similar way higher order differentiation can be defined. Ie. The nth order  derivative of y=f(x) can be obtained by differentiating n-1th  derivative of y=f(x)</p>
+                <p><img width="115" height="49" src="lec15_clip_image002_0002.gif" />where  n= 2,3,4,5….<br />
+                  <strong>Problem</strong><br />
+Find  the first , second and third derivative of </p>
+				               
+				<ol start="1" type="1">
+                  <li>y =<img width="37" height="23" src="lec15_clip_image002_0003.gif" /></li>
+				  <li>y = log(a-bx)</li>
+				  <li>y = sin (ax+b)</li>
+			    </ol>
+				<p><strong>Partial  Differentiation</strong><br />
+				  So far we considered the function of a single variable y  = f(x) where x is the only independent variable. When the number of independent  variable exceeds one then we call it as the function of several variables.<br />
+  <strong>Example</strong><br />
+				  z =  f(x,y) is the function of two variables x and y , where x and y are independent  variables.<br />
+				  U=f(x,y,z)  is the function of three variables x,y and z , where x, y and z  are independent variables.<br />
+				  In  all these functions there will be only one dependent variable.<br />
+				  Consider  a function z = f(x,y). The partial derivative of z with respect to x denoted  by   <img width="20" height="37" src="lec15_clip_image004_0000.gif" />and is obtained by differentiating z with respect to x  keeping y as a constant. Similarly the  partial derivative of z with respect to y denoted by <img width="20" height="40" src="lec15_clip_image006_0002.gif" />and is obtained by differentiating z with respect to y  keeping x as a constant.<br />
+  <strong>Problem</strong> <br />
+				  1.  Differentiate   U = log (ax+by+cz) partially with respect to x, y &amp; z<br />
+				  We can also find higher order partial  derivatives for the function z = f(x,y) as follows<br />
+				  (i)  The second order partial derivative of z with respect to x denoted as <img width="88" height="44" src="lec15_clip_image008_0001.gif" /> is obtained by  partially differentiating <img width="20" height="37" src="lec15_clip_image004_0001.gif" /> with respect to x.  this is also known as direct second order partial derivative of z with respect  to x.<br />
+				  (ii)The  second order partial derivative of z with respect to y denoted as <img width="89" height="47" src="lec15_clip_image010_0001.gif" /> is obtained by  partially differentiating <img width="20" height="40" src="lec15_clip_image006_0003.gif" /> with respect to y this  is also known as direct second order partial derivative of z with respect to y<br />
+				  (iii)  The second order partial derivative of z with respect to x and then y denoted  as <img width="92" height="44" src="lec15_clip_image013_0000.gif" /> is obtained by  partially differentiating <img width="20" height="37" src="lec15_clip_image004_0002.gif" /> with respect to y.  this is also known as mixed second order partial derivative of z with respect  to x and then y<br />
+				  iv)  The second order partial derivative of z with respect to y and then x denoted  as <br />
+  <img width="92" height="45" src="lec15_clip_image015.gif" /> is obtained by  partially differentiating <img width="20" height="40" src="lec15_clip_image006_0004.gif" /> with respect to x.  this is also known as mixed  second order  partial derivative of z with respect to y and then x.<br />
+				  In  similar way higher order partial derivatives can be found.<br />
+  <strong>Problem</strong><br />
+				  Find  all possible first and second order partial derivatives of <br />
+				  1) z  = sin(ax +by)<br />
+				  2) u  = xy + yz + zx   <br />
+  <strong>Homogeneous  Function</strong><br />
+				  A function in which each term has  the same degree is called a homogeneous function.<br />
+  <strong>Example</strong></p>
+				<ul>
+				  <li>x2  - 2xy + y2 = 0 ®  homogeneous function of degree 2.</li>
+				  <li>3x  +4y = 0          ® homogeneous function of  degree 1.   </li>
+				  <li>x3  +3x2y + xy2 – y3= 0 ® homogeneous function of  degree 3.</li>
+			    </ul>
+				<p><strong>To  find the degree of a homogeneous function we proceed as follows.</strong><br />
+				  Consider the function f(x,y) replace  x by tx and y by ty if f (tx, ty) = tn f(x, y) then n gives the  degree of the homogeneous function. This result can be extended to any number  of variables.<br />
+  <strong>Problem</strong><br />
+				  Find  the degree of the homogeneous function </p>
+				<ul>
+				  <li>f(x, y) = x2 –2xy + y2</li>
+			    </ul>
+				<ul>
+				  <li>f(x,y)  = <img width="49" height="56" src="lec15_clip_image018_0002.gif" /></li>
+			    </ul>
+				<p><strong>Euler’s  theorem on homogeneous function</strong><br />
+				  If U= f(x,y,z) is a homogeneous  function of degree n in the variables x, y &amp; z then <img width="137" height="40" src="lec15_clip_image020_0001.gif" /> <img width="11" height="20" src="lec15_clip_image022_0001.gif" /><br />
+  <strong>Problem</strong><br />
+				  Verify  Euler’s theorem for the following function <br />
+				  1.  u(x,y) = x2 –2xy + y2<br />
+				  2.  u(x,y) = x3 + y3+ z3–3xyz <br />
+				  Increasing and decreasing function <br />
+  <strong>Increasing  function </strong><br />
+				  A  function y= f(x) is said to be an increasing function if f(x1) &lt;  f(x2) for all x1 &lt; x2.</p>
+				<p>The condition for the  function to be increasing is that its first order derivative is always <br />
+				  greater than zero .<br />
+				  i.e    <img width="24" height="41" src="lec15_clip_image024_0001.gif" /> &gt;0<br />
+  <strong>Decreasing  function </strong><br />
+				  A  function y= f(x) is said to be a decreasing   function if f(x1) &gt; f(x2) for all x1  &lt; x2.</p>
+				<p>The condition for the  function to be decreasing is that its first order derivative is always <br />
+				  less than zero .<br />
+				  i.e     <img width="24" height="41" src="lec15_clip_image024_0002.gif" /> &lt; 0</p>
+				<h4>Problems</h4>
+				<p>1. Show that the function y  = x3 + x is increasing for all x.<br />
+				  2. Find for what values of x  is the function y = 8 + 2x – x2 is increasing or decreasing ?</p>
+				<h5><strong>&nbsp;</strong></h5>
+				<h5><strong>Maxima and  Minima  Function of a single variable</strong> </h5>
+				<p>         A function y = f(x) is said to have  maximum at x = a if f(a) &gt; f(x) in the neighborhood of the point  x = a and f(a) is the maximum value of f(x) .  The point x = a is also known as local maximum point. <br />
+				  A function y = f(x) is said to have  minimum at x = a if f(a) &lt; f(x) in the neighborhood of the point  x = a and f(a) is the minimum value of f(x) .  The point x = a is also known as local minimum point.<br />
+				  The  points at which the function attains maximum or minimum are called the turning  points or stationary points<br />
+				  A function y=f(x) can have more than  one <strong>maximum or minimum point</strong>.<br />
+				  Maximum  of all the maximum points is called <strong>Global maximum</strong> and   minimum of all the minimum points is called <strong>Global  minimum</strong>.<br />
+				  A  point at which neither maximum nor minimum is called <strong>Saddle point</strong>.<br />
+				  [Consider  a function y = f(x). If the function increases upto a particular point x = a  and then decreases it is said to have a maximum at x = a. If the function  decreases upto a point x = b and then increases it is said to have a minimum at  a point x=b.]<br />
+				  <strong>The necessary and the sufficient condition  for the function y=f(x) to have a maximum or minimum can be tabulated as  follows</strong></p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td valign="top"><p><strong>Maximum</strong></p></td>
+                    <td valign="top"><p><strong>Minimum</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>First    order or necessary condition</p></td>
+                    <td valign="top"><p><img width="24" height="41" src="lec15_clip_image024_0003.gif" />= 0</p></td>
+                    <td valign="top"><p><img width="24" height="41" src="lec15_clip_image024_0004.gif" />=0</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Second    order or sufficient condition</p></td>
+                    <td valign="top"><p><img width="33" height="44" src="lec15_clip_image026_0004.gif" />&lt; 0</p></td>
+                    <td valign="top"><p><img width="33" height="44" src="lec15_clip_image026_0005.gif" /> &gt; 0</p></td>
+                  </tr>
+                </table>
+				<h5><strong>Working Procedure</strong></h5>
+				<h5>1. Find <img width="24" height="41" src="lec15_clip_image024_0005.gif" /> and <img width="33" height="44" src="lec15_clip_image026_0006.gif" /></h5>
+				<h5>2. Equate <img width="24" height="41" src="lec15_clip_image024_0006.gif" />=0 and solve for x. this  will give the turning points of the function.</h5>
+				<h5>3. Consider a turning point  x = a then substitute this value of x in <img width="33" height="44" src="lec15_clip_image026_0007.gif" />  and find the<br />
+				  nature of the second derivative.  If  <img width="79" height="60" src="lec15_clip_image028_0001.gif" />&lt; 0, then the function has a  maximum <br />
+				  value at the point x = a. If  <img width="79" height="60" src="lec15_clip_image028_0002.gif" />&gt; 0, then the function has a  minimum value at <br />
+				  the point x = a. </h5>
+				<h5>4. Then substitute x = a in the function y = f(x) that will  give the maximum or minimum <br />
+				  value of the function at x = a.</h5>
+				<h5><strong>Problem</strong></h5>
+				<h5>Find the maximum and minimum values of the following  function</h5>
+				<h5>y = x3 – 3x +1</h5>
+				<h5>&nbsp;</h5>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec15.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec15.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

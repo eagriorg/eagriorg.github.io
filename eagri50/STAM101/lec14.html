@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 14</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 14 :: </span>Design of experiments</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>Basic concepts –  treatment – experimental unit – experimental error - basic principle –  replication, randomization and local control</strong></p>
+				<p align="center"><strong>Design of Experiments </strong></p>
+				<p>Choice of treatments, method of assigning treatments to experimental  units and arrangement of experimental units in different patterns are known as  designing an experiment. We study the effect of changes in one variable on  another variable. For example how the application of various doses of  fertilizer affects the grain yield. Variable whose change we wish to study is  known as <strong>response variable</strong>. Variable  whose effect on the response variable we wish to study is known as <strong>factor</strong>.</p>
+				<p><strong>Treatment</strong>: Objects of  comparison in an experiment are defined as treatments. Examples are Varieties  tried in a trail and different chemicals.</p>
+				<p><strong>Experimental unit</strong>: The  object to which treatments are applied or basic objects on which the experiment  is conducted is known as experimental unit.</p>
+				<p>Example: piece of land, an animal, etc</p>
+				<p><strong>Experimental error</strong>: Response from all experimental units receiving the same treatment  may not be same even under similar conditions. These variations in responses  may be due to various reasons. Other factors like heterogeneity of soil,  climatic factors and genetic differences, etc also may cause variations (known  as extraneous factors). The variations in response caused by extraneous factors  are known as <strong>experimental error</strong>.</p>
+				<p>Our aim of designing an experiment will be to  minimize the experimental error.</p>
+				<p><strong>Basic  principles</strong></p>
+				<p> To reduce the experimental  error we adopt certain principles known as basic principles of experimental  design.</p>
+				<p>The basic  principles are 1) Replication, 2) Randomization and 3) Local control<br />
+                    <strong>Replication</strong></p>
+				<p>Repeated application of the treatments is  known as replication.</p>
+				<p>When the treatment is applied only once we have no means of knowing  about the variation in the results of a treatment. Only when we repeat several  times we can estimate the experimental error.</p>
+				<p>With the help of  experimental error we can determine whether the obtained differences between  treatment means are real or not. When the number of replications is increased,  experimental error reduces. <br />
+				  <br />
+  <strong>Randomization</strong></p>
+				<p>When all the treatments have equal chance of being allocated to  different experimental units it is known as randomization.</p>
+				<p>If our conclusions are to be valid, treatment means and differences  among treatment means should be estimated without any bias. For this purpose we  use the technique of randomization.</p>
+				<p><strong>Local  Control</strong></p>
+				<p>Experimental error is based on the variations from experimental unit  to experimental unit.  This suggests that  if we group the homogenous experimental units into blocks, the experimental  error will be reduced considerably. Grouping of homogenous experimental units  into blocks is known as local control of error.</p>
+				<p>In order to have valid estimate of experimental error the principles  of replication and randomization are used.</p>
+				<p>In order to reduce the experimental error, the principles of  replication and local control are used.</p>
+				<p>In general to  have precise, valid and accurate result we adopt the basic principles.</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec14.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec14.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

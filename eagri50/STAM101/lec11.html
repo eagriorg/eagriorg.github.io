@@ -1,0 +1,797 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 11</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 11 :: </span></strong><strong>Attributes</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>Contingency table – 2x2 contingency  table – Test for independence of attributes – test for goodness of fit of  mendalian ratio</strong></p>
+				<p><strong>Test  based on <img width="23" height="24" src="lec11_clip_image002.gif" /> -distribution</strong></p>
+				<p>In case of attributes we can not employ the parametric tests such as  F and t. Instead we have to apply <strong><img width="23" height="24" src="lec11_clip_image002_0000.gif" /></strong>test<strong>. </strong>When we  want to test whether a set of observed values are in agreement with those  expected on the basis of some theories or hypothesis. The <img width="23" height="24" src="lec11_clip_image002_0001.gif" />statistic provides a measure of agreement between such  observed and expected frequencies. </p>
+                 <p align="center">Chi-Square<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Chi-Square.m4v" type="video/mp4">
+</video></p>
+				<p>The <img width="23" height="24" src="lec11_clip_image002_0002.gif" /> test has a number of  applications. It is used to </p>
+				<ul>
+				  <li>Test the independence of attributes</li>
+				  <li>Test the goodness of fit</li>
+				  <li>Test the homogeneity of variances</li>
+				  <li>Test the homogeneity of correlation coefficients</li>
+				  <li>Test the equaslity of several proportions.</li>
+			    </ul>
+				<p>In genetics it is applied to detect  linkage.</p>
+				<p><strong>Applications</strong></p>
+				<p><strong><img width="23" height="24" src="lec11_clip_image002_0003.gif" />– test for goodness of fit</strong></p>
+				<p>A very powerful test for testing the significance of the  discrepancy between theory and experiment was given by Prof. Karl Pearson in  1900 and is known as “chi-square test of goodness of fit “. </p>
+				<p>If 0i, (i=1,2,…..,n) is a  set of observed (experimental frequencies) and Ei (i=1,2,…..,n) is the  corresponding set of expected (theoretical or hypothetical) frequencies, then,<br />
+                    <img width="143" height="64" src="lec11_clip_image005.gif" /><img width="12" height="23" src="lec11_clip_image007.gif" /> <br />
+				  It follows a <strong><img width="23" height="24" src="lec11_clip_image002_0004.gif" /></strong> distribution with  n-1 d.f.  In case of <strong><img width="23" height="24" src="lec11_clip_image002_0005.gif" /></strong>only one tailed test is used.</p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>Example</strong></p>
+				<p>            In plant genetics, our interest may be to test  whether the observed segregation ratios deviate significantly from the  mendelian ratios. In such situations we want to test the agreement between the  observed and theoretical frequency, such test is called as test of goodness of  fit.</p>
+				<p><strong>Conditions for the validity of <img width="23" height="24" src="lec11_clip_image002_0006.gif" />-test:</strong><br />
+				  <img width="23" height="24" src="lec11_clip_image002_0007.gif" />-test is an approximate test for large values of ‘n’ for the  validity of <img width="23" height="24" src="lec11_clip_image002_0008.gif" />-test of goodness of fit between theory and experiment, the  following conditions must be satisfied.</p>
+				<ul>
+				  <li>The sample observations should  be independent.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<p>2. Constraints  on the cell freqrequency, if any, should be linear.     <br />
+				  Example:<img width="36" height="29" src="lec11_clip_image011.gif" />=<img width="37" height="29" src="lec11_clip_image013.gif" />.</p>
+				<p>3. N, the total  frequency should be reasonably large, say greater then (&gt;) 50.</p>
+				<p>4. No theoretical cell frequency should be less than (&lt;)5. If any  theoretical cell frequency is &lt;5, then for the application of <img width="23" height="24" src="lec11_clip_image002_0009.gif" />- test, it is pooled with the   preceding or scecceeding frequency so that the pooled frequency is  more  than 5 and finally adjust for  degree’s of freedom lost in pooling.</p>
+				<p><strong>Example1</strong><br />
+				  The number of yiest cells counted in a haemocytometer is compared to  the theoretical value is given below. Does the experimental result support the  theory?</p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        No. of Yeast cells in the square </td>
+                      <td valign="top"><p align="center">Obseved Frequency</p></td>
+                      <td valign="top"><p align="center">Expected Frequency</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">0</p></td>
+                      <td valign="top"><p align="center">103</p></td>
+                      <td valign="top"><p align="center">106</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">143</p></td>
+                      <td valign="top"><p align="center">141</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">98</p></td>
+                      <td valign="top"><p align="center">93</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">42</p></td>
+                      <td valign="top"><p align="center">41</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">4</p></td>
+                      <td valign="top"><p align="center">8</p></td>
+                      <td valign="top"><p align="center">14</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                      <td valign="top"><p align="center">5</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>Solution</strong><br />
+				  H0: the experimental results support the theory<br />
+				  H1: the esperimental results does not support the theory.<br />
+				  Level of significance=5%<br />
+				  Test Statistic:<br />
+				  <img width="139" height="63" src="lec11_clip_image015.gif" /> </p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                        <strong>Oi</strong> </td>
+                    <td valign="top"><p align="center"><strong>Ei</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Oi­-Ei</strong></p></td>
+                    <td valign="top"><p align="center"><strong>(Oi­-Ei)2</strong></p></td>
+                    <td valign="top"><p align="center"><strong>(Oi­-Ei)2/Ei</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">103</p></td>
+                    <td valign="top"><p align="center">106</p></td>
+                    <td valign="top"><p align="center">-3</p></td>
+                    <td valign="top"><p align="center">9</p></td>
+                    <td valign="top"><p align="center">0.0849</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">143</p></td>
+                    <td valign="top"><p align="center">141</p></td>
+                    <td valign="top"><p align="center">2</p></td>
+                    <td valign="top"><p align="center">4</p></td>
+                    <td valign="top"><p align="center">0.0284</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">98</p></td>
+                    <td valign="top"><p align="center">93</p></td>
+                    <td valign="top"><p align="center">5</p></td>
+                    <td valign="top"><p align="center">25</p></td>
+                    <td valign="top"><p align="center">0.2688</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">42</p></td>
+                    <td valign="top"><p align="center">41</p></td>
+                    <td valign="top"><p align="center">1</p></td>
+                    <td valign="top"><p align="center">1</p></td>
+                    <td valign="top"><p align="center">0.0244</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">8</p></td>
+                    <td valign="top"><p align="center">14</p></td>
+                    <td valign="top"><p align="center">-6</p></td>
+                    <td valign="top"><p align="center">36</p></td>
+                    <td valign="top"><p align="center">2.5714</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">6</p></td>
+                    <td valign="top"><p align="center">5</p></td>
+                    <td valign="top"><p align="center">1</p></td>
+                    <td valign="top"><p align="center">1</p></td>
+                    <td valign="top"><p align="center">0.2000</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">400</p></td>
+                    <td valign="top"><p align="center">400</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center"><strong>3.1779</strong></p></td>
+                  </tr>
+                </table>
+				<p>\<strong><img width="23" height="24" src="lec11_clip_image002_0010.gif" /></strong>=3.1779</p>
+				<p><strong>Table value</strong><br />
+                    <img width="23" height="24" src="lec11_clip_image002_0011.gif" />(6-1=5 at 5 % l.os)= 11.070<br />
+				  Inference<br />
+  <strong><img width="23" height="24" src="lec11_clip_image002_0012.gif" />&lt;<img width="23" height="24" src="lec11_clip_image002_0013.gif" /></strong>tab<br />
+				  We  accept the null hypothesis.<br />
+				  (i.e)  there is a good correspondence between theory and experiment.</p>
+				<p><strong><img width="23" height="24" src="lec11_clip_image002_0014.gif" />test for independence of attributes</strong></p>
+				<p>            At times we may  consider two charactertistics on attributes simultaneously. Our interest will  be to test the association between these two attributes<br />
+                    <strong>Example</strong>:- An entomologist may be interested to know the effectiveness of  different concentrations of the chemical in killing the insects. The  concentrations of chemical form one attribute. The state of insects ‘killed  &amp; not killed’ forms another attribute. The result of this experiment can be  arranged in the form of a contingency table.  In general one attribute may be divided into m  classes as A 1,A 2, …….A m  and the other attribute may be divided  into  n classes as B 1,B 2,  ……B n . Then the contingency table will have m x n cells. It is  termed as m x n contingency table </p>
+				<div align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <img width="70" height="33" src="lec11_clip_image017.gif" />A<br />
+                        B </td>
+                      <td valign="top"><p align="center">A1</p></td>
+                      <td valign="top"><p align="center">A2</p></td>
+                      <td valign="top"><p align="center">…</p></td>
+                      <td valign="top"><p align="center">Aj</p></td>
+                      <td valign="top"><p align="center">…</p></td>
+                      <td valign="top"><p align="center">Am</p></td>
+                      <td valign="top"><p align="center">Row    Total</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">B1</p></td>
+                      <td valign="top"><p align="center">O11</p></td>
+                      <td valign="top"><p align="center">O12</p></td>
+                      <td valign="top"><p align="center">…</p></td>
+                      <td valign="top"><p align="center">O1j</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">O1m</p></td>
+                      <td valign="top"><p align="center">r1</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">B2</p></td>
+                      <td valign="top"><p align="center">O21</p></td>
+                      <td valign="top"><p align="center">O22</p></td>
+                      <td valign="top"><p align="center">…</p></td>
+                      <td valign="top"><p align="center">O2j</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">O2m</p></td>
+                      <td valign="top"><p align="center">r2</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">.<br />
+                        .<br />
+                        .</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">Bi</p></td>
+                      <td valign="top"><p align="center">Oij</p></td>
+                      <td valign="top"><p align="center">Oi2</p></td>
+                      <td valign="top"><p align="center">…</p></td>
+                      <td valign="top"><p align="center">Oij</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">Oim</p></td>
+                      <td valign="top"><p align="center">ri</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">.<br />
+                        .<br />
+                        .</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">Bn</p></td>
+                      <td valign="top"><p align="center">On1</p></td>
+                      <td valign="top"><p align="center">On2</p></td>
+                      <td valign="top"><p align="center">…</p></td>
+                      <td valign="top"><p align="center">Onj</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">Onm</p></td>
+                      <td valign="top"><p align="center">rk</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"> Column Total</p></td>
+                      <td valign="top"><p align="center">c1</p></td>
+                      <td valign="top"><p align="center">c2</p></td>
+                      <td valign="top"><p align="center">…</p></td>
+                      <td valign="top"><p align="center">cj</p></td>
+                      <td valign="top"><p align="center">…</p></td>
+                      <td valign="top"><p align="center">cm</p></td>
+                      <td valign="top"><p align="center">n=<img width="84" height="27" src="lec11_clip_image019.gif" /></p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p>where Oij’s are  observed frequencies.<br />
+				  The expected  frequencies corresponding to Oij is calculated as <img width="36" height="41" src="lec11_clip_image021.gif" />. The <img width="23" height="24" src="lec11_clip_image002_0015.gif" />is computed as<br />
+				  <img width="23" height="24" src="lec11_clip_image002_0016.gif" />   <img width="153" height="73" src="lec11_clip_image023.gif" />  <br />
+				  where<br />
+				  Oij –  observed frequencies<br />
+				  Eij –  Expected frequencies<br />
+				  n= number of rows<br />
+				  m= number of  columns<br />
+				  It can be verified  that <img width="101" height="27" src="lec11_clip_image025.gif" /><br />
+				  This <img width="23" height="24" src="lec11_clip_image002_0017.gif" /> is distributed as <img width="23" height="24" src="lec11_clip_image002_0018.gif" /> with (n-1) (m-1) d.f.</p>
+				<p><strong>2x2  – contingency table</strong> </p>
+				<p>            When  the number of rows and numberof columns are equal to 2 it is termed as 2 x 2 contingency  table .It will be in the following form</p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p>&nbsp;</p></td>
+                      <td valign="top"><p>B1                   B2</p></td>
+                      <td valign="top"><p>Row Total</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>A1</p>
+                          <p>A2</p></td>
+                      <td valign="top"><p>a                     b</p>
+                          <p>c                      d</p></td>
+                      <td valign="top"><p>a+b          r1</p>
+                          <p>c+d          r2</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Column<br />
+                        Total</p></td>
+                      <td valign="top"><p>a+c                 b+d</p>
+                          <p>c1                     c2</p></td>
+                      <td valign="top"><p>a+b+c+d<br />
+                        =n</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p>Where a, b, c and d are cell frequancies c1 and c2 are column  totals, r1 and r2 are row totals and n is the total number of observations.<br />
+				  In case of 2 x 2 contigency table <img width="23" height="24" src="lec11_clip_image002_0019.gif" /> can be directly found  using the short cut formula,<br />
+  <img width="23" height="24" src="lec11_clip_image002_0020.gif" />  <img width="97" height="48" src="lec11_clip_image027.gif" /> <br />
+				  The d.f  associated with <img width="23" height="24" src="lec11_clip_image002_0021.gif" />is (2-1) (2-1) =1</p>
+				<p><strong>Yates  correction for continuity</strong><br />
+				  If anyone of the  cell frequency is &lt; 5, we use Yates correction to make <img width="23" height="24" src="lec11_clip_image002_0022.gif" />as continuous. The yares correction is made by adding 0.5 to  the least cell frequency and adjusting the other cell frequencies so that the  column and row totals remain same . suppose, the firat cell frequency is to be  corrected then the consigency table will be as follows:</p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p>&nbsp;</p></td>
+                      <td valign="top"><p>B1</p></td>
+                      <td valign="top"><p>B2</p></td>
+                      <td valign="top"><p>Row Total</p></td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2" valign="top"><p>A1</p>
+                          <p>A2</p></td>
+                      <td valign="top"><p> a <img width="37" height="19" src="lec11_clip_image029.gif" /></p></td>
+                      <td valign="top"><p>b<img width="36" height="19" src="lec11_clip_image031.gif" /></p></td>
+                      <td valign="top"><p>a+b=r1</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>c<img width="36" height="19" src="lec11_clip_image031_0000.gif" /></p></td>
+                      <td valign="top"><p>d<img width="37" height="19" src="lec11_clip_image029_0000.gif" /></p></td>
+                      <td valign="top"><p>c+d =r2</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Column<br />
+                        Total</p></td>
+                      <td valign="top"><p>a+c=c1</p></td>
+                      <td valign="top"><p>b+d=c2</p></td>
+                      <td valign="top"><p>n = a+b+c+d</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p>Then  use the <img width="23" height="24" src="lec11_clip_image002_0023.gif" />- statistic as </p>
+				<p>            <img width="23" height="24" src="lec11_clip_image002_0024.gif" />  <img width="141" height="72" src="lec11_clip_image035.gif" /> <br />
+				  The d.f   associated with <img width="23" height="24" src="lec11_clip_image002_0025.gif" />is (2-1) (2-1) =1</p>
+				<p><strong>Exapmle 2</strong><br />
+				  The severity of a disease and blood group were studied in a research  projest. The findings sre given in the following table, knowmn as the m xn  contingency table. Can this severity of the condition and blood group are  associated.<br />
+				  Severity of a disease classified by blood group in 1500 patients.</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td rowspan="2"><br />
+                      Condition </td>
+                    <td colspan="4" valign="top"><p align="center">Blood Groups</p></td>
+                    <td rowspan="2"><p align="center">Total</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">O</p></td>
+                    <td valign="top"><p align="center">A</p></td>
+                    <td valign="top"><p align="center">B</p></td>
+                    <td valign="top"><p align="center">AB</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Severe</p></td>
+                    <td valign="top"><p align="center">51</p></td>
+                    <td valign="top"><p align="center">40</p></td>
+                    <td valign="top"><p align="center">10</p></td>
+                    <td valign="top"><p align="center">9</p></td>
+                    <td valign="top"><p align="center">110</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Moderate</p></td>
+                    <td valign="top"><p align="center">105</p></td>
+                    <td valign="top"><p align="center">103</p></td>
+                    <td valign="top"><p align="center">25</p></td>
+                    <td valign="top"><p align="center">17</p></td>
+                    <td valign="top"><p align="center">250</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Mild</p></td>
+                    <td valign="top"><p align="center">384</p></td>
+                    <td valign="top"><p align="center">527</p></td>
+                    <td valign="top"><p align="center">125</p></td>
+                    <td valign="top"><p align="center">104</p></td>
+                    <td valign="top"><p align="center">1140</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">540</p></td>
+                    <td valign="top"><p align="center">670</p></td>
+                    <td valign="top"><p align="center">160</p></td>
+                    <td valign="top"><p align="center">130</p></td>
+                    <td valign="top"><p align="center">1500</p></td>
+                  </tr>
+                </table>
+				<p><strong>Solution</strong><br />
+				  H0: The severity of the disease is not associated with  blood group.<br />
+				  H1: The severity of the disease is associated with blood  group.<br />
+				  Calculation of Expected frequencies</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td rowspan="2"><br />
+                      Condition </td>
+                    <td colspan="4" valign="top"><p align="center">Blood Groups</p></td>
+                    <td rowspan="2"><p align="center">Total</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">O</p></td>
+                    <td valign="top"><p align="center">A</p></td>
+                    <td valign="top"><p align="center">B</p></td>
+                    <td valign="top"><p align="center">AB</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Severe</p></td>
+                    <td valign="top"><p align="center">39.6</p></td>
+                    <td valign="top"><p align="center">49.1</p></td>
+                    <td valign="top"><p align="center">11.7</p></td>
+                    <td valign="top"><p align="center">9.5</p></td>
+                    <td valign="top"><p align="center">110</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Moderate</p></td>
+                    <td valign="top"><p align="center">90.0</p></td>
+                    <td valign="top"><p align="center">111.7</p></td>
+                    <td valign="top"><p align="center">26.7</p></td>
+                    <td valign="top"><p align="center">21.7</p></td>
+                    <td valign="top"><p align="center">250</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Mild</p></td>
+                    <td valign="top"><p align="center">410.4</p></td>
+                    <td valign="top"><p align="center">509.2</p></td>
+                    <td valign="top"><p align="center">121.6</p></td>
+                    <td valign="top"><p align="center">98.8</p></td>
+                    <td valign="top"><p align="center">1140</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">540</p></td>
+                    <td valign="top"><p align="center">670</p></td>
+                    <td valign="top"><p align="center">160</p></td>
+                    <td valign="top"><p align="center">130</p></td>
+                    <td valign="top"><p align="center">1500</p></td>
+                  </tr>
+                </table>
+				<p>Test statistic:<br />
+                    <img width="23" height="24" src="lec11_clip_image002_0026.gif" />   <img width="153" height="73" src="lec11_clip_image004.gif" /> <br />
+				  The d.f. associated with the  <strong><img width="23" height="24" src="lec11_clip_image002_0027.gif" /> </strong>is (3-1)(4-1) = 6<br />
+  <strong>Calculations</strong></p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p align="center"><strong>Oi</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Ei</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Oi­-Ei</strong></p></td>
+                    <td valign="top"><p align="center"><strong>(Oi­-Ei)2</strong></p></td>
+                    <td valign="top"><p align="center"><strong>(Oi­-Ei)2/Ei</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">51</p></td>
+                    <td valign="top"><p align="center">39.6</p></td>
+                    <td valign="top"><p align="center">11.4</p></td>
+                    <td valign="top"><p align="center">129.96</p></td>
+                    <td valign="top"><p align="center">3.2818</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">40</p></td>
+                    <td valign="top"><p align="center">49.1</p></td>
+                    <td valign="top"><p align="center">-9.1</p></td>
+                    <td valign="top"><p align="center">82.81</p></td>
+                    <td valign="top"><p align="center">1.6866</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">10</p></td>
+                    <td valign="top"><p align="center">11.7</p></td>
+                    <td valign="top"><p align="center">-1.7</p></td>
+                    <td valign="top"><p align="center">2.89</p></td>
+                    <td valign="top"><p align="center">0.2470</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">9</p></td>
+                    <td valign="top"><p align="center">9.5</p></td>
+                    <td valign="top"><p align="center">-0.5</p></td>
+                    <td valign="top"><p align="center">0.25</p></td>
+                    <td valign="top"><p align="center">0.0263</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">105</p></td>
+                    <td valign="top"><p align="center">90.0</p></td>
+                    <td valign="top"><p align="center">15</p></td>
+                    <td valign="top"><p align="center">225.00</p></td>
+                    <td valign="top"><p align="center">2.5000</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">103</p></td>
+                    <td valign="top"><p align="center">111.7</p></td>
+                    <td valign="top"><p align="center">-8.7</p></td>
+                    <td valign="top"><p align="center">75.69</p></td>
+                    <td valign="top"><p align="center">0.6776</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">25</p></td>
+                    <td valign="top"><p align="center">26.7</p></td>
+                    <td valign="top"><p align="center">-1.7</p></td>
+                    <td valign="top"><p align="center">2.89</p></td>
+                    <td valign="top"><p align="center">0.1082</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">17</p></td>
+                    <td valign="top"><p align="center">21.7</p></td>
+                    <td valign="top"><p align="center">-4.7</p></td>
+                    <td valign="top"><p align="center">22.09</p></td>
+                    <td valign="top"><p align="center">1.0180</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">384</p></td>
+                    <td valign="top"><p align="center">410.4</p></td>
+                    <td valign="top"><p align="center">-26.4</p></td>
+                    <td valign="top"><p align="center">696.96</p></td>
+                    <td valign="top"><p align="center">1.6982</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">527</p></td>
+                    <td valign="top"><p align="center">509.2</p></td>
+                    <td valign="top"><p align="center">17.8</p></td>
+                    <td valign="top"><p align="center">316.84</p></td>
+                    <td valign="top"><p align="center">0.6222</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">125</p></td>
+                    <td valign="top"><p align="center">121.6</p></td>
+                    <td valign="top"><p align="center">3.4</p></td>
+                    <td valign="top"><p align="center">11.56</p></td>
+                    <td valign="top"><p align="center">0.0951</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">104</p></td>
+                    <td valign="top"><p align="center">98.8</p></td>
+                    <td valign="top"><p align="center">5.2</p></td>
+                    <td valign="top"><p align="center">27.04</p></td>
+                    <td valign="top"><p align="center">0.2737</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" valign="top"><p align="center">                                      Total</p></td>
+                    <td valign="top"><p align="center">12.2347</p></td>
+                  </tr>
+                </table>
+				<p>\<strong><img width="23" height="24" src="lec11_clip_image002_0028.gif" /></strong>=12.2347<br />
+				  Table value of <img width="23" height="24" src="lec11_clip_image002_0029.gif" />for 6 d.f. at 5% level of significance is 12.59<br />
+				  Inference<br />
+  <strong><img width="23" height="24" src="lec11_clip_image002_0030.gif" />&lt;<img width="23" height="24" src="lec11_clip_image002_0031.gif" /></strong>tab<br />
+				  We accept the null hypothesis.<br />
+				  The severity of the disease has no association with blood group.</p>
+				<p><strong>Example 3</strong><br />
+				  In order to  determine the possible effect of a chemical treatment on the rate of  germination of cotton seeds a pot culture experiment was conducted. The results  are given below<br />
+				  Chemical treatment and germination of cotton  seeds</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">Germinated</p></td>
+                    <td valign="top"><p align="center">Not    germinated</p></td>
+                    <td valign="top"><p align="center">Total</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Chemically    Treated</p></td>
+                    <td valign="top"><p align="center">118</p></td>
+                    <td valign="top"><p align="center">22</p></td>
+                    <td valign="top"><p align="center">140</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>  Untreated</p></td>
+                    <td valign="top"><p>120</p></td>
+                    <td valign="top"><p>40</p></td>
+                    <td valign="top"><p>160</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">238</p></td>
+                    <td valign="top"><p align="center">62</p></td>
+                    <td valign="top"><p align="center">300</p></td>
+                  </tr>
+                </table>
+				<p>Does  the chemical treatrment improve the germination rate of cotton seeds?</p>
+				<p><strong>Solution</strong><br />
+				  H0:The chemical treatment does not improve the germination  rate of cotton seeds.<br />
+				  H1: The chemical treatment improves the germination rate  of cotton seeds.<br />
+				  Level  of significance = 1%<br />
+				  Test statistic<br />
+  <img width="256" height="51" src="lec11_clip_image007_0000.gif" />   <br />
+  <img width="23" height="24" src="lec11_clip_image002_0032.gif" /> <img width="235" height="48" src="lec11_clip_image009.gif" /></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>Table value</strong><br />
+                    <img width="23" height="24" src="lec11_clip_image002_0033.gif" />(1) d.f. at 1 % L.O.S = 6.635<br />
+				  Inference<br />
+  <strong><img width="23" height="24" src="lec11_clip_image002_0034.gif" /></strong> <strong>&lt;<img width="23" height="24" src="lec11_clip_image002_0035.gif" /></strong>tab<br />
+				  We accept the null hypothesis.<br />
+				  The  chemical treatmentwill not  improve the  germination rate of cotton seeds significantly.</p>
+				<p><strong>Example 4</strong><br />
+				  In an experiment on the effect of a growth regulator on fruit  setting in muskmelon the following results were obtained. Test whether the  fruit setting in muskmelon and the application of growth regulator are  independent at 1% level.</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center"><strong>Fruit set</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Fruit not set</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Treated</p></td>
+                    <td valign="top"><p align="center">16</p></td>
+                    <td valign="top"><p align="center">9</p></td>
+                    <td valign="top"><p align="center">25</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Control</p></td>
+                    <td valign="top"><p align="center">4</p></td>
+                    <td valign="top"><p align="center">21</p></td>
+                    <td valign="top"><p align="center">25</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">20</p></td>
+                    <td valign="top"><p align="center">30</p></td>
+                    <td valign="top"><p align="center">50</p></td>
+                  </tr>
+                </table>
+				<p><strong>Solution</strong><br />
+				  H0:Fruit setting in muskmelon does not depend on the  application of growth regulator.<br />
+				  H1: Fruit setting in muskmelon depend on the application  of growth regulator.<br />
+				  Level  of significance = 1%<br />
+				  After  Yates correction we have  </p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">Fruit set</p></td>
+                    <td valign="top"><p align="center">Fruit not set</p></td>
+                    <td valign="top"><p align="center">Total</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Treated</p></td>
+                    <td valign="top"><p align="center">15.5</p></td>
+                    <td valign="top"><p align="center">9.5</p></td>
+                    <td valign="top"><p align="center">25</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Control</p></td>
+                    <td valign="top"><p align="center">4.5</p></td>
+                    <td valign="top"><p align="center">20.5</p></td>
+                    <td valign="top"><p align="center">25</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">20</p></td>
+                    <td valign="top"><p align="center">30</p></td>
+                    <td valign="top"><p align="center">50</p></td>
+                  </tr>
+                </table>
+				<p>&nbsp;</p>
+				<p>Tet statistic<br />
+                    <img width="23" height="24" src="lec11_clip_image002_0036.gif" />  <img width="187" height="75" src="lec11_clip_image011_0000.gif" />  <br />
+                    <img width="23" height="24" src="lec11_clip_image002_0037.gif" />  <img width="277" height="72" src="lec11_clip_image013_0000.gif" /></p>
+				<p><strong>Table value</strong><br />
+                    <img width="23" height="24" src="lec11_clip_image002_0038.gif" />(1) d.f. at 1 % level of  significance is 6.635<br />
+				  Inference<br />
+  <strong><img width="23" height="24" src="lec11_clip_image002_0039.gif" /></strong> <strong>&gt;<img width="23" height="24" src="lec11_clip_image002_0040.gif" /></strong>tab<br />
+				  We reject the null hypothesis.<br />
+				  Fruit setting in muskmelon is influenced by the  growth regulator. Application of growth  regulator will increase fruit setting in musk melon.</p>
+				<p align="left"><br />
+			    </p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec11.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec11.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

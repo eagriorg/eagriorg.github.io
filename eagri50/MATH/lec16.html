@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS :: Lecture 16</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS:: Lecture 16 :: </span>PERMUTATION AND COMBINATION</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong> PERMUTATION AND COMBINATION</strong><br />
+				<strong>Fundamental Counting Principle</strong><br />
+				 <p> If a first job can be done in <strong><em>m</em></strong> ways and a second job can be done  in <strong><em>n</em></strong> ways then the total  number of ways in which both the jobs can be done in succession is <strong><em>m x n.</em></strong><br />
+				  For example, consider 3 cities  Coimbatore, Chennai and Hyderabad. Assume that there are 3 routes (by road)  from Coimbatore to Chennai and 4 routes from Chennai to Hyderabad. Then the  total number of routes from Coimbatore to Hyderabad via Chennai is 3 x 4 =12.  This can be explained as follows.<br />
+				  For every route from Coimbatore to  Chennai there are 4 routes from Chennai to Hyderabad. Since there are 3 road  routes from Coimbatore to Chennai, the total number of routes <strong>is 3 x 4 =12.</strong><br />
+  <strong>            </strong>The above principle  can be extended as follows<strong>. </strong>If there are <em>n </em>jobs and if there are <em>mi</em> ways in which the ith  job can  be done, then the total number of ways in which all the <em>n </em>jobs can be done in succession ( 1st job, 2nd  job, 3rd job… <em>n</em>th  job) is given by <em>m1 x m2 x  m3 …x mn .   </em><br />
+  <a name="Permutation" id="Permutation"></a><strong>Permutation</strong><br />
+  <strong>            </strong>Permutation means <em>arrangement</em> of things. The word <em>arrangement </em>is used, if the order of things is  considered. Let us assume that there are 3  plants P1, P2, P3. These 3 plants can be  planted in the following 6 ways namely</p>
+				<table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><br />
+                      P1 </td>
+                    <td><p align="center">P2</p></td>
+                    <td><p align="center">P3</p></td>
+                  </tr>
+                  <tr>
+                    <td><p align="center">P1</p></td>
+                    <td><p align="center">P3</p></td>
+                    <td><p align="center">P2</p></td>
+                  </tr>
+                  <tr>
+                    <td><p align="center">P2</p></td>
+                    <td><p align="center">P1</p></td>
+                    <td><p align="center">P3</p></td>
+                  </tr>
+                  <tr>
+                    <td><p align="center">P2</p></td>
+                    <td><p align="center">P3</p></td>
+                    <td><p align="center">P1</p></td>
+                  </tr>
+                  <tr>
+                    <td><p align="center">P3</p></td>
+                    <td><p align="center">P1</p></td>
+                    <td><p align="center">P2</p></td>
+                  </tr>
+                  <tr>
+                    <td><p align="center">P3</p></td>
+                    <td><p align="center">P2</p></td>
+                    <td><p align="center">P1</p></td>
+                  </tr>
+                </table>
+				<p>Each  arrangement is called a permutation. Thus there are 6 arrangements  (permutations) of  3 plants taking all  the 3 plants at a time. This we write as 3P3. Therefore 3P3 = 6. Suppose  out of the 3 objects we choose only 2 objects and arrange them. How many  arrangements are possible? For this consider 2 boxes as shown in figure. <strong></strong></p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td><br />
+                      I Box </td>
+                    <td><p align="center">II    Box</p></td>
+                  </tr>
+                </table>
+                  <p align="center">Permutation<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/Permutations.mp4" type="video/mp4">
+</video></p>
+				<p>Since  we want to arrange only two objects and we have totally 3 objects, the first  box can be filled by any one of the 3 objects, (i.e.) the first box can be  filled in 3 ways. After filling the first box we are left with only 2 objects  and the second box can be filled by any one of these two objects. Therefore  from Fundamental Counting Principle the total number of ways in which both the  boxes can be filled is 3 x 2 =6. This we write as                3<em>P</em>2  = 6.<br />
+				  In general the number of  permutations of <em>n</em> objects taking <em>r</em> objects at a time is denoted by <em>nPr</em>. Its value is given by <br />
+				  <img width="236" height="23" src="lec16_clip_image002.gif" /></p>
+				<p>                           <img width="357" height="44" src="lec16_clip_image004.gif" /><br />
+				  <br />
+  <img width="128" height="44" src="lec16_clip_image006.gif" />                                                                                                                                                                                                                                                                                                                                                                                                                   <br />
+				  Note:  1</p>
+				<ul>
+				  <li>nPn  = n !   (b ) nP1= n.  (c) nP0= 1. <strong></strong></li>
+			    </ul>
+				<p><strong>Examples:</strong><br />
+				  1.  Evaluate <em>8P3 </em><br />
+  <strong>Solution:</strong><br />
+  <img width="222" height="80" src="lec16_clip_image008.gif" /><br />
+				  2.  Evaluate  11P2<br />
+  <strong>Solution:</strong><br />
+  <img width="228" height="80" src="lec16_clip_image010.gif" /><br />
+				  3.  There are 6 varieties on brinjal, in how many ways these can be arranged in 6  plots which are in a line?<br />
+  <strong>Solution</strong><br />
+				  Six varieties of brinjal can be  arranged in 6 plots in <em>6P6</em> ways.<br />
+				  <em>6</em>P<em>6</em> = <img width="80" height="44" src="lec16_clip_image012.gif" />  = 6!          [0! = 1]<br />
+				  = 6 x 5 x 4 x 3 x 2x1 = 720.<br />
+				  Therefore  6 varieties of brinjal can be arranged in 720 ways.</p>
+				<p>4.  There are 5 varieties of roses and 2 varieties of jasmine to be arranged in a  row, for a photograph. In how many ways can they be arranged, if <br />
+				  <strong>(i) all varieties of   jasmine   together </strong><br />
+  <strong>   (ii)All varieties of   jasmine   are not together.</strong> <br />
+  <strong>Solution</strong><br />
+				  i)  Since the 2 varieties of  jasmine are  inseparable, consider them as one single unit. This together with 5 varieties  of roses make 6  units which can be  arranged themselves in 6! ways.<br />
+				  In  every one of these permutations, 2 varieties of jasmine can be rearranged among  themselves in 2!  ways. <br />
+				  Hence  the total number of arrangements required <br />
+				  = 6! x 2! = 720 x 2 = 1440.<br />
+				  ii)The  number of arrangements of all 7 varieties without any restrictions  =7! = 5040 <br />
+				  Number  of arrangements in which all varieties of    jasmine are together = 1440.<br />
+				  Therefore  number of arrangements required = 5040 -1440 = 3600.<br />
+  <strong><a name="Combination" id="Combination"></a>Combinatination</strong> <br />
+				  Combination  means <em>selection</em> of things. The word <em>selection</em> is used, when the order of thing is  immaterial. Let us consider 3  plant varieties V1, V2 &amp; V3. In how many ways 2  varieties can be selected?  The possible  selections are</p>
+				<table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p>1)</p></td>
+                    <td valign="top"><p>V1</p></td>
+                    <td valign="top"><p>&amp;</p></td>
+                    <td valign="top"><p>V2</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>2)</p></td>
+                    <td valign="top"><p>V2</p></td>
+                    <td valign="top"><p>&amp;</p></td>
+                    <td valign="top"><p>V3</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>3)</p></td>
+                    <td valign="top"><p>V1</p></td>
+                    <td valign="top"><p>&amp;</p></td>
+                    <td valign="top"><p>V3</p></td>
+                  </tr>
+                </table>
+				<p>   Each  such selection is known as a combination. There are 3 selections possible from  a total of 3 objects taking 2 objects at a time and we write            3C2= 3.<br />
+				  In general the number of selections  (Combinations) from a total of <em>n</em> objects taking <em>r</em> objects at a time is  denoted by <em>n Cr.</em><br />
+                     <p align="center">Combination<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/Combinations.mp4" type="video/mp4">
+</video></p>
+      <p align="center">Probability using Combinations<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/Probability&#32;using&#32;Combinations.mp4" type="video/mp4">
+</video></p>
+  <a name="Relation" id="Relation"></a><strong>Relation  between nPr and nCr</strong><br />
+				  We  know that <br />
+				  <em>n  Pr = nCr </em>x <em>r! </em><br />
+				  (or) <img border="0" width="132" height="45" src="lec16_clip_image014.gif" />    ------------(1)             <br />
+				  <br />
+				  But  we know    <img border="0" width="145" height="45" src="lec16_clip_image016.gif" />---------(2)<br />
+				  Sub (2) in (1) we get<br />
+				  <img border="0" width="107" height="45" src="lec16_clip_image018.gif" /><br />
+				  <br />
+  <strong>Another formula for <em>nCr</em></strong><br />
+				  We  know that <em>nPr  = n. (n-1). (n-2)…(n-r+1)</em></p>
+				<p>\     <img border="0" width="223" height="45" src="lec16_clip_image020.gif" /><br />
+                    <strong>Example </strong><br />
+				  1.  Find the value of 10<em>C</em>3<em>.</em><br />
+				  <strong>Solution:</strong><br />
+  <img border="0" width="247" height="45" src="lec16_clip_image022.gif" /><br />
+  <strong>Note -1</strong></p>
+				<ul>
+				  <ul>
+				    <li><em>nC0  =  1</em></li>
+				    <li><em>nC1  =  n</em></li>
+				    <li><em>nCn  = 1<strong></strong></em></li>
+			      </ul>
+			    </ul>
+				<p><em>                 d) nCr = nCn-r</em><br />
+                    <strong>Examples</strong><br />
+				  1<strong>.  Find the value of 20<em>C</em>18</strong><br />
+  <strong>Solution</strong><br />
+				  We  have 20<em>C</em>18<em> = </em>20<em>C</em>20-18<em>=</em>20C2 = <img border="0" width="52" height="41" src="lec16_clip_image024.gif" />=190<br />
+  <strong>                     <u></u></strong><br />
+  <strong>2.</strong> <strong>How many ways can 4 prizes  be given away to 3 boys, if each boy is eligible for all the prizes?</strong> <br />
+  <strong>Solution</strong><br />
+				  Any one prize can be given to any one of the 3 boys and hence there are 3 ways  of distributing each prize.<br />
+				  Hence, the 4 prizes can be distributed in 34= 81 ways.<br />
+  <strong>3. A team of 8 students goes on an excursion, in two cars, of which one can  accommodate 5 and the other only 4. In how many ways can they travel? </strong><br />
+  <strong>Solution</strong><br />
+				  There are 8 students and the maximum number of students can accommodate in two  cars together is 9.<br />
+				  We may divide the 8 students as follows<br />
+  <strong>Case I: 5  students in the first car and 3 in the second <br />
+    Case II: 4 students in the first car and 4 in the second<br />
+    In Case I:</strong> 8 students are divided into groups of 5  and 3 in 8C3 ways.<br />
+  <strong>Similarly, in Case II:</strong> 8 students are divided into two groups of 4 and 4  in 8C4 ways.<br />
+				  Therefore, the total number of ways in which 8 students can travel is 8C3  + 8C4 = 56 + 70 = 126.<br />
+  <strong>4.</strong> <strong>How many words of 4 consonants  and 3 vowels can be made from 12 consonants and 4 vowels, if all the letters  are different?</strong> <br />
+  <strong>Solution</strong><br />
+				  4 consonants out of 12 can be selected in 12C4 ways.<br />
+				  3 vowels can be selected in 4C3 ways.<br />
+				  Therefore, total number of groups each containing 4 consonants and 3 vowels <br />
+				  = 12C4 * 4C3<br />
+				  Each group contains 7 letters, which can be arranging in 7! ways.<br />
+				  Therefore required number of words = 124 * 4C3  * 7!<br />
+                </p>
+				<p><br />
+                </p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec16.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec16.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

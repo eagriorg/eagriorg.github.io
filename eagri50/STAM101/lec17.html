@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 17</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101  :: Lecture 17 :: </span></strong><strong>Latin square design – description – layout –  analysis – advantages and disadvantages</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p><strong>Latin Square Design</strong></p>
+				<p>When the experimental material is divided into rows and columns and  the treatments are allocated such that each treatment occurs only once in each  row and each column, the design is known as L S D.</p>
+				<p>In LSD the treatments are usually denoted  by A B C D etc. </p>
+				<p>For a 5 x 5 LSD the arrangements may be                                         </p>
+				<table width="170" height="177" border="1" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top"><br />
+                        <strong><em>A</em></strong> </td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" valign="top"><p align="center"><strong>Square 1</strong></p></td>
+                  </tr>
+                </table>
+				<table width="169" height="178" border="1" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top"><p><strong></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" valign="top"><p align="center"><strong>Square 2</strong></p></td>
+                  </tr>
+                </table>
+				<table width="170" height="177" border="1" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong><em>E</em></strong></p></td>
+                    <td valign="top"><p><strong><em>A</em></strong></p></td>
+                    <td valign="top"><p><strong><em>B</em></strong></p></td>
+                    <td valign="top"><p><strong><em>C</em></strong></p></td>
+                    <td valign="top"><p><strong><em>D</em></strong></p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" valign="top"><p align="center"><strong>Square     3</strong></p></td>
+                  </tr>
+                </table>
+				<p>&nbsp;</p>
+				<p><strong>Analysis </strong></p>
+				<p>The ANOVA model for LSD is</p>
+				<p>            Yijk = µ + ri + cj  + tk + eijk</p>
+				<p>ri  is the ith row effect<br />
+				  cj is the jth  column effect<br />
+				  tk  is the kth treatment effect and<br />
+				  eijk  is the error term<br />
+				  The analysis of variance table for LSD is  as follows:</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p>Sources of Variation</p></td>
+                    <td valign="top"><p>d.f.</p></td>
+                    <td valign="top"><p>S S</p></td>
+                    <td valign="top"><p>M S</p></td>
+                    <td valign="top"><p>F</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Rows</p></td>
+                    <td valign="top"><p>t-1</p></td>
+                    <td valign="top"><p>RSS</p></td>
+                    <td valign="top"><p>RMS</p></td>
+                    <td valign="top"><p>RMS/EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Columns</p></td>
+                    <td valign="top"><p>t-1</p></td>
+                    <td valign="top"><p>CSS</p></td>
+                    <td valign="top"><p>CMS</p></td>
+                    <td valign="top"><p>CMS/EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Treatments</p></td>
+                    <td valign="top"><p>t-1</p></td>
+                    <td valign="top"><p>TrSS</p></td>
+                    <td valign="top"><p>TrMS</p></td>
+                    <td valign="top"><p>TrMS/EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Error</p></td>
+                    <td valign="top"><p>(t-1)(t-2)</p></td>
+                    <td valign="top"><p>ESS</p></td>
+                    <td valign="top"><p>EMS</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Total</p></td>
+                    <td valign="top"><p>t2-1</p></td>
+                    <td valign="top"><p>TSS</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                </table>
+				<p><strong>F table value</strong><br />
+				  F [t-1),(t-1)(t-2)]  degrees of freedom at 5% or 1%  level of  significance</p>
+				<p>&nbsp;</p>
+				<p>Steps to calculate the above Sum of Squares  are as follows:</p>
+				<p>Correction Factor <img width="95" height="48" src="lec17_clip_image002.gif" /></p>
+				<p>Total Sum of Squares <img width="156" height="27" src="lec17_clip_image004.gif" /></p>
+				<p>Row sum of squares <img width="161" height="45" src="lec17_clip_image006.gif" /></p>
+				<p>Column sum of squares <img width="164" height="47" src="lec17_clip_image008.gif" /></p>
+				<p>Treatment sum of squares <img width="165" height="45" src="lec17_clip_image010.gif" /></p>
+				<p>Error Sum of Squares = TSS-RSS-CSS-TrSS</p>
+				<p>These results can be summarized in the form  of analysis of variance table.</p>
+				<p>Calculation of SE,  SE (d) and CD values<br />
+                    <img width="87" height="47" src="lec17_clip_image012.gif" /><br />
+				  where r is the  number of rows<br />
+  <img width="99" height="25" src="lec17_clip_image014.gif" />. <br />
+				  CD= SE (d). t<br />
+				  where t = table value of t for a specified level of significance and  error degrees of freedom<br />
+				  Using CD value the  bar chart can be drawn and the conclusion may be written.</p>
+				<p><strong>Advantages</strong></p>
+				<ul type="disc">
+                  <li>LSD is       more efficient than RBD or CRD. This is because of double grouping that       will result in small experimental error.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<ul type="disc">
+                  <li>When       missing values are present, missing plot technique can be used and       analysed.</li>
+			    </ul>
+				<strong>Disadvantages</strong>
+				<ul type="disc">
+                  <li>This design is not as flexible as RBD or CRD as the number of       treatments is limited to the number of rows and columns. LSD is seldom       used when the number of treatments is more than 12. LSD is not suitable       for treatments less than five.</li>
+			    </ul>
+				<p>Because of the limitations on the  number of treatments, LSD is not widely used in agricultural experiments.</p>
+				<p>Note: The number of sources of  variation is two for CRD, three for RBD and four for LSD.</p>
+				<table width="27%" border="0">
+  <tr>
+    <td><strong><a href="pdf/lec17.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+    <td bgcolor="#A20807"><strong><a href="pdf/lec17.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+  </tr>
+</table>
+<br />
+<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+  </map>
+</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

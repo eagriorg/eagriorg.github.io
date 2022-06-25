@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 21</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 21 :: </span>Split plot design – layout – ANOVA Table</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p><strong>Split-plot Design</strong><br />
+				  In field experiments certain  factors may require larger plots than for others. For example, experiments on  irrigation, tillage, etc requires larger areas. On the other hand experiments on  fertilizers, etc may not require larger areas. To accommodate factors which  require different sizes of experimental plots in the same experiment, split  plot design has been evolved. <br />
+				  In this design, larger plots are  taken for the factor which requires larger plots. Next each of the larger plots  is split into smaller plots to accommodate the other factor. The different  treatments are allotted at random to their respective plots. Such arrangement  is called split plot design. <br />
+				  In split plot design the larger  plots are called main plots and smaller plots within the larger plots are  called as sub plots. The factor levels allotted to the main plots are main plot  treatments and the factor levels allotted to sub plots are called as sub plot  treatments.<br />
+				  <br />
+  <strong>Layout and analysis of  variance table</strong><br />
+				  First the main plot treatment and sub plot treatment are usually decided  based on the needed precision. The factor for which greater precision is  required is assigned to the sub plots. <br />
+			    The replication is then divided into number of main plots equivalent  to main plot treatments. Each main plot is divided into subplots depending on  the number of sub plot treatments. The main plot treatments are allocated at  random to the main plots as in the case of RBD. Within each main plot the sub  plot treatments are allocated at random as in the case of RBD. Thus  randomization is done in two stages. The same procedure is followed for all the  replications independently.</p>
+				<p>The analysis of  variance will have two parts, which correspond to the main plots and sub-plots.  For the main plot analysis, replication X main plot treatments table is formed.  From this two-way table sum of squares for replication, main plot treatments  and error (a) are computed. For the analysis of sub-plot treatments, main plot  X sub-plot treatments table is formed. From this table the sums of squares for  sub-plot treatments and interaction between main plot and sub-plot treatments  are computed. Error (b) sum of squares is found out by residual method. The  analysis of variance table for a split plot design with <em>m</em> main plot  treatments and <em>s</em> sub-plot treatments is given below.</p>
+				<p><strong>Analysis  of variance for split plot with factor A with m levels in main plots and factor  B with s levels in sub-plots will be as follows:</strong></p>
+				<table border="1" cellspacing="0" cellpadding="0" width="607">
+                  <tr>
+                    <td valign="top"><p>Sources    of                                                                          <br />
+                      Variation</p></td>
+                    <td valign="top"><p align="center">d.f.</p></td>
+                    <td valign="top"><p align="center">SS                      </p></td>
+                    <td valign="top"><p align="center">MS</p></td>
+                    <td valign="top"><p align="center">F</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Replication</p></td>
+                    <td valign="top"><p align="center">r-1</p></td>
+                    <td valign="top"><p align="center">RSS</p></td>
+                    <td valign="top"><p align="center">RMS</p></td>
+                    <td valign="top"><p align="center">RMS/EMS (a)</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A</p></td>
+                    <td valign="top"><p align="center">m-1</p></td>
+                    <td valign="top"><p align="center">ASS</p></td>
+                    <td valign="top"><p align="center">AMS</p></td>
+                    <td valign="top"><p align="center">AMS/EMS (a)</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Error (a)</p></td>
+                    <td valign="top"><p align="center">(r-1) (m-1)</p></td>
+                    <td valign="top"><p align="center">ESS (a)</p></td>
+                    <td valign="top"><p align="center">EMS (a)</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">B</p></td>
+                    <td valign="top"><p align="center">s-1</p></td>
+                    <td valign="top"><p align="center">BSS</p></td>
+                    <td valign="top"><p align="center">BMS</p></td>
+                    <td valign="top"><p align="center">BMS/EMS (b)</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">AB</p></td>
+                    <td valign="top"><p align="center">(m-1) (s-1)</p></td>
+                    <td valign="top"><p align="center">ABSS</p></td>
+                    <td valign="top"><p align="center">ABMS</p></td>
+                    <td valign="top"><p align="center">ABMS/EMS (b)</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Error (b) </p></td>
+                    <td valign="top"><p align="center">m(r-1) (s-1)</p></td>
+                    <td valign="top"><p align="center">ESS (b)</p></td>
+                    <td valign="top"><p align="center">EMS (b)</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5" valign="top"><p align="left">       Total                   rms – 1                 TSS</p></td>
+                  </tr>
+                </table>
+				<p><strong>Analysis </strong><br />
+                    <strong>Arrange  the results as follows</strong></p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td rowspan="2" valign="top"><br />
+                        <strong>Treatment Combination </strong> </td>
+                    <td colspan="4" valign="top"><p align="center"><strong>Replication</strong></p></td>
+                    <td rowspan="2" valign="top"><p><strong>Total</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center"><strong>R1</strong></p></td>
+                    <td valign="top"><p align="center"><strong>R2</strong></p></td>
+                    <td valign="top"><p align="center"><strong>R3</strong></p></td>
+                    <td valign="top"><p align="center"><strong>…</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A0B0</p></td>
+                    <td valign="top"><p align="center">a0b0</p></td>
+                    <td valign="top"><p align="center">a0b0</p></td>
+                    <td valign="top"><p align="center">a0b0</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T00</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A0B1</p></td>
+                    <td valign="top"><p align="center">a0b1</p></td>
+                    <td valign="top"><p align="center">a0b1</p></td>
+                    <td valign="top"><p align="center">a0b1</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T01</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A0B2</p></td>
+                    <td valign="top"><p align="center">a0b2</p></td>
+                    <td valign="top"><p align="center">a0b2</p></td>
+                    <td valign="top"><p align="center">a0b2</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T02</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Sub Total</p></td>
+                    <td valign="top"><p align="center">A01</p></td>
+                    <td valign="top"><p align="center">A02</p></td>
+                    <td valign="top"><p align="center">A03</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T0</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A1B0</p></td>
+                    <td valign="top"><p align="center">a1b0</p></td>
+                    <td valign="top"><p align="center">a1b0</p></td>
+                    <td valign="top"><p align="center">a1b0</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T10</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A1B1</p></td>
+                    <td valign="top"><p align="center">a1b1</p></td>
+                    <td valign="top"><p align="center">a1b1</p></td>
+                    <td valign="top"><p align="center">a1b1</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T11</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A1B2</p></td>
+                    <td valign="top"><p align="center">a1b2</p></td>
+                    <td valign="top"><p align="center">a1b2</p></td>
+                    <td valign="top"><p align="center">a1b2</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T12</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Sub Total</p></td>
+                    <td valign="top"><p align="center">A11</p></td>
+                    <td valign="top"><p align="center">A12</p></td>
+                    <td valign="top"><p align="center">A13</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T1</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">R1</p></td>
+                    <td valign="top"><p align="center">R2</p></td>
+                    <td valign="top"><p align="center">R3</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">G.T</p></td>
+                  </tr>
+                </table>
+				<p>&nbsp;</p>
+				<p><img width="159" height="44" src="lec21_clip_image002.gif" /></p>
+				<p>TSS=[ (a0b0)2 + (a0b1)2+(a0b2)2+…]-CF</p>
+				<p>Form A x R Table and calculate RSS, ASS and  Error (a) SS</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td rowspan="2" valign="top"><p>Treatment </p></td>
+                    <td colspan="4" valign="top"><p align="center">Replication</p></td>
+                    <td rowspan="2" valign="top"><p>Total</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">R1</p></td>
+                    <td valign="top"><p align="center">R2</p></td>
+                    <td valign="top"><p align="center">R3</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A0</p></td>
+                    <td valign="top"><p align="center">A01</p></td>
+                    <td valign="top"><p align="center">A02</p></td>
+                    <td valign="top"><p align="center">A03</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T0</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A1</p></td>
+                    <td valign="top"><p align="center">A11</p></td>
+                    <td valign="top"><p align="center">A12</p></td>
+                    <td valign="top"><p align="center">A13</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T1</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A2</p></td>
+                    <td valign="top"><p align="center">A21</p></td>
+                    <td valign="top"><p align="center">A22</p></td>
+                    <td valign="top"><p align="center">A23</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T2</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total </p></td>
+                    <td valign="top"><p align="center">R1</p></td>
+                    <td valign="top"><p align="center">R2</p></td>
+                    <td valign="top"><p align="center">R3</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">GT</p></td>
+                  </tr>
+                </table>
+				<p><img width="237" height="51" src="lec21_clip_image004.gif" /><br />
+                    <img width="236" height="51" src="lec21_clip_image006.gif" /><br />
+                    <img width="328" height="51" src="lec21_clip_image008.gif" /><br />
+				  Error (a) SS= A x R TSS-RASS-ASS.<br />
+				  Form A xB Table and calculate BSS, Ax B  SSS and Error (b) SS</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td rowspan="2" valign="top"><br />
+                      Treatment </td>
+                    <td colspan="4" valign="top"><p align="center">Replication</p></td>
+                    <td rowspan="2" valign="top"><p>Total</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">B0</p></td>
+                    <td valign="top"><p align="center">B1</p></td>
+                    <td valign="top"><p align="center">B2</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A0</p></td>
+                    <td valign="top"><p align="center">T00</p></td>
+                    <td valign="top"><p align="center">T01</p></td>
+                    <td valign="top"><p align="center">T02</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T0</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A1</p></td>
+                    <td valign="top"><p align="center">T10</p></td>
+                    <td valign="top"><p align="center">T11</p></td>
+                    <td valign="top"><p align="center">T12</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T1</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">A2</p></td>
+                    <td valign="top"><p align="center">T20</p></td>
+                    <td valign="top"><p align="center">T21</p></td>
+                    <td valign="top"><p align="center">T22</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">T2</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                    <td valign="top"><p align="center">.<br />
+                      .<br />
+                      .</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total </p></td>
+                    <td valign="top"><p align="center">C0</p></td>
+                    <td valign="top"><p align="center">C1</p></td>
+                    <td valign="top"><p align="center">C2</p></td>
+                    <td valign="top"><p align="center">…</p></td>
+                    <td valign="top"><p align="center">GT</p></td>
+                  </tr>
+                </table>
+				<p><img width="240" height="51" src="lec21_clip_image010.gif" /><br />
+                    <img width="299" height="51" src="lec21_clip_image012.gif" align="left" hspace="12" /></p>
+				<p>ABSS= A x B Table SS – ASS- ABSS<br />
+				  Error (b) SS= Table SS-ASS-BSS-ABSS  –Error (a) SS.<br />
+			    Then complete the ANOVA table.				</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec21.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec21.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

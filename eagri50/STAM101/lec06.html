@@ -1,0 +1,402 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 06</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 06 ::</span>Probability – Basic concepts-trial-  event-equally likely- mutually exclusive</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong> –independent event, additive and  multiplicative laws. Theoretical distributions- discrete and continuous distributions, Binomial  distributions-properties</strong><br />
+				</p>
+				<p><strong>Probability</strong><br />
+                  <strong>            </strong>The  concept of probability is difficult to define in precise terms.  In ordinary language, the word probable means  likely (or) chance.  Generally the word,  probability, is used to denote the happening of a certain event, and the  likelihood of the occurrence of that event, based on past experiences.  By looking at the clear sky, one will say  that there will not be any rain today.   On the other hand, by looking at the cloudy sky or overcast sky, one  will say that there will be rain today.   In the earlier sentence, we aim that there will not be rain and in the  latter we expect rain.  On the other hand  a mathematician says that the probability of rain is ‘0’ in the first case and  that the probability of rain is ‘1’ in the second case.  In between 0 and 1, there are fractions  denoting the chance of the event occurring. In ordinary language, the word  probability means uncertainty about happenings.In Mathematics and Statistics, a  numerical measure of uncertainty is provided by the important branch of  statistics – called theory of probability.   Thus we can say, that the theory of probability describes certainty by 1  (one), impossibility by 0 (zero) and uncertainties by the co-efficient which  lies between 0 and 1.</p>
+                <p><strong>Trial  and Event </strong>An experiment which, though repeated under  essentially identical (or) same conditions does not give unique results but may  result in any one of the several possible outcomes.  Performing an experiment is known as a trial and  the outcomes of the experiment are known as events.</p>
+                <p><strong>Example  1: </strong>Seed germination – either germinates or  does not germinates are events.</p>
+                <ul>
+                  <li>In a lot of 5 seeds  none may germinate (0), 1 or 2 or 3 or 4 or all 5 may germinate. </li>
+                </ul>
+                 <p align="center">Probability<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/probability.mp4" type="video/mp4">
+</video></p>
+                <p><strong>Sample  space (S)</strong><br />
+                  A  set of all possible outcomes from an experiment is called sample space.  For example, a set of five seeds are sown in  a plot, none may germinate, 1, 2, 3 ,4 or all five may germinate. i.e the  possible outcomes are {0, 1, 2, 3, 4, 5. The set of numbers is called a sample  space.  Each possible outcome (or)  element in a sample space is called sample point.<br />
+  <strong>Exhaustive  Events</strong><br />
+                  The total number of possible  outcomes in any trial is known as exhaustive events (or) exhaustive cases.<br />
+  <strong>Example</strong></p>
+                <ul>
+                  <li>When pesticide is  applied a pest may survive or die. There are two exhaustive cases namely (  survival, death)</li>
+                  <li>In throwing of a die,  there are six exhaustive cases, since anyone of the 6 faces <br />
+                    1, 2, 3, 4, 5, 6 may come uppermost.</li>
+                  <li>In drawing 2 cards from  a pack of cards the exhaustive number of cases is 52C2, since 2  cards can be drawn out of 52 cards in 52C2 ways</li>
+                </ul>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Trial</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Random    Experiment</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Total    number of trials</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Sample    Space</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">(1)</p></td>
+                      <td valign="top"><p align="center">One    pest is exposed to pesticide</p></td>
+                      <td valign="top"><p align="center">21=2</p></td>
+                      <td valign="top"><p align="center">{S,D}</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">(2)</p></td>
+                      <td valign="top"><p align="center">Two    pests are exposed to pesticide</p></td>
+                      <td valign="top"><p align="center">22=4</p></td>
+                      <td valign="top"><p align="center">{SS,    SD, DS, DD}</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">(3)</p></td>
+                      <td valign="top"><p align="center">Three    pests are exposed to pesticide</p></td>
+                      <td valign="top"><p align="center">23=8</p></td>
+                      <td valign="top"><p align="center">{SSS,    SSD, SDS, DSS, SDD, DSD,DDS, DDD</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">(4)</p></td>
+                      <td valign="top"><p align="center">One    set of three seeds</p></td>
+                      <td valign="top"><p align="center">41=    4</p></td>
+                      <td valign="top"><p align="center">{0,1,2,3}</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">(5)</p></td>
+                      <td valign="top"><p align="center">Two    sets of three seeds</p></td>
+                      <td valign="top"><p align="center">42=16</p></td>
+                      <td valign="top"><p align="center">{0,1},{0,2},{0,3}    etc</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Favourable  Events</strong><br />
+                  The number of cases favourable to an  event in a trial is the number of outcomes which entail the happening of the  event.<br />
+  <strong>Example</strong></p>
+                <ul>
+                  <li>When a seed is sown if  we observe non germination of a seed, it is a favourable event. If we are  interested in germination of the seed then germination is the favourable event. </li>
+                </ul>
+                <p><strong>Mutually  Exclusive Events</strong><br />
+                  Events are said to be mutually  exclusive (or) incompatible if the happening of any one of the events excludes  (or) precludes the happening of all the others i.e.) if no two or more of the  events can happen simultaneously in the same trial.  (i.e.) The joint occurrence is not possible.<br />
+  <strong>Example</strong></p>
+                <ul>
+                  <li>In observation of seed  germination the seed may either germinate or it will not germinate. Germination  and non germination are mutually exclusive events.</li>
+                </ul>
+                <p><strong>Equally  Likely Events</strong><br />
+                  Outcomes of a trial are said to be  equally likely if taking in to consideration all the relevant evidences, there  is no reason to expect one in preference to the others. (i.e.) Two or more  events are said to be equally likely if each one of them has an <strong>equal chance of occurring</strong>.</p>
+                <p><strong>Independent Events</strong><br />
+                  Several events are said to be  independent if the happening of an event is not affected by the happening of  one or more events.<br />
+  <strong>Example</strong></p>
+                <ul>
+                  <li>When  two seeds are sown in a pot, one seed germinates. It would not affect the  germination or non germination of the second seed. One event does not affect  the other event.</li>
+                </ul>
+                <p><strong>Dependent Events</strong><br />
+                    <strong>            </strong>If the happening of one  event is affected by the happening of one or more events, then the events are  called dependent events.<br />
+                    <strong>Example</strong><br />
+                    <strong>            </strong>If we draw a card from  a pack of well shuffled cards, if the first card drawn is not replaced then the  second draw is dependent on the first draw.</p>
+                <p><strong>Note:</strong>  In the case of independent (or) dependent  events, the joint occurrence is possible.</p>
+                <p><strong>Definition  of Probability</strong><br />
+                    <strong>Mathematical  (or) Classical (or) a-priori Probability</strong><br />
+                    <strong>            </strong>If  an experiment results in ‘n’ exhaustive cases which are mutually exclusive and  equally likely cases out of which ‘m’ events are favourable to the happening of  an event ‘A’, then the probability ‘p’ of happening of ‘A’ is given by<br />
+                  <img width="300" height="45" src="lec06_clip_image002.gif" /></p>
+                <p><strong>Note</strong></p>
+                <ul>
+                  <li>If m = 0 Þ  P(A) = 0, then ‘A’ is called an impossible event. (i.e.) also by P(f)  = 0.</li>
+                  <li>If m = n Þ  P(A) = 1, then ‘A’ is called assure (or) certain event.</li>
+                  <li>The probability is a non-negative  real number and cannot exceed unity (i.e.) lies between 0 to 1.</li>
+                  <li>The probability of non-happening  of the event ‘A’ (i.e.) P(<img width="17" height="20" src="lec06_clip_image004.gif" />).  It is denoted by  ‘q’.</li>
+                </ul>
+                <p>            P (<img width="17" height="20" src="lec06_clip_image004_0000.gif" />) = <img width="164" height="41" src="lec06_clip_image006.gif" /><br />
+                  Þ q = 1 – p<br />
+                  Þ p + q = 1<br />
+                  (or)   P (A) + P (<img width="17" height="20" src="lec06_clip_image004_0001.gif" />) = 1.</p>
+                <p><strong>Statistical  (or) Empirical Probability (or) a-posteriori Probability</strong><br />
+                  If an experiment is repeated a  number (n) of times, an event ‘A’ happens ‘m’ times then the statistical  probability of ‘A’ is given by<br />
+                  <img width="116" height="41" src="lec06_clip_image008.gif" /></p>
+                <p> <strong>Axioms  for Probability</strong></p>
+                <ul>
+                  <li>The probability of an  event ranges from 0 to 1.  If the event  cannot take place its probability shall be ‘0’ if it certain, its probability  shall be ‘1’.  </li>
+                </ul>
+                <p>            Let  E1, E2, …., En be any events, then P (Ei)  ³  0.</p>
+                <ul>
+                  <li>The probability of the  entire sample space is ‘1’. (i.e.) P(S) = 1.</li>
+                </ul>
+                <p>            Total  Probability, <img width="83" height="45" src="lec06_clip_image010.gif" /></p>
+                <ul>
+                  <li>If A and B are mutually  exclusive (or) disjoint events then the probability of occurrence of either A  (or) B denoted by P(AUB) shall be given by</li>
+                </ul>
+                <p>            P(AÈB) = P(A) + P(B)<br />
+                  P(E1ÈE2È….ÈEn)  = P (E1) + P (E2) + …… + P (En) <br />
+                  If E1, E2, ….,  En are mutually exclusive events.</p>
+                <p><strong>Example  1:</strong> Two dice are tossed.  What is the probability of getting (i) Sum  6    (ii) Sum 9?<br />
+                    <strong>Solution</strong><br />
+                  When  2 dice are tossed.  The exhaustive number  of cases is 36 ways.<br />
+  <strong>(i)  Sum 6 </strong>= {(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)}<br />
+  <strong>            </strong>\ Favourable number of cases = 5<br />
+                  P  (Sum 6) = <img width="23" height="41" src="lec06_clip_image012.gif" /><br />
+  <strong>(ii)  Sum 9 </strong>= {(3, 6), (4, 5), (5, 4), (6, 3)}<br />
+  <strong>            </strong>\  Favourable number of cases = 4<br />
+                  P  (Sum 9) = <img width="23" height="41" src="lec06_clip_image014.gif" />= <img width="15" height="41" src="lec06_clip_image016.gif" /></p>
+                <p><strong>Example  2:</strong> A card is drawn from a pack of cards.  What is a probability of getting (i) a king (ii)  a spade (iii) a red card (iv) a numbered card?</p>
+                <p><strong>Solution</strong><br />
+                  There  are 52 cards in a pack.<br />
+                  One can be selected in 52C1  ways.<br />
+                  \  Exhaustive number of cases is = 52C1 = 52.<br />
+  <strong>(i)  A king </strong> <br />
+                  There  are 4 kings in a pack.<br />
+                  One king can be selected in 4C1  ways.<br />
+                  \  Favourable number of cases is = 4C1 = 4<br />
+                  Hence the probability of getting a  king = <img width="23" height="41" src="lec06_clip_image018.gif" /><br />
+  <strong>(ii)  A spade</strong><br />
+                  There  are 13 kings in a pack.<br />
+                  One spade can be selected in 13C1  ways.<br />
+                  \  Favourable number of cases is = 13C1 = 13<br />
+                  Hence the probability of getting a  spade = <img width="23" height="41" src="lec06_clip_image020.gif" /><br />
+  <strong>(iii)  A red card  </strong><br />
+                  There are 26  kings in a pack.<br />
+                  One red card can be selected in 26C1  ways.<br />
+                  \  Favourable number of cases is = 26C1 = 26<br />
+                  Hence the probability of getting a  red card = <img width="24" height="41" src="lec06_clip_image022.gif" /><br />
+  <strong>(iv)  A numbered card</strong><br />
+                  There are 36  kings in a pack.<br />
+                  One numbered card can be selected  in 36C1 ways.<br />
+                  \  Favourable number of cases is = 36C1 = 36<br />
+                  Hence the probability of getting a  numbered card = <img width="23" height="41" src="lec06_clip_image024.gif" /><br />
+  <strong>Example  3:</strong> What is the probability of getting 53  Sundays when a leap year selected at random?</p>
+                <p><strong>Solution</strong><br />
+            A  leap year consists of 366 days.<br />
+This has 52 full weeks and 2 days  remained.<br />
+The remaining 2 days have the  following possibilities.<br />
+<br />
+(i) Sun. Mon (ii) Mon, Tues    (iii) Tues, Wed (iv) Wed, Thurs (v) Thurs, Fri (vi) Fri, Sat (vii)  Sat, Sun.<br />
+            In  order that a lap year selected at random should contain 53 Sundays, one of the  2 over days must be Sunday.<br />
+\  Exhaustive number of cases is = 7<br />
+\  Favourable number of cases is = 2<br />
+\  Required Probability is = <img width="16" height="41" src="lec06_clip_image002_0000.gif" /></p>
+                <p><strong>Conditional  Probability</strong><br />
+                    <strong>            </strong>Two  events A and B are said to be dependent, when B can occur only when A is known  to have occurred (or vice versa).  The  probability attached to such an event is called the conditional probability and  is denoted by P (A/B) (read it as: A given B) or, in other words, probability  of A given that B has occurred.<br />
+                  <img width="191" height="44" src="lec06_clip_image004_0002.gif" /><br />
+                  If two events A and B are <strong>dependent</strong>, then the conditional  probability of B given A is,<br />
+                  <img width="193" height="44" src="lec06_clip_image006_0000.gif" /></p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Theorems  of Probability</strong><br />
+                  There  are two important theorems of probability namely,</p>
+                <ul>
+                  <li>The addition theorem on  probability</li>
+                  <li>The multiplication  theorem on probability.</li>
+                </ul>
+                <p><strong>I.  Addition Theorem</strong> <strong>on Probability</strong><br />
+                  (i)   Let A and B be any two events which are <strong>not mutually exclusive</strong><br />
+  <strong>            </strong>P  (A or B) = P (AÈB)  = P (A + B) = P (A) + P (B) – P (AÇB)      (or)<br />
+                  = P (A) + P (B) – P (AB)<br />
+  <strong>Proof</strong><br />
+  <img width="431" height="244" src="lec06_clip_image008.jpg" /></p>
+                <p><img width="490" height="265" src="lec06_clip_image010.jpg" /><br />
+                  (ii)  Let A and B be any two events which are <strong>mutually exclusive</strong><br />
+  <strong>            </strong>P  (A or B) = P (AÈB)  = P (A + B) = P (A) + P (B)</p>
+                <p><strong>Proof</strong> <br />
+                    <img width="225" height="132" src="lec06_clip_image012.jpg" /></p>
+                <p>We know that,<strong>   </strong>n (AÈB) = n (A) + n (B)<br />
+                  P (AÈB) = <img width="67" height="41" src="lec06_clip_image014_0000.gif" /><br />
+                  = <img width="83" height="41" src="lec06_clip_image016_0000.gif" /><strong></strong><br />
+  <strong>                = </strong><img width="85" height="41" src="lec06_clip_image018_0000.gif" /><br />
+                  P (AÈB) = P (A) + P (B)<strong></strong></p>
+                <p><strong>Note</strong><br />
+                  (i)  In the case of 3 events, <strong>(not mutually exclusive events)</strong><br />
+                  P (A or B or C) = P (AÈBÈC)  = P (A + B + C) <br />
+                  = P (A) + P (B) + P (C) – P (AÇB)  – P (BÇC)  – P (AÇC)  + P (AÇBÇC)<br />
+                  (ii)  In the case of 3 events, <strong>(mutually exclusive events)</strong><br />
+                  P (A or B or C) = P (AÈBÈC)  = P (A + B + C) = P (A) + P (B) + P (C)</p>
+                <p><strong>Example</strong><br />
+                  Using the additive law of  probability we can find the probability that in one roll of a die, we will  obtain either a one-spot or a six-spot. The probability of obtaining a one-spot  is 1/6. The probability of obtaining a six-spot is also 1/6. The probability of  rolling a die and getting a side that has both a one-spot with a six-spot is 0.  There is no side on a die that has both these events. So substituting these  values into the equation gives the following result:<br />
+  <img width="179" height="41" src="lec06_clip_image020_0000.gif" /><br />
+                  Finding the probability of drawing a 4 of  hearts or a 6 or any suit using the additive law of probability would give the  following:<br />
+                  <img width="175" height="41" src="lec06_clip_image022_0000.gif" /><br />
+                  There is only a single 4 of hearts, there are  4 sixes in the deck and there isn't a single card that is both the 4 of hearts  and a six of any suit.<br />
+                  Now  using the additive law of probability, you can find the probability of drawing  either a king or any club from a deck of shuffled cards. The equation would be  completed like this:<br />
+  <img width="185" height="41" src="lec06_clip_image024_0000.gif" /><br />
+                  There  are 4 kings, 13 clubs, and obviously one card is both a king and a club. We don't  want to count that card twice, so you must subtract one of it's occurrences  away to obtain the result.</p>
+                <p><strong>II.  Multiplication Theorem on Probability</strong><br />
+                  (i)   If A and B be any two events which are <strong>not independent</strong>, then (i.e.) <strong>dependent</strong>.<br />
+  <img width="69" height="12" src="lec06_clip_image025.gif" />            P (A and B) = P (AÇB)  = P (AB) = P (A). P (B/A)                (I)<br />
+  <img width="69" height="12" src="lec06_clip_image026.gif" />                                                                = P (B). P (A/B)                   (II)<br />
+                  Where  P (B/A) and P (A/B) are the conditional probability of B given A and A given B  respectively.</p>
+                <p><strong>Proof</strong><br />
+                  Let n is the  total number of events<br />
+                  n  (A) is the number of events in A<br />
+                  n  (B) is the number of events in B<br />
+                  n  (AÈB)  is the number of events in (AÈB)<br />
+                  n  (AÇB)  is the number of events in (AÇB)<br />
+  <strong>            </strong><br />
+                  P (AÇB)  = <img width="67" height="41" src="lec06_clip_image028.gif" /><br />
+                  <img width="127" height="44" src="lec06_clip_image030.gif" /><br />
+                  <img width="127" height="44" src="lec06_clip_image032.gif" /><br />
+  <img width="69" height="12" src="lec06_clip_image026_0000.gif" />            P (AÇB) = P (A). P (B/A)                      (I)</p>
+                <p>P (AÇB) <img width="79" height="41" src="lec06_clip_image034.gif" /><br />
+                  <img width="129" height="44" src="lec06_clip_image036.gif" /><br />
+                  <img width="125" height="44" src="lec06_clip_image038.gif" /><br />
+  <img width="69" height="12" src="lec06_clip_image026_0001.gif" />            P (AÇB) = P (B). P (A/B)                      (II)</p>
+                <p><strong>&nbsp;</strong></p>
+                <p>(ii)  If A and B be any two events which are <strong>independent</strong>, then, <br />
+                  P  (B/A) = P (B) and P (A/B) = P (A)<br />
+                  P (A and B) = P (AÇB)  = P (AB) = P (A) . P (B) </p>
+                <p><strong>Note</strong><br />
+                  (i)  In the case of 3 events, <strong>(dependent)</strong>        <br />
+                  P (AÇBÇC) = P (A). P (B/A). P (C/AB)</p>
+                <p>(ii)  In the case of 3 events, <strong>(independent)</strong><br />
+                  P (AÇBÇC) = P (A). P (B). P (C)</p>
+                <p><strong>Example</strong><br />
+                  So  in finding the probability of drawing a 4 and then a 7 from a well shuffled  deck of cards, this law would state that we need to multiply those separate  probabilities together. Completing the equation above gives: <br />
+  <img width="257" height="41" src="lec06_clip_image040.gif" /><br />
+                  Given a well shuffled deck of cards,  what is the probability of drawing a Jack of Hearts, Queen of Hearts, King of  Hearts, Ace of Hearts, and 10 of Hearts?<br />
+  <img width="440" height="41" src="lec06_clip_image042.gif" /><br />
+                  In any case, given a well shuffled deck of  cards, obtaining this assortment of cards, drawing one at a time and returning  it to the deck would be highly unlikely (it has an exceedingly low  probability).</p>
+                <table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec06.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec06.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<p></p>
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

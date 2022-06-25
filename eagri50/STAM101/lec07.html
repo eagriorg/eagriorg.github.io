@@ -1,0 +1,404 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 07</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 07 :: </span>Poisson Distributions - properties, Normal  Distributions- properties</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="left"><strong>Theoretical  distributions are</strong></p>
+				<p><img src="34235" /></p>
+                 <p align="center">Poisson<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Poisson.mp4" type="video/mp4">
+</video></p>
+  <p align="center">Normal Distribution_ Empirical Rule<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Normal&#32;Distribution_&#32;Empirical&#32;Rule.mp4" type="video/mp4">
+</video></p>
+  <p align="center">Normal Distribution Qualitative sense of normal distributions<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Normal&#32;Distribution&#32;Qualitative&#32;sense&#32;of&#32;normal&#32;distributions.mp4" type="video/mp4">
+</video></p>
+ <p align="center">Standard Normal Distribution and the Empirical Rule<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Standard&#32;Normal&#32;Distribution&#32;and&#32;the&#32;Empirical&#32;Rule.mp4" type="video/mp4">
+</video></p>
+	      <p><strong>Discrete Probability distribution</strong><br />
+                    <strong>Bernoulli distribution</strong><br />
+                  A random variable x takes two values  0 and 1, with probabilities q and p ie., p(x=1) = p and p(x=0)=q, q-1-p is  called a Bernoulli variate and is said to be Bernoulli distribution where p and  q are probability of success and failure. It was given by Swiss mathematician  James Bernoulli (1654-1705)<br />
+  <strong>Example</strong></p>
+                <ul>
+                  <li>Tossing a coin(head or  tail)</li>
+                  <li>Germination of  seed(germinate or not)</li>
+                </ul>
+                <p><strong>Binomial distribution</strong><br />
+                  Binomial  distribution was discovered by James Bernoulli (1654-1705). Let a random  experiment be performed repeatedly and the occurrence of an event in a trial be  called as success and its non-occurrence is failure. Consider a set of n  independent trails (n being finite), in which the probability p of success in  any trail is constant for each trial. Then q=1-p is the probability of failure  in any trail.<br />
+                  The probability of x success and  consequently n-x failures in n independent trails. But x successes in n trails  can occur in ncx ways. Probability for each of these ways is pxqn-x. <br />
+                  P(sss…ff…fsf…f)=p(s)p(s)….p(f)p(f)….<br />
+                  = p,p…q,q…<br />
+                  = (p,p…p)(q,q…q)<br />
+                  (x times) (n-x times)<br />
+                  Hence  the probability of x success in n trials is given by<br />
+                  ncx  pxqn-x <br />
+  <strong>Definition</strong><br />
+                  A random variable x is said to  follow binomial distribution if it assumes non-negative values and its  probability mass function is given by<br />
+  <img width="17" height="133" src="lec07_clip_image003.gif" />P(X=x) =p(x) =          <br />
+                  ncx  pxqn-x  ,          x=0,1,2…n<br />
+                  q=1-p<br />
+                  0,                     otherwise<br />
+                  The  two independent constants n and p in the distribution are known as the  parameters of the distribution.<br />
+  <strong>Condition for Binomial distribution</strong><br />
+                  We get the binomial distribution  under the following experimentation conditions</p>
+                <ul>
+                  <li>The number of trial n  is finite</li>
+                  <li>The trials are  independent of each other.</li>
+                  <li>The probability of  success p is constant for each trial.</li>
+                  <li>Each trial must result  in a success or failure.</li>
+                  <li>The events are discrete  events.</li>
+                </ul>
+                <p><strong>Properties</strong></p>
+                <ul>
+                  <li>If p and q are equal,  the given binomial distribution will be symmetrical. If p and q are not equal,  the distribution will be skewed distribution.</li>
+                  <li>Mean = E(x) = np</li>
+                  <li>Variance =V(x) =  npq   (mean&gt;variance)</li>
+                </ul>
+                <p><strong>Application</strong></p>
+                <ul>
+                  <li>Quality control  measures and sampling process in industries to classify items as defectives or  non-defective.</li>
+                  <li>Medical applications  such as success or failure, cure or no-cure.</li>
+                </ul>
+                <p><strong>Example  1</strong><br />
+                  Eight  coins are tossed simultaneously. Find the probability of getting atleast six  heads.<br />
+  <strong>Solution</strong><br />
+                  Here  number of trials, n = 8, p denotes the probability of getting a head.<br />
+                  \ <img width="40" height="41" src="lec07_clip_image005.gif" />and <img width="40" height="41" src="lec07_clip_image007.gif" /><br />
+                  If  the random variable X denotes the number of heads, then the probability of a  success in n trials is given by<br />
+                  P(X  = x) = ncx px qn-x ,  <em>x </em>= 0 , 1, 2, ..., n<br />
+  <img width="253" height="49" src="lec07_clip_image009.gif" /></p>
+                <p><img width="119" height="41" src="lec07_clip_image011.gif" /><br />
+                  Probability  of getting atleast six heads is given by<br />
+                  P(x  ³ 6) = P(x = 6) + P(x = 7) + P(x = 8)<br />
+  <img width="240" height="41" src="lec07_clip_image013.gif" /><br />
+  <img width="209" height="41" src="lec07_clip_image015.gif" /><br />
+  <img width="203" height="41" src="lec07_clip_image017.gif" /><br />
+  <strong>Example  2 </strong>Ten coins are tossed simultaneously.  Find the probability of getting (i) atleast seven heads (ii) exactly seven  heads (iii) atmost seven heads<br />
+  <strong>Solution</strong><br />
+                  p  = Probability of getting a head = <img width="20" height="41" src="lec07_clip_image019.gif" />2<br />
+                  q  = Probability of not getting a head =<img width="20" height="41" src="lec07_clip_image019_0000.gif" /> <br />
+                  The  probability of getting x heads throwing 10 coins simultaneously is given by<br />
+                  P(X  = x) = nCx px qn-x. , x = 0, 1, 2, ..., n<br />
+  <img width="277" height="49" src="lec07_clip_image022.gif" /><br />
+                  <img width="129" height="41" src="lec07_clip_image024.gif" /><br />
+                  i)  Probability of getting atleast seven heads<br />
+                  P(x  ³ 7) = P (x = 7) + P(x = 8) + P (x = 9) +  P (x =10)<br />
+  <img width="285" height="41" src="lec07_clip_image026.gif" /><br />
+  <img width="269" height="41" src="lec07_clip_image028.gif" /><br />
+                  ii)  Probability of getting exactly 7 heads<br />
+  <img width="139" height="41" src="lec07_clip_image030.gif" /><img width="80" height="41" src="lec07_clip_image032.gif" /><img width="49" height="41" src="lec07_clip_image034.gif" /><strong></strong><br />
+                  iii)  Probability of getting almost 7 heads<br />
+                  P(x  £ 7) = 1 – P(x &gt; 7)<br />
+                  = 1 symbol {P(x = 8) + P (x =  9) + P(x = 10)}<br />
+                  <img width="197" height="41" src="lec07_clip_image036.gif" /><br />
+                  <img width="136" height="41" src="lec07_clip_image038.gif" /><br />
+                  <img width="71" height="41" src="lec07_clip_image040.gif" /><br />
+                  <img width="55" height="41" src="lec07_clip_image042.gif" /><br />
+  <strong>Example  3:</strong>20 wrist watches in a box of 100 are  defective. If 10 watches are selected at random, find the probability that (i)  10 are defective (ii) 10 are good (iii) at least one watch is defective (iv) at  most 3 are defective.<br />
+  <strong>Solution</strong><br />
+                  20  out of 100 wrist watches are defective<br />
+                  Probability  of defective wrist watch, p <img width="73" height="41" src="lec07_clip_image044.gif" /><br />
+  <img width="83" height="41" src="lec07_clip_image046.gif" /><br />
+                  Since  10 watches are selected at random, n =10<br />
+                  P(X  = x) = nCx px qn-x, x = 0, 1, 2, ..., 10<br />
+  <img width="187" height="49" src="lec07_clip_image048.gif" /><br />
+                  i)  Probability of selecting 10 defective watches<br />
+                  P(  x =10) = <img width="225" height="49" src="lec07_clip_image050.gif" /><br />
+                  ii)  Probability of selecting 10 good watches (i.e. no defective)<br />
+                  P(x  = 0) = <img width="115" height="49" src="lec07_clip_image052.gif" /><br />
+                  =<img width="120" height="49" src="lec07_clip_image054.gif" /></p>
+                <p>iii)  Probability of selecting at least one defective watch<br />
+                  P(x  ³ 1) = 1 – P(x &lt; 1)<br />
+                  =  1 – P(x = 0)<br />
+                  =  1 - <img width="115" height="49" src="lec07_clip_image052_0000.gif" /><br />
+                  =1-<img width="40" height="49" src="lec07_clip_image057.gif" /><br />
+                  iv)  Probability of selecting at most 3 defective watches<br />
+                  P  (x 3) = P (x = 0) + P(x =1) + P(x = 2) + P(x = 3)<br />
+                  =<img width="115" height="49" src="lec07_clip_image052_0001.gif" /><img width="108" height="49" src="lec07_clip_image059.gif" /><img width="111" height="49" src="lec07_clip_image061.gif" /><img width="111" height="49" src="lec07_clip_image063.gif" /><br />
+                  <img width="397" height="49" src="lec07_clip_image065.gif" /><br />
+                  =  1. (0.107) + 10 (0.026) + 45 (0.0062) + 120 (0.0016)<br />
+                  =  0.859 (approx)</p>
+                <p><strong>Poisson distribution</strong><br />
+                  The Poisson distribution, named  after Simeon Denis Poisson (1781-1840). Poisson distribution is a discrete  distribution. It describes random events that occurs rarely over a unit of time  or space.<br />
+                It differs from the binomial  distribution in the sense that we count the number of success and number of  failures, while in Poisson distribution, the average number of success in given  unit of time or space.</p>
+               <p align="center"><a href="videos/The&#32;Poisson&#32;Distribution.mp4" target="_blank">The Poisson Distribution</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/The&#32;Poisson&#32;Distribution.mp4" type="video/mp4">
+</video></p>  <p>
+                  <strong>Definition</strong><br />
+                  The probability that exactly x  events will occur in a given time is as follows<br />
+                  P(x) = <img width="45" height="44" src="lec07_clip_image067.gif" />, x=0,1,2…<br />
+                  called  as probability mass function of Poisson distribution.<br />
+                  where λ is the average number of  occurrences per unit of time<br />
+                  λ = np<br />
+                  <strong>Condition for Poisson distribution</strong><br />
+                  <strong>            </strong>Poisson distribution is  the limiting case of binomial distribution under the following assumptions.</p>
+                <ul>
+                  <li>The number of trials n  should be indefinitely large ie., n-&gt;∞</li>
+                  <li>The probability of  success p for each trial is indefinitely small.</li>
+                  <li>np= λ, should be finite  where λ is constant.</li>
+                </ul>
+                <p><strong>Properties</strong></p>
+                <ul>
+                  <li>Poisson distribution is  defined by single parameter λ.</li>
+                  <li>Mean = λ</li>
+                  <li>Variance = λ. Mean and  Variance are equal.</li>
+                </ul>
+                <p> <strong>Application</strong></p>
+                <ul>
+                  <li>It is used in quality  control statistics to count the number of defects of an item.</li>
+                  <li>In biology, to count  the number of bacteria.</li>
+                  <li>In determining the  number of deaths in a district in a given period, by rare disease.</li>
+                  <li>The number of error per  page in typed material.</li>
+                  <li>The number of plants  infected with a particular disease in a plot of field.</li>
+                  <li>Number of weeds in  particular species in different plots of a field.                                     </li>
+                </ul>
+                <p><strong>Example  4: </strong>Suppose on an average 1 house in 1000 in  a certain district has a fire during a year. If there are 2000 houses in that  district, what is the probability that exactly 5 houses will have a fire during  the year? [given that e-2 = 0.13534]<br />
+                    <strong>Solution:</strong><br />
+                  Mean, <img width="15" height="17" src="lec07_clip_image069.gif" />= np , n = 2000  and p =<img width="37" height="41" src="lec07_clip_image071.gif" /> <br />
+                  <img width="97" height="41" src="lec07_clip_image073.gif" /></p>
+                <p>                 l=2<br />
+                  The  Poisson distribution is<br />
+  <img width="117" height="44" src="lec07_clip_image075.gif" /><br />
+  <img width="116" height="44" src="lec07_clip_image077.gif" /><br />
+  <strong>            </strong> <img width="113" height="41" src="lec07_clip_image079.gif" /><br />
+  <strong>                         = 0.036</strong><br />
+  <strong>Example  5</strong><br />
+                  If 2% of electric bulbs manufactured by  a certain company are defective. Find the probability that in a sample of 200  bulbs i) less than 2 bulbs ii) more than 3 bulbs are defective.[e-4 = 0.0183]<br />
+  <strong>Solution</strong><br />
+                  The  probability of a defective bulb <img width="111" height="41" src="lec07_clip_image081.gif" /><br />
+                  Given  that n = 200 since p is small and n is large<br />
+                  We  use the Poisson distribution<br />
+                  mean,  m = np = 200 ´ 0.02 = 4<br />
+                  Now,  Poisson Probability function, <img width="116" height="44" src="lec07_clip_image083.gif" /><br />
+                  i)  Probability of less than 2 bulbs are defective<br />
+                  = P(X&lt;2)<br />
+                  = P(x = 0) + P(x = 1)<br />
+                  = e- 4 + e- 4 (4)<br />
+                  = e- 4 (1 + 4) = 0.0183 ´ 5<br />
+                  = 0.0915<br />
+                  ii)  Probability of getting more than 3 defective bulbs<br />
+                  P(x  &gt; 3) = 1- P(x £ 3)<br />
+                  =  1- {P(x = 0) + P(x =1) + P(x=2) + P(x=3)}<br />
+  <img width="171" height="51" src="lec07_clip_image085.gif" /><br />
+                  =  1- {0.0183 ´ (1  + 4 + 8 + 10.67)}<br />
+                  =  0.567<br />
+  <strong>Normal distribution</strong><br />
+                  Continuous  Probability distribution is normal distribution. It is also known as error law  or Normal law or Laplacian law or Gaussian distribution. Many of the sampling  distribution like student-t, f distribution and χ2 distribution.<br />
+  <strong>Definition</strong><br />
+                  A continuous random variable x is  said to be a normal distribution with parameters µ and σ2, if the  density function is given by the probability law<br />
+                  f(x)=<img width="129" height="72" src="lec07_clip_image087.gif" />; -¥  &lt; x &lt; ¥,  -¥  &lt; m  &lt; ¥,  s  &gt;0<br />
+  <strong>Note</strong><br />
+                  The  mean and standard deviation are called the parameters of Normal  distribution. The normal distribution is expressed by X N(, 2)<br />
+  <strong>Condition  of Normal Distribution</strong><br />
+                  i)  Normal distribution is a limiting form of the binomial distribution under the  following conditions.<br />
+                  a)  n, the number of trials is indefinitely large ie., nand<br />
+                  b)  Neither p nor q is very small.<br />
+                  ii)  Normal distribution can also be obtained as a limiting form of Poisson  distribution with parameter m<br />
+                  iii)  Constants of normal distribution are mean = , variation =2, Standard  deviation = .</p>
+                <p><strong>Normal  probability curve</strong><br />
+                  The  curve representing the normal distribution is called the normal probability  curve. The curve is symmetrical about the mean (), bell-shaped and the two  tails on the right and left sides of the mean extends to the infinity. The  shape of the curve is shown in the following figure. <br />
+  <img width="184" height="75" src="lec07_clip_image088.gif" />&nbsp;</p>
+                <p>&nbsp;</p>
+                <br clear="all" />
+                <p>              - x = </p>
+                <p><strong>Properties  of normal distribution</strong><br />
+                  1.  The normal curve is bell shaped and is symmetric at x = .<br />
+                  2.  Mean, median, and mode of the distribution are coincide<br />
+                  i.e., Mean = Median = Mode = <br />
+                  3.  It has only one mode at x = (i.e., unimodal)<br />
+                  4.  The points of inflection are at x = <br />
+                  5.  The maximum ordinate occurs at x = and its value is =<img width="49" height="44" src="lec07_clip_image090.gif" /><br />
+                  6.  Area Property P(- &lt; &lt; + ) = 0.6826<br />
+                  P(- 2&lt;  &lt; + 2) = 0.9544<br />
+                  P(- 3&lt;  &lt; + 3) = 0.9973</p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Standard  Normal distribution</strong><br />
+                  Let X be random variable which follows  normal distribution with mean and variance 2 .The standard normal variate is  defined as <img width="75" height="41" src="lec07_clip_image092.gif" /> which follows standard  normal distribution with mean 0 and standard deviation 1 i.e., Z N(0,1). The  standard normal distribution is given by  <img width="136" height="61" src="lec07_clip_image094.gif" /> ; -&lt; z&lt; <br />
+                  The advantage of the above function is  that it doesn’t contain any parameter. This enables us to compute the area  under the normal probability curve.</p>
+                <p><strong>Note</strong><br />
+                    <strong>Property  of <img width="36" height="21" src="lec07_clip_image096.gif" /></strong></p>
+                <ul>
+                  <li><strong><img width="113" height="21" src="lec07_clip_image098.gif" /></strong> </li>
+                  <li><img width="176" height="21" src="lec07_clip_image100.gif" /> </li>
+                </ul>
+                <p><strong>Example 6:</strong> In a normal distribution whose mean is 12 and standard deviation is 2. Find the  probability for the interval from x = 9.6 to x = 13.8<br />
+                    <strong>Solution</strong><br />
+                  Given that Z~ N  (12, 4)<br />
+  <img width="300" height="45" src="lec07_clip_image102.gif" /><br />
+                  = P(-1.2 ≤ Z ≤  0)+P(0 ≤ Z ≤ 0.9)<br />
+                  = P(0≤ Z ≤ 1.2)+P(0  ≤ Z ≤ 0.9)    [by using symmetric  property]<br />
+                  =0.3849 +0.3159<br />
+                  =0.7008<br />
+                  When it is  converted to percentage (ie) 70% of the observations are covered between 9.6 to  13.8.<br />
+  <strong>Example 7:</strong> For a normal distribution whose mean is 2 and standard deviation 3. Find the  value of the variate such that the probability of the variate from the mean to  the value is 0.4115<br />
+  <strong>Solution:</strong><br />
+                  Given that Z~ N  (2, 9)<br />
+                  To find X1:<br />
+                  We have P (2 ≤ Z  ≤X1) =0.4115<br />
+  <img width="283" height="48" src="lec07_clip_image104.gif" /><br />
+                  P (0 ≤ Z ≤ Z1) =0.4115  where  <img width="83" height="43" src="lec07_clip_image106.gif" /><br />
+                  [From the normal  table where 0.4115 lies is rthe value of Z1]<br />
+                  Form the normal  table we have Z1=1.35<br />
+                  <img width="105" height="43" src="lec07_clip_image108.gif" /> <br />
+                  Þ3(1.35)+2=X1<br />
+                  =X1=6.05<br />
+                (i.e) 41 % of  the observation converged between 2 and 6.05				</p>
+                <table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec07.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec07.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

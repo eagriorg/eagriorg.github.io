@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FMP 211  :: Lecture 03</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/FMP211/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">FMP 211  :: Lecture 03 ::</span>DIFFERENT SYSTEMS OF IC ENGINE – COOLING, LUBRICATING, FUEL INJECTION SYSTEMS</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p>
+			    Different systems available for efficient functioning of an engine are as follows</p>
+                <ol>
+                  <li>fuel supply system</li>
+                  <li>lubrication system</li>
+                  <li>ignition system</li>
+                  <li>cooling system</li>
+                  <li>governor</li>
+                </ol>
+                <p> Fuel is a substance consumed by the engine to produce power. The common fuel for Internal Combustion engines are</p>
+                <ol>
+                  <li>Petrol</li>
+                  <li>Power kerosene</li>
+                  <li>High speed diesel</li>
+                </ol>
+                <p><strong>Calorific value of fuel</strong><br />
+                  The heat liberated by combustion of a fuel is known as calorific value or heat value of the fuel. It is expressed in kcal/kg of the fuel</p>
+                <table width="80%" border="1" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top"><strong>Sl. No</strong></td>
+                    <td valign="top"><p><strong>Name of fuel</strong></p></td>
+                    <td valign="top"><p><strong>Calorific value, kcal/kg</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>1</p></td>
+                    <td valign="top"><p>Light Diesel Oil (L.D.O)</p></td>
+                    <td valign="top"><p>10300</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>2</p></td>
+                    <td valign="top"><p>High speed diesel oil (HSD)</p></td>
+                    <td valign="top"><p>10550</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>3</p></td>
+                    <td valign="top"><p>Power kerosene</p></td>
+                    <td valign="top"><p>10850</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>4</p></td>
+                    <td valign="top"><p>Petrol</p></td>
+                    <td valign="top"><p>11100</p></td>
+                  </tr>
+                </table>
+                <p><strong>FUEL SUPPLY SYSTEM IN SPARK IGNITION ENGINE</strong><br />
+                  The fuel supply system of spark ignition engine consists of<br />
+                  1. Fuel tank  2. Sediment bowl<br />
+                  3. Fuel lift pump 4. Carburetor<br />
+                  5. Fuel pipes<br />
+                In some spark ignition engines the fuel tank is placed above the level of the carburetor. The fuel flows from fuel tank to the carburetor under the action of gravity. There are one or two filters between fuel tank and carburetor. A transparent sediment bowl is also provided to hold the dust and dirt of the fuel. If the tank is below the level of carburetor, a lift pump is provided in between the tank and the carburetor for forcing fuel from tank to the carburetor of the engine. The fuel comes from fuel tank to sediment bowl and then to the lift pump. From there the fuel goes to the carburetor through suitable pipes. From carburetor the fuel goes to the engine cylinder through inlet manifold of the engine.</p>
+                <center><img width="258" height="171" src="lec03_clip_image002.png" /></center>
+                <p><strong>Carburetor</strong><br />
+                  <strong> </strong>The process of preparing air-fuel mixture away from the engine cylinder is called carburetion. and the device in which this process takes is called carburetor.<br />
+                  <strong>Functions of carburetor</strong></p>
+                <ol>
+                  <li>To mix the air and fuel thoroughly</li>
+                  <li>To atomize the fuel</li>
+                  <li>To regulate the air- fuel ratio at different speeds and loads on the engine.</li>
+                  <li>to supply correct amount of mixture at different speeds and loads</li>
+                </ol>
+                <p><strong>FUEL SUPPLY SYSTEM IN DIESEL ENGINE</strong><br />
+                  Fuel supply system of diesel engine consists of the following components</p>
+                <ol>
+                  <li>Fuel tank</li>
+                  <li>Fuel lift pump or fuel feed pump</li>
+                  <li>Fuel filter</li>
+                  <li>Fuel injection pump</li>
+                  <li>High pressure pipe</li>
+                  <li>Over flow valve</li>
+                  <li>Fuel injector</li>
+                </ol>
+                <p>Fuel is drawn from fuel tank by fuel feed pump and forced to injection pump through fuel filter. The injection pump supplies high pressure fuel to injection nozzles through delivery valves and high pressure pipes. Fuel is injected into the combustion chamber through injection nozzles. The fuel that leaks out from the injection nozzles passes out through leakage pipe and returns to the fuel tank through the over flow pipe.<br />
+                  Over flow valve installed at the top of the filter keeps the feed pressure under specified limit. If the feed pressure exceeds the specified limit , the over flow valve opens and then the excess fuel returns to fuel tank through over flow pipe.<br />
+ <center> <img width="326" height="191" src="lec03_clip_image004.png" /></center><br />
+  <strong>Fuel tank</strong><br />
+  <strong> </strong>It is a storage tank for diesel. A wire gauge strainer is provided under the cap to prevent foreign particles entering the tank<br />
+  <strong>Fuel lift pump</strong><br />
+  <strong> </strong>It transfers fuel from fuel tank to inlet gallery of fuel injection pump<br />
+  <strong>Preliminary filter (sediment bowl assembly)</strong><br />
+  <strong> </strong>This filter is mostly fitted on fuel lkift pump. It prevents foreign materials from reaching inside he fuel line. It consists of a glass cap with a gasket.<br />
+  <strong>Fuel filter</strong><br />
+                  Mostly two stage filters are used in diesel engines<br />
+                  1. Primary filter  2. Secondary filter<br />
+                  Primary filter removes coarse materials, water and dust. Secondary filter removes fine dust particles.<br />
+  <strong>Fuel injection pump</strong> <br />
+                  It is a high pressure pump which supplies fuel to the injectors according to the firing order of the engine. It is used to create pressure varying from 120 kg/cm2 to 300 kg/cm2. It supplies the required quantity of fuel to each cylinder at appropriate time.<br />
+  <strong>Air venting of fuel system</strong> <br />
+                  When air has entered the fuel lines or suction chamber of the injection pump, venting should be done properly.. Air is removed by the priming pump through the bleeding holes of the injection pump.<br />
+  <strong>Fuel injector</strong> <br />
+                  It is the component which delivers finely atomized fuel under high pressure to combustion chamber of the engine. Modern tractor engines use fuel injectors which have multiple holes. Main parts of injectors are nozzle body, and needle valve. The needle valve is pressed against a conical seat in the nozzle body by a spring. The injection pressure is adjusted by adjusting a screw. In operation, fuel from injection pump enters the nozzle body through high pressure pipe. When fuel pressure becomes so high that it exceeds the set spring pressure, the needle valve lifts off its seat. The fuel is forced out of the nozzle spray holes into the combustion chamber.<br />
+  <strong>LUBRICATION SYSTEM</strong><br />
+                  IC engine is made of moving parts. Duo to continuous movement of two metallic surfaces over each other, there is wearing of moving parts, generation of heat and loss of power in engine. Lubrication of moving parts is essential to prevent all these harmful effects.<br />
+  <strong>Purpose of lubrication-</strong></p>
+                <ol>
+                  <li><strong>Reducing frictional effect</strong></li>
+                  <li><strong>Cooling effect</strong></li>
+                  <li><strong>Sealing effect</strong></li>
+                  <li><strong>Cleaning effect</strong></li>
+                </ol>
+                <p><strong>Types of lubricants</strong><br />
+                  Lubricants are obtained from animal fat, vegetables and minerals. Vegetable lubricants are obtained from seeds, fruits and plants. Cotton seed oil, olive oil, linseed oil, caster oil are used as lubricants. Mineral lubricants are most popular for engines and machines. It is obtained from crude petroleum found in nature.. Petroleum lubricants are less expensive and suitable for internal combustion engines<strong></strong><br />
+  <strong>Engine lubrication system</strong><br />
+                  The lubricating system of an engine is an arrangement of mechanisms which maintains the supply of lubricating oil to the rubbing surfaces of an engine at correct pressure and temperature.<br />
+                  The parts which require lubrication are</p>
+                <ol>
+                  <li>Cylinder walls and piston]</li>
+                  <li>Piston pin</li>
+                  <li>crankshaft and connecting rod bearings</li>
+                  <li>Camshaft bearings</li>
+                  <li>Valve operating mechanism</li>
+                  <li>Cooling fan</li>
+                  <li>Water pump and</li>
+                  <li>Ignition mechanism</li>
+                </ol>
+                <p><strong>Types of lubricating systems</strong></p>
+                <ol>
+                  <li>Splash system</li>
+                  <li>Forced feed system</li>
+                </ol>
+                <p><strong>IGNITION SYSTEM</strong><br />
+                  Fuel mixture of IC engine must be ignited in the engine cylinder at proper time for useful work.&nbsp; Arrangement of different components for providing ignition at proper time in the engine cylinder is called Ignition system<br />
+                  Types of ignition systems</p>
+                <ol>
+                  <li>Ignition by electric spark or spark ignition</li>
+                  <li>Ignition by heat of compression or compression ignition</li>
+                  <li>Ignition by hot tube or hot bulb</li>
+                  <li>Ignition by open fire</li>
+                </ol>
+                <p>Only the first two are important methods for modern engines<br />
+                  <strong>SPARK IGNITION</strong><br />
+                  The purpose of spark ignition is to deliver a perfectly timed surge of electricity across an open gap in each cylinder at the exact moment so that the charge may start burning with maximum efficiency<br />
+                  Two types of spark ignition are a) Battery ignition b) magneto ignition<br />
+  <strong>MAGNETO IGNITION SYSTEM</strong><br />
+ <center> <img width="290" height="309" src="lec03_clip_image006.png" /></center></p>
+                <p>In magneto ignition system a magneto is used to generate electric current for producing spark. A high tension magneto generates a very high voltage needed for spark plug<br />
+                  <strong>Main components of magneto ignition system</strong><br />
+                  a) Frame  b) Permanent magnet<br />
+                  c) Armature  d) Soft iron field<br />
+                  e) rotor   f) Primary and secondary winding<br />
+                  g) Breaker points h) Condenser</p>
+                <p> The armature consists of an iron core on which there are two sets of windings 1) Primary 2) Secondary<br />
+                The armature is driven by the engine. As the armature rotates, primary windings cut the lines of force of magnetic field and an induced current flows in the primary circuit. As the primary current reaches its maximum value in each direction, the primary circuit is suddenly opened by a contact breaker and the current collapses. This action induces a very high voltage in the secondary winding which causes a momentary spark to jump at the spark plug gap. A distributor is provided which carries current to the spark plug through high tension wires. The condenser is used to eliminate the arching at the breaker points and intensifying the current in the secondary circuit. For multi cylinder engines, a distributor and a rotor are required to distribute the current to different spark plugs.</p>
+                <table width="100%" border="0">
+                  <tr>
+                    <td align="center"><img width="222" height="131" src="lec03_clip_image008.png" /></td>
+                    <td align="center"><img width="192" height="197" src="lec03_clip_image010.png" /></td>
+                  </tr>
+                  <tr>
+                    <td align="center"><strong>Magneto ignition system</strong></td>
+                    <td align="center">  <strong>Magneto ignition system</strong></td>
+                  </tr>
+                </table>
+               
+                <p>
+                  <strong>COOLING SYSTEM</strong><br />
+                  Fuel is burnt inside the cylinder of an internal combustion engine to produce power. The temperature produced on the power stroke of an engine can be as high as 1600 ºC&nbsp; and this is greater than melting point of engine parts.. The best operating temperature of IC engines lie between 140 F and 200&nbsp; ºF and hence cooling of an IC engine is highly essential. . It is estimated that about 40% of total heat produced is passed to atmosphere via exhaust, 30% is removed by cooling and about 30% is used to produce power.<br />
+  <strong>Purpose of cooling</strong></p>
+                <ol>
+                  <li>To maintain optimum temperature of engine for efficient operation under all conditions.</li>
+                  <li>To dissipate surplus heat for protection of engine components like cylinder, cylinder head, piston, piston rings, and valves</li>
+                  <li>To maintain the the lubricating property of oil inside engine</li>
+                </ol>
+                <p><strong>Methods of cooling</strong></p>
+                <ol>
+                  <li>Air cooled system</li>
+                  <li>Water cooled system</li>
+                </ol>
+                <p><strong>AIR COOLING SYSTEM</strong><br />
+                  Air cooled engines are those engines in which heat is conducted from the working components of the engine to the atmosphere directly.<br />
+  <strong>Principle of air cooling-</strong> The cylinder of an air cooled engine has fins to increase the area of contact of air for speedy cooling. The cylinder is normally enclosed in a sheet metal casing called cowling. The fly wheel has blades projecting from its face, so that it acts like a fan drawing air through a hole in the cowling and directed it around the finned cylinder. For maintenance of air cooled system, passage of air is kept clean by removing grasses etc. by a stiff brush of compressed air<br />
+  <strong>Advantages of air cooled engine</strong></p>
+                <ol>
+                  <li>It is simple in design and construction</li>
+                  <li>Water jackets, radiators, water pump, thermostat, pipes, hoses are not required</li>
+                  <li>It is more compact</li>
+                  <li>Lighter in weight</li>
+                </ol>
+                <p><strong>Disadvantages</strong></p>
+                <ol>
+                  <li>There is uneven cooling of engine parts</li>
+                  <li>Engine temperature is generally high during working period</li>
+                </ol><center><img width="207" height="192" src="lec03_clip_image012.png" /></center>
+                <p align="center">Air cooled engine</p>
+                <strong><br clear="all" />
+                </strong>
+                <p><strong>WATER COOLING SYSTEM</strong><br />
+                  Engines using water as cooling medium are called water cooled engines. Water is circulated round the cylinders to absorb heat from the cylinder walls. The heated water is conducted through a radiator to remove the heat and cool the water.<br />
+  <strong>Methods of water cooling</strong></p>
+                <ol>
+                  <li>Open jacket or hopper method</li>
+                  <li>Thermo siphon method</li>
+                  <li>Forced circulation method</li>
+                </ol>
+                <p><strong>1. Open jacket method</strong><br />
+                  <strong> </strong>There is a hopper or jacket containing water which surrounds the engine cylinder. So long as the hopper contains water the engine continues to operate satisfactorily. As soon as the water starts boiling it is replaced by cold water.. The hopper is large enough to run for several hours without refilling. A drain plug is provided in a low accessible position for draining water as and when required.<br />
+                  <strong>2. Thermo siphon method</strong><br />
+                  <strong> </strong>It consists of a radiator, water jacket, fan, temperature gauge and hose connections. The system is based on the principle that heated water which surrounds the cylinder becomes lighter and it rises upwards in liquid column. Hot water goes to the radiator where it passes through tubes surrounded by air. Circulation of water takes place due to the reason that water jacket and radiator are connected at both sides i.e. at top and bottom. A fan is driven with the help of a V belt to suck air through tubes of the radiator unit, cooling radiator water. The disadvantage of the system is that circulation of water is greatly reduced by accumulation of scale or foreign matter in the passage and consequently causing over heating of the engine.<br />
+                  <strong>3. Forced Circulation system</strong><br />
+                  <strong> </strong>In this method, a water pump is used to force water from radiator to the water jacket of the engine. After circulating the entire run of water jacket, water comes back to the radiator where it loses its heat by the process of radiation. To maintain the correct engine temperature , a thermostat valve is placed at the outer end of cylinder head. Cooling liquid is by-passed through the water jacket of th3e engine until the engine attains the desired temperature. The thermostat valve opens and the by-pass is closed, allowing the water to go to the radiator. The system consists of the following components<br />
+                  1. Water pump  2. Radiator<br />
+                  3. Fan    4. Fan-belt<br />
+                  5. Water jacket  6. Thermostat valve<br />
+                  7. Temperature gauge 7. Hose pipe<br />
+  <strong>Water pump</strong><br />
+  <strong> </strong>It is a centrifugal pump. It draws the cooled water from bottom of the radiator and delivers it to the water jackets surrounding the engine..<br />
+  <strong>Thermostat valve</strong><br />
+  <strong> </strong>It is a control valve used in cooling system to control the flow of water when activated by a temperature signal<strong>.</strong><br />
+  <strong>Fan</strong><br />
+  <strong> </strong>The fan is mounted on the water pump shaft. It is driven by the same belt that drives the pump and dynamo. The purpose of radiator is to provide strong draft of air through the radiator to improve engine cooling<br />
+                  Water jacket - Water jackets are passages cored out around the engine cylinder as well as around the valve opening</p>
+                <table width="100%" border="0">
+                  <tr>
+                    <td align="center"><img width="299" height="211" src="lec03_clip_image014.png" /></td>
+                    <td align="center"><img width="290" height="245" src="lec03_clip_image016.png" /></td>
+                  </tr>
+                  <tr>
+                    <td align="center"><strong>Forced Circulation cooling system- Water cooled engine</strong></td>
+                    <td align="center"><strong>Forced Circulation cooling system- Water cooled engine</strong></td>
+                  </tr>
+                </table>
+           
+                <p>                  <strong>GOVERNOR</strong><br />
+                Governor is mechanical device, designed to control the soeed of the engine with in specified limit., used on tractor or stationary engine for</p>
+                <ol>
+                  <ol>
+                    <li>Maintaining a nearly constant speed of engine&nbsp; under different load conditions</li>
+                    <li>Protecting the engine and attached equipments against high speeds, when the load is removed or reduced</li>
+                  </ol>
+                </ol>
+                <p><strong>Types of governors</strong></p>
+                <ol>
+                  <li>Centrifugal governor</li>
+                  <li>Pneumatic governor</li>
+                  <li>Hydraulic governor</li>
+                </ol>
+                <p><strong>Governor regulation</strong><br />
+                  <strong> </strong>The governor is fited on an engine for maintaining a constant speeed , even then some variation in speed is observed at full load and no load conditions. In normal working , a variation of about 100 rev/min is observed between full load and noload conditions for a good governor. Hence it is possible to regulate the governor to maintain a higher or lower speed by changing the tention of the spring . The extent of regulatyion done , is expressed inbterms of percentage called percentage regulation. This is also called speed drop. It is the variation in the engine speed between full load and no load condition. It is usually expressed as percentage of rated speed. This is given by</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; N1 – N2<br />
+                  R =  &nbsp;------------------&nbsp; X 100<br />
+  &nbsp;&nbsp; ( N1 + N2 )/2<br />
+                  Where ,<br />
+                  R – &nbsp;% &nbsp;regulation, <br />
+                  N1 – Speed at no load, rpm<br />
+                  N2 – Speed at full load, rpm<strong></strong></p>
+                <p>Problem- Find the percentage regulation in a governor if speed at no load is 1600 rev/min and at full load is 1500 rev/min</p>
+                <p><strong>Governor hunting</strong><br />
+                  <strong> </strong>Governor hunting is the erratic variation of the speed of the governor when it over compensates for speed changes. When the governor produces a periodic effect on the engine speed like too fast and then too slow, then too fast and so on it is a sign of governor hunting. In such cases it is observed that when the engine speeds up quickly, the governor suddenly responds, the speed drops quickly, the governor again responds and this process is repeated. The reason for governor hunting may be due to incorrect adjustment of fuel pump or carburetor, improper adjustment of the idling screw and excessive friction. Hunting may be due to governor being too stiff or due to some obstruction in free movement of governor components.</p>
+             
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec03.pdf" target="_blank"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec03.pdf" target="_blank" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+</map></p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

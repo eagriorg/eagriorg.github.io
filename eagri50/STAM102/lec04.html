@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STAM 102 :: Lecture 04</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM102/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM 102 :: Lecture 04 ::</span> Computer Viruses, Worms and Vaccines</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h1><strong>Computer Viruses</strong></h1>
+				<p>Computer  virus is a small software program that is designed to spread from one computer  to another and to interfere with computer operation. A true virus is capable of  self replication on a machine. Virus may spread between files or disks.</p>
+				<ol>
+				  <li>There  are estimated 30,000 computer viruses in existence.</li>
+				  <li>Over  300 new ones are created each month.</li>
+				  <li>First  virus was created to show loopholes in software.</li>
+				  <li>Today  almost 87% of all viruses are spread through the internet. </li>
+			    </ol>
+				<p><strong>Symptoms of Virus Attack</strong></p>
+				<ol>
+				  <li>Computer  runs slower than usual</li>
+				  <li> Computer no longer boots up</li>
+				  <li> Screen sometimes flicker</li>
+				  <li> Speaker beeps periodically</li>
+				  <li> System crashes for no reason</li>
+				  <li> Files/directories sometimes disappear</li>
+				  <li> Denial of Service (DoS)</li>
+			    </ol>
+				<p><strong>Types Computer Viruses</strong><strong><u> </u></strong></p>
+				<ol>
+				  <li><strong>Trojan Horse</strong></li>
+				  <ol>
+				    <li>Requires  Windows to work</li>
+				    <li>Once  infected, runs in the background</li>
+			      </ol>
+				  <li><strong>Worm</strong></li>
+				  <ol>
+				    <li>Spread  over network connection</li>
+				    <li>Worms  replicate</li>
+			      </ol>
+				  <li><strong>Macro</strong></li>
+				  <ol>
+				    <li>Specific  to certain applications </li>
+				    <li>Comprise  a high percentage of the viruses</li>
+			      </ol>
+				  <li><strong>E-mail viruses</u></strong></li>
+				  <ol>
+				    <li>An  e-mail virus travels as an attachment to e-mail messages, and usually  replicates itself by automatically mailing itself to dozens of people in the  victim's e-mail address book.</li>
+				    <li>Some  e-mail viruses don't even require a double-click -- they launch when you view  the infected message in the preview pane of your e-mail software.<u></u></li>
+			      </ol>
+			    </ol>
+				<h1><strong>Worms</strong><strong> </strong></h1>
+				<p>A worm  is a small piece of software that uses computer networks and security holes to  replicate itself. A copy of the worm scans the network for another machine that  has a specific security hole. It copies itself to the new machine using the  security hole, and then starts replicating from there, as well.<br />
+				  Worms use computer time and  network bandwidth when they replicate. A worm called <strong>Code Red</strong> made huge headlines in 2001. Experts predicted  that this worm could clog the Internet so effectively that things would  completely grind to a halt.<br />
+				  A worm usually exploits some  sort of <strong>security hole</strong> in a piece of software  or the operating system. For example, the Slammer worm (which caused mayhem in  January 2003) exploited a hole in Microsoft's SQL server. <br />
+				  Worms normally move around  and infect other machines through computer networks. Using a network, a worm  can expand from a single copy incredibly quickly. The Code Red worm replicated  itself more than 250,000 times in approximately nine hours on July 19, 2001.<br />
+				  Protect computer against  viruses:</p>
+				<ol>
+				  <li>Gain  knowledge about viruses</li>
+				  <li>Proper  configurations</li>
+				  <li>Run  only necessary programs</li>
+				  <li>Install  Anti-virus software and update </li>
+			    </ol>
+				<h1><strong>Vaccines</strong></h1>
+				<p>Vaccines  or Antivirus software is a computer program that detects, prevents, and takes  action to disarm or remove malicious software programs, such as viruses and  worms. New viruses, worms, and other threats are created by cyber  terrorists and discovered every day. So updating antivirus software is  periodically mandatory. List  of some top Anti Virus Programs which are veryusefl  to users:</p>
+                <p><strong>Norton AntiVirus</strong> – Norton AntiVirus is the most popular and  secure virus scanner for checking boot sector records  at startup. The live update feature automatically installs new updates for  regular protection against viruses.</p>
+                <p align="center"><img width="326" height="37" src="lec04_clip_image002_0001.jpg" /></p>
+				<p><strong>AVG Free Edition</strong> – AVG Resident Shield provides real-time  protection executions of files and programs. It features a smart e-mail  scanner, virus updates and virus vault for secure  handling of the files which are infected by viruses. The base version  for windows is Free for private and non-commercial use.</p>
+                <p align="center"><img width="137" height="53" src="lec04_clip_image002_0002.jpg" /></p>
+                <p><strong>McAfee VirusScan for  Windows</strong>: This antivirus  package detects all virus types, including Word and Excel macros; boot-sector  infections; and file, multipartite, stealth, polymorphic, and encrypted  viruses.</p>
+                <p align="center"><img width="136" height="32" src="lec04_clip_image002_0003.jpg" /> </p>
+                <p></p>
+                <p><strong>Kaspersky Anti-Virus Personal Pro</strong> –  It is a commonly used virus protection solution offering full protection  against macro-viruses and unknown viruses. </p>
+                <p>&nbsp;</p>
+                <p align="center"><img width="166" height="42" src="lec04_clip_image002_0004.jpg" /></p><br />
+                </p>
+                <strong>ESET NOD32 Antivirus</strong> – ESET NOD32 Anti-virus is available as an  anti-virus for small businesses, individuals and for  large networks.
+                
+                <p align="center"><img width="77" height="30" src="lec04_clip_image002_0005.jpg" /></p>
+                <p><strong>avast! Home Edition</strong> – A free antivirus solution for scanning disk,  CDs, and E-mail.</p>
+                <p align="center"><img width="169" height="61" src="lec04_clip_image002_0006.jpg" /></p>
+                <p><strong>Panda Antivirus Platinum</strong> – It is a complete virus protection package for  home and business users. It comes with an easy installation and automatic  protection from latest viruses.</p>
+                <p align="center"><img width="399" height="44" src="lec04_clip_image002_0007.jpg" /></p>
+                <p><strong>Avira</strong> - Windows and Linux anti virus, firewall, anti  spam, recovery solutions against malware infection</p>
+                <p align="center"><img width="102" height="102" src="lec04_clip_image002_0008.jpg" /></p>
+                <table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec04.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec04.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+</map></p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

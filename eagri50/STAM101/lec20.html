@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 20</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101  :: Lecture 20 :: </span></strong><strong>2cube factorial  experiments in RBD – lay out – analysis</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="left"><strong>2cube  Factorial Experiment in RBD</strong><br />
+				  2cube  factorial  experiment mean three factors each at two levels. Suppose the three factors are  A, B and C are tried with two levels the total number of combinations will be eight  i.e. a0b0c0, a0b0c1, a0b1c0, a0b1c1, a1b0c0, a1b0c1, a1b1c0 and a1b1c1.<br />
+				  The allotment of these eight treatment  combinations will be as allotted in RBD. That is each block is divided into eight  experimental units. By using the random numbers these eight combinations are  allotted at random for each block separately. <br />
+  <strong>The analysis of  variance table for three factors A with a levels, B with b levels and C with c  levels with r replications tried in RBD will be as follows:</strong></p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                        <strong>Sources    of Variation</strong> </td>
+                    <td valign="top"><p align="center"><strong>d.f.</strong></p></td>
+                    <td valign="top"><p align="center"><strong>SS</strong></p></td>
+                    <td valign="top"><p align="center"><strong>MS</strong></p></td>
+                    <td valign="top"><p align="center"><strong>F</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Replications</p></td>
+                    <td valign="top"><p align="center">r-1</p></td>
+                    <td valign="top"><p align="center">RSS</p></td>
+                    <td valign="top"><p align="center">RMS</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Factor A</p></td>
+                    <td valign="top"><p align="center">a-1</p></td>
+                    <td valign="top"><p align="center">ASS</p></td>
+                    <td valign="top"><p align="center">AMS</p></td>
+                    <td valign="top"><p align="center">AMS / EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Factor B</p></td>
+                    <td valign="top"><p align="center">b-1</p></td>
+                    <td valign="top"><p align="center">BSS</p></td>
+                    <td valign="top"><p align="center">BMS</p></td>
+                    <td valign="top"><p align="center">BMS / EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Factor C</p></td>
+                    <td valign="top"><p align="center">c-1</p></td>
+                    <td valign="top"><p align="center">CSS</p></td>
+                    <td valign="top"><p align="center">CMS</p></td>
+                    <td valign="top"><p align="center">CMS / EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">AB</p></td>
+                    <td valign="top"><p align="center">(a-1)(b-1)</p></td>
+                    <td valign="top"><p align="center">ABSS</p></td>
+                    <td valign="top"><p align="center">ABMS</p></td>
+                    <td valign="top"><p align="center">ABMS / EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">AC</p></td>
+                    <td valign="top"><p align="center">(a-1)(c-1)</p></td>
+                    <td valign="top"><p align="center">ACSS</p></td>
+                    <td valign="top"><p align="center">ACMS</p></td>
+                    <td valign="top"><p align="center">ACMS / EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">BC</p></td>
+                    <td valign="top"><p align="center">(b-1)(c-1)</p></td>
+                    <td valign="top"><p align="center">BCSS</p></td>
+                    <td valign="top"><p align="center">BCMS</p></td>
+                    <td valign="top"><p align="center">BCMS / EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">ABC</p></td>
+                    <td valign="top"><p align="center">(a-1)(b-1)(c-1)</p></td>
+                    <td valign="top"><p align="center">ABCSS</p></td>
+                    <td valign="top"><p align="center">ABCMS</p></td>
+                    <td valign="top"><p align="center">ABCMS / EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Error</p></td>
+                    <td valign="top"><p align="center">(r-1)(abc-1)</p></td>
+                    <td valign="top"><p align="center">ESS</p></td>
+                    <td valign="top"><p align="center">EMS</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">rabc-1</p></td>
+                    <td valign="top"><p align="center">TSS</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                </table>
+				<p>&nbsp;</p>
+				<p><strong>Analysis</strong></p>
+				<ol start="1" type="1">
+                  <li>Arrange       the results as per treatment combinations and replications.</li>
+			    </ol>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p align="center"><strong>Treatment    combination</strong></p></td>
+                    <td colspan="4" valign="top"><p align="center"><strong>Replication</strong><br />
+                            <strong>R1                 R2                      R3                …</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Treatment    Total</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">a0b0c0</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">T1</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">a0b0c1</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">T2</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">a0b1c0</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">T3</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">a0b1c1</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">T4</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">a1b0c0</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">T5</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">a1b0c1</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">T6</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">a1b1c0</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">T7</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">a1b1c1</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">T8</p></td>
+                  </tr>
+                </table>
+				<p>As in the previous designs calculate the replication  totals to calculate the CF, RSS, TSS, overall TrSS in the usual way. To  calculate ASS, BSS, CSS, ABSS, ACSS, BCSS and ABCSS, form three two way tables A  X B, AXC and BXC. <br />
+				  AXB two way table can be formed by  taking the levels of A in rows and levels of B in the columns.  To get the values in this table the missing  factor is replication. That is by adding over replication we can form this  table. <br />
+				  A  X B Two way table</p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <img width="76" height="54" src="lec20_clip_image001.gif" />B                   A </td>
+                      <td valign="top"><p align="center">b0</p></td>
+                      <td valign="top"><p align="center">b1</p></td>
+                      <td valign="top"><p align="center">Total</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">a0</p></td>
+                      <td valign="top"><p align="center">a0 b0</p></td>
+                      <td valign="top"><p align="center">a0 b1</p></td>
+                      <td valign="top"><p align="center">A0</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">a1</p></td>
+                      <td valign="top"><p align="center">a1 b0</p></td>
+                      <td valign="top"><p align="center">a1 b1</p></td>
+                      <td valign="top"><p align="center">A1</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">Total</p></td>
+                      <td valign="top"><p align="center">B0</p></td>
+                      <td valign="top"><p align="center">B1</p></td>
+                      <td valign="top"><p align="center">Grand Total</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p>ASS=<img width="97" height="44" src="lec20_clip_image003.gif" /><br />
+                    <img width="143" height="44" src="lec20_clip_image005.gif" /><br />
+                    <img width="419" height="44" src="lec20_clip_image007.gif" /><br />
+				  A  X C two way table can be formed by taking the levels of A in rows and levels of  C in the columns<br />
+				  A  X C Two way table</p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p align="center"><img width="76" height="54" src="lec20_clip_image001_0000.gif" />C                   A</p></td>
+                      <td valign="top"><p align="center">c0</p></td>
+                      <td valign="top"><p align="center">c1</p></td>
+                      <td valign="top"><p align="center">Total</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">a0</p></td>
+                      <td valign="top"><p align="center">a0 c0</p></td>
+                      <td valign="top"><p align="center">a0 c1</p></td>
+                      <td valign="top"><p align="center">A0</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">a1</p></td>
+                      <td valign="top"><p align="center">a1 c0</p></td>
+                      <td valign="top"><p align="center">a1 c1</p></td>
+                      <td valign="top"><p align="center">A1</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">Total</p></td>
+                      <td valign="top"><p align="center">C0</p></td>
+                      <td valign="top"><p align="center">C1</p></td>
+                      <td valign="top"><p align="center">Grand Total</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p><img width="144" height="44" src="lec20_clip_image009.gif" /><br />
+                    <img width="419" height="44" src="lec20_clip_image011.gif" /><br />
+				  B  X C two way table can be formed by taking the levels of B in rows and levels of  C in the columns<br />
+				  B  X C Two way table</p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <img width="76" height="54" src="lec20_clip_image012.gif" />C                   <br />
+                        B </td>
+                      <td valign="top"><p align="center">c0</p></td>
+                      <td valign="top"><p align="center">c1</p></td>
+                      <td valign="top"><p align="center">Total</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">b0</p></td>
+                      <td valign="top"><p align="center">b0 c0</p></td>
+                      <td valign="top"><p align="center">b0 c1</p></td>
+                      <td valign="top"><p align="center">B0</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">b1</p></td>
+                      <td valign="top"><p align="center">b1 c0</p></td>
+                      <td valign="top"><p align="center">b1 c1</p></td>
+                      <td valign="top"><p align="center">B1</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">Total</p></td>
+                      <td valign="top"><p align="center">C0</p></td>
+                      <td valign="top"><p align="center">C1</p></td>
+                      <td valign="top"><p align="center">Grand Total</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p><img width="412" height="44" src="lec20_clip_image014.gif" /><br />
+                    <img width="609" height="38" src="lec20_clip_image016.gif" /><br />
+				  -CF-ASS-BSS-CSS-ABSS-ACSS-BCSS</p>
+				<p>ESS  = TSS-RSS- ASS-BSS-CSS-ABSS-ACSS-BCSS-ABCSS<br />
+			    By  substituting the above values in the ANOVA table corresponding to the columns  sum of squares, the mean squares and F value can be calculated.</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec20.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec20.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

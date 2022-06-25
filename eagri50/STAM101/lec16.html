@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 16</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101:: Lecture 16 :: </span>Randomized blocks design – description – layout  – analysis – advantages and disadvantages</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h2>Randomized Blocks Design (RBD)</h2>
+				<p>When the experimental material is heterogeneous, the experimental  material is grouped into homogenous sub-groups called blocks. As each block  consists of the entire set of treatments a block is equivalent to a  replication. </p>
+				<p>If the fertility gradient runs in one direction say from north to  south or east to west then the blocks are formed in the opposite direction. Such  an arrangement of grouping the heterogeneous units into homogenous blocks is  known as randomized blocks design. Each block consists of as many experimental  units as the number of treatments. The treatments are allocated randomly to the  experimental units within each block independently such that each treatment  occurs once. The number of blocks is chosen to be equal to the number of  replications for the treatments. </p>
+				<p><strong> </strong>The analysis of variance model for RBD is <br />
+				  Yij = m + ti + rj + eij <br />
+				  where<br />
+				  m = the overall mean<br />
+				  t<em>i </em> = the ith treatment effect<br />
+				  rj  = the jth  replication effect<br />
+				  eij = the error term for ith treatment and jth  replication</p>
+				<p><strong>Analysis of RBD</strong></p>
+				<p>The results of RBD can be arranged in a two way table according to  the replications (blocks) and treatments. <br />
+				  There will be r x t observations in total where r stands for number  of replications and t for number of treatments. . <br />
+				  The data are arranged in a two way table form by representing  treatments in rows and replications in columns.</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                      Treatment </td>
+                    <td colspan="5" valign="top"><p align="center">Replication</p></td>
+                    <td valign="top"><p>Total</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">1</p></td>
+                    <td valign="top"><p align="center">2</p></td>
+                    <td valign="top"><p align="center">3</p></td>
+                    <td valign="top"><p align="center">…………</p></td>
+                    <td valign="top"><p align="center">r</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">1</p></td>
+                    <td valign="top"><p align="center">y11</p></td>
+                    <td valign="top"><p align="center">y12</p></td>
+                    <td valign="top"><p align="center">y13</p></td>
+                    <td valign="top"><p align="center">…………</p></td>
+                    <td valign="top"><p align="center">y1r</p></td>
+                    <td valign="top"><p align="center">T1</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">2</p></td>
+                    <td valign="top"><p align="center">y21</p></td>
+                    <td valign="top"><p align="center">y22</p></td>
+                    <td valign="top"><p align="center">y23</p></td>
+                    <td valign="top"><p align="center">…………</p></td>
+                    <td valign="top"><p align="center">y2r</p></td>
+                    <td valign="top"><p align="center">T2</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">3</p></td>
+                    <td valign="top"><p align="center">y31</p></td>
+                    <td valign="top"><p align="center">y32</p></td>
+                    <td valign="top"><p align="center">y33</p></td>
+                    <td valign="top"><p align="center">…………</p></td>
+                    <td valign="top"><p align="center">y3r</p></td>
+                    <td valign="top"><p align="center">T3</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">t</p></td>
+                    <td valign="top"><p align="center">yt1</p></td>
+                    <td valign="top"><p align="center">yt2</p></td>
+                    <td valign="top"><p align="center">yt3</p></td>
+                    <td valign="top"><p align="center">………….</p></td>
+                    <td valign="top"><p align="center">ytr</p></td>
+                    <td valign="top"><p align="center">Tt</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">R1</p></td>
+                    <td valign="top"><p align="center">R2</p></td>
+                    <td valign="top"><p align="center">R3</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">Rr</p></td>
+                    <td valign="top"><p align="center">G.T</p></td>
+                  </tr>
+                </table>
+				<p>In this design the total variance is divided into three sources of  variation viz., between replications, between treatments and error<br />
+                    <img width="84" height="44" src="lec16_clip_image002.gif" /><br />
+				  Total SS=TSS=åå y ij 2  – CF<br />
+				  Replication SS=RSS= = <img width="12" height="41" src="lec16_clip_image004.gif" />åRj2 – CF<br />
+				  Treatments SS=TrSS = <img width="15" height="41" src="lec16_clip_image006.gif" />åTi2  - CF<br />
+				  Error SS=ESS = Total SS – Replication SS – Treatment SS<br />
+				  The skeleton ANOVA table for RBD with t treatments and r  replications</p>
+				<table border="1" cellspacing="0" cellpadding="0" width="77%">
+                  <tr>
+                    <td valign="top"><br />
+                        <strong>Sources of variation </strong> </td>
+                    <td valign="top"><p><strong>d.f.</strong></p></td>
+                    <td valign="top"><p><strong>SS </strong></p></td>
+                    <td valign="top"><p><strong>MS</strong></p></td>
+                    <td valign="top"><p><strong>F Value</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Replication <img width="12" height="23" src="lec16_clip_image008.gif" /></p></td>
+                    <td valign="top"><p>r-1</p></td>
+                    <td valign="top"><p>RSS</p></td>
+                    <td valign="top"><p>RMS</p></td>
+                    <td valign="top"><p>RM S/ EM S</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Treatment </p></td>
+                    <td valign="top"><p>t-1</p></td>
+                    <td valign="top"><p>TrSS</p></td>
+                    <td valign="top"><p>TrMS</p></td>
+                    <td valign="top"><p>TrMS/EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Error</p></td>
+                    <td valign="top"><p>(r-1) (t-1)</p></td>
+                    <td valign="top"><p>ESS </p></td>
+                    <td valign="top"><p>EMS</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Total </p></td>
+                    <td valign="top"><p>rt –1</p></td>
+                    <td valign="top"><p>TSS</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                </table>
+				<p>CD = SE(d) . t    where S.E(d)= <img width="61" height="47" src="lec16_clip_image010.gif" /><br />
+				  t = critical value of t for a specified level of significance and  error degrees of freedom<br />
+				  Based on the CD value the bar chart can be drawn. <br />
+				  From the bar chart conclusion can be written.</p>
+				<p><strong>Advantages of RBD</strong><br />
+				  The precision is more in RBD. The amount of information obtained in  RBD is more as compared to CRD. RBD is more flexible. Statistical analysis is  simple and easy. Even if some values are missing, still the analysis can be  done by using missing plot technique.</p>
+				<h3>Disadvantages of RBD</h3>
+				<p>When the number of treatments is increased, the block size will  increase. If the block size is large maintaining homogeneity is difficult and  hence when more number of treatments is present this design may not be  suitable.				</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec16.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec16.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

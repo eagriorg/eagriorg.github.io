@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS :: Lecture 05</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS  :: Lecture 05 ::</span> Differential Calculus(1)</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>DIFFERENTIATION</strong><br />
+			    <p> In all practical situations we come  across a number of variables. The <strong>variable</strong> is one which takes different values, whereas a <strong>constant</strong> takes a fixed value.<br />
+				  Let x be the independent variable.  That means x can take any value. Let y be a variable depending on the value of  x. Then y is called the dependent variable. Then y is said to be a function of  x and it is denoted by y = f(x)<br />
+				  For example if x denotes the time and y  denotes the plant growth, then we know that the plant growth depends upon time.  In that case, the function y=f(x) represents the growth function. The rate of  change of y with respect to x is denoted by <img width="24" height="41" src="lec05_clip_image002.gif" />and called as the derivative of function y with respect to x.</p>
+				 <table border="1" cellspacing="0" cellpadding="0">
+                   <tr>
+                     <td valign="top"><p>S.No.</p></td>
+                     <td valign="top"><p>Form of Functions</p></td>
+                     <td valign="top"><p>y=f(x)</p></td>
+                     <td valign="top"><p><img width="24" height="41" src="lec05_clip_image002_0000.gif" /></p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">1.</p></td>
+                     <td valign="top"><p align="left">Power Formula</p></td>
+                     <td valign="top"><p align="left">xn</p></td>
+                     <td valign="top"><p align="left"><img width="91" height="44" src="lec05_clip_image004.gif" /> </p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">2.</p></td>
+                     <td valign="top"><p align="left">Constant</p></td>
+                     <td valign="top"><p align="left">C</p></td>
+                     <td valign="top"><p align="left">0</p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">3.</p></td>
+                     <td valign="top"><p align="left">Constant with variable</p></td>
+                     <td valign="top"><p align="left">Cy </p></td>
+                     <td valign="top"><p align="left"><img width="32" height="35" src="lec05_clip_image006.gif" /> </p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">4.</p></td>
+                     <td valign="top"><p align="left">Exponential</p></td>
+                     <td valign="top"><p align="left">ex                    </p></td>
+                     <td valign="top"><p align="left">ex</p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">5.</p></td>
+                     <td valign="top"><p align="left">Constant power x</p></td>
+                     <td valign="top"><p align="left">ax</p></td>
+                     <td valign="top"><p align="left">    ax    log a</p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">6.</p></td>
+                     <td valign="top"><p align="left">Logirthamic</p></td>
+                     <td valign="top"><p align="left">logx                 </p></td>
+                     <td valign="top"><p align="left"><img width="16" height="41" src="lec05_clip_image008.gif" /></p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">7.</p></td>
+                     <td valign="top"><p>Differentiation of a sum<strong></strong></p></td>
+                     <td valign="top"><p align="left">y = u + v<br />
+                       where u and v are functions of x.  </p></td>
+                     <td valign="top"><p align="left"><img width="171" height="41" src="lec05_clip_image010.gif" /></p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">8.</p></td>
+                     <td valign="top"><p>Differentiation of  a difference </p></td>
+                     <td valign="top"><p align="left">y = u – v<br />
+                       where u and v are functions of x.  </p></td>
+                     <td valign="top"><p align="left"><img width="171" height="41" src="lec05_clip_image012.gif" /> </p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">9.</p></td>
+                     <td valign="top"><p>Product rule of    differentiation</p></td>
+                     <td valign="top"><p>y = uv, <br />
+                       where u and v are    functions of x.  <strong></strong></p></td>
+                     <td valign="top"><p align="left"><img width="175" height="41" src="lec05_clip_image014.gif" /> </p></td>
+                   </tr>
+                   <tr>
+                     <td valign="top"><p align="left">10.</p></td>
+                     <td valign="top"><p>Quotient rule of    differentiation</p></td>
+                     <td valign="top"><p> y = <img width="16" height="41" src="lec05_clip_image016.gif" /> ,<br />
+                       where u and v are    functions of x.  <br />
+                     </p></td>
+                     <td valign="top"><p align="left"><img width="160" height="45" src="lec05_clip_image018.gif" /><br />
+                       where  <img width="53" height="41" src="lec05_clip_image020.gif" />  , <img width="52" height="41" src="lec05_clip_image022.gif" /></p></td>
+                   </tr>
+                 </table>
+			     <p><strong>Example</strong></p>
+			     <ol>
+			       <li>Differentiate  each of the following function  <strong> </strong><img width="187" height="20" src="lec05_clip_image001.gif" /><img width="1" height="28" src="lec05_clip_image003.gif" /><img width="1" height="1" src="lec05_clip_image004_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0001.gif" /></li>
+		        </ol>
+			     <p><strong>Solution</strong> <br />
+                     <img width="279" height="43" src="lec05_clip_image005.gif" /><strong></strong></p>
+			     <ol>
+			       <li>Differentiate following function  <strong> </strong><img width="100" height="20" src="lec05_clip_image006_0000.gif" /><img width="1" height="28" src="lec05_clip_image003_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0002.gif" /><img width="1" height="1" src="lec05_clip_image004_0003.gif" /></li>
+		        </ol>
+			     <p><strong>Solution</strong><br />
+  &nbsp;  Here is the derivative.<br />
+  <img width="161" height="42" src="lec05_clip_image007.gif" /><img width="1" height="50" src="lec05_clip_image008_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0004.gif" /><img width="1" height="1" src="lec05_clip_image004_0005.gif" /></p>
+			     <ol>
+			       <li>Differentiate  following function  <strong> </strong><img width="135" height="33" src="lec05_clip_image009.gif" /><img width="1" height="41" src="lec05_clip_image010_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0006.gif" /><img width="1" height="1" src="lec05_clip_image004_0007.gif" /></li>
+		        </ol>
+			     <p><strong>Solution</strong> <br />
+                     <img width="143" height="33" src="lec05_clip_image011.gif" /><img width="1" height="41" src="lec05_clip_image010_0001.gif" /><img width="1" height="1" src="lec05_clip_image004_0008.gif" /><img width="1" height="1" src="lec05_clip_image004_0009.gif" /><br />
+			       diff. w.r.to  x<br />
+  <img width="124" height="33" src="lec05_clip_image012_0000.gif" /><img width="1" height="41" src="lec05_clip_image010_0002.gif" /><img width="1" height="1" src="lec05_clip_image004_0010.gif" /><img width="1" height="1" src="lec05_clip_image004_0011.gif" /><br />
+			       MPSetEqnAttrs('eq0008','',3,[[90,34,13,-1,-1],[118,46,17,-1,-1],[148,57,21,-1,-1],[],[],[],[372,141,53,-3,-3]]);  &nbsp;<br />
+			       ExampleBegin();  4.<strong><em> &nbsp;</em></strong>Differentiate   the following functions. <br />
+			       a)      <img width="111" height="24" src="lec05_clip_image013.gif" /><img width="1" height="32" src="lec05_clip_image014_0000.gif" />                                                                                                                       <strong></strong><br />
+  <strong>Solution</strong><br />
+  <strong> MPSetEqnAttrs('eq0009','',3,[[84,18,5,-1,-1],[111,24,7,-1,-1],[139,31,8,-1,-1],[],[],[],[348,77,21,-3,-3]])    	MPEquation() </strong>                              <img width="111" height="24" src="lec05_clip_image013_0000.gif" /><img width="1" height="32" src="lec05_clip_image014_0001.gif" /><img width="1" height="1" src="lec05_clip_image004_0012.gif" /><img width="1" height="1" src="lec05_clip_image004_0013.gif" /><br />
+			       MPSetEqnAttrs('eq0011','',3,[[76,23,5,-1,-1],[101,32,7,-1,-1],[127,40,8,-1,-1],[],[],[],[315,98,22,-3,-3]])    	MPEquation() <img width="101" height="32" src="lec05_clip_image015.gif" /><img width="1" height="40" src="lec05_clip_image016_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0014.gif" /><img width="1" height="1" src="lec05_clip_image004_0015.gif" /><br />
+			       diff   y   w.  r. to  x      	MPSetEqnAttrs('eq0012','',3,[[154,27,9,-1,-1],[205,38,13,-1,-1],[257,47,16,-1,-1],[],[],[],[641,114,39,-3,-3]])    	MPEquation() <img width="205" height="38" src="lec05_clip_image017.gif" /><img width="1" height="46" src="lec05_clip_image018_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0016.gif" /><img width="1" height="1" src="lec05_clip_image004_0017.gif" /><br />
+			       MPSetEqnAttrs('eq0012','',3,[[154,27,9,-1,-1],[205,38,13,-1,-1],[257,47,16,-1,-1],[],[],[],[641,114,39,-3,-3]]);  &nbsp;  	MPSetEqnAttrs('eq0013','',3,[[132,62,28,-1,-1],[175,83,37,-1,-1],[218,105,47,-1,-1],[],[],[],[547,258,117,-3,-3]]);  &nbsp;&nbsp;<br />
+			       ExampleBegin();  5. Differentiate  the following  functions. <strong>   	MPSetEqnAttrs('eq0014','',3,[[218,34,14,-1,-1],[289,45,19,-1,-1],[361,55,23,-1,-1],[],[],[],[905,141,58,-3,-3]])    	MPEquation()    	MPSetEqnAttrs('eq0009','',3,[[84,18,5,-1,-1],[111,24,7,-1,-1],[139,31,8,-1,-1],[],[],[],[348,77,21,-3,-3]]); </strong><img width="172" height="22" src="lec05_clip_image019.gif" /><img width="1" height="30" src="lec05_clip_image020_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0018.gif" /><img width="1" height="1" src="lec05_clip_image004_0019.gif" /></p>
+			     <p><strong> MPSetEqnAttrs('eq0010','',3,[[130,17,6,-1,-1],[172,22,7,-1,-1],[216,27,8,-1,-1],[],[],[],[539,71,22,-3,-3]])    	MPEquation() </strong><img width="236" height="19" src="lec05_clip_image021.gif" /><img width="172" height="22" src="lec05_clip_image019_0000.gif" /><img width="1" height="30" src="lec05_clip_image020_0001.gif" /><img width="1" height="1" src="lec05_clip_image004_0020.gif" /><img width="1" height="1" src="lec05_clip_image004_0021.gif" /><br />
+			       diff   f(x)  w r to x<br />
+  <img width="1" height="53" src="lec05_clip_image022_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0022.gif" />                                                   <img width="1" height="1" src="lec05_clip_image004_0023.gif" /><img width="289" height="45" src="lec05_clip_image023.gif" /></p>
+			     <p><strong>Derivatives of the six  trigonometric  functions</strong> <br />
+                     <img width="428" height="120" src="lec05_clip_image024.gif" /><img width="1" height="128" src="lec05_clip_image025.gif" /><img width="1" height="1" src="lec05_clip_image004_0024.gif" /><img width="1" height="1" src="lec05_clip_image004_0025.gif" /> &nbsp;</p>
+			     <p><strong>Example</strong><br />
+			       1.<strong><em> &nbsp;</em></strong>Differentiate  each of the following functions.<br />
+  <strong> </strong><img width="171" height="18" src="lec05_clip_image026.gif" /><img width="1" height="26" src="lec05_clip_image027.gif" /><img width="1" height="1" src="lec05_clip_image004_0026.gif" /><img width="1" height="1" src="lec05_clip_image004_0027.gif" /><br />
+  <strong><em>Solution  </em></strong> We’ll just differentiate each term using  the  formulas from above.<br />
+  <img width="241" height="47" src="lec05_clip_image028.gif" /><img width="1" height="55" src="lec05_clip_image029.gif" /><img width="1" height="1" src="lec05_clip_image004_0028.gif" /><img width="1" height="1" src="lec05_clip_image004_0029.gif" /><br />
+			       2.<strong><em> &nbsp;</em></strong>Differentiate each of the following functions <img width="178" height="18" src="lec05_clip_image030.gif" /><img width="1" height="26" src="lec05_clip_image027_0000.gif" /><img width="1" height="1" src="lec05_clip_image004_0030.gif" /><img width="1" height="1" src="lec05_clip_image004_0031.gif" /><br />
+			       Here’s the derivative of  this function.<br />
+  <img width="376" height="49" src="lec05_clip_image031.gif" /><img width="1" height="57" src="lec05_clip_image032.gif" /><img width="1" height="1" src="lec05_clip_image004_0032.gif" /><img width="1" height="1" src="lec05_clip_image004_0033.gif" /></p>
+			     <p>&nbsp;Note that in the  simplification step we took advantage of the fact that<br />
+                     <img width="99" height="25" src="lec05_clip_image033.gif" /><img width="100" height="38" src="lec05_clip_image034.gif" /><img width="1" height="46" src="lec05_clip_image018_0001.gif" /><img width="1" height="1" src="lec05_clip_image004_0034.gif" /><img width="1" height="1" src="lec05_clip_image004_0035.gif" /><br />
+			       to  simplify the second term a little.<br />
+			       3.<strong><em> &nbsp;</em></strong>Differentiate  each of the following functions <img width="118" height="41" src="lec05_clip_image035.gif" /><img width="1" height="49" src="lec05_clip_image036.gif" /><img width="1" height="1" src="lec05_clip_image004_0036.gif" /><img width="1" height="1" src="lec05_clip_image004_0037.gif" /><br />
+  &nbsp; In this part we’ll  need to use the quotient rule.<br />
+  <img width="290" height="106" src="lec05_clip_image037.gif" /><img width="1" height="114" src="lec05_clip_image038.gif" /><img width="1" height="1" src="lec05_clip_image004_0038.gif" /><img width="1" height="1" src="lec05_clip_image004_0039.gif" /></p>
+		        <p>&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec05.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec05.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                    </map>
+                </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

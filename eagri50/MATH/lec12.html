@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS :: Lecture 12</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS :: Lecture 12 :: </span></strong><strong>MATRICES</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>MATRICES</strong></p>
+				<p>            An arrangement of numbers in rows   and columns. A matrix of type “(<em>m x n</em>)” is defined as arrangement of (<em>m x n</em>) numbers in ‘<em>m</em>’ rows &amp; ‘<em>n</em>’  columns.  Usually these numbers are  enclosed within square brackets [  ] (or)  simple brackets (   ) are denoted by  capital letters A, B, C etc.<br />
+                    <strong>Example </strong><br />
+                    <img width="150" height="126" src="lec12_clip_image001.gif" alt="Double Bracket: 1	3	4  2        10	2  9         -1	3  4	8	5  " /><img width="198" height="102" src="lec12_clip_image002.gif" alt="Double Bracket: 1	2	3	4  9        10        -1	3  4	2	8	5  " /><strong>&nbsp;</strong></p>
+				<br clear="all" />
+                <p>            A =                                                            B =            </p>
+
+                <p>            Here A is of type 3 x 4 &amp; B is  of type 4 x 3 </p>
+                                <p align="center">Matrix<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/matrix.m4v" type="video/mp4">
+</video></p>
+                <h1>Types of  matrices </h1>
+                <p><strong>1.  Row matrix:</strong> It is a matrix containing only one row and  several columns .It is also called as row vector.<br />
+                  Example:<br />
+  <img width="12" height="27" src="lec12_clip_image003.gif" />        [1     3    7      9      6 ] <br />
+                  <br />
+                  (1 x  5) matrix called row vector.<br />
+  <strong>2.</strong> <strong>Column matrix:</strong> It is a matrix containing only one column. It is also known as <br />
+                  column vector. <br />
+  <img width="32" height="66" src="lec12_clip_image004.gif" alt="Double Bracket: 1  4  1  " />&nbsp;</p>
+                <br clear="all" />
+                <br />
+                        Example: <br />
+                                                   (3x1)<br />
+<strong>3.</strong> <strong>Square matrix:</strong> A matrix is called as square matrix, if the number of rows is equal to number  of columns.<br />
+<img width="150" height="102" src="lec12_clip_image005.gif" />&nbsp;
+<p>&nbsp;</p>
+<br clear="all" />
+<p><strong>Example </strong><br />
+  The elements <em>a11, a22, a33</em> etc fall along the  diagonal &amp; this is called a leading diagonal (or) principal diagonal of the  matrix.</p>
+<p>4. Trace  of the matrix</p>
+<p>            It is defined as the sum of the  elements along the leading diagonal.</p>
+<p>    In this above matrix the trace  of the matrix is  </p>
+<h1>                          4 + 9 + 2 = 15.</h1>
+<p><strong>5.</strong> <strong>Diagonal matrix</strong><br />
+  It is a square matrix in which all the elements other  than in the leading diagonals are zero’s.<strong> </strong><br />
+  <img width="150" height="102" src="lec12_clip_image006.gif" /><strong>&nbsp;</strong></p>
+<br clear="all" />
+<p><strong>            </strong>Eg: </p>
+<p>&nbsp;</p>
+<p><strong>6.Scalar matrix</strong><br />
+    <strong>            </strong>It is a diagonal matrix in which all the  elements in the leading diagonal are same.<br />
+    <img width="150" height="102" src="lec12_clip_image007.gif" />&nbsp;</p>
+<br clear="all" />
+<p>            Eg: </p>
+<p><strong>7.</strong> <strong>Unit matrix or  identify matrix</strong><br />
+    <strong>            </strong>It is a diagonal  matrix, in which the elements along the   leading diagonal are equal to one. It is denoted by I <br />
+    <img width="150" height="102" src="lec12_clip_image008.gif" alt="Double Bracket: 1	0	0  0	1	0  0	0	1  " />            </p>
+<p>                                                I =                                </p>
+<p>&nbsp;</p>
+<p><strong>8.</strong> <strong>Zero matrix (or)  Non-matrix</strong><br />
+    <strong>            </strong> It is matrix all of whole elements are equal  to zero denoted by “O”<br />
+    <img width="141" height="66" src="lec12_clip_image009.gif" alt="Double Bracket: 0	0	0  0	0	0  " /><img width="93" height="66" src="lec12_clip_image010.gif" alt="Double Bracket: 0	0  0	0  " />&nbsp;</p>
+<br clear="all" />
+<br />
+            Eg:       O  =                                          2  x 3    O =                              2  x 2
+<p><strong>9.  Triangular matrix</strong> <br />
+  There are two types. 1. Lower  Triangular Matrix    2. Upper Triangular  Matrix.</p>
+<p>&nbsp;</p>
+<p><strong>   Lower Triangular matrix</strong><br />
+    <strong>            </strong>It is a square matrix  in which all the elements above the leading diagonal are zeros.<br />
+    <img width="153" height="102" src="lec12_clip_image011.gif" />&nbsp;</p>
+<br clear="all" />
+<br />
+            <br />
+            Eg:
+<p>&nbsp;</p>
+<p><strong>Upper  Triangular matrix</strong><br />
+    <strong>            </strong>Square matrix in  which all the elements below the leading diagonal are zeros <br />
+    <img width="150" height="102" src="lec12_clip_image012.gif" />&nbsp;
+</p>
+                         <br />
+ 
+ &nbsp;Eg:   
+<p><strong>10.</strong> <strong>Symmetric  matrix</strong><br />
+  <strong>            </strong>A square matrix A =  {aij} said i = 1 to n ;  j = 1  to n said <br />
+     to symmetric, if                       for all i and j.  <br />
+<img width="150" height="102" src="lec12_clip_image013.gif" alt="Double Bracket:   1	  3	  4    3	  6	 -5    4	-5	  2  " />&nbsp;
+</p>
+<br clear="all" />
+</p>
+<p>           Eg:</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+<div>
+  <p>aij =       -aji</p>
+</div>
+ <strong>11.</strong> <strong>Skew  symmetric matrix </strong><br />
+<strong>            </strong>A square matrix A =  {aij} i = 1 to n ,   j = 1 to  n is called skew symmetric, if                                  for all i &amp; j. Here aii  = 0 for all i
+</p>
+<p>&nbsp;</p>
+<p><img width="150" height="102" src="lec12_clip_image014.gif" alt="Double Bracket:   0	  3	-4  -3	  0	  5   4	-5	  0  " />            Eg: </p>
+<p align="center"><strong>&nbsp;</strong></p>
+<p align="left"><strong>Algebra  of matrices</strong><br />
+    <strong>1. Equality of matrices</strong> <br />
+  Two matrices A &amp; B are equal, if and only if,</p>
+<ul>
+  <li>Both A &amp; B are of the same type</li>
+  <li>Every element of ‘B’ is the same as the <u>corresponding  element</u> of ‘A’.</li>
+</ul>
+<p><strong>Example</strong><br />
+    <img width="150" height="126" src="lec12_clip_image001_0000.gif" alt="Double Bracket: 1	3	4  2        10	2  9         -1	3  4	8	5  " /><img width="198" height="102" src="lec12_clip_image002_0000.gif" alt="Double Bracket: 1	2	3	4  9        10        -1	3  4	2	8	5  " /><strong>1. </strong></p>
+<p>            A =                                                            B =            </p>
+<p>&nbsp;</p>
+<p>Here  order of matrix A is not same as order matrix B, the two matrices are not  equal.<br />
+  A  ¹  B<br />
+  2.  Find the value of <em>a</em> and <em>b</em> given<br />
+  <img width="165" height="48" src="lec12_clip_image016.gif" /><br />
+  <strong>Solution:</strong><br />
+  The given matrices are equal <br />
+  \ <em>a</em> = 3, <em>b</em> = 2</p>
+<p align="left"><strong>2.</strong> <strong>Addition of  matrices</strong> <br />
+  Two matrices A &amp; B can be added if and only if,</p>
+<ul>
+  <li>Both are of the same type.</li>
+  <li>The resulting matrix of A &amp; B is also of  same type and is obtained by adding the all elements of ‘A’ to the  corresponding elements of ‘B’.</li>
+</ul>
+<p><strong>Example</strong><br />
+  1.  Find <img width="163" height="48" src="lec12_clip_image018.gif" /><br />
+  <strong>Solution</strong><br />
+  <img width="163" height="48" src="lec12_clip_image018_0000.gif" />=<img width="97" height="48" src="lec12_clip_image020.gif" />=<img width="76" height="48" src="lec12_clip_image022.gif" /><br />
+  <strong>3.</strong> <strong>Subtraction of  the matrices</strong><br />
+  This can be done, when both the  matrices are of same type.<br />
+  (A-B)  is obtained by subtracting the elements of ‘A’ with corresponding  elements of ‘B’.<br />
+  <strong>Example</strong><br />
+  1.  Find <img width="163" height="48" src="lec12_clip_image024.gif" /></p>
+<p><strong>Solution</strong><br />
+    <img width="163" height="48" src="lec12_clip_image002_0001.gif" />=<img width="97" height="48" src="lec12_clip_image004_0000.gif" />=<img width="76" height="48" src="lec12_clip_image006_0000.gif" /><br />
+    <strong>4.</strong> <strong>Multiplication of  matrix</strong> <br />
+  They   are  of two types : 1. By a  scalar         K B.<br />
+  <img width="27" height="12" src="lec12_clip_image007_0000.gif" />                                                    2. By a matrix                   A x B.<br />
+  <strong> i) Scalar multiplication</strong><br />
+  To multiply a matrix ‘A’ by a scalar ‘K’,  then  multiply every element of a matrix  ‘A’ by that scalar.<br />
+  <strong>Example</strong><br />
+  1.  Find <img width="84" height="48" src="lec12_clip_image009_0000.gif" /><br />
+  <strong>Solution:</strong><br />
+  <img width="84" height="48" src="lec12_clip_image009_0001.gif" />=<img width="83" height="48" src="lec12_clip_image012_0000.gif" /><br />
+  <strong>ii) Matrix Multiplication</strong><br />
+  Two matrices A &amp; B can be  multiplied to form the matrix product AB, if and only if the number  of columns of 1st matrix A is  equal to the number of rows of  2nd  matrix B.    If A is an <em>(m x p)</em>   and B is an <em>(p x n)</em> then the matrix product AB can  be formed.  AB is a matrix by <em>(m x n)</em>.<br />
+  In  this case the matrices A and B are said to be conformable for matrix multiplication.<br />
+  <strong>Example</strong></p>
+<h2><img width="185" height="66" src="lec12_clip_image013_0000.gif" />&nbsp;</h2>
+<br clear="all" />
+<p align="left">1. Find                                                                                                              </p>
+<p><strong>Solution</strong></p>
+<p align="left"><img width="185" height="65" src="lec12_clip_image014_0000.gif" />                                                                                                <br />
+  = <img width="197" height="48" src="lec12_clip_image016_0000.gif" /></p>
+<p>                                                     =<img width="169" height="48" src="lec12_clip_image018_0001.gif" /></p>
+<p>                                                     =<img width="84" height="48" src="lec12_clip_image020_0000.gif" /><br />
+    <strong>Note:</strong> The  matrix product AB is different from the matrix product BA.</p>
+<p>1.  The matrix AB can be formed but not BA<br />
+  Eg: A is   a (2 x 3) matrix<br />
+  B is    a (3 x 5) matrix<br />
+  AB alone can be formed and it is a (2 x 5) matrix.<br />
+  <br />
+  2.  Even if AB &amp; BA can be formed, they need not be of same type.<br />
+  Eg: A is a (2 x 3) matrix<br />
+  B is a (3 x 2) matrix<br />
+  AB can be formed and is a (2 x 2) matrix<br />
+  BA can be formed and is a (3x 3) matrix</p>
+<p>3. Even if AB &amp; BA are  of the same type, they needn’t be equal.   Because, they need not    <br />
+  be identical. <br />
+  Eg: A is a (3 x 3)  matrix<br />
+  B is   a (3 x 3) matrix<br />
+  AB is a   (3 x 3) matrix<br />
+  BA is a (3x 3) matrix<br />
+  AB ¹ BA                    <br />
+  The multiplication of any matrix  with null matrix the resultant matrix is also a null matrix.<br />
+  When any matrix (ie.) A is multiplied by unit matrix; the  resultant matrix is ‘A’ itself.<br />
+  <a name="Transpose" id="Transpose"></a><strong> Transpose of a matrix</strong><br />
+  The Transpose of any matrix (‘A’) is  obtained by interchanging the rows &amp; columns of ‘A’ and is denoted by AT.  If A is of type <em>(m x n),</em> then  AT  is of type <em>(n x m).</em><br />
+  <img width="90" height="102" src="lec12_clip_image021.gif" alt="Double Bracket: 2	3  1	0  4	5  " /> <br />
+  <img width="138" height="66" src="lec12_clip_image022_0000.gif" alt="Double Bracket: 2	1	4  3	0	5  " />            Eg: A = <br />
+  AT      =                                         <br />
+  (3 x 2)                                                            (2 x 3)<br />
+  <strong></strong><strong>                                                     <u></u></strong></p>
+<strong><br clear="all" />
+</strong>
+<h1><a name="Propertiesoftranspose" id="Propertiesoftranspose"></a>Properties of transpose of a matrix</h1>
+<p>1)  (AT)T = A<br />
+  2)  (AB)T  =  BT  AT   is known as the reversal Law of Transpose of product of two matrices.<br />
+  <a name="Determinant" id="Determinant"></a><strong>DETERMINANTS</strong><br />
+  Every square matrix A of order n x n  with entries real or complex there exists a number called the determinant of  the matrix A denoted by by çAçor det (A). The determinant  formed by the elements of A is said to be the determinant of the matrix A.. <br />
+  <img width="2" height="62" src="lec12_clip_image023.gif" /> Consider the 2nd order determinant.<br />
+  <img width="2" height="62" src="lec12_clip_image023_0000.gif" /> </p>
+<div>
+  <p>= a1 b2      – a2 b1</p>
+</div>
+ 
+<div>
+  <p>çA ç      =</p>
+</div>
+                                       a1       b1<br />
+                          a2        b2
+</p>
+<p>&nbsp; </p>
+<div>
+  <p>= 0-3 = -3</p>
+</div>
+ 
+<div>
+  <p>çA ç      =</p>
+</div>
+ <img width="2" height="50" src="lec12_clip_image024_0000.gif" /><img width="2" height="50" src="lec12_clip_image024_0001.gif" />Eg:                     4        3<br />
+                          1        0
+</p>
+<p>Consider  the 3rd order determinant,</p>
+<p><img width="2" height="86" src="lec12_clip_image025.gif" /> </p>
+ <img width="2" height="86" src="lec12_clip_image025_0000.gif" />                                    a1         b1         c1<br />
+                                    a2         b2         c2<br />
+                        a3         b3         c3                                            
+</p>
+<p>            This can be expanded along any row  or any column.  Usually we expand by the  1st row.  On expanding along  the 1st row<br />
+    <img width="392" height="63" src="lec12_clip_image026.gif" />&nbsp;</p>
+<br clear="all" />
+<br />
+<div>
+  <p>+ c1</p>
+</div>
+ 
+<div>
+  <p>- b1</p>
+</div>
+                                             b2      c2                 a2       c2                  a2      b2<br />
+                                            b3      c3                 a3       c3                   a3      b3
+<p><strong>Minors</strong><br />
+    <strong>            </strong>Let   A = (<img width="20" height="23" src="lec12_clip_image028.gif" />)be a determinant of order n. The minor of the element <img width="20" height="23" src="lec12_clip_image028_0000.gif" />is the determinant formed by deleting ith  row and jth column in which the  element  belongs and the cofactor of the  element is <img width="99" height="28" src="lec12_clip_image031.gif" />where M is the minor of ith row and jth  column .<br />
+    <strong>Example 1</strong> &nbsp; Calculate the  determinant of the following matrices.<br />
+  <br />
+  (<em>a</em>)&nbsp; <img width="165" height="75" src="lec12_clip_image033.gif" /> <br />
+  <em><strong>Solution</strong></em><br />
+  <img width="380" height="102" src="lec12_clip_image035.gif" /><br />
+  <strong>Singular and Non-Singular Matrices:</strong><br />
+  <strong>Definition </strong><br />
+  A square matrix ‘A’ is said to be singular if, çA ç = 0    and it is called  non-singular if  çA ç ¹ 0.<br />
+  <strong>Note</strong><br />
+  Only square matrices have  determinants.<br />
+  Example:  Find the solution for the matrix <img width="151" height="75" src="lec12_clip_image037.gif" /><br />
+  <img width="394" height="121" src="lec12_clip_image039.gif" /><br />
+  Here çA ç = 0   .So the given matrix is singular <br />
+  <strong>Properties  of determinants</strong><br />
+  1. <strong>The value of a  determinant is unaltered by interchanging its rows and columns. </strong><br />
+  <strong>Example</strong><br />
+  Let <img width="160" height="75" src="lec12_clip_image041.gif" /> then <br />
+  <img width="452" height="117" src="lec12_clip_image043.gif" /></p>
+<p>Let us  interchange the rows and columns of A. Thus we get new matrix A1.<br />
+Then<br />
+ <img width="454" height="117" src="lec12_clip_image002_0002.gif" /><br />
+Hence det (A) =  det (A1).<br />
+<strong>2.  If  any two rows (columns) of a determinant are interchanged the determinant  changes its sign but its numerical value is unaltered.</strong><br />
+<strong>Example</strong><br />
+Let <img width="160" height="75" src="lec12_clip_image004_0001.gif" /> then </p>
+				<p><img width="452" height="117" src="lec12_clip_image006_0001.gif" /><br />
+				  Let A1  be the matrix obtained from A by interchanging the first and second row. i.e R1  and R2.<br />
+				  Then <br />
+  <img width="460" height="117" src="lec12_clip_image008_0000.gif" /><br />
+				  Hence det (A) =  - det (A1).</p>
+				<p><strong>3.</strong> <strong>If two rows  (columns) of a determinant are identical then the value of the terminant is  zero.</strong><br />
+                    <strong>Example</strong><br />
+				  Let <img width="160" height="75" src="lec12_clip_image010_0000.gif" /> then </p>
+				<p><img width="448" height="117" src="lec12_clip_image012_0001.gif" /><br />
+				  Hence <img width="73" height="22" src="lec12_clip_image014_0001.gif" /><br />
+  <strong>4.</strong> <strong>If  every element in a row ( or column) of a determinant is multiplied by a  constant “k” then the value of the determinant is multiplied by k.</strong><br />
+				  Example<br />
+				  Let <img width="160" height="75" src="lec12_clip_image004_0002.gif" /> then </p>
+				<p><img width="452" height="117" src="lec12_clip_image006_0002.gif" /><br />
+				  Let A1  be the matrix obtained by multiplying the elements of the first row by 2 (ie.  here k =2) then <br />
+  <img width="538" height="117" src="lec12_clip_image017.gif" /><br />
+				  Hence det (A) = 2 det (A1).<br />
+  <strong> 5.</strong> <strong>If every element in any  row (column) can be expressed as the sum of two quantities then given  determinant can be expressed as the sum of two determinants of the same order  with the elements of the remaining rows (columns) of both being the same</strong>.<br />
+  <strong>Example </strong><br />
+				  Let<strong> </strong><img width="181" height="75" src="lec12_clip_image019.gif" />then<strong></strong></p>
+				<p><img width="472" height="259" src="lec12_clip_image021_0000.gif" /><br />
+                  <img width="469" height="169" src="lec12_clip_image023_0001.gif" /><br />
+                    <strong>6.</strong> <strong>A determinant is  unaltered when to each element of any row (column) is added to those of several  other rows (columns) multiplied respectively by constant factors.</strong><br />
+                    <strong>Example</strong><br />
+				  Let <img width="160" height="75" src="lec12_clip_image004_0003.gif" /> then <br />
+  <img width="455" height="117" src="lec12_clip_image026_0000.gif" /><br />
+				  Let A1  be a matrix obtained when the elements C1 of A are added to those of  second column and third column multiplied respectively by constants 2 and 3.  Then </p>
+				<p align="center"><img width="658" height="160" src="lec12_clip_image028_0001.gif" /></p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec12.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec12.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

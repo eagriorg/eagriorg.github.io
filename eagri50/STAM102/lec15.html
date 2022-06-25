@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STAM 102 :: Lecture 15</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM102/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM 102 :: Lecture 15 :: </span></strong><strong>Internet: World Wide Web (WWW), Concepts</h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h1><strong>Internet</strong></h1>
+				<ul>
+				  <li>Network  of interconnected computers around the world.</li>
+				  <li>A  network of computer networks which operates world-wide using a common set of  communications protocols.</li>
+				  <li>a  computer network consisting of a worldwide network of computer networks that  use the TCP/IP network protocols to facilitate data transmission and exchange.</li>
+				  <li>Visualization  of the various routes through a portion of the Internet:</li>
+			    </ul>
+				<p align="center"><img width="624" height="468" src="lec15_clip_image002.jpg" alt="Image:Internet map 1024.jpg" /></p>
+				<p><strong><u>&nbsp;</u></strong></p>
+				<p><strong>What do we need to get connected to  internet?</strong></p>
+				<ul>
+				  <li>Getting on the Internet requires: </li>
+				  <ul>
+				    <li>Computer </li>
+				    <li>Modem </li>
+				    <li>Telephone Line </li>
+				    <li>Internet Service Provider (ISP) </li>
+				    <li>Communication Software </li>
+			      </ul>
+			    </ul>
+				<p><strong>Modem and Telephone Line</strong></p>
+				<table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><ul>
+                      <li>Modem    is a communications device that allows us to communicate with another    computer through telephone lines.</li>
+                      <li>Modem    is abbreviation of modulator/demodulator.</li>
+                    </ul></td>
+                    <td valign="top"><ul>
+                      <li>Telephone    services, such as </li>
+                      <ul>
+                        <li>ISDN,</li>
+                        <li>56K    leased lines, and </li>
+                        <li>T-1    connections</li>
+                      </ul>
+                      <li>offer    connections to the Internet at considerably faster connection speeds. </li>
+                    </ul></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><img width="318" height="294" src="lec15_clip_image004.jpg" alt="modempic" /> </p></td>
+                    <td valign="top"><p><img width="298" height="296" src="lec15_clip_image006.jpg" alt="teleline" /></p></td>
+                  </tr>
+                </table>
+				<p><strong>Internet Service Provider (ISP)</strong></p>
+				<ul>
+				  <li>An  Internet Service Provider (ISP) is a company that allow you to use their  internet connection for a price. </li>
+				  <li>When  you register with an ISP the followings are given:</li>
+				  <ul>
+				    <li>Username </li>
+				    <ul>
+				      <li>A unique name that identifies you. </li>
+			        </ul>
+				    <li>Password </li>
+				    <ul>
+				      <li>A secret code that prevents other people from using  your account. </li>
+			        </ul>
+			      </ul>
+			    </ul>
+				<p><strong>Some Popular Internet Service Providers</strong></p>
+				<ul>
+				  <li>AT&amp;T  WorldNet </li>
+				  <li>Microsoft  Network</li>
+				  <li>America  Online</li>
+				  <li>In  India:</li>
+				  <ul>
+				    <li>VSNL  (Videsh Sanchar Nigam Limited</li>
+				    <li>MTNL  (Mahanagar Telecom Nigam Limited)</li>
+				    <li>BSNL  (Bharat Sanchar Nigam Limited)</li>
+				    <li>Satyam  Onlile </li>
+			      </ul>
+			    </ul>
+				<p><strong>Communication Software</strong></p>
+				<ul>
+				  <li>Computer  needs communicate</li>
+				  <li>on  software to allow you to get connected to, and interact with, the Internet.</li>
+				  <li>Communication  software is of two types:</li>
+				  <ul>
+				    <li>Software  that Helps Establish Basic Internet Connectivity </li>
+				    <li>Software  that helps to browse, access e-mail etc.</li>
+			      </ul>
+			    </ul>
+				<h1><strong>World Wide Web</strong></h1>
+				<table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p align="center">&quot;The World Wide Web is the universe of    network-accessible information, an embodiment of human knowledge.&quot;</p></td>
+                    <td valign="top"><p><a href="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/WWW_logo_by_Robert_Cailliau.svg/601px-WWW_logo_by_Robert_Cailliau.svg.png"><img border="0" width="137" height="95" src="lec15_clip_image007.jpg" alt="See full size image" /></a></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><ul type="disc">
+                        <li>Tim Berners-Lee, a scientist at         CERN (The European         Organization for Nuclear Research (<a href="http://en.wikipedia.org/wiki/French_language" title="French language">French</a>: Organisation Européenne pour la Recherche Nucléaire),         invented the World Wide Web         (WWW) in 1989. </li>
+                      <li>The Web was originally conceived         and developed to meet the demand for automatic information sharing         between scientists working in different universities and institutes all         over the world.</li>
+                    </ul></td>
+                    <td valign="top"><p><a href="http://mediaarchive.cern.ch/MediaArchive/Photo/Public/1994/9407011/9407011_20/9407011_20-A5-at-72-dpi.jpg"><img border="0" width="143" height="177" src="lec15_clip_image009.jpg" alt="Highslide JS" /></a><u> </u></p></td>
+                  </tr>
+                </table>
+				<ul type="disc">
+                  <li>The basic idea of the WWW was to merge the       technologies of personal computers, computer networking and hypertext into       a powerful and easy to use global information system.</li>
+				  <li>The World Wide Web, abbreviated as WWW and commonly known as The Web, is a system of       interlinked hypertext documents contained on the Internet.</li>
+				  <li>With a web browser,       one can view web pages that may contain text, images, videos, and other       multimedia and navigate between them by using hyperlinks.</li>
+			    </ul>
+				<p><strong>Hypertext</strong></p>
+				<ul>
+				  <li>Hypertext  is text displayed on a computer or other electronic device with references  (hyperlinks) to other text that the reader can immediately access, usually by a  mouse click or keypress sequence. </li>
+				  <li>Apart  from running text, hypertext may contain tables, images and other  presentational devices. Hypertext is the underlying concept defining the structure  of the World Wide Web, making it an easy-to-use and flexible format to share  information over the Internet.</li>
+			    </ul>
+				<p><strong>Web Browser</strong></p>
+				<ul>
+				  <li>A  web browser is a software  application for retrieving, presenting, and traversing information resources on  the World Wide Web. An information  resource is identified by a Uniform Resource Locator (URL) and may be a  web page, image, video, or other piece of content.</li>
+				  <li>Example  of Web Browser:</li>
+				  <ul>
+				    <li>Mosaic</li>
+				    <li>Internet  Explorer</li>
+				    <li>Netscape  Navigator</li>
+				    <li>Mozilla  Firefox</li>
+			      </ul>
+			    </ul>
+				<p><strong>Web Page and Websites</strong></p>
+				<ul>
+				  <li>W3 contains several millions of pages of  information. Each of these pages is called a Web Page. </li>
+				  <li>A  webpage or web page is a document or resource of  information that is suitable for the World Wide Web and can be accessed through  a web browser and displayed on a computer screen.</li>
+				  <li>A web page can contain text, pictures, sound,  animation and video. </li>
+				  <li>A group of related web pages that are linked  together form a Web Site. </li>
+				  <li>The first page of a web site is called the Home  Page. </li>
+				  <li>The  Home Page shown below is the Home Page of the official website of Tail Nadu  Agriculture University.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<p align="center"><img border="0" width="624" height="531" src="lec15_clip_image011.jpg" /></p>
+				<p><u>&nbsp;</u></p>
+				<p><u>&nbsp;</u></p>
+				<strong><u><br clear="all" />
+                </u></strong>
+                <p><strong>Universal Resource Locator</strong></p>
+                <table border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><ul>
+                      <li>Each web page has a unique address called Universal Resource    Locator (URL).</li>
+                      <li>Contains unique information about the server and the path on the    server to find and retrieve the information</li>
+                    </ul>
+                        <p>&nbsp;</p></td>
+                    <td valign="top"><p><img border="0" width="260" height="218" src="lec15_clip_image013.jpg" alt="url" /> </p></td>
+                  </tr>
+                </table>
+                <table width="604" border="1" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td colspan="2" valign="top"><p>Example:     http://www.usd.edu/trio/tut/start/url.html </p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>http://</p></td>
+                    <td valign="top"><p>protocol – rules through which transmission takes place over the    internet.</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>www.usd.edu/</p></td>
+                    <td valign="top"><p>server name - computer domain name</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>trio/tut/start/</p></td>
+                    <td valign="top"><p>pathname to the directory you are requesting</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>url.html</p></td>
+                    <td valign="top"><p>filename you are requesting</p></td>
+                  </tr>
+                </table>
+                <p><strong>Search Engine</strong></p>
+                <ul>
+                  <li>A web search  engine is designed to search for information on the World Wide Web. The  search results are usually presented in a list of results and are commonly  called hits. </li>
+                  <li>Few examples of web search engines are: </li>
+                </ul>
+                <div align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td width="367" valign="top"><p>Google.com </p></td>
+                      <td width="442" valign="top"><p><img border="0" width="156" height="60" src="lec15_clip_image015.jpg" /> </p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Ask.com </p></td>
+                      <td valign="top"><p><img border="0" width="108" height="79" src="lec15_clip_image017.jpg" /> </p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Yahoo.com </p></td>
+                      <td valign="top"><p><img border="0" width="214" height="64" src="lec15_clip_image019.jpg" /> </p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Bing.com</p></td>
+                      <td valign="top"><p><img border="0" width="136" height="55" src="lec15_clip_image021.jpg" /> </p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>TripleMe.com </p></td>
+                      <td valign="top"><p><img border="0" width="295" height="109" src="lec15_clip_image023.jpg" /> </p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Shopzilla.com </p></td>
+                      <td valign="top"><p><img border="0" width="428" height="82" src="lec15_clip_image025.jpg" /> </p></td>
+                    </tr>
+                                  </table>
+                </div>
+                <h1 align="left">&nbsp;</h1>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec15.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec15.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>GPBR112 :: Lecture 16</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/BIC101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">BIC 101 :: Lecture 16 :: </span>MECHANISM OF ENZYME ACTION</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+			
+				<ul type="disc">
+                  <li>A chemical reaction such as A  ----&gt; P       takes place because a certain fraction of the <strong>substrate possesses enough energy to attain an activated condition       called the transition state.</strong></li>
+				  <li>This transition state is at the top       of the energy barrier separating the reactants and products.</li>
+				  <li><strong>The       rate of a given chemical reaction is proportional to the concentration of       this transition state species.</strong></li>
+				  <li><strong>The       energy of activation</strong> is the amount of       energy required to bring all the molecules in 1 mole of a substance at a       given temperature to the transition state.</li>
+				  <li>Enzymes combine transiently with       the substrate to produce a transition state intermediate having a lower       energy of activation than the uncatalysed reaction. Thus, they accelerate       chemical reactions by <strong>lowering the       energy of activation</strong></li>
+			    </ul>
+				<p>Example<br />
+				  H2O2  ---------&gt; H2O + (O)<br />
+  <strong>Catalase</strong></p>
+				<table border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top">
+                      Reaction    condition                 </td>
+                    <td valign="top"><p>Activation    energy (KCal mol-1)</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Uncatalysed</p></td>
+                    <td valign="top"><p>18</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Catalysed by    colloidal Pt</p></td>
+                    <td valign="top"><p>13</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Catalysed by    catalase</p></td>
+                    <td valign="top"><p>7</p></td>
+                  </tr>
+                </table>
+				<p>It is generally believed  that the catalytic reactions occur in at least two steps.</p>
+				<p><strong>Step 1:</strong> A molecule of  enzyme(E) and a molecule of substrate(S) collide and react<br />
+				  to form an intermediate  called the enzyme-substrate complex (ES).<br />
+  <strong>Step 2:</strong> The  decomposition of ES complex to give product(s) and the active enzyme<br />
+  <strong>[S] + [E] ----------</strong><strong>&gt;  </strong><strong>[ES] ---------&gt;</strong><strong> </strong><strong>P+[E]</strong></p>
+				<p><strong>The formation of an ES complex affords a lower activation energy</strong>.<br />
+                    <strong>Active site</strong></p>
+				<ul type="disc">
+                  <li><strong>The       substrate binding site in the enzyme</strong> is referred as <strong>active site.</strong></li>
+				  <li>The functional groups that are       essential for the formation of ES complex occur at a specific location on       the surface of the enzyme molecule.</li>
+				  <li>This section of enzyme <strong>where substrate binding and       transformation of substrate to product </strong>occurs is called as <strong>active site</strong>.</li>
+				  <li>Many attempts have been made to       implicate <strong>specific amino acid       residues (side chain or R groups) as being part of the active site of       various enzymes.</strong></li>
+				  <li>Some of the amino acids occurring       at the active site of enzymes are hydroxyl</li>
+			    </ul>
+				<p>group of serine, sulfhydryl group of cysteine, imidazole group of  histidine and carboxyl groupof aspartic acid.<br />
+				  Two theories were proposed  to explain the mechanism of enzyme action.<br />
+  <strong>1. Fischer’s lock and key theory (Rigid template model)</strong></p>
+				<ul type="disc">
+                  <li>During 1890,  <strong>Emil       Fischer</strong> proposed this theory</li>
+				  <li>According to this, the <strong>active site possesses a unique       conformation which is complementary to the structure of the substrate</strong> thus enabling the two molecules to fit together in much the same way as a       key fits into a lock</li>
+			    </ul>
+				<p align="center"><img width="340" height="357" src="lec16_clip_image001.gif"  /> </p>
+			
+				<ul type="disc">
+                  <li>An unfortunate feature of this       model is the <strong>implied rigidity of       the catalytic site</strong>.</li>
+			    </ul>
+				<p><strong>2. Koshland’s induced-fit theory</strong></p>
+				<ul type="disc">
+                  <li>Koshland had advocated a theory <strong>to account for the specificity of       enzymes</strong>.</li>
+				  <li>He postulated that the essential       functional groups on the active site of the free enzyme are not in their       optimal positions for promoting catalysis.</li>
+				  <li>When the substrate molecule is       bound by the enzyme, <strong>the catalytic       groups assume favourable geometrical position to form the transition       state.</strong></li>
+				  <li>The enzyme molecule is unstable in       this active conformation and tends to revert to its free form in the       absence of substrate.</li>
+				  <li>In the induced fit model, the       substrate induces a conformational change in the enzyme which aligns the       amino acid residues or other groups for substrate binding, catalysis or       both.<strong></strong></li>
+			    </ul>
+				<p align="center"><a href="http://en.wikipedia.org/wiki/Image:Two_substrates_b.svg" title="Diagrams to show the induced fit hypothesis of enzyme action." target="_blank"><img border="0" width="565" height="221" src="lec16_clip_image003.gif" alt="Diagrams to show the induced fit hypothesis of enzyme action." /></a> </p>
+				<p><strong>Factors  affecting enzymatic reaction</strong><br />
+				  The factors that mainly  influence any enzyme-catalysed reaction are:<br />
+  <strong>1.</strong> <strong>Substrate concentration</strong><br />
+  <strong>2. Enzyme concentration</strong><br />
+  <strong>3. Temperature</strong><br />
+  <strong>4. pH</strong><br />
+  <strong>5. Inhibitors</strong><br />
+				  Other factors such as <strong>state of enzyme (oxidation), time and  activators </strong>also affect enzyme-catalysed reaction to certain extent.<br />
+  <strong>Substrate concentration</strong></p>
+				<ul type="disc">
+                  <li>Keeping the factors such as pH,       temperature and enzyme concentration at optimum levels, if the <strong>substrate concentration is increased,</strong> <strong>the velocity of the reaction       recorded a rectangular hyperbola.</strong></li>
+				  <li>At <strong>very low substrate concentration</strong> the initial reaction velocity       (v) is nearly proportional to the substrate concentration (first order       kinetics).</li>
+				  <li>However, if the substrate       concentration is increased the rate of increase slows down (mixed order       kinetics).</li>
+				  <li>With a further increase in the       substrate concentration the reaction rate approaches a constant (zero       order-reaction where velocity is independent of substrate concentration).</li>
+				  <li>At initial point, eventhough the       substrate molecules are present in excess than enzyme on molar basis, not       all the enzyme molecules present combine with the substrate.</li>
+				  <li>Hence, increasing the substrate       concentration will increase the amount of enzyme associated with substrate       as ES and thus v will depend on [S].</li>
+				  <li>At Vmax, all the enzyme molecules       are saturated with substrate molecules so that further increase in [S]       cannot result in increased reaction rate.</li>
+				  <li>Michaelis-Menten derived an       equation to explain this type of behaviour.</li>
+			    </ul>
+				<p align="center"><img width="465" height="355" src="lec16_clip_image005.gif" alt="Saturation curve for an enzyme reaction showing the relation between the substrate concentration (S) and rate (v)." /> </p>
+				
+				<p align="center"><img width="229" height="78" src="lec16_clip_image006.gif" alt="Text Box:                        Vmax [S]   v  =              -------------                          Km + [S]  " /> </p>
+		
+				<p> [S] =  Substrate concentration           Vmax  = Maximum velocity<br />
+				  v = Velocity of the reaction</p>
+				<p>At half maximal velocity [S] = Km</p>
+				<p>i.e                  Vmax                      Vmax [S]<br />
+				  --------      =            -------------<br />
+				  2                              Km+[S]</p>
+				<p>Km + [S]                    Vmax [S]<br />
+				  -----------     =              ----------<br />
+				  2                                Vmax</p>
+				<p>Km + [S] = 2 [S]</p>
+				<p>Km =       2 [S] – [S]   = [S]</p>
+				<p>Hence, Michaelis - Menten  constant, <strong>Km, is defined as the  substrate concentration at half maximal velocity and is expressed as mole per  litre</strong>.</p>
+				<ul type="disc">
+                  <li>The Michaelis-Menten equation can       be algebraically transformed into more useful way to plot the experimental       data.</li>
+				  <li>Lineweaver and Burk have taken the       reciprocal of both [S] and v of the Michaelis-Menten equation to give</li>
+			    </ul>
+				<p>1            Km    1                           1<br />
+				  ---   =     ------ ------ +     -------<br />
+				  v         Vmax [S]          Vmax</p>
+				<ul>
+				  <li>A plot of    1/v versus    1/ [S] (the double reciprocal) yields a  straight line.</li>
+				  <li>This line  intercept X-axis at -1/Km and Y-axis at 1/Vmax.</li>
+				  <li>The slope of the  line is <strong>Km/Vmax.</strong></li>
+				  <li>The  Lineweaver-Burk plot has the great advantage of allowing more accurate  determination of Vmax and Km</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<p><strong>Significance of Km</strong><br />
+				  i.   Km value may vary with  substrate.<br />
+				  ii. An enzyme whose Km is very low will have a high degree of  affinity for its<br />
+				  substrate</p>
+				<p><strong>Enzyme concentration</strong></p>
+				<ul type="disc">
+                  <li>When compared to substrate       concentration, the concentration of enzyme is always <strong>very very low</strong> on molar basis.</li>
+				  <li>Hence, <strong>increasing the enzyme concentration will always increase the       reaction rate</strong></li>
+			    </ul>
+				<p><strong>Temperature</strong></p>
+				<ul type="disc">
+                  <li>The <strong>velocity of enzyme-catalysed reactions</strong> roughly <strong>doubles with a 10oC</strong> rise in temperature over a limited range of temperature</li>
+				  <li>Enzymes, being proteins, are <strong>denatured by heat</strong> and become <strong>inactive </strong>as the temperature       increases beyond a certain point.</li>
+				  <li>Most of the enzymes are inactivated       at temperatures <strong>above 60oC.</strong></li>
+				  <li>The temperature at which the       reaction rate is maximum is known as <strong>optimum       temperature</strong></li>
+			    </ul>
+				<p><strong>pH</strong></p>
+				<ul type="disc">
+                  <li>Most enzymes have a <strong>characteristic pH</strong> at which their       activity is maximum; above or below this pH, the activity declines</li>
+				  <li>The pH affects the ionic state of       the enzyme and frequently that of the substrate also.</li>
+				  <li>If a negatively charged enzyme (E-)       reacts with a positively charged substrate (SH+), ESH is       formed.</li>
+				  <li>At low pH values, E-       will be protonated and ESH is not formed.</li>
+				  <li>Similarly, at very high pH values       SH+ will ionize and lose its positive charge.</li>
+			    </ul>
+				<p>E- + SH+ ------&gt; ESH<br />
+				  acidic pH</p>
+				<p>E- + SH+ ------&gt;   EH + SH+ --------&gt;    No ESH  formation<br />
+				  alkaline pH</p>
+				<p>SH+ ----------&gt;     S + H+  + E- --------&gt;    No ESH formation</p>
+				<ul type="disc">
+                  <li>Another important       factor is the <strong>change in       conformation (denaturation) of enzyme at extreme pH values.</strong></li>
+			    </ul>
+				<p><strong>Inhibitors</strong></p>
+				<ul type="disc">
+                  <li>Compounds that have the <strong>ability to combine with certain       enzymes</strong> but <strong>do not serve as       substrates</strong> and therefore <strong>block       catalysis</strong> are called <strong>inhibitors</strong>.</li>
+				  <li>The important type of       inhibitors are <strong>competitive </strong>and <strong>noncompetitive inhibitors</strong>.</li>
+			    </ul>
+				<p><strong>Competitive inhibitor</strong></p>
+				<ul>
+				  <li>Any compound  which <strong>possessess a close structural  resemblance to a particular substrate</strong> and which <strong>competes with that of substrate for the same active site on the enzyme </strong>is  called as <strong>competitive inhibitor</strong>.</li>
+				  <li>The inhibitor is  not acted upon by the enzyme and so remains bound to the enzyme preventing the  substrate to bind.</li>
+				  <li>This is a <strong>reversible process</strong>.</li>
+				  <li>It <strong>depends upon the relative concentration of  substrate and inhibitor</strong>.</li>
+				  <li>Competitive  inhibition can be completely reversed by addition of large excess of substrate</li>
+			    </ul>
+				<p>                        high  inhibitor concn.<br />
+				  E +  I      ----------------------&gt;         E I<br />
+				  &lt;----------------------<br />
+				  high substrate concn.</p>
+				<p>Eg.   the enzyme, succinate  dehydrogenase converts succinate to fumarate.<br />
+				  For this reaction, <strong>malonic acid </strong>is a<strong> competitive inhibitor</strong> as it structurally  resembles that of succinate</p>
+				<ul type="disc">
+                  <li>In case of competitive       inhibition, <strong>Km is       increased  </strong>but<strong> Vmax is not altered</strong>.</li>
+			    </ul>
+				<p><a href="http://en.wikipedia.org/wiki/Image:Competitive_inhibition_copy.svg" title="A competitive inhibitor binds reversibly to the enzyme, preventing the binding of substrate. On the other hand, binding of substrate prevents binding of the inhibitor. Substrate and inhibitor compete for the enzyme."><img border="0" width="479" height="335" src="lec16_clip_image008.gif" alt="A competitive inhibitor binds reversibly to the enzyme, preventing the binding of substrate. On the other hand, binding of substrate prevents binding of the inhibitor. Substrate and inhibitor compete for the enzyme." /></a> </p>
+				<p><strong>Non-competitive inhibitor</strong></p>
+				<ul type="disc">
+                  <li>Non-competitive inhibitors <strong>bind to a site other than the active       site on the enzyme</strong> often to <strong>deform       the enzyme</strong>, so that, it does not form the ES complex at its normal       rate.</li>
+				  <li>Once formed, the ES complex does       not decompose at the normal rate to yield products.</li>
+				  <li>These <strong>effects are not reversed</strong> by increasing the substrate       concentration.</li>
+			    </ul>
+				<p>E + I -------&gt;  EI<br />
+				  ES + I ------&gt; ESI</p>
+				<ul type="disc">
+                  <li>Some enzymes possessing       an essential -SH group are non-competitively inhibited by heavy metal ions       (Hg2+, Pb2+).</li>
+				  <li>Some <strong>metalloenzymes </strong>are inhibited <strong>non competitively by metal chelating       agents like ethylene diamine tetraacetic acid(EDTA).</strong></li>
+				  <li>Inhibitors are used as <strong>tools to probe the mechanism of enzyme       - catalysed reactions </strong>and as <strong>therapeutic       agents</strong>.<strong></strong></li>
+				  <li>In case of noncompetitive inhibition, Vmax is lowered but Km is not       altered</li>
+			    </ul>
+				<p><strong>Uncompetitive  inhibitor</strong></p>
+				<ul type="disc">
+                  <li>In case       of uncompetitive inhibition, the inhibitor binds only to free enzyme and       not to the enzyme substrate [ES]        complex</li>
+			    </ul>
+			
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec16.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec16.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

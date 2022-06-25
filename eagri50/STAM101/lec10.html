@@ -1,0 +1,573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 10</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 10 :: </span></strong><strong>T-test</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>  Definition –  Assumptions – Test for equality of two means-independent and paired t test</strong></p>
+				<p align="center"><strong>Student’s t test</strong><br />
+				  When the sample size is smaller, the ratio <img width="81" height="75" src="lec10_clip_image002.gif" /> will follow t  distribution and not the standard normal distribution. Hence the test statistic  is given as <img width="81" height="75" src="lec10_clip_image004.gif" /> which follows normal  distribution with mean 0 and unit standard deviation. This follows a t  distribution with (n-1) degrees of freedom which can be written as t(n-1)  d.f.<br />
+				  This fact was brought out by Sir  William Gossest and Prof. R.A Fisher. Sir William Gossest published his  discovery in 1905 under the pen name Student and later on developed and  extended by Prof. R.A Fisher. He gave a test known as t-test.</p>
+                   <p align="center">Inference About Two Means<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Inference_About_Two_Means.m4v" type="video/mp4">
+</video></p>
+				<p><strong>Applications (or) uses</strong></p>
+				<ul>
+				  <li>To test the single mean in  single sample case.</li>
+				  <li>To test the equality of  two means in double sample case.</li>
+				  <li> Independent  samples(Independent t test)</li>
+			    </ul>
+				<p>(ii) Dependent samples  (Paired t test)</p>
+				<ul>
+				  <li>To test the significance  of observed correlation coefficient.</li>
+				  <li>To test the significance  of observed partial correlation coefficient.</li>
+				  <li>To test the significance  of observed regression coefficient.</li>
+			    </ul>
+				<p><strong>Test for single Mean   </strong></p>
+				<ul>
+				  <li>Form the null hypothesis<strong> </strong></li>
+			    </ul>
+				<p>            Ho: µ=µo  <br />
+				  (i.e) There is no  significance difference between the sample mean and the population mean   </p>
+				<ul>
+				  <li>Form the Alternate hypothesis<strong> </strong></li>
+			    </ul>
+				<p>    H1: µ≠µo (or µ&gt;µo  or µ&lt;µo) <br />
+				  ie., There is significance  difference between the sample mean and the population mean <br />
+  <strong>3. </strong>Level of Significance<strong></strong><br />
+				  The level may be fixed at  either 5% or 1%<br />
+  <strong>4. </strong>Test statistic<strong></strong><br />
+				  <img width="75" height="91" src="lec10_clip_image006.gif" />which follows t distribution with (n-1) degrees of freedom<br />
+				  <img width="104" height="45" src="lec10_clip_image008.gif" /> <img width="164" height="73" src="lec10_clip_image010.gif" /></p>
+				<ul>
+				  <li>Find the table value of t  corresponding to (n-1) d.f. and the specified level of significance.  </li>
+				  <li>Inference</li>
+			    </ul>
+				<p>If t &lt; ttab  we accept the null hypothesis H0. We  conclude that there is no significant difference sample mean and  population mean<br />
+				  (or) if t &gt; ttab  we reject the null hypothesis H0.  (ie) we accept the alternative  hypothesis and conclude that there is significant difference between the sample  mean and the population mean. </p>
+                  <table width="100%" border="0">
+  <tr>
+    <td>   <p align="center">2-Sample t-Test Using Minitab<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/2-Sample&#32;t-Test&#32;Using&#32;Minitab.mp4" type="video/mp4">
+</video></p></td>
+    <td>   <p align="center"><a href="videos/Student-t-Test.mp4" target="_blank">Student-t-Test</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Student-t-Test.mp4" type="video/mp4">
+</video></p></td>
+  </tr>
+</table>
+
+                
+				<p><strong>Example 1</strong><br />
+				  Based on field  experiments, a new variety of green gram is expected to given a yield of 12.0 quintals  per hectare. The variety was tested on 10 randomly selected farmer’s fields.  The     yield  (quintals/hectare) were recorded as 14.3,12.6,13.7,10.9,13.7,12.0,11.4,12.0,12.6,13.1.  Do the results conform to the expectation?</p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>Solution</strong><br />
+				  Null hypothesis H0: m=12.0<br />
+				  (i.e) the average yield of  the new variety of green gram is 12.0 quintals/hectare.<br />
+				  Alternative Hypothesis: H1:m≠ 12.0<br />
+				  (i.e) the average yield is  not 12.0 quintals/hectare, it may be less or more than 12 quintals / hectare<br />
+				  Level of significance: 5 % <br />
+				  Test statistic:<br />
+				  <img width="68" height="91" src="lec10_clip_image012.gif" /><br />
+				  From the given data <br />
+  <img width="83" height="27" src="lec10_clip_image014.gif" />        <img width="108" height="27" src="lec10_clip_image016.gif" /><br />
+				  <img width="165" height="45" src="lec10_clip_image018.gif" /><br />
+  <img width="139" height="73" src="lec10_clip_image020.gif" /><img width="157" height="47" src="lec10_clip_image022.gif" /><img width="75" height="47" src="lec10_clip_image024.gif" /><br />
+				  = 1.0853<br />
+  <img width="151" height="44" src="lec10_clip_image026.gif" /><br />
+				  Now  <img width="68" height="91" src="lec10_clip_image012_0000.gif" /><br />
+				  <img width="144" height="41" src="lec10_clip_image029.gif" /><br />
+				  Table value for t  corresponding to 5% level of significance and 9 d.f. is 2.262 (two tailed test)</p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>Inference</strong><br />
+				  t &lt; ttab<br />
+				  We accept the null hypothesis H0<br />
+				  We conclude that the new  variety of green gram will give an average yield of 12 quintals/hectare.<br />
+  <strong>Note</strong><br />
+				  Before applying t test in  case of two samples the equality of their variances has to be tested by using F-test<br />
+  <strong><img width="195" height="49" src="lec10_clip_image031.gif" /> <img width="59" height="24" src="lec10_clip_image033.gif" /></strong><br />
+				  or<br />
+  <strong><img width="183" height="48" src="lec10_clip_image035.gif" /></strong> <strong><img width="69" height="24" src="lec10_clip_image037.gif" /></strong><br />
+				  where <img width="19" height="24" src="lec10_clip_image039.gif" />is the variance of the first sample whose size is n1.<br />
+				  <strong><img width="19" height="24" src="lec10_clip_image041.gif" /></strong>is the variance of the second sample whose size is n2.<br />
+				  It may be  noted that the numerator is always the greater variance. The critical value for  F is read from the F table corresponding to a specified d.f.  and level of significance<br />
+				  Inference <br />
+				  F &lt;Ftab<br />
+				  We accept the null hypothesis H0.(i.e)  the variances are equal otherwise the variances are unequal.<br />
+  <strong>Test for equality of two Means (Independent Samples)</strong><br />
+				  Given two sets of sample observation  x11,x12,x13…x1n , and  x21,x22,x23…x2n  of sizes n1 and n2 respectively from the normal population.</p>
+				<ul>
+				  <li>Using F-Test , test their variances</li>
+				  <li><strong>Variances are Equal</strong> </li>
+			    </ul>
+				<p>Ho:., µ1=µ2 <br />
+				  H1  µ1≠µ2  (or µ1&lt;µ2 or µ1&gt;µ2)</p>
+				<p>&nbsp;</p>
+				<p>Test statistic<br />
+				  <img width="121" height="85" src="lec10_clip_image043.gif" /><br />
+				  where the combined variance <br />
+  <img width="289" height="84" src="lec10_clip_image045.gif" /><br />
+				  The test statistic t  follows a t distribution with (n1+n2-2) d.f.</p>
+				<ul>
+				  <li><strong>Variances are unequal  and n1=n2</strong></li>
+			    </ul>
+				<p><img width="121" height="85" src="lec10_clip_image043_0000.gif" /><br />
+				  It follows a t  distribution with <img width="108" height="45" src="lec10_clip_image048.gif" /> </p>
+				<ul>
+				  <li><strong>Variances are unequal  and n1≠n2</strong></li>
+			    </ul>
+				<p><img width="97" height="107" src="lec10_clip_image050.gif" /><br />
+				  This statistic follows  neither t nor normal distribution but it follows Behrens-Fisher d distribution.  The Behrens – Fisher test is laborious one. An alternative simple method has  been suggested by Cochran &amp; Cox. In this method the critical value of t is  altered as  tw (i.e) weighted  t <br />
+  <img width="143" height="95" src="lec10_clip_image052.gif" /><br />
+				  where t1is  the critical value for t with (n1-1) d.f. at a dspecified level of significance  and <br />
+				  t2 is the  critical value for t with (n2-1) d.f. at a dspecified level of significance and <br />
+  <strong>Example 2</strong><br />
+				  In a fertilizer trial the  grain yield of paddy (Kg/plot) was observed as follows<br />
+				  Under ammonium chloride  42,39,38,60 &amp;41 kgs<br />
+				  Under urea 38, 42, 56, 64,  68, 69,&amp; 62 kgs.<br />
+				  Find whether there is any difference between the  sources of nitrogen?<br />
+  <strong>Solution</strong><br />
+				  Ho: µ1=µ2  (i.e) there is no significant difference in effect between the sources of  nitrogen.<br />
+				  H1:  µ1≠µ2   (i.e) there is a significant difference  between the two sources<br />
+				  Level of significance = 5%<br />
+				  Before we go to test the  means first we have to test their variances by using F-test.<br />
+				  F-test<br />
+				  Ho:., s12=s22 <br />
+				  H1:., s12≠s22 <br />
+  <strong><img width="187" height="68" src="lec10_clip_image054.gif" /></strong> <br />
+  <strong><img width="203" height="68" src="lec10_clip_image056.gif" /></strong> <br />
+  <strong>\</strong><strong><img width="183" height="48" src="lec10_clip_image035_0000.gif" /></strong> <strong><img width="65" height="24" src="lec10_clip_image059.gif" /></strong><br />
+  <strong><img width="137" height="41" src="lec10_clip_image061.gif" /></strong><br />
+				  Ftab(6,4)  d.f. = 6.16<br />
+				  Þ F &lt; Ftab<br />
+				  We accept the null hypothesis H0. (i.e)  the variances are equal.<br />
+				  Use the test  statistic<br />
+  <img width="121" height="85" src="lec10_clip_image043_0001.gif" /></p>
+				<p>where <br />
+                    <img width="289" height="84" src="lec10_clip_image045_0000.gif" /><img width="133" height="41" src="lec10_clip_image065.gif" /></p>
+				<p><img width="179" height="75" src="lec10_clip_image067.gif" /><br />
+				  The degrees of freedom is  5+7-2= 10. For 5 % level of significance, table value of t  is 2.228<br />
+				  Inference:<br />
+				  t &lt;ttab<br />
+				  We accept the null hypothesis H0<br />
+				  We conclude that the two  sources of nitrogen do not differ significantly with regard to the grain yield  of paddy.<br />
+  <strong>Example 3</strong><br />
+				  The summary of  the results of an yield trial on onion with two methods of propagation is given  below.  Determine whether the methods  differ with regard to onion yield. The onion yield is given in Kg/plot.</p>
+				<div align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Method    I</strong> </td>
+                      <td valign="top"><p align="center"><strong>Method    II</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">n1=12</p></td>
+                      <td valign="top"><p align="center">n2=12</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><img width="73" height="24" src="lec10_clip_image069.gif" /></p></td>
+                      <td valign="top"><p align="center"><img width="75" height="24" src="lec10_clip_image071.gif" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">SS1=186.25</p></td>
+                      <td valign="top"><p align="center">SS2=737.6667</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><img width="87" height="24" src="lec10_clip_image073.gif" /></p></td>
+                      <td valign="top"><p align="center"><img width="89" height="24" src="lec10_clip_image075.gif" /></p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p><strong>Solution</strong><br />
+				  Ho:., µ1=µ2  (i.e) the two propagation methods do not differ with regard to onion yield.<br />
+				  H1  µ1≠µ2   (i.e) the two propagation methods differ with  regard to onion yield.<br />
+				  Level of significance = 5%<br />
+				  Before we go to test the  means first we have to test their variability using F-test.<br />
+				  F-test<br />
+				  Ho: s12=s22 <br />
+				  H1: s12≠s22 <br />
+  <strong><img width="209" height="68" src="lec10_clip_image077.gif" /></strong> <br />
+  <strong><img width="212" height="68" src="lec10_clip_image079.gif" /></strong> <br />
+  <strong>\</strong><strong><img width="183" height="48" src="lec10_clip_image035_0001.gif" /></strong> <strong><img width="65" height="24" src="lec10_clip_image059_0000.gif" /></strong><br />
+  <strong><img width="140" height="41" src="lec10_clip_image083.gif" /></strong><br />
+				  Ftab(11,11)  d.f. = 2.82<br />
+				  Þ F &gt; Ftab<br />
+				  We reject the null hypothesis H0.we  conclude that the variances are unequal.<br />
+				  Here the variances are unequal with  equal sample size then the test statistic is <br />
+  <img width="121" height="85" src="lec10_clip_image043_0002.gif" /><br />
+				  where <br />
+  <img width="289" height="84" src="lec10_clip_image045_0001.gif" /><br />
+  <img width="313" height="45" src="lec10_clip_image087.gif" /><br />
+  <img width="284" height="76" src="lec10_clip_image089.gif" /><br />
+				  t =1.353<br />
+				  The table value for <img width="48" height="29" src="lec10_clip_image091.gif" />=11 d.f. at 5% level of significance is 2.201<br />
+				  Inference:<br />
+				  t&lt;ttab<br />
+				  We accept the null hypothesis H0<br />
+				  We conclude that the two  propagation methods do not differ with regard to onion yield.<br />
+  <strong>Example 4</strong><br />
+				  The following data relate the  rubber yield of two types of rubber plants, where the sample have been drawn  independently. Test whether the two types of rubber plants differ in their  yield.</p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td rowspan="2"><p align="center">Type    I</p></td>
+                      <td><p>6.21</p></td>
+                      <td><p>5.70</p></td>
+                      <td><p>6.04</p></td>
+                      <td><p>4.47</p></td>
+                      <td><p>5.22</p></td>
+                      <td><p>4.45</p></td>
+                      <td><p>4.84</p></td>
+                      <td><p>5.84</p></td>
+                      <td><p>5.88</p></td>
+                      <td><p>5.82</p></td>
+                      <td><p>6.09</p></td>
+                      <td><p>5.59</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>6.06</p></td>
+                      <td><p>5.59</p></td>
+                      <td><p>6.74</p></td>
+                      <td><p>5.55</p></td>
+                      <td><p>&nbsp;</p></td>
+                      <td><p>&nbsp;</p></td>
+                      <td><p>&nbsp;</p></td>
+                      <td><p>&nbsp;</p></td>
+                      <td><p>&nbsp;</p></td>
+                      <td><p>&nbsp;</p></td>
+                      <td><p>&nbsp;</p></td>
+                      <td><p>&nbsp;</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p>Type II</p></td>
+                      <td><p>4.28</p></td>
+                      <td><p>7.71</p></td>
+                      <td><p>6.48</p></td>
+                      <td><p>7.71</p></td>
+                      <td><p>7.37</p></td>
+                      <td><p>7.20</p></td>
+                      <td><p>7.06</p></td>
+                      <td><p>6.40</p></td>
+                      <td><p>8.93</p></td>
+                      <td><p>5.91</p></td>
+                      <td><p>5.51</p></td>
+                      <td><p>6.36</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p><strong>Solution</strong><br />
+				  Ho:., µ1=µ2  (i.e) there is no significant difference between the two rubber plants.<br />
+				  H1  µ1≠µ2   (i.e) there is a significant difference  between the two rubber plants.<br />
+				  Level of significance = 5%<br />
+				  Here</p>
+				<div align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        n1=16 </td>
+                      <td valign="top"><p align="center">n2=12</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><img width="91" height="27" src="lec10_clip_image093.gif" /></p></td>
+                      <td valign="top"><p align="center"><img width="92" height="27" src="lec10_clip_image095.gif" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><img width="65" height="24" src="lec10_clip_image097.gif" /></p></td>
+                      <td valign="top"><p align="center"><img width="81" height="24" src="lec10_clip_image099.gif" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><img width="112" height="28" src="lec10_clip_image101.gif" /></p></td>
+                      <td valign="top"><p align="center"><img width="107" height="28" src="lec10_clip_image103.gif" /></p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p>Before we go to test the  means first we have to test their variability using F-test.<br />
+				  F-test<br />
+				  Ho:., s12=s22 <br />
+				  H1:., s12≠s22 <br />
+  <strong><img width="195" height="68" src="lec10_clip_image105.gif" /></strong> <br />
+  <strong><img width="195" height="68" src="lec10_clip_image107.gif" /></strong> </p>
+				<p><strong>\</strong><strong><img width="185" height="48" src="lec10_clip_image109.gif" /></strong> if <strong><img width="51" height="24" src="lec10_clip_image111.gif" /></strong><br />
+                    <strong><img width="124" height="41" src="lec10_clip_image113.gif" /></strong><br />
+				  Ftab(11,15)  d.f.=2.51<br />
+				  Þ F &gt; Ftab<br />
+				  We reject the null hypothesis H0.  Hence, the variances are unequal.<br />
+				  Here the variances are unequal with  unequal sample size then the test statistic is <br />
+  <img width="97" height="107" src="lec10_clip_image050_0000.gif" /><br />
+  <img width="187" height="68" src="lec10_clip_image116.gif" /><br />
+  <img width="145" height="92" src="lec10_clip_image118.gif" /> <br />
+				  t1=t(16-1)  d.f.=2.131<br />
+				  t2=t(12-1) d.f  .=2.201 <br />
+  <img width="281" height="87" src="lec10_clip_image120.gif" /></p>
+				<p>Inference:<br />
+				  t&gt;tw<br />
+				  We reject the null hypothesis H0.  We conclude that the second type of rubber plant yields more rubber than that  of first type.</p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>Equality of  two means (Dependant samples)</strong><br />
+				  Paired t test<br />
+				  In the t-test  for difference between two means, the two samples were independent of each  other. Let us now take particular situations where the samples are not  independent.<br />
+				  In agricultural  experiments it may not be possible to get required number of homogeneous  experimental units. For example, required number of plots which are similar in  all; characteristics may not be available. In such cases each plot may be divided  into two equal parts and one treatment is applied to one part and  second treatment to another part of the plot.  The results of the experiment will result in two correlated samples. In some  other situations two observations may be taken on the same experimental unit.  For example, the soil properties before and after the application of industrial  effluents may be observed on number of plots. This will result in paired  observation. In such situations we apply paired t test.<br />
+				  Suppose the observation before treatment is denoted by x and the  observation after treatment is denoted by y. for each experimental unit we get  a pair of observation(x,y). In case of n experimental units we get n pairs of  observations : (x1,y1), (x2,y2)…(xn,yn). In order to apply the paired t test we  find out the differences (x1- y1), (x2-y2),..,(xn-yn) and denote them as d1,  d2,…,dn. Now d1, d2…form a sample . we apply the t test procedure for one  sample (i.e) <img width="75" height="55" src="lec10_clip_image122.gif" /><br />
+  <img width="116" height="45" src="lec10_clip_image124.gif" />, <strong><img width="147" height="68" src="lec10_clip_image126.gif" /></strong><br />
+				  the mean<strong> </strong><img width="16" height="21" src="lec10_clip_image128.gif" />may be positive or negative. Hence we take the absolute value  as <img width="20" height="29" src="lec10_clip_image130.gif" />. The test statistic t follows a t distribution with (n-1)  d.f. <br />
+  <strong>Example 5</strong><br />
+				  In an experiment the plots where  divided into two equal parts. One part received soil treatment A and the second  part received soil treatment B. each plot was planted with sorghum. The sorghum  yield (kg/plot) was absorbed. The results are given below. Test the  effectiveness of soil treatments on sorghum yield.  </p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        Soil treatment    A </td>
+                      <td valign="top"><p>49</p></td>
+                      <td valign="top"><p align="center">53</p></td>
+                      <td valign="top"><p>51</p></td>
+                      <td valign="top"><p>52</p></td>
+                      <td valign="top"><p>47</p></td>
+                      <td valign="top"><p>50</p></td>
+                      <td valign="top"><p>52</p></td>
+                      <td valign="top"><p>53</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Soil    treatment B </p></td>
+                      <td valign="top"><p>52</p></td>
+                      <td valign="top"><p>55</p></td>
+                      <td valign="top"><p>52</p></td>
+                      <td valign="top"><p>53</p></td>
+                      <td valign="top"><p>50</p></td>
+                      <td valign="top"><p>54</p></td>
+                      <td valign="top"><p>54</p></td>
+                      <td valign="top"><p>53</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p><strong>Solution</strong><br />
+				  H0: m1 = m2 ,  there is no significant difference between the effects of the two soil  treatments<br />
+				  H1: m1 ¹ m2, there  is significant difference between the effects of the two soil treatments <br />
+				  Level of significance = 5%<br />
+				  <strong>Test  statistic</strong><br />
+  <img width="75" height="55" src="lec10_clip_image122_0000.gif" /> </p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                      x </td>
+                    <td valign="top"><p align="center">y</p></td>
+                    <td valign="top"><p align="center">d=x-y</p></td>
+                    <td valign="top"><p align="center">d2</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">49</p></td>
+                    <td valign="top"><p align="center">52</p></td>
+                    <td valign="top"><p align="center">-3</p></td>
+                    <td valign="top"><p align="center">9</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">53</p></td>
+                    <td valign="top"><p align="center">55</p></td>
+                    <td valign="top"><p align="center">-2</p></td>
+                    <td valign="top"><p align="center">4</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">51</p></td>
+                    <td valign="top"><p align="center">52</p></td>
+                    <td valign="top"><p align="center">-1</p></td>
+                    <td valign="top"><p align="center">1</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">51</p></td>
+                    <td valign="top"><p align="center">52</p></td>
+                    <td valign="top"><p align="center">-1</p></td>
+                    <td valign="top"><p align="center">1</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">47</p></td>
+                    <td valign="top"><p align="center">50</p></td>
+                    <td valign="top"><p align="center">-3</p></td>
+                    <td valign="top"><p align="center">16</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">50</p></td>
+                    <td valign="top"><p align="center">54</p></td>
+                    <td valign="top"><p align="center">-4</p></td>
+                    <td valign="top"><p align="center">16</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">52</p></td>
+                    <td valign="top"><p align="center">54</p></td>
+                    <td valign="top"><p align="center">-2</p></td>
+                    <td valign="top"><p align="center">4</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">53</p></td>
+                    <td valign="top"><p align="center">53</p></td>
+                    <td valign="top"><p align="center">0</p></td>
+                    <td valign="top"><p align="center">0</p></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">-16</p></td>
+                    <td valign="top"><p align="center">44</p></td>
+                  </tr>
+                </table>
+				<p><img width="153" height="45" src="lec10_clip_image133.gif" />,<br />
+				  <strong><img width="205" height="68" src="lec10_clip_image135.gif" /> </strong><br />
+  <img width="145" height="48" src="lec10_clip_image137.gif" /><br />
+				  Table value of t for 7 d.f.  at 5% l.o.s is  2.365<br />
+				  Inference:<br />
+				  t&gt;ttab<br />
+			    We reject the null hypothesis H0.  We conclude that the is significant difference between the two soil treatments  between A and B. Soil treatment B increases the yield of sorghum significantly,</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec10.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec10.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

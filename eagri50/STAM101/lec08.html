@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 08</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 08 :: </span></strong><strong>Sampling-basic concepts</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h4 align="center"><strong>Sampling vs Complete  enumeration parameter and statistic-sampling methods-simple random sampling and  stratified random sampling</strong></h4>
+				<p><strong>Population (Universe)</strong><br />
+				  Population  means aggregate of all possible units. It need not be human population. It may  be population of plants, population of insects, population of fruits, etc. </p>
+				<p><strong>Finite population</strong><br />
+				  When the number of observation can be counted and is  definite, it is known as finite population</p>
+				<ul>
+				  <li>No. of plants in a plot.</li>
+				  <li>No. of farmers in a village.</li>
+				  <li>All the fields under a specified crop.</li>
+			    </ul>
+                
+
+              
+				<p><strong>Infinite population</strong><br />
+				  When the number of units in a population is innumerably  large, that we cannot count all of them, it is known as infinite population.</p>
+				<ul>
+				  <li>The plant population in a region. </li>
+				  <li>The population of insects in a region. </li>
+			    </ul>
+				<p><strong>Frame</strong><br />
+				  A list  of all units of a population is known as frame.        <br />
+  <strong>Parameter</strong><br />
+				  A  summary measure that describes any given characteristic of the population is  known as parameter. Population are described in terms of certain measures like  mean, standard deviation etc. These measures of the population are called  parameter and are usually denoted by Greek letters. For example, population  mean is denoted by m, standard deviation by s  and variance by s2  .<br />
+  <strong>Sample</strong><br />
+				  A portion  or small number of unit of the total population is known as sample. </p>
+				<ul>
+				  <li>All the farmers in a  village(population) and a few farmers(sample)</li>
+				  <li>All plants in a plot is a  population of plants.</li>
+				  <li>A small number of plants  selected out of that population is a sample of plants.</li>
+			    </ul>
+				<p><strong>Statistic</strong><br />
+				  A summary  measure that describes the characteristic of the sample is known as statisitic.  Thus sample mean, sample standard deviation etc is statistic. The statistic is  usually denoted by roman letter.<br />
+  <img width="13" height="23" src="lec08_clip_image002.gif" />- sample mean<br />
+				  s – standard deviation<br />
+				  The statistic is a random variable because it varies from  sample to sample. <br />
+  <strong>Sampling</strong><br />
+				  The  method of selecting samples from a population is known as sampling. <br />
+  <strong>Sampling technique </strong><br />
+				  There are two ways in which the  information is collected during statistical survey. They are</p>
+				<ul>
+				  <li>Census survey</li>
+				  <li>Sampling survey</li>
+			    </ul>
+				<p><strong>Census</strong><br />
+                    <strong>            </strong>It is also known as population survey and complete  enumeration survey. Under census survey the information are collected from each  and every unit of the population or universe.<br />
+                    <strong>Sample survey</strong><br />
+				  A  sample is a part of the population. Information are collected from only a few  units of a population and not from all the units. Such a survey is known as  sample survey.<br />
+				  Sampling technique is universal in nature,  consciously or unconsciously it is adopted in every day life.<br />
+				  For eg.</p>
+				<ul>
+				  <li>A handful of rice is examined before buying a sack.</li>
+				  <li>We taste one or two fruits before buying a bunch of  grapes.</li>
+				  <li>To measure root length of plants only a portion of  plants are selected from a plot.</li>
+			    </ul>
+				<p><strong>Need for sampling</strong><br />
+				  The  sampling methods have been extensively used for a variety of purposes and in  great diversity of situations.<br />
+				  In  practice it may not be possible to collected information on all units of a  population due to various reasons such as</p>
+				<ul>
+				  <li>Lack of resources in terms of money, personnel and  equipment.</li>
+				  <li>The experimentation may be destructive in nature.  Eg- finding out the germination percentage of seed material or in evaluating  the efficiency of an insecticide the experimentation is destructive.</li>
+				  <li>The data may be wasteful if they are not collected  within a time limit. The census survey will take longer time as compared to the  sample survey. Hence for getting quick results sampling is preferred.  Moreover a sample survey will be less costly  than complete enumeration.</li>
+				  <li>Sampling remains the only way when population  contains infinitely many number of units.</li>
+				  <li>Greater accuracy.</li>
+			    </ul>
+				<p><strong>Sampling methods</strong><br />
+				  The  various methods of sampling can be grouped under<br />
+				  1) Probability sampling or random sampling<br />
+				  2) Non-probability sampling or non random sampling<br />
+  <strong>Random  sampling</strong><br />
+				  Under  this method, every unit of the population at any stage has equal chance (or)  each unit is drawn with known probability. It helps to estimate the mean,  variance etc of the population. <br />
+                   <p align="center">Random Samples<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Random&#32;Samples.m4v" type="video/mp4">
+</video></p>
+				  Under probability sampling there are two procedures</p>
+				<ul>
+				  <li>Sampling with replacement (SWR)</li>
+				  <li>Sampling without replacement (SWOR)</li>
+			    </ul>
+				<p>When the successive draws  are made with placing back the units selected in the preceding draws, it is  known as sampling with replacement. When such replacement is not made it is known  as sampling without replacement.<br />
+				  When  the population is finite sampling with replacement is adopted otherwise SWOR is  adopted.<br />
+				  Mainly there are many kinds of random sampling. Some  of them are.</p>
+				<ul>
+				  <li>Simple Random Sampling</li>
+				  <li>Systematic Random Sampling</li>
+				  <li>Stratified Random Sampling</li>
+				  <li>Cluster Sampling</li>
+			    </ul>
+				<p><strong>Simple Random sampling (SRS)</strong><br />
+				  The basic probability sampling method is the simple  random sampling. It is the simplest of all the probability sampling methods. It  is used when the population is homogeneous.<br />
+				  When the units of the sample are drawn independently  with equal probabilities. The sampling method is known as Simple Random Sampling  (SRS). Thus if the population consists of N units, the probability of selecting  any unit is 1/N. <br />
+				  A  theoretical definition of SRS is as follows<br />
+				  Suppose  we draw a sample of size n from a population of size N. There are NCn  possible samples of size n. If all possible samples have an equal probability  1/NCn of being drawn, the sampling is said be simple random  sampling.<br />
+				  There  are two methods in SRS</p>
+				<ul>
+				  <li>Lottery method</li>
+				  <li>Random no. table method</li>
+			    </ul>
+				<p><strong>Lottery method</strong><br />
+				  This is most popular method and  simplest method. In this method all the items of the universe are numbered on  separate slips of paper of same size, shape and color. They are folded and  mixed up in a drum or a box or a container. A blindfold selection is made. Required  number of slips is selected for the desired sample size. The selection of items  thus depends on chance.<br />
+				  For example, if we want to select 5 plants  out of 50 plants in a plot, we number the 50 plants first. We write the numbers  from 1-50 on slips of the same size, role them and mix them. Then we make a  blindfold selection of 5 plants. This method is also called unrestricted random  sampling because units are selected from the population without any  restriction. This method is mostly used in lottery draws. If the population is  infinite, this method is inapplicable. There is a lot of possibility of  personal prejudice if the size and shape of the slips are not identical.<br />
+  <strong>Random  number table method</strong> <br />
+				  As the lottery method cannot be used  when the population is infinite, the alternative method is using of table of  random numbers.<br />
+				  There are several standard tables of  random numbers. But the credit for this technique goes to Prof. LHC. Tippet (1927).  The random number table consists of 10,400 four-figured numbers. There are  various other random numbers. They are fishers and Yates (19380 comprising of  15,000 digits arranged in twos. Kendall and B.B Smith (1939) consisting of 1,  00,000 numbers grouped in 25,000 sets of 4 digit random numbers, Rand corporation  (1955) consisting of 2, 00,000 random numbers of 5 digits each etc.,<br />
+  <strong>Merits</strong></p>
+				<ul>
+				  <li>There is less chance  for personal bias.</li>
+				  <li>Sampling error can be  measured.</li>
+				  <li>This method is  economical as it saves time, money and labour.</li>
+			    </ul>
+				<p><strong>Demerits</strong></p>
+				<ul>
+				  <li>It cannot be applied if the population is  heterogeneous.</li>
+				  <li>This  requires a complete list of the population but such up-to-date lists are not  available in many enquires.<strong></strong></li>
+				  <li>If  the size of the sample is small, then it will not be a representative of the  population.<strong></strong></li>
+			    </ul>
+				<p><strong>Stratified  Sampling</strong><br />
+				  When the population is heterogeneous  with respect to the characteristic in which we are interested, we adopt  stratified sampling.<br />
+				  When the heterogeneous population is divided into  homogenous sub-population, the sub-populations are called strata. From each  stratum a separate sample is selected using simple random sampling. This  sampling method is known as stratified sampling.<br />
+				  We  may stratify by size of farm, type of crop, soil type, etc.<br />
+				  The  number of units to be selected may be uniform in all strata (or) may vary from  stratum to stratum. <br />
+				  There  are four types of allocation of strata</p>
+				<ul>
+				  <li>Equal allocation</li>
+				  <li>Proportional allocation</li>
+				  <li>Neyman’s allocation</li>
+				  <li>Optimum allocation</li>
+			    </ul>
+				<p>           If the number of units to be selected  is uniform in all strata it is known as equal allocation of samples.<br />
+				  If the number of units to be selected from a stratum  is proportional to the size of the stratum, it is known as proportional  allocation of samples. <br />
+  <strong>            </strong>When the cost per unit varies from stratum to  stratum, it is known as optimum allocation.<br />
+				  When  the costs for different strata are equal, it is known as Neyman’s allocation.<br />
+  <strong>Merits</strong></p>
+				<ul>
+				  <li>It is more representative.</li>
+				  <li>It ensures greater accuracy.</li>
+				  <li>It is easy to administrate as the universe is  sub-divided.</li>
+			    </ul>
+				<p><strong>Demerits</strong></p>
+				<ul>
+				  <li>To divide the population into homogeneous strata, it  requires more money, time and statistical experience which is a difficult one.</li>
+				  <li>If proper stratification is not done, the sample  will have an effect of bias.</li>
+			    </ul>
+				<p><strong>&nbsp;</strong></p>
+				<p align="center"><strong>Questions</strong></p>
+				<p>1. If each and every unit of population has equal chance of being  included in the sample,<br />
+				  it is known as<br />
+				  (a) Restricted  sampling                    (b) Purposive  sampling<br />
+				  (c) Simple random sampling            (d) None of the above<br />
+  <strong>     Ans: Simple random sampling           </strong><br />
+  <strong>  </strong><br />
+  <strong>2.</strong> In a population of size 10 the  possible number of samples of size 2 will be<br />
+				  (a) 45<strong>  </strong>                  (b) 40               (c)         54            (d) None of the above</p>
+				<p><strong>      Ans:</strong> <strong>45</strong></p>
+				<p><strong>3.</strong> A population consisting of an unlimited  number of units is<br />
+				  called an infinite<strong> </strong>population.<br />
+				  <br />
+  <strong>      Ans: True</strong></p>
+				<p>4. If all the units of a population are  surveyed it is called census.</p>
+				<p><strong>      Ans: True</strong></p>
+				<p>5.  Random numbers are used for selecting the samples in simple random sampling  method.<br />
+                    <strong>      Ans:  True</strong></p>
+				<p>6. The  list of all units in a population is called as Frame.<br />
+                    <strong>      Ans: True</strong><br />
+                    <strong> </strong><br />
+				  7. What is sampling?<br />
+				  8. Explain  the Lottery method.<br />
+				  9. Explain the method of selection of samples in simple random sampling.</p>
+				<p>10. Explain  the method of selection of samples in Stratified random sampling<br />
+			    </p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec08.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec08.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

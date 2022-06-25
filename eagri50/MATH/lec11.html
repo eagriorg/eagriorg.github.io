@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS :: Lecture 11</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS :: Lecture 11 :: </span></strong><strong> 
+INVERSE OF A MATRIX
+</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="left"><strong><u> </u></strong><br />
+                    <strong>INVERSE OF A MATRIX</strong><br />
+                    <strong>Definition</strong><br />
+				  Let A be any square matrix.  If there exists another square matrix B Such  that AB = BA = I (I is a unit matrix) then B is called the inverse of the  matrix A and is denoted by A-1. <br />
+				  The cofactor method is used to find  the inverse of a matrix. Using matrices, the solutions of simultaneous  equations are found.<strong>                                                     <u></u></strong><br />
+  <a name="workingrule" id="workingrule"></a>Working  Rule to find the inverse of the matrix <br />
+				  Step 1: Find the determinant of the matrix.<br />
+				  Step 2: If the value of the determinant is non zero proceed  to find the inverse of the matrix.<br />
+				  Step 3: Find the cofactor of each element and form the  cofactor matrix.<br />
+				  Step 4: The transpose of the cofactor matrix is the adjoint  matrix.<br />
+			    Step 5:  The inverse  of the matrix A-1 = <img border="0" width="51" height="47" src="lec11_clip_image002.gif" /></p>
+				<p align="left"><br />
+                <p align="center">Finding Matrix Inverse<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/invmatrix/1Finding&#32;Matrix&#32;Inverse.mp4" type="video/mp4">
+</video></p>
+                <p align="center"><a href="matvdo/invmatrix/2inverse&#32;matrices.mp4" target="_blank">Inverse Matrices</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/invmatrix/2inverse&#32;matrices.mp4" type="video/mp4">
+</video></p>
+                <p align="center"><a href="matvdo/invmatrix/3Cramer's&#32;Rule,&#32;Inverse&#32;Matrix,&#32;and&#32;Volume.mp4" target="_blank">Cramer's Rule, Inverse Matrix, and Volume</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/invmatrix/3Cramer's&#32;Rule,&#32;Inverse&#32;Matrix,&#32;and&#32;Volume.mp4" type="video/mpeg4">
+</video></p>
+				  Example<br />
+				  Find the  inverse of the matrix <img border="0" width="125" height="75" src="lec11_clip_image004.gif" /><br />
+				  Solution<br />
+				  Let A =<img border="0" width="125" height="75" src="lec11_clip_image004_0000.gif" /><br />
+				  Step 1<br />
+                  <img border="0" width="341" height="121" src="lec11_clip_image007.gif" /><br />
+				  Step 2<br />
+				  The value  of the determinant is non zero<br />
+				  \A-1 exists.<br />
+				  Step 3<br />
+				  Let Aij denote the  cofactor of <em>aij</em> in <img border="0" width="20" height="27" src="lec11_clip_image009.gif" /><br />
+                  <img border="0" width="331" height="48" src="lec11_clip_image011.gif" /><br />
+                  <img border="0" width="345" height="48" src="lec11_clip_image013.gif" /><br />
+                  <img border="0" width="318" height="48" src="lec11_clip_image015.gif" /><br />
+                  <img border="0" width="346" height="48" src="lec11_clip_image017.gif" /><br />
+                  <img border="0" width="320" height="48" src="lec11_clip_image019.gif" /><br />
+                  <img border="0" width="348" height="48" src="lec11_clip_image021.gif" /><br />
+                  <img border="0" width="313" height="48" src="lec11_clip_image023.gif" /><br />
+                  <img border="0" width="348" height="48" src="lec11_clip_image025.gif" /><br />
+                  <img border="0" width="317" height="48" src="lec11_clip_image027.gif" /><br />
+				  Step 4<br />
+				  The  matrix formed by cofactors of element of determinant <img border="0" width="20" height="27" src="lec11_clip_image009_0000.gif" /> is <img border="0" width="133" height="75" src="lec11_clip_image030.gif" /><br />
+				  \adj A = <img border="0" width="133" height="75" src="lec11_clip_image032.gif" /><br />
+				  Step 5<br />
+                  <img border="0" width="240" height="75" src="lec11_clip_image034.gif" /><br />
+				  = <img border="0" width="136" height="112" src="lec11_clip_image036.gif" /><br />
+                  <strong></strong><strong>                 <u></u></strong><br />
+                  <a name="solutionoflinear" id="solutionoflinear"></a>SOLUTION OF LINEAR EQUATIONS<br />
+				  Let us consider a system of linear  equations with three unknowns <br />
+                  <img border="0" width="136" height="74" src="lec11_clip_image038.gif" /> <br />
+				  The matrix form of the equation is AX=B where<img border="0" width="149" height="75" src="lec11_clip_image040.gif" /><strong> </strong>is a 3x3 matrix <br />
+				  X = <img border="0" width="28" height="75" src="lec11_clip_image042.gif" /> and B = <img border="0" width="35" height="75" src="lec11_clip_image044.gif" /><br />
+				  Here AX = B<br />
+				  Pre  multiplying both sides by A‑1.<br />
+				  (A-1  A)X= A-1B <br />
+				  We know  that A-1 A= A A-1=I<br />
+				  \ I X= A-1B<br />
+				  since IX  = X<br />
+				  Hence the  solution is X =  A-1B.<br />
+				  Example<br />
+				  Solve the <em>x + y + z = 1, </em>3<em>x + </em>5<em>y + </em>6<em>z = 4, </em>9<em>x + </em>26<em>y + </em>36<em>z =16</em> by matrix method.<br />
+				  Solution<br />
+				  The given  equations are    <em>x + y + z = 1, </em><br />
+				  3<em>x + </em>5<em>y  + </em>6<em>z = 4, </em><br />
+			    9<em>x + </em>26<em>y + </em>36<em>z =16</em></p>
+				<p>Let A= <img border="0" width="140" height="75" src="lec11_clip_image046.gif" />, X=<img border="0" width="40" height="75" src="lec11_clip_image048.gif" />, B= <img border="0" width="43" height="75" src="lec11_clip_image050.gif" /><br />
+				  The given system of equations can be put in the form  of the matrix equation AX=B<br />
+  <img border="0" width="409" height="121" src="lec11_clip_image052.gif" /></p>
+				<p>The value  of the determinant is non zero<br />
+				  \ A-1 exists.<br />
+				  Let Aij (i, j = 1,2,3)  denote the cofactor of <em>aij </em>in <img width="20" height="27" src="lec11_clip_image002_0001.gif" /><br />
+  <img width="363" height="48" src="lec11_clip_image004_0003.gif" /><br />
+  <img width="384" height="48" src="lec11_clip_image006.gif" /><br />
+  <img width="347" height="48" src="lec11_clip_image008.gif" /><br />
+  <img width="381" height="48" src="lec11_clip_image010.gif" /><br />
+  <img width="349" height="48" src="lec11_clip_image012.gif" /><br />
+  <img width="376" height="48" src="lec11_clip_image014.gif" /><br />
+  <img width="317" height="48" src="lec11_clip_image016.gif" /><br />
+  <img width="359" height="48" src="lec11_clip_image018.gif" /><br />
+  <img width="327" height="48" src="lec11_clip_image020.gif" /><br />
+				  The  matrix formed by cofactors of element of determinant <img width="20" height="27" src="lec11_clip_image002_0002.gif" /> is <img width="142" height="75" src="lec11_clip_image023_0001.gif" /><br />
+				  \adj A = <img width="133" height="75" src="lec11_clip_image025_0001.gif" /></p>
+				<p><img width="239" height="75" src="lec11_clip_image027_0001.gif" /><br />
+				  We Know that      X=A-1B</p>
+				<p>\  <img width="40" height="75" src="lec11_clip_image029.gif" />= <img width="145" height="75" src="lec11_clip_image031.gif" /> <img width="43" height="75" src="lec11_clip_image033.gif" />         <br />
+                    <img width="245" height="75" src="lec11_clip_image035.gif" />  <br />
+                    <img width="119" height="75" src="lec11_clip_image037.gif" />=<img width="43" height="75" src="lec11_clip_image039.gif" /><br />
+                    <strong><em>x</em></strong><strong> = 0, <em>y</em> = 2, <em>z</em> = -1.<u> </u></strong><br />
+                    <a name="cramersrule" id="cramersrule"></a><strong>SOLUTION BY DETERMINANT  (CRAMER'S RULE)</strong><br />
+				  Let the equations be <br />
+  <img width="146" height="61" src="lec11_clip_image040_0001.gif" alt="{a_1x+b_1y+c_1z==d_1; a_2x+b_2y+c_2z==d_2; a_3x+b_3y+c_3z==d_3," />        …………………….  (1)             <br />
+				  Consider the determinant <br />
+  <img width="148" height="75" src="lec11_clip_image042_0001.gif" /><br />
+  <img width="156" height="75" src="lec11_clip_image044_0001.gif" />           <img width="157" height="75" src="lec11_clip_image046_0001.gif" />        <img width="159" height="75" src="lec11_clip_image048_0001.gif" />         <br />
+				  When D ≠ 0, the unique solution is given by<br />
+				  <img width="160" height="44" src="lec11_clip_image050_0001.gif" />              <br />
+  <strong>Example</strong><br />
+				  Solve the equations <em>x + </em>2<em>y + </em>5<em>z  =23, </em>3<em>x + y + </em>4<em>z = 26,                           </em>6<em>x + y + </em>7<em>z = 47</em> by determinant method (Cramer’s Rule).<br />
+  <strong>Solution</strong><br />
+				  The equations are<br />
+  <em>x + 2y + </em>5<em>z</em> =23,<br />
+				  3<em>x + y + </em>4<em>z</em> = 26, <br />
+				  6<em>x + y + </em>7<em>z</em> = 47<br />
+  <img width="204" height="75" src="lec11_clip_image052_0001.gif" />       <img width="196" height="75" src="lec11_clip_image054.gif" /><br />
+  <img width="192" height="75" src="lec11_clip_image056.gif" />          <img width="200" height="75" src="lec11_clip_image058.gif" /><br />
+				  By Cramer’s rule<br />
+				  <img width="124" height="132" src="lec11_clip_image060.gif" /><br />
+				  Þ <em>x</em> = 4, <em>y </em>= 2, <em>z</em> = 3.</p>
+				<p>&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec11.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec11.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

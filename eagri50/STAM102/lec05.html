@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STAM 102 :: Lecture 05</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM102/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM 102 :: Lecture 05 ::</span> Operating System – Some Fundamental DOS Commands,Rules for naming files in DOS and Types of files</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p><h1><strong>Operating System</strong></h1></p><br />
+<p>Operating  system is a set of software that controls and manages hardware and basic system  operations for a computer. The operating system loads programs into the  computer's memory, runs these programs, and manages peripherals like disks and  printers.<br />
+<strong>Example: </strong></p>
+				<div align="center">
+                  <table border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p>Disk    Operating System (DOS)</p></td>
+                      <td valign="top"><p><img width="90" height="112" src="lec05_clip_image002.jpg" alt="crass.on.ru/images/unsorted/logo/msdos(cm.gif" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Windows</p></td>
+                      <td valign="top"><p><img width="151" height="131" src="lec05_clip_image004.jpg" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>LINUX</p></td>
+                      <td valign="top"><p><img width="139" height="143" src="lec05_clip_image006.gif" alt="334px-Tux_svg" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Mac</p></td>
+                      <td valign="top"><p><img width="153" height="116" src="lec05_clip_image008.jpg" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>UNIX</p></td>
+                      <td valign="top"><p><img width="128" height="48" src="lec05_clip_image010.gif" /></p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p>&nbsp;</p>
+				<p><strong>Disk Operating System (DOS)</strong></p>
+				<ul type="disc">
+                  <li>In the 1980s or early 1990s, the operating system       that shipped with most PCs was a version of the Disk Operating System (DOS)created by Microsoft: MS-DOS.</li>
+				  <li>MS-DOS is a disk-based, single-user, single-task and       character based user interface (CUI) operating system. </li>
+			    </ul>
+				<p>&nbsp;</p>
+				<p>Goto  MSDOS from Windows Operating System:<br />
+				  Click  Start Button à  Choose Program à  Choose Accessories à  Click Command Prompt as shown below:</p>
+				<p align="center"><img width="623" height="387" src="lec05_clip_image012.jpg" /></p>
+				<p>Or  Click Start Button à  Choose Run à  Type cmd in the Open tab as shown below:</p><br />
+                  <p align="center"><img width="600" height="270" src="lec05_clip_image014.jpg" /></p>
+				<p>&nbsp;</p>
+				<p>Command  Prompt will get displayed as shown:</p>
+				<p align="center"><img width="623" height="316" src="lec05_clip_image016.jpg" /></p>
+				<p>The  DOS commands can be entered in the command prompt and executed. <br />
+			    <h1><strong>Some Examples of DOS commands</strong></h1><br />
+                    <strong>DIR Command</strong><br />
+The  dir command allows you to see the available files in the current and/or parent  directories. Examples:</p>
+				<ul>
+				  <li><strong>DIR </strong></li>
+			    </ul>
+				<p>                        Lists all files and  directories in the directory that you are currently in.</p><br />
+                    <p align="center"><img width="624" height="315" src="lec05_clip_image002_0000.jpg" /></p>
+				<ul>
+				  <li><strong>dir /w</strong><strong> </strong></li>
+			    </ul>
+				<blockquote>
+				  <p>If  information   on the date / time and other information on the files are not needed,  then this command can be used to list just the files and directories going  horizontally, taking as little as space needed.</p>
+			    </blockquote>
+				<br />
+				  <p align="center"><img width="624" height="313" src="lec05_clip_image004_0000.jpg" /></p>
+				<ul>
+				  <li><strong>dir /on</strong><strong> </strong></li>
+			    </ul>
+				<blockquote>
+				  <p>List  the files in alphabetical order by the names of the files.</p>
+			    </blockquote>
+				<br />
+                    <p align="center"><img width="624" height="315" src="lec05_clip_image006.jpg" /></p>
+				<ul>
+				  <li><strong>dir /o-n</strong><strong> </strong></li>
+			    </ul>
+				<blockquote>
+				  <p>List  the files in reverse alphabetical order by the names of the files.<br />
+			      </p>
+			    </blockquote>
+				<p align="center"><img width="624" height="313" src="lec05_clip_image008_0000.jpg" /></p><br />
+                    <strong>FORMAT  Command</strong><br />
+				  FORMAT command is used to erase all  information of a diskette or fixed drive.</p>
+				<ul>
+				  <li>format a: </li>
+			    </ul>
+				<blockquote>
+				  <p>Would  erase all the contents off a disk. Commonly used on a diskette that has not  been formatted or on a diskette you wish to erase.</p>
+			    </blockquote>
+				<ul>
+				  <li>format a: /q </li>
+			    </ul>
+				<blockquote>
+				  <p>Quickly  erases all the contents of a floppy diskette. Commonly used to quickly erase  all information on the diskette.</p>
+			    </blockquote>
+				<ul>
+				  <li>format c: </li>
+			    </ul>
+				<blockquote>
+				  <p>This  would erase all the contents of  C: hard disk drive. In other words, unless you wish to erase all your  computer's information, this command should not be done unless you're planning  to start over.</p>
+			    </blockquote>
+				<p><u>&nbsp;</u></p>
+				<p><strong>COPY  Command</strong><br />
+				  COPY  command allows to copy one or more files to an alternate location.<br />
+				  Examples:</p>
+				<ol start="1" type="1">
+                  <li>copy *.* a: </li>
+			    </ol>
+				<blockquote>
+				  <p>Copy all files  in the current directory to the a disk drive.</p>
+			    </blockquote>
+				<ol start="2" type="1">
+                  <li>copy       file1.txt file2.txt</li>
+			    </ol>
+				<blockquote>
+				  <p>Copy  the contents of file1.txt to file2.txt </p>
+			      <ul>
+			        <li>copy myfile1.txt+myfile2.txt </li>
+		          </ul>
+				</blockquote>
+				<p>Copy the contents in myfile2.txt and combines it with the  contents in myfile1.txt.<br />
+                    <strong>PATH Command</strong><br />
+				  Path  is used to specify the location where MS-DOS looks when using a command. For  example, when using the command &quot;format&quot;, if the path is not  specified to where the command is you will receive bad command or file name.</p>
+				<br clear="all" />
+                <p>Example:</p><br />
+                    <p align="center"><img width="623" height="314" src="lec05_clip_image010.jpg" /></p>
+                <p><strong>LABEL  Command</strong><br />
+                  Label  is used to view or change the label of the computer disk drives. <br />
+                  Example:<br />
+                  label a: mydisk <br />
+                  This would  label the disk currently in the drive to &quot;mydisk&quot;, but will not label  if your disk is write protected.<br />
+  <strong>VOL  Command</strong><br />
+                  VOL  command displays the volume information about the designated drive.</p><br />
+  <p align="center"><img width="623" height="315" src="lec05_clip_image012_0000.jpg" /></p>
+  <br />
+  <strong>MD  (Make Directory) Command</strong><br />
+                  MD command allows to create directories  in MS-DOS.<br />
+                  Examples:</p>
+                <ol start="1" type="1">
+                  <li>md test </li>
+                </ol>
+                <p>Creates the &quot;test&quot;  directory in the directory in the currently directory.</p>
+                <ol start="2" type="1">
+                  <li>md c:\test </li>
+                </ol>
+                <p>Creates the  &quot;test&quot; directory in the c:\ directory.</p>
+                <p><strong>CD  (Change Directory) Command</strong><br />
+                  CD  (Change Directory) is a command used to switch directories in MS-DOS.<br />
+                  Examples:</p>
+                <ul>
+                  <li><strong>cd\</strong><strong> </strong></li>
+                </ul>
+                <blockquote>
+                  <p>Goes to the highest level, the root of  the drive.</p>
+                </blockquote>
+                <br />
+                <p align="center"><img width="624" height="314" src="lec05_clip_image014_0000.jpg" /></p>
+                <ul>
+                  <li><strong>cd..</strong><strong> </strong></li>
+                </ul>
+                <blockquote>
+                  <p>Goes back one directory.<br />
+                  </p>
+                </blockquote>
+                <p align="center"><img width="624" height="313" src="lec05_clip_image016_0000.jpg" /></p></p>
+                <p>&nbsp;</p>
+                <ol start="3" type="1">
+                  <li><strong>cd</strong><strong> </strong></li>
+                </ol>
+                <blockquote>
+                  <p>Typing cd alone  will print the working directory.</p>
+                </blockquote>
+                <br />
+                    <p align="center"><img width="624" height="317" src="lec05_clip_image018.jpg" /></p><br />
+                    <strong>DEL Command</strong><br />
+                  DEL  command is used to delete files from the computer. Deleting files from MS-DOS  does not send files to the recycle bin. <br />
+                  Examples:</p>
+                  <ol>
+                    <li>del test.tmp </li>
+                    <ul>
+                      <li> Deletes the test.tmp in the directory that you  currently are in, if the file exists.</li>
+                    </ul>
+                    <li>del c:\windows\test.tmp
+                      <ul>
+                        <li> Delete the c:\windows\test.tmp in the windows  directory if it exists.<br />
+                          </p>
+                              </p>
+                            </li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <h1><strong>Rules for naming files in DOS</strong></h1></p>
+                <ul>
+                  <li>The  combination of the following characters can be used for writing names of  directories and files: <br />
+                      <u></u></li>
+                </ul>
+                <p> Alphabets A to Z (both capital and small).<u></u><br />
+                  Digits 0 to 9.<br />
+                  Special characters like spaces ' ! A 0 $o &amp; # @ % '-{}[]+-=-- . <u></u></p>
+                <ul>
+                  <li>Some  special characters which cannot be used are? / \ : 1&lt; &gt; II *. <u></u></li>
+                  <li>There  are some words specifically reserved for special files and are not allowed if  used singly. They are CON, COM1, COM2, COM3. COM4, AVX, LPT1, LPT2, LPT3, PRN,  NUL. These words can be used in combination such as ASCon, deltacom1, Panamavx.  etc. <u></u></li>
+                  <li>Files  with extension names like .EXE, .COM and .BAT are called executable files and  are given a special status by DOS.<u></u></li>
+                  <li>Dot  (.) is allowed only once.<u></u></li>
+                </ul>
+                <blockquote>
+                  <p><strong>Types  of files in DOS</strong><br />
+                    DOS supports a wide variety of  files. The type of the file can be identified with the extension of the file in  the filename. The three letters following the name of the file is called as the  extension of the file.<br />
+                    <strong>Examples:</strong><br />
+                    <strong><img width="15" height="15" src="lec05_clip_image019.gif" alt="*" />&nbsp;&nbsp;.bak&nbsp;&nbsp;&nbsp; </strong><br />
+                    Used by programs and users to make a  copy of an existing file for safety and/or archive purposes.</p>
+                </blockquote>
+                <p><strong>    .bas</strong><br />
+  &nbsp;&nbsp;&nbsp;          A basic  computer-language program file.</p>
+                <p><strong>   .bat</strong></p>
+                <blockquote>
+                  <p>This is used for a batch file. Such a  file is a series of commands in mostly plain english which perform an operation  in DOS automatically. They come with some programs and may also be written by a  user to make shortcuts or perform operations like sorting or backups.</p>
+                </blockquote>
+                <p><strong>    .bin</strong><br />
+&nbsp;&nbsp;&nbsp;          A binary file.</p>
+                <p>     <strong>.c</strong><strong><br />
+                </strong>&nbsp;&nbsp;&nbsp;         A file of  programming language in the C format.</p>
+                <p><strong>     .dat</strong></p>
+                <blockquote>
+                  <p>
+                    Used to hold information about a  particular aspect of a program or about a particular operation. The latter may  update a .dat file to reflect recent changes. Other operations in the program  may then view this file and other .dat files while determining a course of  action.                    </p>
+                  </p>
+                </blockquote>
+                <p><strong>    .db or .dbf</strong><strong> </strong></p>
+                <blockquote>
+                  <p>These are used by data base programs  to hold the users' data information. Other programs may use them to hold  information used by the application itself for such things as printer  specifications regarding printer selection by the user.</p>
+                </blockquote>
+                <p><strong>     .dir</strong></p>
+                <blockquote>
+                    <p>Used to house a directory list,  especially for communications programs.</p>
+                </blockquote>
+                <p><strong>    .exe</strong></p>
+                <blockquote>
+                  <p> An executable file.</p>
+                </blockquote>
+                <p><strong><u>References</u></strong><strong> </strong></p>
+                <ol start="1" type="1">
+                  <li><a href="http://www.chebucto.ns.ca/~ak621/DOS/DOS-Ext.html">http://www.chebucto.ns.ca/~ak621/DOS/DOS-Ext.html</a></li>
+                  <li><a href="http://www.computerhope.com/msdos.htm">http://www.computerhope.com/msdos.htm</a></li>
+                </ol>
+                <table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec05.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec05.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

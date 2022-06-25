@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STAM 102 :: Lecture   01</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM102/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM 102 :: Lecture 09 :: </span>Use of in-built functions and writing expressions</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h1><strong>In-built Functions</strong></h1>
+				<ul type="disc">
+                  <li>A function is an in-built program, which is used to       do a particular task. </li>
+				  <li>Functions take the input the input and will give the       result as the output.</li>
+				  <li>Based on the input and output data the functions are       categorized as</li>
+				  <ul type="circle">
+                    <li>String functions</li>
+				    <li>Arithmetic functions</li>
+				    <li>Date functions</li>
+				    <li>Logical functions</li>
+				    <li>Group functions              
+			   	</li>
+			      </ul>
+			    </ul>
+				<p><strong>Use of in-built function SUM()</strong><br />
+To use  in-built functions enter the data to prepare mark list of the I- B.Sc.(Agriculture)  students in the spreadsheet.</p>
+                  <p align="center"><img width="497" height="198" src="lec01_clip_image002_0014.jpg" /></p>
+                  <ul type="disc">
+                    <li>Using the in-built function SUM() we can calculate       the total scored by each and every student in I-B. Sc. (Agri.).</li>
+                    <li>Add Total column in the spreadsheet as shown below:</li>
+                </ul>
+                  <p align="center"><img width="561" height="203" src="lec01_clip_image004.jpg" /></p>
+                  <ul type="disc">
+                    <li>Place the mouse pointer in the cell with the address       F3</li>
+                    <li>The F3 cell is the one which should display the       total mark scored by the student namely Angaleeswari in the above example.</li>
+                    <li>Click on Insert Menu à Function </li>
+                </ul>
+                  <ul type="disc">
+                    <li>or Select fx in the Formula bar</li>
+                    <li>Insert Function dialog box will get displayed as       shown below:</li>
+                </ul>
+                  <p align="center"><img width="436" height="304" src="lec01_clip_image006.jpg" /></p>
+                  <ul type="disc">
+                    <li>Select SUM function and click OK button in the       Insert Function dialog box.</li>
+                    <li>The function Argument dialog box will be displayed       with the automatically assumed range of cells to be added(B3 to E3)</li>
+                </ul>
+                  <p align="center"><img width="623" height="286" src="lec01_clip_image008.jpg" /></p>
+                  <p>&nbsp;</p>
+                <ul type="disc">
+                    <li>Click OK. The result is displayed as shown. We can even       choose the range of cells added manually.</li>
+                </ul>
+                  <p align="center"><img width="563" height="203" src="lec01_clip_image010.jpg" /></p>
+                  <ul type="disc">
+                    <li>The total marks scored by the other students have to       added in the same way by making use of the SUM() function.</li>
+                    <li>Instead entering the same function for all the       students in the example we can copy the formula to the cells in the total       column to add B4:E4, B5:E5, B6:E6 and so on.</li>
+                    <li>When we copy the SUM() function formula from the       cell F3 to F4 the SUM function will automatically taking the input range       of numbers to be added is B4:E4.</li>
+                    <li>The same is applicable to the rest of the cells in       the total column.</li>
+                    <li>To copy down the formula place the mouse pointer at       the bottom right corner of the cell F3.</li>
+                    <li>The mouse pointer now automatically changes into +       symbol.</li>
+                    <li>Now drag + symbol down the cells in the Total       column.</li>
+                    <li>We can see the total marks of all the students in       the example as shown below.</li>
+                </ul>
+                  <p align="center"><img width="563" height="202" src="lec01_clip_image012.jpg" /></p>
+                  <p><strong>Use of in-built function AVERAGE()</strong></p>
+                <ul type="disc">
+                    <li>To calculate the average marks scored by the       students in the example we can make use of average function AVERAGE().</li>
+                    <li>Enter Average column in the spreadsheet.</li>
+                </ul>
+                  <ul type="disc">
+                    <li>Place the mouse pointer in the cell with the address       G3</li>
+                    <li>The F3 cell is the one which should display the       total mark scored by the student namely Angaleeswari in the above example.</li>
+                    <li>Click on Insert Menu à Function </li>
+                </ul>
+                  <ul type="disc">
+                    <li>or Select fx in the Formula bar</li>
+                    <li>Insert Function dialog box will get displayed as       shown below. Choose AVERAGE() function and click OK.</li>
+                </ul>
+                  <p align="center"><img width="624" height="324" src="lec01_clip_image014.jpg" /></p>
+                  <ul type="disc">
+                    <li>Click OK button in the Insert Function dialog box.</li>
+                    <li>In the Function Argument dialog box enter F3/4  then click OK button. The average scored       is displayed.</li>
+                </ul>
+                  <p align="center"><img width="624" height="290" src="lec01_clip_image016.jpg" /></p>
+                  
+                  <ul type="disc">
+                    <li>Copy the AVERAGE formula as we copied the SUM().</li>
+                </ul>
+                  <p align="center"><img width="626" height="204" src="lec01_clip_image018.jpg" /><br />
+                  </p>
+                  <h1><strong>Writing Expressions</strong></h1>
+                  <ul type="disc">
+                    <li>The total marks can be calculated by writing       expressions.<u></u></li>
+                    <li>Place the cursor the cell F3.<u></u></li>
+                    <li>To enter expression, enter the equal sign first.<u></u></li>
+                  </ul>
+                  <p align="center"><img width="625" height="229" src="lec01_clip_image002_0015.jpg" /></p>
+                  <ul type="disc">
+                    <li>Choose the cells with the cursor as sown</li>
+                  </ul>
+                  <p align="center"><img width="622" height="201" src="lec01_clip_image004_0000.jpg" /></p>
+                  <ul type="disc">
+                    <li>Press enter. The result will be displayed in F3.       Copy the expression down the Total column to find the total mark scored by       all the students in the example.</li>
+                    <li>To calculate the averages place the G3.</li>
+                    <li>Enter the equal sign first in the cell G3.</li>
+                    <li>Enter F3/4 which is the average to be calculated.</li>
+                  </ul>
+                  <p align="center"><img width="626" height="202" src="lec01_clip_image006_0000.jpg" /></p>
+                  <ul type="disc">
+                    <li>Press enter. The average will be displayed. Copy the       expression down the cells in the Average column to calculate the rest of       the averages.</li>
+                  </ul>
+                  <p>&nbsp;</p>
+                  <p align="center"><img width="624" height="202" src="lec01_clip_image008_0000.jpg" /></p>
+                  <p>&nbsp;</p>
+                <table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec09.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec09.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+			    `
+			    <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+</map></p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

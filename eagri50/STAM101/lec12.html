@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 12</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 12 ::</span></strong><strong> Correlation – definition – Scatter diagram  -Pearson’s correlation co-efficient – properties of correlation coefficient</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="left">Correlation <br />
+Correlation is the study of  relationship between two or more variables. Whenever we conduct any experiment  we gather information on more related variables. When there are two related  variables their joint distribution is known as bivariate normal distribution  and if there are more than two variables their joint distribution is known as  multivariate normal distribution.<br />
+In case of bi-variate or  multivariate normal distribution, we are interested in discovering and  measuring the magnitude and direction of relationship between 2 or more  variables. For this we use the tool known as correlation.<br />
+Suppose we have two continuous variables X and Y and if the change in X  affects Y, the variables are said to be correlated. In other words, the  systematic relationship between the variables is termed as correlation. When  only 2 variables are involved the correlation is known as simple correlation  and when more than 2 variables are involved the correlation is known as  multiple correlation. When the variables move in the same direction, these  variables are said to be correlated positively and if they move in the opposite  direction they are said to be negatively correlated. </p>
+				<h6>&nbsp;</h6>
+				<h6>Scatter Diagram</h6>
+				<p>To investigate whether there is  any relation between the variables X and Y we use scatter diagram. Let (x1,y1),  (x2,y2)….(xn,yn) be n pairs of  observations. If the variables X and Y are plotted along the X-axis and Y-axis  respectively in the x-y plane of a graph sheet the resultant diagram of dots is  known as scatter diagram.  From the  scatter diagram we can say whether there is any correlation between x and y and  whether it is positive or negative or the correlation is linear or curvilinear.</p>
+				<p>&nbsp;</p>
+				<p>                                                  <br />
+                    <img width="114" height="111" src="lec12_clip_image002.gif" /><img width="114" height="110" src="lec12_clip_image003.gif" />         </p>
+				<p>     Positive Correlation                                         Negative correlation</p>
+				<h6>&nbsp;</h6>
+				<h6>&nbsp;</h6>
+				<h6><img width="141" height="110" src="lec12_clip_image004.gif" /><img width="114" height="110" src="lec12_clip_image005.gif" />&nbsp;</h6>
+				<h6>&nbsp;</h6>
+				<h6>&nbsp;</h6>
+				<h6>&nbsp;</h6>
+				<br clear="all" />
+                <h6>             Curvilinear                                                        no correlation</h6>
+                <p>           (or) non  linear</p>
+                <h6>&nbsp;</h6>
+                <h6>Pearsons Correlation coefficient</h6>
+                <p>            The measures of the  degree of relationship between two continuous variables is called correlation  coefficient. It is denoted by r.( in case of sample )and r (in case of population). The correlation coefficient r is known as  Pearson’s correlation coefficient as it was discovered by Karl Pearson. It is  also called as product moment correlation.</p>
+                <p>The correlation coefficient r is given as the  ratio of covariance of the variables X and Y to the product of the standard  deviation of X and Y. <br />
+                  Symbolically,<br />
+  <img width="262" height="88" src="lec12_clip_image007.gif" /></p>
+                <p>which can be simplified as<br />
+                    <img width="264" height="99" src="lec12_clip_image009.gif" /></p>
+                <p>This correlation coefficient r is known as  Pearson’s Correlation coefficient.  The  numerator is termed as sum of product of X and Y and abbreviated as SP(XY). In  the denominator the first term is called sum off squares of X (i.e) SS(X) and  second term is called sum of squares of Y (i.e) SS(Y)<br />
+                  \<img width="137" height="48" src="lec12_clip_image011.gif" /><br />
+                  The denominator in the above formula is  always positive. The numerator may be positive or negative making r to be  either positive or negative.<br />
+                  <br />
+  <strong>Assumptions in correlation analysis:</strong><br />
+                  Correlation coefficient r is used under certain assumptions, they are</p>
+                <ol start="1" type="1">
+                  <li>The       variables under study are continuous random variables and they are       normally distributed</li>
+                  <li>The       relationship between the variables is linear</li>
+                  <li>Each       pair of observations is unconnected with other pair (independent)</li>
+                </ol>
+                <h6>&nbsp;</h6>
+                <h6>Properties</h6>
+                <ol start="1" type="1">
+                  <li>The       correlation coefficient value ranges between –1 and +1.</li>
+                  <li>The       correlation coefficient is not affected by change of origin or scale or       both.</li>
+                  <li>If           r &gt; 0 it denotes positive       correlation </li>
+                </ol>
+                <p>               r&lt;  0 it denotes negative  correlation between the two variables x and y.<br />
+                  r = 0 then the two variables x and y are not linearly correlated.(i.e)two           <br />
+                  variables are independent. <br />
+                  r = +1 then the correlation is perfect positive<br />
+                  r = -1 then the correlation is perfect  negative.</p>
+                <p><strong>Testing the significance of r</strong><br />
+                  The significance of r can be tested by  Student’s t test. The test statistics is given by </p>
+                <p><img width="90" height="73" src="lec12_clip_image013.gif" /></p>
+                <p>This t is distributed as Student’s t  distribution with (n-2) degrees of freedom.<br />
+                  The relationship between the  variables is interpreted by the square of the correlation coefficient (r2)  which is called coefficient of determination. The value 1-r2 is  called as coefficient of alienation. If r2 is 0.72, it implies that  on the basis of the samples 72% of the variation in one variable is caused by  the variation of the other variable. The coefficient of determination is used  to compare 2 correlation coefficients.</p>
+                <p><strong>Problem</strong><br />
+                  Compute Pearsons coefficient of  correlation between plant height (cm) and yield (Kgs) as per the data given  below:</p>
+                <table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                      Plant Height (cm) </td>
+                    <td valign="top"><p>39</p></td>
+                    <td valign="top"><p>65</p></td>
+                    <td valign="top"><p>62</p></td>
+                    <td valign="top"><p>90</p></td>
+                    <td valign="top"><p>82</p></td>
+                    <td valign="top"><p>75</p></td>
+                    <td valign="top"><p>25</p></td>
+                    <td valign="top"><p>98</p></td>
+                    <td valign="top"><p>36</p></td>
+                    <td valign="top"><p>78</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Yield in Kgs</p></td>
+                    <td valign="top"><p>47</p></td>
+                    <td valign="top"><p>53</p></td>
+                    <td valign="top"><p>58</p></td>
+                    <td valign="top"><p>86</p></td>
+                    <td valign="top"><p>62</p></td>
+                    <td valign="top"><p>68</p></td>
+                    <td valign="top"><p>60</p></td>
+                    <td valign="top"><p>91</p></td>
+                    <td valign="top"><p>51</p></td>
+                    <td valign="top"><p>84</p></td>
+                  </tr>
+                </table>
+                <p><strong>Solution</strong><br />
+                  Ho: The correlation  coefficient r is not significant<br />
+                  H1: The correlation  coefficient r is significant.<br />
+                  Level of significance 5%<br />
+                  From the data<br />
+                  n = 10<br />
+  <img width="73" height="27" src="lec12_clip_image015.gif" /> <img width="75" height="27" src="lec12_clip_image017.gif" /><img width="96" height="27" src="lec12_clip_image019.gif" /><img width="99" height="27" src="lec12_clip_image021.gif" /> <img width="100" height="27" src="lec12_clip_image023.gif" /><br />
+  <img width="264" height="99" src="lec12_clip_image009_0000.gif" /></p>
+                <p>                                  <img width="247" height="91" src="lec12_clip_image026.gif" /><br />
+                  <img width="176" height="45" src="lec12_clip_image028.gif" /><br />
+                  Correlation coefficient is  positively correlated.<br />
+  <strong>Test Statistic</strong><br />
+                  <img width="167" height="73" src="lec12_clip_image030.gif" /></p>
+                <p>                    <img width="185" height="69" src="lec12_clip_image032.gif" /><br />
+                  ttab=t<strong>(10-2,  5%los)=</strong>2.306</p>
+                <p><strong>Inference</strong><br />
+                  t&gt; ttab, we reject  null hypothesis.<br />
+                  \The  correlation coefficient r is significant. (i.e) there is a relation between plant  height and yield.</p>
+                <table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec12.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec12.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

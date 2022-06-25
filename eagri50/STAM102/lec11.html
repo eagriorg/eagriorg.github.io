@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STAM 102 :: Lecture 11</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM102/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM 102 :: Lecture 11 :: </span></strong><strong>t-test for two samples and ANOVA with One-way classification</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h1><strong>t-test for two samples assuming equal variances:</strong> </h1>
+				<ul type="disc">
+				  <li>Example: Perform t-test for two       samples assuming equal variances for yield of food in kg/ha in Kharif  and Rabi season from 1996-97 to 2006-07.</li>
+				  <li>The data is entered in Excel       sheet as shown below:</li>
+			    </ul>
+				<p align="center"><img width="624" height="277" src="lec11_clip_image002.jpg" /></p>
+				<ul type="disc">
+                  <li>Choose t-Test: Two-Samples       assuming Equal Variances in the Data Analysis window:</li>
+			    </ul>
+				<p align="center"><img width="423" height="210" src="lec11_clip_image004.jpg" /></p>
+				<ul type="disc">
+                  <li>In the t-Test: Two-Samples       assuming Equal Variances window enter the Variable 1 Range and Variable 2       Range.</li>
+				  <li>Check the Labels option</li>
+				  <li>Hypothesized mean difference be       0.5</li>
+				  <li>Let Alpha value be 0.05</li>
+				  <li>Set output range as E2.</li>
+			    </ul>
+				<p align="center"><img width="452" height="299" src="lec11_clip_image006.jpg" /></p>
+				<ul type="disc">
+                  <li>The result will be displayed       from E2 as shown below:</li>
+			    </ul>
+				<p align="center"><img width="624" height="373" src="lec11_clip_image008.jpg" /><br />
+                    <strong><u>ANOVA(Analysis  od Variances) with One-way Classification</u></strong></p>
+				<ul type="disc">
+                  <li>Example: Perform ANOVA One Way       Classification for yield of food in kg/ha in three seasons from 1996-97 to       2006-07</li>
+				  <li>The data is entered in Excel       sheet as follows:</li>
+			    </ul>
+				<p align="center"><img width="624" height="382" src="lec11_clip_image010.jpg" /></p>
+				<ul type="disc">
+                  <li>Choose       ANOVA: Single Factor from Data Analysis window.</li>
+			    </ul>
+				<p align="center"><img width="396" height="275" src="lec11_clip_image012.jpg" /></p>
+				<ul type="disc">
+                  <li>In       the ANOVA: Single Factor window enter the input range. The input range in       the example is B2:D13</li>
+				  <li>Choose       Group by Columns</li>
+				  <li>Check       Labels in the first row</li>
+				  <li>Output       range is set to F2 as follows:</li>
+			    </ul>
+				<p align="center"><img width="700" height="510" src="lec11_clip_image014.jpg" /></p>
+				<p>&nbsp;</p>
+				<ul>
+				  <li>The result of the ANOVA  with One-way classification is displayed from F2 as shown below:</li>
+			    </ul>
+				<p align="center"><img width="642" height="440" src="lec11_clip_image016.jpg" /></p>
+				<p>&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec11.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec11.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+				  <map name="Map" id="Map">
+				    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+			      </map>
+			    </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

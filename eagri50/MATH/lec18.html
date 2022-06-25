@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS  :: Lecture 18</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS  :: Lecture 18 :: </span>Population Dynamics</em></strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p><strong>Population Dynamics</strong><br />
+                  <strong>Definition </strong><br />
+                  <strong>Model</strong><br />
+            A model is defined as a physical representation of any  natural phenomena <br />
+Example:  1. A miniature building model.<br />
+                 2. A children cycle park depicting  the traffic signals <br />
+                 3. Display of clothes on models in a show room  and so on. <br />
+<strong> Mathematical Models</strong><br />
+  A mathematical model is a representation of  phenomena by means of mathematical equations.   If the phenomena is growth, the corresponding model is called a growth  model.  Here we are going to study the  following 3 models.            <br />
+            1. Linear model<br />
+            2. Exponential model<br />
+            3. Logistic model<br />
+<strong>Linear model </strong> <br />
+            The general form of a linear model is y = a+bx. Here both  the variables x and y are of degree 1.   In a linear growth model, the dependent variable is always the total dry  weight which is noted by w and the independent variable is the time denoted by  t. Hence the linear growth model is given by w = a+bt.<br />
+<strong>To fit a linear model of the form  y=a+bx to the given data.</strong><br />
+  Here a and b are the parameters (or)  constants to be estimated.  Let us  consider (x1,y1),(x2 , y2)… (xn  , yn) be n pairs of observations. By plotting these points on an  ordinary graph sheet, we get a collection of dots which is called a scatter  diagram.  <br />
+            In a linear model, these points lie close to a straight  line. Suppose y = a+bx is a linear model to be fitted to the given data, the  expected values of y corresponding to x1, x2…xn  are given by (a+bx1) , (a+bx2),…(a+bxn).  The corresponding observed values of y are  y1, y2……yn.  The difference between the observed value and the expected value is called a  residual.  The Principles of least  squares states that the constants occurring in the curve of best fit should be  chosen such that the sum of the squares of the residuals must be a minimum.  Using this for a linear model we get the  following 2 simultaneous equations in a and b, given by <br />
+            Sy =  na+bSx   --------------------------- (1)<br />
+            Sxy =  aSx+bSx2  -------------------------(2)                     <br />
+where n is the no. of  observations.  Equations 1 and 2 are called <strong>normal equations</strong>. Given the values  of x and y, we can find Sx, Sy, Sxy, Sx2.    Substituting in equations (1) and (2)  we get two simultaneous equations in the constants  a and b solving which we get the values of a  and b.<br />
+<strong>Note: </strong>If  the linear equation is w=a+bt then the corresponding normal equations become<br />
+                        Sw       =   na + bSt      ------- (1)<br />
+                        Stw      = aSt +  bSt2     --------(2)<img src="images/lect18_001.jpg" alt="" /> </p>
+				<div>
+                  <p>                  </p>
+			    </div>
+				 &nbsp;‘a’ stands for the constant term which is the intercept  made by the line on the w axis. When t=0, w=a ie ‘a’ gives the initial DMP( ie.  Seed weight) ; ‘b’ stands for the slope of the line which gives the growth  rate.<br />
+                <strong>Problem</strong><br />
+                <strong>            </strong>The table below gives the DMP(kgs) of a  particular crop taken at different stages; fit a linear growth model of the  form w=a+bt, and also calculate the estimated value of w.
+                </p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p>t (in days)  ;</p></td>
+                      <td valign="top"><p align="center">0</p></td>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">10</p></td>
+                      <td valign="top"><p align="center">20</p></td>
+                      <td valign="top"><p align="center">25</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>DMP w: (kg/ha)</p></td>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">8</p></td>
+                      <td valign="top"><p align="center">14</p></td>
+                      <td valign="top"><p align="center">17</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p> <br />
+                    <strong>2. Exponential model </strong><br />
+                  This model is of the form w=aebt where a and b  are constants to be determined<br />
+                  Growth rate = <img width="76" height="41" src="lec18_clip_image002.gif" /><br />
+                  Relative growth rate = <img width="124" height="44" src="lec18_clip_image004.gif" /><br />
+                  Here RGR = b which is also known as intensive growth rate  or Malthusian parameter.<br />
+                  To find the parameters ‘a’ and ‘b’  in the exponential model first we convert it into a linear form by suitable  transformation.<br />
+                  Now        w =  aebt    ----------------------(1)<br />
+                  Taking  logarithm on both the sides we get <br />
+                  logew   =          loge(aebt)<br />
+                  logew   =          logea  + logeebt<br />
+                  logw     =          logea + bt logee<br />
+                  log w    =          logea +  bt<br />
+                  Y = A + bt        -------------------------(2)<br />
+                  Where  Y = log w and  A = logea<br />
+                  Here  equation(2) is linear in the variables Y and t and hence we can find the  constants ‘A’ and ‘b’ using the normal equations.<br />
+                  SY =  nA + bSt<br />
+                  StY =  ASt +  bSt2<br />
+                  After  finding <u>A </u> by taking antilogarithms  we can find the value of <u>a</u>  </p>
+                <h1>Note</h1>
+                <p>            The above model is also known as a  semilog model. When the values of t and w are plotted on a semilog graph sheet  we will get a straight line.  On the  other hand if we plot the points t and w on an ordinary graph sheet we will get  an exponential curve.<br />
+                    <strong>Problem:</strong> Fit  an exponential model to the following data.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                      t    in days </td>
+                      <td valign="top"><p> 5</p></td>
+                      <td valign="top"><p>15</p></td>
+                      <td valign="top"><p>25</p></td>
+                      <td valign="top"><p>35</p></td>
+                      <td valign="top"><p>45</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>W in    mg per plant</p></td>
+                      <td valign="top"><p>0.05</p></td>
+                      <td valign="top"><p>0.4</p></td>
+                      <td valign="top"><p>2.97</p></td>
+                      <td valign="top"><p>21.93</p></td>
+                      <td valign="top"><p>162.06</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>3.  Logistic model (or) Logistic curve</strong><br />
+                  The equation of this model is given  by  <img width="87" height="41" src="lec18_clip_image006.gif" /> ------------- (1)<br />
+                  Where a, c and k are constants.  The above model can be reduced to a linear  form as follows: <br />
+                  <img width="85" height="41" src="lec18_clip_image008.gif" />   <br />
+  <img width="85" height="41" src="lec18_clip_image010.gif" /><br />
+  <img width="84" height="41" src="lec18_clip_image012.gif" /><br />
+                  Taking  logarithm to the base e,<br />
+                  <img width="187" height="45" src="lec18_clip_image014.gif" /><br />
+  <img width="148" height="45" src="lec18_clip_image016.gif" /><br />
+                  Y =  A + Bt ------------------- (2)<br />
+                  Where                          Y = <img width="81" height="45" src="lec18_clip_image018.gif" /><br />
+                  A = logec<br />
+                  B = - k<br />
+                  Now  the equation (1) is reduced to the linear form given by equation (2) using this  we can determine the constants A and B from which we can get the value of the  constants c and k.</p>
+                <p>Problem</p>
+                <p>           The maximum dry weight of groundnut is 48 gms.  The following table gives the dry matter  production w of groundnut during various days estimate the logistic growth  model for the following data.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p>t    in days</p></td>
+                      <td valign="top"><p align="center">25</p></td>
+                      <td valign="top"><p align="center">45</p></td>
+                      <td valign="top"><p align="center">60</p></td>
+                      <td valign="top"><p align="center">80</p></td>
+                      <td valign="top"><p align="center">105</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>DMP    w in gm/plant</p></td>
+                      <td valign="top"><p align="center">5.0</p></td>
+                      <td valign="top"><p align="center">13.5</p></td>
+                      <td valign="top"><p align="center">23.6</p></td>
+                      <td valign="top"><p align="center">36.6</p></td>
+                      <td valign="top"><p align="center">45.0</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p>                                                                                                                                                <br />
+                </p>
+                <table width="27%" border="0">
+  <tr>
+    <td><strong><a href="pdf/lec18.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+    <td bgcolor="#A20807"><strong><a href="pdf/lec18.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+  </tr>
+</table>
+<br />
+<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+  </map>
+</p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

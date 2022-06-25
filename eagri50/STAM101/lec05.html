@@ -1,0 +1,481 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 05</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101  :: Lecture 05 ::</span> Measures of dispersion - Range, Variance  -Standard deviation – co-efficient of variation </strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>Computation of the above  statistics for raw and grouped data</strong><br />
+			    <p><img width="1" height="1" src="http://eagri.org/eagri50/STAM101/lec05_clip_image004_0038.gif" /><strong>Measures  of Dispersion</strong><br />
+The averages  are representatives of a frequency distribution. But they fail to give a  complete picture of the distribution. They do not tell anything about the  scatterness of observations within the distribution.<br />
+Suppose that  we have the distribution of the yields (kg per plot) of two paddy varieties  from 5 plots each. The distribution may be as follows</p>
+			    <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p>Variety I</p></td>
+                      <td valign="top"><p>45</p></td>
+                      <td valign="top"><p>42</p></td>
+                      <td valign="top"><p>42</p></td>
+                      <td valign="top"><p>41</p></td>
+                      <td valign="top"><p>40</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Variety II</p></td>
+                      <td valign="top"><p>54</p></td>
+                      <td valign="top"><p>48</p></td>
+                      <td valign="top"><p>42</p></td>
+                      <td valign="top"><p>33</p></td>
+                      <td valign="top"><p>30</p></td>
+                    </tr>
+                  </table>
+		        </div>
+			    <p>It can be seen  that the mean yield for both varieties is 42 kg but cannot say that the  performances of the two varieties are same. There is greater uniformity of  yields in the first variety whereas there is more variability in the yields of  the second variety. The first variety may be preferred since it is more consistent  in yield performance.<br />
+			      Form the above  example it is obvious that a measure of central tendency alone is not  sufficient to describe a frequency distribution. In addition to it we should  have a measure of scatterness of observations. The scatterness or variation of  observations from their average are called the dispersion. There are different  measures of dispersion like the range, the quartile deviation, the mean  deviation and the standard deviation.</p>
+			    <p><strong>Characteristics of a good measure  of dispersion</strong><br />
+			      An ideal measure of dispersion is  expected to possess the following properties<br />
+			      1. It should be rigidly defined<br />
+			      2. It should be based on all the  items.<br />
+			      3. It should not be unduly affected  by extreme items.<br />
+			      4. It should lend itself for  algebraic manipulation.<br />
+			      5. It should be simple to understand  and easy to calculate</p>
+			    <p><strong>&nbsp;</strong></p>
+			    <p><strong>Range</strong><br />
+			      This is the simplest possible  measure of dispersion and is defined as the difference between the largest and  smallest values of the variable.</p>
+			    <ul type="disc">
+                  <li>In       symbols, Range = L – S.</li>
+			      <li>Where L =       Largest value.</li>
+			      <li>S =       Smallest value.</li>
+		        </ul>
+			    <p>In individual observations and discrete  series, L and S are easily identified. <br />
+			      In continuous series, the following two  methods are followed.</p>
+			    <p><strong>Method 1</strong><br />
+			      L = Upper boundary of the highest class<br />
+			      S = Lower boundary of the lowest class.</p>
+			    <p><strong>Method 2</strong><br />
+			      L = Mid value of the highest class.<br />
+			      S = Mid value of the lowest class.</p>
+			    <p><strong>Example1</strong><br />
+			      The yields (kg per plot) of a cotton  variety from five plots are 8, 9, 8, 10 and 11. Find the range</p>
+			    <p><strong>Solution</strong><br />
+			      L=11, S = 8.<br />
+			      Range = L – S = 11- 8 = 3</p>
+			    <p><strong>Example 2</strong><br />
+			      Calculate range from the following distribution.<br />
+			      Size:                60-63    63-66  66-69    69-72   72-75<br />
+			      Number:             5           18       42         27       8</p>
+			    <p><strong>&nbsp;</strong></p>
+			    <p><strong>Solution</strong><br />
+			      L = Upper boundary of the highest class =  75<br />
+			      S = Lower boundary of the lowest class =  60<br />
+			      Range = L – S = 75 – 60 = 15</p>
+			    <p><strong>Merits and Demerits of Range </strong><br />
+                    <strong>Merits</strong><br />
+			      1. It is simple to understand.<br />
+			      2. It is easy to calculate.<br />
+			      3. In certain types of problems like  quality control, weather forecasts, share price analysis, etc.,   <br />
+			      range is most widely used.</p>
+			    <p><strong>Demerits</strong><br />
+			      1. It is very much affected by the  extreme items.<br />
+			      2. It is based on only two extreme  observations.<br />
+			      3. It cannot be calculated from open-end  class intervals.<br />
+			      4. It is not suitable for mathematical  treatment.<br />
+			      5. It is a very rarely used measure.</p>
+			    <p><strong>Standard Deviation</strong><br />
+			      It is defined  as the positive square-root of the arithmetic mean of the Square of the  deviations of the given observation from their arithmetic mean.<br />
+			      The standard  deviation is denoted by s in case of sample and Greek letter s (sigma) in case of population.<br />
+			      The formula for calculating standard  deviation is as follows<br />
+  <img width="139" height="72" src="lec05_clip_image002.gif" />  for raw data<br />
+			      And for grouped data the formulas are <br />
+  <img width="163" height="64" src="lec05_clip_image004.gif" /> for discrete data</p>
+			    <p><img width="192" height="64" src="lec05_clip_image006.gif" />for continuous data<br />
+			      Where d = <img width="41" height="41" src="lec05_clip_image008.gif" /><br />
+			      C = class interval</p>
+                   <p align="center">Calculate Standard Deviation<br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Calculate&#32;Standard&#32;Deviation.mp4" type="video/mp4">
+</video></p>
+			    <p><strong>Example  3</strong><br />
+                    <strong>Raw  Data</strong><br />
+			      The weights of 5 ear-heads of sorghum are  100, 102,118,124,126 gms. Find the standard deviation.<br />
+  <strong>Solution</strong></p>
+			    <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>x</strong> </td>
+                      <td valign="top"><p align="center"><strong>x2</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">100</p></td>
+                      <td valign="top"><p align="center">10000</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">102</p></td>
+                      <td valign="top"><p align="center">10404</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">118</p></td>
+                      <td valign="top"><p align="center">13924</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">124</p></td>
+                      <td valign="top"><p align="center">15376</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">126</p></td>
+                      <td valign="top"><p align="center">15876</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>570</strong></p></td>
+                      <td valign="top"><p align="center"><strong>65580</strong></p></td>
+                    </tr>
+                  </table>
+		        </div>
+			    <p>Standard deviation <img width="139" height="72" src="lec05_clip_image002_0000.gif" /><br />
+			      <img width="265" height="69" src="lec05_clip_image011.gif" /><br />
+  <strong>Example  4</strong><br />
+  <strong>Discrete  distribution</strong><br />
+			      The frequency distributions of seed  yield of 50 seasamum plants are given below. Find the standard deviation.</p>
+			    <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        Seed yield in gms (x) </td>
+                      <td valign="top"><p>3</p></td>
+                      <td valign="top"><p>4</p></td>
+                      <td valign="top"><p>5</p></td>
+                      <td valign="top"><p>6</p></td>
+                      <td valign="top"><p>7</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Frequency (f)</p></td>
+                      <td valign="top"><p>4</p></td>
+                      <td valign="top"><p>6</p></td>
+                      <td valign="top"><p>15</p></td>
+                      <td valign="top"><p>15</p></td>
+                      <td valign="top"><p>10</p></td>
+                    </tr>
+                  </table>
+		        </div>
+			    <p><strong>Solution</strong></p>
+			    <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Seed yield in gms (x)</strong> </td>
+                      <td valign="top"><p align="center"><strong>f</strong></p></td>
+                      <td valign="top"><p align="center"><strong>fx</strong></p></td>
+                      <td valign="top"><p align="center"><strong>fx2</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                      <td valign="top"><p align="center">12</p></td>
+                      <td valign="top"><p align="center">36</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">4</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                      <td valign="top"><p align="center">24</p></td>
+                      <td valign="top"><p align="center">96</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                      <td valign="top"><p align="center">75</p></td>
+                      <td valign="top"><p align="center">375</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">6</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                      <td valign="top"><p align="center">90</p></td>
+                      <td valign="top"><p align="center">540</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">7</p></td>
+                      <td valign="top"><p align="center">10</p></td>
+                      <td valign="top"><p align="center">70</p></td>
+                      <td valign="top"><p align="center">490</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                      <td valign="top"><p align="center"><strong>50</strong></p></td>
+                      <td valign="top"><p align="center"><strong>271</strong></p></td>
+                      <td valign="top"><p align="center"><strong>1537</strong></p></td>
+                    </tr>
+                  </table>
+		        </div>
+			    <p>&nbsp;</p>
+			    <p>Here <em>n</em> = 50<br />
+			      Standard deviation <img width="164" height="64" src="lec05_clip_image013.gif" /><br />
+			      <img width="132" height="83" src="lec05_clip_image015.gif" /><br />
+			      <br />
+			      = 1.1677 gms</p>
+			    <p><strong>Example 5</strong><br />
+                    <strong>Continuous  distribution</strong><br />
+			      The Frequency distributions of seed yield  of 50 seasamum plants are given below. Find the standard deviation.<br />
+		        </p>
+			    <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        Seed yield in gms (x) </td>
+                      <td valign="top"><p>2.5-35</p></td>
+                      <td valign="top"><p>3.5-4.5</p></td>
+                      <td valign="top"><p>4.5-5.5</p></td>
+                      <td valign="top"><p>5.5-6.5</p></td>
+                      <td valign="top"><p>6.5-7.5</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>No. of plants (f)</p></td>
+                      <td valign="top"><p>4</p></td>
+                      <td valign="top"><p>6</p></td>
+                      <td valign="top"><p>15</p></td>
+                      <td valign="top"><p>15</p></td>
+                      <td valign="top"><p>10</p></td>
+                    </tr>
+                  </table>
+		        </div>
+			    <p><strong>Solution</strong></p>
+			    <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Seed yield in gms (x)</strong></p></td>
+                      <td valign="top"><p align="center"><strong>No. of Plants</strong><br />
+                              <strong>f</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Mid x</strong></p></td>
+                      <td valign="top"><p align="center"><strong>d=<img width="41" height="41" src="lec05_clip_image008_0000.gif" /></strong></p></td>
+                      <td valign="top"><p align="center"><strong>df</strong></p></td>
+                      <td valign="top"><p align="center"><strong>d2 f</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">2.5-3.5</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">-2</p></td>
+                      <td valign="top"><p align="center">-8</p></td>
+                      <td valign="top"><p align="center">16</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">3.5-4.5</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                      <td valign="top"><p align="center">-1</p></td>
+                      <td valign="top"><p align="center">-6</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">4.5-5.5</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">0</p></td>
+                      <td valign="top"><p align="center">0</p></td>
+                      <td valign="top"><p align="center">0</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">5.5-6.5</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">6.5-7.5</p></td>
+                      <td valign="top"><p align="center">10</p></td>
+                      <td valign="top"><p align="center">7</p></td>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">20</p></td>
+                      <td valign="top"><p align="center">40</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                      <td valign="top"><p align="center"><strong>50</strong></p></td>
+                      <td valign="top"><p align="center"><strong>25</strong></p></td>
+                      <td valign="top"><p align="center"><strong>0</strong></p></td>
+                      <td valign="top"><p align="center"><strong>21</strong></p></td>
+                      <td valign="top"><p align="center"><strong>77</strong></p></td>
+                    </tr>
+                  </table>
+		        </div>
+			    <p>A=Assumed mean = 5<br />
+                    <em>n</em>=50, C=1<br />
+                    <img width="192" height="64" src="lec05_clip_image017.gif" /><br />
+                    <img width="141" height="57" src="lec05_clip_image019.gif" /><br />
+                    <img width="132" height="29" src="lec05_clip_image021.gif" /><br />
+                    <img width="89" height="29" src="lec05_clip_image023.gif" />=1.1677</p>
+			    <p><strong>Merits and Demerits of Standard  Deviation</strong><br />
+                    <strong>Merits</strong><br />
+			      1. It is rigidly defined and its value is  always definite and based on all the observations and the actual signs of deviations  are used.<br />
+			      2. As it is based on arithmetic mean, it  has all the merits of arithmetic mean.<br />
+			      3. It is the most important and widely  used measure of dispersion.<br />
+			      4. It is possible for further algebraic  treatment.<br />
+			      5. It is less affected by the  fluctuations of sampling and hence stable.<br />
+			      6. It is the basis for measuring the  coefficient of correlation and sampling.</p>
+			    <p><strong>Demerits</strong><br />
+			      1. It is not easy to understand and it is  difficult to calculate.<br />
+			      2. It gives more weight to extreme values  because the values are squared up.<br />
+			      3. As it is an absolute measure of  variability, it cannot be used for the purpose of comparison. </p>
+			    <p><strong>Variance </strong><br />
+			      The square of the standard deviation is  called variance <br />
+			      (i.e.) variance = (SD) 2.</p>
+			    <p><strong>Coefficient of Variation</strong><br />
+			      The Standard  deviation is an absolute measure of dispersion. It is expressed in terms of  units in which the original figures are collected and stated. The standard  deviation of heights of plants cannot be compared with the standard deviation  of weights of the grains, as both are expressed in different units, i.e heights  in centimeter and weights in kilograms. Therefore the standard deviation must  be converted into a relative measure of dispersion for the purpose of  comparison. The relative measure is known as the coefficient of variation. The coefficient  of variation is obtained by dividing the standard deviation by the mean and  expressed in percentage. Symbolically, Coefficient of variation (C.V) = <img width="79" height="41" src="lec05_clip_image025.gif" />  <br />
+			      If we want to  compare the variability of two or more series, we can use C.V. The series or  groups of data for which the C.V. is greater indicate that the group is more  variable, less stable, less uniform, less consistent or less homogeneous. If  the C.V. is less, it indicates that the group is less variable or more stable or  more uniform or more consistent or more homogeneous.</p>
+			    <p><strong>Example 6</strong><br />
+			      Consider  the measurement on yield and plant height of a paddy variety. The mean and  standard deviation for yield are 50 kg and 10 kg respectively. The mean and  standard deviation for plant height are 55 am and 5 cm respectively. <br />
+			      Here  the measurements for yield and plant height are in different units. Hence the  variabilities can be compared only by using coefficient of variation.<br />
+			      For yield, CV=<img width="59" height="41" src="lec05_clip_image027.gif" />= 20%<br />
+			      For plant height, CV=<img width="59" height="41" src="lec05_clip_image029.gif" />= 9.1%<br />
+			      The yield is subject to more  variation than the plant height.</p>
+			    <p>&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec05.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec05.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                    </map>
+                </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

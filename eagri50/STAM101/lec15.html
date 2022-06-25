@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 15</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 15 :: </span>Completely randomized design – description –  layout – analysis – advantages and disadvantages</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h2>Completely Randomized Design  (CRD)</h2>
+				<p>CRD is the basic single factor design. In this design the treatments  are assigned completely at random so that each experimental unit has the same  chance of receiving any one treatment. But CRD is appropriate only when the  experimental material is homogeneous. As there is generally large variation  among experimental plots due to many factors CRD is not preferred in field  experiments. <br />
+				  In laboratory experiments and greenhouse studies it is easy to  achieve homogeneity of experimental materials and therefore CRD is most useful  in such experiments.</p>
+				<h2 align="left">Layout of a CRD</h2>
+				<p>Completely randomized Design is the one in which all the experimental  units are taken in a single group which are homogeneous as far as possible.<br />
+				  The randomization procedure for allotting the treatments to various  units will be as follows.<br />
+  <strong>Step 1:</strong> Determine the total number of experimental units. <br />
+  <strong>Step 2:</strong> Assign a plot number to each of the experimental units starting  from left to right for all rows.<br />
+  <strong>Step 3:</strong> Assign the treatments to the experimental units by using random  numbers.<br />
+				  The statistical model for CRD with one observation per unit<br />
+				  Yij = m + ti  + eij<br />
+				  m = overall mean effect<br />
+				  ti  = true effect  of the ith treatment<br />
+				  eij  = error term  of the jth unit receiving ith treatment </p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>The arrangement of data in CRD is as follows:</p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td colspan="4" valign="top"><p align="center">Treatments</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td valign="top"><p>T1</p></td>
+                    <td valign="top"><p>T2</p></td>
+                    <td valign="top"><p>Ti</p></td>
+                    <td valign="top"><p>TK</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td valign="top"><p>y11</p></td>
+                    <td valign="top"><p>y21</p></td>
+                    <td valign="top"><p>yi1</p></td>
+                    <td valign="top"><p>YK1</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td valign="top"><p>y12</p></td>
+                    <td valign="top"><p>y22</p></td>
+                    <td valign="top"><p>yi2</p></td>
+                    <td valign="top"><p>YK2</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td valign="top"><p>y1r1</p></td>
+                    <td valign="top"><p>y2r2</p></td>
+                    <td valign="top"><p>yiri </p></td>
+                    <td valign="top"><p>Yk rk</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Total </p></td>
+                    <td valign="top"><p>Y1</p></td>
+                    <td valign="top"><p>Y2</p></td>
+                    <td valign="top"><p>Yi </p></td>
+                    <td valign="top"><p>Tk </p></td>
+                    <td valign="top"><p>GT</p></td>
+                  </tr>
+                </table>
+				<p>                                                                                    (GT – Grand total)<br />
+				  The null hypothesis will be <br />
+				  Ho : m1 = m2=………….=mk or There is no significant  difference between the treatments<br />
+				  And the alternative hypothesis is <br />
+				  H1: m1 ≠ m2≠ ………….≠  mk. There is significant difference  between the treatments<br />
+				  The different steps in forming the analysis of variance table for a  CRD are:</p>
+				<ul>
+				  <li><img width="89" height="45" src="lec15_clip_image002.gif" /></li>
+			    </ul>
+				<p>       n= Total  number of observations</p>
+				<ul>
+				  <li><img width="233" height="49" src="lec15_clip_image004.gif" />        </li>
+				  <li><img width="364" height="48" src="lec15_clip_image006.gif" /></li>
+			    </ul>
+				<p>                  <img width="127" height="48" src="lec15_clip_image008.gif" /><br />
+				  4.  <img width="287" height="48" src="lec15_clip_image010.gif" /><br />
+				  =   TSS  – TrSS<br />
+				  5. Form the following ANOVA table and  calculate F value.</p>
+				<table border="1" cellspacing="0" cellpadding="0" width="71%">
+                  <tr>
+                    <td valign="top"><p align="center"><strong>Source of variation</strong></p></td>
+                    <td valign="top"><p align="center"><strong>d.f.</strong></p></td>
+                    <td valign="top"><p><strong> SS</strong></p></td>
+                    <td valign="top"><p><strong>        MS</strong></p></td>
+                    <td valign="top"><p align="center"><strong>F</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p>Treatments</p>
+                        <p>&nbsp;</p>
+                      <p>Error</p></td>
+                    <td valign="top"><p>t-1</p>
+                        <p>&nbsp;</p>
+                      <p>n-t</p></td>
+                    <td valign="top"><p>TrSS</p>
+                        <p>&nbsp;</p>
+                      <p>ESS</p></td>
+                    <td valign="top"><p>TrMS= <img width="40" height="41" src="lec15_clip_image012.gif" /><br />
+                      EMS=<img width="36" height="41" src="lec15_clip_image014.gif" /></p></td>
+                    <td valign="top"><p><img width="44" height="41" src="lec15_clip_image016.gif" /></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p><strong>Total</strong></p></td>
+                    <td valign="top"><p>n-1</p></td>
+                    <td valign="top"><p>TSS</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                    <td valign="top"><p>&nbsp;</p></td>
+                  </tr>
+                </table>
+				<p>6. Compare the calculated F with the critical value of F  corresponding to treatment degrees of freedom and error degrees of freedom so  that acceptance or rejection of the null hypothesis can be determined.<br />
+				  7. If null hypothesis is rejected that indicates there is  significant differences between the different treatments.<br />
+				  8. Calculate C D value. <br />
+				  C.D. = SE(d). t <br />
+  <img width="204" height="52" src="lec15_clip_image018.gif" /><br />
+				  ri = number of replications for treatment i<br />
+				  rj = number of replications for treatment j and <br />
+				  t is the critical t value for error degrees of freedom at specified  level of significance, either 5% or 1%.</p>
+				<h3>Advantages of a CRD</h3>
+				<ul>
+				  <li>Its layout is very easy.</li>
+				  <li>There is complete flexibility  in this design i.e. any number of treatments and replications for each  treatment can be tried.</li>
+				  <li>Whole experimental material can  be utilized in this design.</li>
+				  <li>This design yields maximum  degrees of freedom for experimental error.</li>
+				  <li>The analysis of data is  simplest as compared to any other design.</li>
+				  <li>Even if some values are missing  the analysis can be done.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<h3>Disadvantages of a CRD</h3>
+				<ul>
+				<ul>
+				  <li>It is difficult to find  homogeneous experimental units in all respects and hence CRD is seldom suitable  for field experiments as compared to other experimental designs.</li>
+				  <li>It is less accurate than other  designs.</li>
+			    </ul>
+				<h5>&nbsp;</h5>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec15.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec15.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

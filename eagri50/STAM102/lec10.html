@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STAM 102 :: Lecture 10</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM102/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM 102 :: Lecture 10 :: </span>Data Analysis Tools- Correlation and Regression, t-test for two samples and ANOVA with One-way classification</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<h1><strong>Data Analysis Tools</strong></h1>
+				<ul type="disc">
+ 				  <ul type="disc">
+                    <li>Most of Excel’s statistical       procedures are part of the Data Analysis ToolPak. This option is available       in TOOLS menu. <u></u></li>
+				    <li>The analysis that can be done       are: <u></u></li>
+				    <ul type="circle">
+                      <li>descriptive        statistics, <u></u></li>
+				      <li>t tests, <u></u></li>
+				      <li>correlations, <u></u></li>
+				      <li>one or two way        analysis of variance, <u></u></li>
+				      <li>regression, <u></u></li>
+				      <li>moving        average, <u></u></li>
+				      <li>Fourier        analysis etc. <u></u></li>
+			        </ul>
+				    <li>To start the data analysis click       Tools menu. Search for the Data Analysis tab in the Tools menu.<u></u></li>
+			      </ul>
+				  <p align="center"><img width="269" height="521" src="lec10_clip_image002.jpg" /></p>
+				  <table width="854" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="480" valign="top"><ul type="disc">
+                          <li>If Data         Analysis is not found in the menu then click Add-Ins…<u></u></li>
+                        <li>In the Add_Ins         dialog box check Analysis ToolPak. Then Click OK.<u></u></li>
+                      </ul>
+                          <p align="center"><img width="329" height="450" src="lec10_clip_image004.jpg" /><u></u></p></td>
+                      <td width="374" valign="top"><ul type="disc">
+                          <li>Now choose the         Tools menu. You can find the Data Analysis there.<u></u></li>
+                      </ul>
+                          <p align="center"><img width="265" height="468" src="lec10_clip_image006.jpg" /></p></td>
+                    </tr>
+                  </table>       
+			   	   <li>Click Data Analysis option in the       Tools now.<u></u></li>
+			   	   <li>Data Analysis dialog box will get       displayed as shown:<u></u></li>
+				</ul>
+				<table width="885" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td valign="top"><p><u>&nbsp;</u></p>
+                        <ul type="disc">
+                          <li>Click Data         Analysis option in the Tools now.<u></u></li>
+                          <li>Data Analysis         dialog box will get displayed as shown:<u></u></li>
+                        </ul>
+                      <p align="center"><img width="591" height="296" src="lec10_clip_image002_0000.jpg" /><br />
+                      </p>
+                      <h1><strong>Correlation</strong></h1>
+                      <ul type="disc">
+                        <li>To do the correlation we consider       a problem of finding correlation coefficient of data which relates to the       Yield in grams (Y) and the Matured Pods (X) of 10 groundnut plants.</li>
+                        <li>The data is entered in the Excel       sheet as follows:</li>
+                      </ul>
+                      <p align="center"><img width="619" height="294" src="lec10_clip_image002_0002.jpg" /></p>
+                      <ul type="disc">
+                        <li>Choose Correlation from the Data       Analysis window then click OK button.</li>
+                        <li>Correlation window will get       displayed as follows:</li>
+                      </ul>
+                      <p align="center"><img width="440" height="264" src="lec10_clip_image004_0001.jpg" /></p>
+                      <ul type="disc">
+                        <li>Enter the input range if you know       the input range of data or else make use of the address icon to mark the       input range in the Excel sheet. In this example the input range is A2:B12.</li>
+                        <li>Since the data are grouped by       column in this example, choose Grouped By Columns option.</li>
+                        <li>We can add the labels as the       first row in the data range. So check the Labels in First Row.</li>
+                        <li>In the output options choose       where you want to display the output. In this example the output range is       given as D2.</li>
+                      </ul>
+                      <p align="center"><img width="443" height="263" src="lec10_clip_image006_0001.jpg" /></p>
+                      <ul type="disc">
+                        <li>Click OK button in the       Correlation window.</li>
+                      </ul>
+                      <ul type="disc">
+                        <li>The result will be displayed from       D2 as shown below:</li>
+                      </ul>
+                      <p>&nbsp;</p>
+                      <p align="center"><img width="636" height="460" src="lec10_clip_image008_0000.jpg" /></p>
+                      <h1><strong>Regression</strong></h1>
+                      <ul type="disc">
+                        <li>To do the regression analysis we       consider an example with paddy yield in Kg as dependent variable and ear length       in cm as the independent variable.</li>
+                        <li>The data are entered in the Excel       sheet as follows:</li>
+                      </ul>
+                      <p align="center"><img width="562" height="424" src="lec10_clip_image010_0000.jpg" /></p>
+                      <ul type="disc">
+                        <li>The Regression procedure in the       Data Analysis tools lets you choose one column as the dependent variable,       and a set of contiguous columns for the independents<u></u></li>
+                        <li>It does not tolerate any empty       cells anywhere in the input ranges. <u></u></li>
+                        <li>Therefore, if there is any empty       cells in the input range, delete the rows contain empty cells.<u></u></li>
+                        <li>Choose Regression from Data       Analysis and click OK.</li>
+                      </ul>
+                      <p align="center"><img width="493" height="247" src="lec10_clip_image012_0000.jpg" /></p>
+                      <ul type="disc">
+                        <li>In the Regression window enter the Y and X ranges if       you know the address values or else the click the colored icon in the Y       and X range tabs to fill the addresses.</li>
+                        <li>If the first row of the data entered includes labels       then check the Labels box in the Regression window.</li>
+                        <li>Let the confidence level be set to 99%.</li>
+                        <li>In the output options choose where you want to display       the output of regression analysis. In this example the Output Range is set       to E2.</li>
+                      </ul>
+                      <p align="center"><img width="450" height="335" src="lec10_clip_image014_0000.jpg" /></p>
+                      <ul type="disc">
+                        <li>Click OK. The result will be displayed fro E2 as shown       below:</li>
+                      </ul>
+                      <p align="center"><img width="624" height="372" src="lec10_clip_image016_0000.jpg" /><br />
+                          <strong><u>t-test  for two samples</u></strong></p>
+                      <ul type="disc">
+                        <li>t-test for two samples assuming       Perform t-test for two samples assuming equal variances: yield of food in       kg/ha in Kharif  and Rabi season       from 1996-97 to 2006-07.</li>
+                        <li>The data is entered in Excel       sheet as shown below:</li>
+                      </ul>
+                      <p align="center"><img width="624" height="277" src="lec10_clip_image018_0000.jpg" /></p>
+                      <ul type="disc">
+                        <li>Choose t-Test: Two-Samples       assuming Equal Variances in the Data Analysis window:</li>
+                      </ul>
+                      <p align="center"><img width="423" height="210" src="lec10_clip_image020_0000.jpg" /></p>
+                      <ul type="disc">
+                        <li>In the t-Test: Two-Samples       assuming Equal Variances window enter the Variable 1 Range and Variable 2       Range.</li>
+                        <li>Check the Labels option</li>
+                        <li>Hypothesized mean difference be       0.5</li>
+                        <li>Let Alpha value be 0.05</li>
+                        <li>Set output range as E2.</li>
+                      </ul>
+                      <p align="center"><img width="452" height="299" src="lec10_clip_image022_0000.jpg" /></p>
+                      <ul type="disc">
+                        <li>The result will be displayed       from E2 as shown below:</li>
+                      </ul>
+                      <p align="center"><img width="624" height="373" src="lec10_clip_image024_0000.jpg" /></p>
+                      <p><strong>ANOVA with One-way Classification</strong></p>
+                      <ul type="disc">
+                        <li>Perform ANOVA One Way       Classification for yield of food in kg/ha in three seasons from 1996-97 to       2006-07</li>
+                        <li>The data is entered in Excel       sheet as follows:</li>
+                      </ul>
+                      <p align="center"><img width="624" height="326" src="lec10_clip_image026_0000.jpg" /></p>
+                      <ul type="disc">
+                        <li>Choose       ANOVA: Single Factor from Data Analysis window.</li>
+                      </ul>
+                      <p align="center"><img width="396" height="197" src="lec10_clip_image028_0000.jpg" /></p>
+                      <ul type="disc">
+                        <li>In       the ANOVA: Single Factor window enter the input range. The input range in       the example is B2:D13</li>
+                        <li>Choose       Group by Columns</li>
+                        <li>Check       Labels in the first row</li>
+                        <li>Output       range is set to F2 as follows:</li>
+                      </ul>
+                      <p align="center"><img width="648" height="345" src="lec10_clip_image030_0000.jpg" /></p>
+                      <ul>
+                      <ul>
+                        <li>The result of the ANOVA  with One-way classification is displayed from F2 as shown below:</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+				<p>&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec10.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec10.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+			    `
+			    <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+</map></p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

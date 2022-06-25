@@ -1,0 +1,1462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 04</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 04 ::</span>Measures of averages</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="center"><strong>Mean – median – mode –  geometric mean – harmonic mean – computation of the above statistics for raw  and grouped data - merits and demerits -      measures of location – percentiles –  quartiles - computation of the above statistics for raw and grouped data</strong></p>
+				<p>In the study  of a population with respect to one in which we are interested we may get a  large number of observations. It is not possible to grasp any idea about the  characteristic when we look at all the observations. So it is better to get one  number for one group. That number must be a good representative one for all the  observations to give a clear picture of that characteristic. Such  representative number can be a central value for all these observations. This  central value is called a measure of central tendency or an average or a  measure of locations. There are five averages. Among them mean, median and mode  are called simple averages and the other two averages geometric mean and  harmonic mean are called special averages.<br />
+                  <strong>Arithmetic mean or mean</strong><br />
+Arithmetic  mean or simply the mean of a variable is defined as the sum of the observations  divided by the number of observations. It is denoted by the symbol <img width="15" height="14" src="lec04_clip_image002.gif" /> If the variable x  assumes n values x1, x2 … xn then the mean is given by<br />
+<img width="164" height="43" src="lec04_clip_image004.gif" /><br />
+<img width="80" height="45" src="lec04_clip_image006.gif" /><br />
+This formula is for the ungrouped or raw  data.<br />
+ <p align="center"><a href="videos/Mean&#32;and&#32;Standard&#32;Deviation.mp4" target="_blank">Mean and Standard Deviation</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="videos/Mean&#32;and&#32;Standard&#32;Deviation.mp4" type="video/mp4">
+</video></p>
+<strong>Example 1 </strong><br />
+Calculate the mean for pH levels of soil  6.8, 6.6, 5.2, 5.6, 5.8 <br />
+<strong>Solution</strong><br />
+<img width="251" height="41" src="lec04_clip_image008.gif" /><strong></strong><br />
+<strong>Grouped Data </strong><br />
+The mean for grouped data is obtained  from the following formula:<br />
+<img width="67" height="45" src="lec04_clip_image010.gif" /><br />
+Where <em>x </em>=   the  mid-point of individual class<br />
+<em>f =</em> the  frequency of individual class<br />
+<em>n </em>= the sum of the frequencies or total frequencies in a sample.<br />
+<strong>Short-cut method </strong><br />
+<img width="119" height="45" src="lec04_clip_image012.gif" /><strong></strong><br />
+Where   <img width="68" height="41" src="lec04_clip_image014.gif" /> <br />
+A = any value in x<br />
+<em>n </em>= total frequency<br />
+c = width of the class interval<br />
+<strong>Example 2</strong><br />
+Given the following frequency  distribution, calculate the arithmetic mean<br />
+Marks          :   64         63         62        61       60        59<br />
+<img width="12" height="36" src="lec04_clip_image015.gif" />Number of<br />
+Students      :     8         18        12        9          7          6<br />
+<strong>Solution</strong></p>
+				<div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>X</strong> </td>
+                      <td valign="top"><p align="center"><strong>F</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Fx</strong></p></td>
+                      <td valign="top"><p align="center"><strong>D=x-A</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Fd</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">64</p></td>
+                      <td valign="top"><p align="center">8</p></td>
+                      <td valign="top"><p align="center">512</p></td>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">16</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">63</p></td>
+                      <td valign="top"><p align="center">18</p></td>
+                      <td valign="top"><p align="center">1134</p></td>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">18</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>62</strong></p></td>
+                      <td valign="top"><p align="center">12</p></td>
+                      <td valign="top"><p align="center">744</p></td>
+                      <td valign="top"><p align="center">0</p></td>
+                      <td valign="top"><p align="center">0</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">61</p></td>
+                      <td valign="top"><p align="center">9</p></td>
+                      <td valign="top"><p align="center">549</p></td>
+                      <td valign="top"><p align="center">-1</p></td>
+                      <td valign="top"><p align="center">-9</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">60</p></td>
+                      <td valign="top"><p align="center">7</p></td>
+                      <td valign="top"><p align="center">420</p></td>
+                      <td valign="top"><p align="center">-2</p></td>
+                      <td valign="top"><p align="center">-14</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">59</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                      <td valign="top"><p align="center">354</p></td>
+                      <td valign="top"><p align="center">-3</p></td>
+                      <td valign="top"><p align="center">-18</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">60</p></td>
+                      <td valign="top"><p align="center">3713</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">-7</p></td>
+                    </tr>
+                  </table>
+			    </div>
+				<p><strong>Direct method</strong><br />
+                    <img width="67" height="45" src="lec04_clip_image010_0000.gif" /><br />
+                    <img width="117" height="41" src="lec04_clip_image018.gif" /></p>
+				<strong><br clear="all" />
+                </strong>
+                <p><strong>Short-cut method</strong><br />
+                    <img width="115" height="45" src="lec04_clip_image020.gif" /><strong></strong><br />
+                  Here A  = 62 <br />
+  <img width="153" height="41" src="lec04_clip_image022.gif" /> <br />
+  <strong>Example 3</strong><br />
+                  For the frequency distribution of seed  yield of seasamum given in table, calculate the mean yield per plot.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        Yield  per plot in(in g) </td>
+                      <td valign="top"><p>64.5-84.5</p></td>
+                      <td valign="top"><p>84.5-104.5</p></td>
+                      <td valign="top"><p>104.5-124.5</p></td>
+                      <td valign="top"><p>124.5-144.5</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>No of plots</p></td>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">7</p></td>
+                      <td valign="top"><p align="center">20</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Solution</strong></p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Yield ( in g)</strong> </td>
+                      <td valign="top"><p align="center"><strong>No of Plots (f)</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Mid X</strong></p></td>
+                      <td valign="top"><p align="center"><img width="68" height="41" src="lec04_clip_image014_0000.gif" /><strong></strong></p></td>
+                      <td valign="top"><p align="center"><strong>Fd</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">64.5-84.5</p></td>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">74.5</p></td>
+                      <td valign="top"><p align="center">-1</p></td>
+                      <td valign="top"><p align="center">-3</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">84.5-104.5</p></td>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">94.5</p></td>
+                      <td valign="top"><p align="center">0</p></td>
+                      <td valign="top"><p align="center">0</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">104.5-124.5</p></td>
+                      <td valign="top"><p align="center">7</p></td>
+                      <td valign="top"><p align="center">114.5</p></td>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">7</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">124.5-144.5</p></td>
+                      <td valign="top"><p align="center">20</p></td>
+                      <td valign="top"><p align="center">134.5</p></td>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">40</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                      <td valign="top"><p align="center"><strong>35</strong></p></td>
+                      <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                      <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                      <td valign="top"><p align="center"><strong>44</strong></p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p>A=94.5<br />
+                  The  mean yield per plot is <br />
+                  Direct  method:<br />
+  <img width="381" height="45" src="lec04_clip_image024.gif" /><br />
+                  = <img width="52" height="41" src="lec04_clip_image026.gif" />=119.64 gms<br />
+  <strong>Shortcut method</strong><br />
+  <img width="115" height="45" src="lec04_clip_image020_0000.gif" /><br />
+  <img width="197" height="41" src="lec04_clip_image029.gif" /><br />
+  <strong>Merits and demerits of Arithmetic mean</strong><br />
+  <strong>Merits</strong><br />
+                  1. It is rigidly defined.<br />
+                  2. It is easy to understand and easy to  calculate.<br />
+                  3. If the number of items is sufficiently  large, it is more accurate and more reliable.<br />
+                  4. It is a calculated value and is not  based on its position in the series.<br />
+                  5. It is possible to calculate even if  some of the details of the data are lacking.<br />
+                  6. Of all averages, it is affected least  by fluctuations of sampling.<br />
+                  7. It provides a good basis for  comparison.<br />
+  <strong>Demerits</strong><br />
+                  1. It cannot be obtained by inspection  nor located through a frequency graph.<br />
+                  2. It cannot be in the study of  qualitative phenomena not capable of numerical measurement i.e.   <br />
+                  Intelligence, beauty, honesty etc.,<br />
+                  3. It can ignore any single item only at  the risk of losing its accuracy.<br />
+                  4. It is affected very much by extreme  values.<br />
+                  5. It cannot be calculated for open-end  classes.<br />
+                  6. It may lead to fallacious conclusions,  if the details of the data from which it is computed are <br />
+                  not given.<br />
+  <strong>Median </strong><br />
+                  The median is the middle most item  that divides the group into two equal parts, one part comprising all values  greater, and the other, all values less than that item.<br />
+  <strong>Ungrouped or Raw data </strong><br />
+                  Arrange the given values in the ascending  order. If the number of values are odd, median is the middle value<br />
+                  If the number of values are even, median  is the mean of middle two values.<br />
+                  By formula<br />
+                  When n is odd, Median = Md = <img width="96" height="49" src="lec04_clip_image031.gif" /> <br />
+                  When n is even, Average of <img width="152" height="49" src="lec04_clip_image033.gif" /></p>
+                <p><strong>Example 4</strong><br />
+                  If the weights of  sorghum ear heads are 45, 60,48,100,65 gms, calculate the median<br />
+  <strong>Solution</strong><br />
+                  Here n = 5<br />
+                  First arrange it  in ascending order<br />
+                  45, 48, 60, 65,  100<br />
+                  Median =<img width="96" height="49" src="lec04_clip_image031_0000.gif" /><br />
+                  =<img width="129" height="45" src="lec04_clip_image036.gif" />=60<br />
+  <strong>Example 5 </strong><br />
+                  If the sorghum  ear- heads are 5,48, 60, 65, 65, 100 gms, calculate the median.<br />
+  <strong>Solution </strong><br />
+                  Here n = 6<br />
+  <img width="299" height="49" src="lec04_clip_image038.gif" /><br />
+  <img width="161" height="45" src="lec04_clip_image040.gif" /> <img width="228" height="45" src="lec04_clip_image042.gif" /><br />
+  <img width="180" height="41" src="lec04_clip_image044.gif" /><br />
+  <strong>Grouped data</strong><br />
+                  In a grouped  distribution, values are associated with frequencies. Grouping can be in the  form of a discrete frequency distribution or a continuous frequency  distribution. Whatever may be the type of distribution, cumulative frequencies  have to be calculated to know the total number of items.</p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Cumulative frequency (cf)</strong><br />
+                  Cumulative frequency of each class  is the sum of the frequency of the class and the frequencies of the pervious  classes, ie adding the frequencies successively, so that the last cumulative  frequency gives the total number of items. <br />
+  <strong>Discrete Series</strong><br />
+                  Step1: Find cumulative frequencies.<br />
+  <img width="136" height="45" src="lec04_clip_image046.gif" /><br />
+                  Step3: See in the cumulative frequencies  the value just greater than <img width="55" height="45" src="lec04_clip_image048.gif" /><br />
+                  Step4: Then the corresponding value of x  is median.<br />
+  <strong>Example 6</strong><br />
+                  The following data pertaining to the  number of insects per plant. Find median number of insects per plant.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        Number of insects per plant (x) </td>
+                      <td valign="top"><p>1</p></td>
+                      <td valign="top"><p>2</p></td>
+                      <td valign="top"><p>3</p></td>
+                      <td valign="top"><p>4</p></td>
+                      <td valign="top"><p>5</p></td>
+                      <td valign="top"><p>6</p></td>
+                      <td valign="top"><p>7</p></td>
+                      <td valign="top"><p>8</p></td>
+                      <td valign="top"><p>9</p></td>
+                      <td valign="top"><p>10</p></td>
+                      <td valign="top"><p>11</p></td>
+                      <td valign="top"><p>12</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>No. of plants(f)</p></td>
+                      <td valign="top"><p>1</p></td>
+                      <td valign="top"><p>3</p></td>
+                      <td valign="top"><p>5</p></td>
+                      <td valign="top"><p>6</p></td>
+                      <td valign="top"><p>10</p></td>
+                      <td valign="top"><p>13</p></td>
+                      <td valign="top"><p>9</p></td>
+                      <td valign="top"><p>5</p></td>
+                      <td valign="top"><p>3</p></td>
+                      <td valign="top"><p>2</p></td>
+                      <td valign="top"><p>2</p></td>
+                      <td valign="top"><p>1</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Solution</strong><br />
+                  Form  the cumulative frequency table</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>x</strong> </td>
+                      <td valign="top"><p align="center"><strong>f</strong></p></td>
+                      <td valign="top"><p align="center"><strong>cf</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">1</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">9</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">4</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">10</p></td>
+                      <td valign="top"><p align="center">25</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">6</p></td>
+                      <td valign="top"><p align="center">13</p></td>
+                      <td valign="top"><p align="center">38</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">7</p></td>
+                      <td valign="top"><p align="center">9</p></td>
+                      <td valign="top"><p align="center">47</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">8</p></td>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">52</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">9</p></td>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">55</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">10</p></td>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">57</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">11</p></td>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">59</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">12</p></td>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">60</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">60</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p>Median  = size of  <img width="88" height="49" src="lec04_clip_image050.gif" /><br />
+                  Here the number of observations is even.  Therefore median = average of (n/2)th item and (n/2+1)th item.  <br />
+                  =  (30th item +31st item) / 2 = (6+6)/2 = 6<br />
+                  <br />
+                  Hence  the median size is 6 insects per plant.</p>
+                <p><strong>Continuous Series</strong><br />
+The steps given below are followed for  the calculation of median in continuous series.<br />
+Step1: Find cumulative frequencies.<br />
+Step2: Find  <img width="31" height="45" src="lec04_clip_image002_0000.gif" /><br />
+Step3: See in the cumulative frequency  the value first greater than <img width="31" height="45" src="lec04_clip_image002_0001.gif" />,  Then the  corresponding class interval is called the Median class. Then apply the formula<br />
+Median = <img width="83" height="63" src="lec04_clip_image005.gif" /><br />
+where              <em>l </em>= Lower limit of the medianal class<br />
+m = cumulative  frequency preceding the medianal class<br />
+c = width of  the class<br />
+f =frequency  in the median class.<br />
+<em>n</em>=Total frequency.<br />
+<strong>Example  7</strong><br />
+For the frequency distribution of weights  of sorghum ear-heads given in table below. Calculate the median.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Weights of ear heads ( in g)</strong> </td>
+                      <td valign="top"><p align="center"><strong>No of ear heads (f)</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Less than class</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Cumulative frequency (m)</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">60-80</p></td>
+                      <td valign="top"><p align="center">22</p></td>
+                      <td valign="top"><p align="center">&lt;80</p></td>
+                      <td valign="top"><p align="center">22</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80-100</p></td>
+                      <td valign="top"><p align="center">38</p></td>
+                      <td valign="top"><p align="center">&lt;100</p></td>
+                      <td valign="top"><p align="center">60</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">100-120</p></td>
+                      <td valign="top"><p align="center">45</p></td>
+                      <td valign="top"><p align="center">&lt;120</p></td>
+                      <td valign="top"><p align="center">105</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">120-140</p></td>
+                      <td valign="top"><p align="center">35</p></td>
+                      <td valign="top"><p align="center">&lt;140</p></td>
+                      <td valign="top"><p align="center">140</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">140-160</p></td>
+                      <td valign="top"><p align="center">24</p></td>
+                      <td valign="top"><p align="center">&lt;160</p></td>
+                      <td valign="top"><p align="center">164</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">Total</p></td>
+                      <td valign="top"><p align="center">164</p></td>
+                      <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Solution</strong><br />
+                  Median = <img width="87" height="63" src="lec04_clip_image007.gif" /><br />
+  <img width="31" height="45" src="lec04_clip_image009.gif" />=<img width="77" height="45" src="lec04_clip_image011.gif" /><br />
+                  It lies between 60 and 105.  Corresponding to 60 the less than class is 100 and corresponding to 105 the  less than class is 120. Therefore the medianal class is 100-120. Its lower  limit is 100.<br />
+                  Here  <img width="23" height="19" src="lec04_clip_image013.gif" />100, n=164 , f = 45 , c = 20,   m =60<br />
+                  Median = <img width="212" height="41" src="lec04_clip_image015_0000.gif" /><br />
+  <strong> Merits of Median </strong><br />
+                  1. Median is not influenced by extreme  values because it is a positional average.<br />
+                  2. Median can be calculated in case of  distribution with open-end intervals.<br />
+                  3. Median can be located even if the data  are incomplete.</p>
+                <p><strong>Demerits of Median </strong><br />
+                  1. A slight change in the series may  bring drastic change in median value.<br />
+                  2. In case of even number of items or  continuous series, median is an estimated value other than   any  value in the series.<br />
+                  3. It is not suitable for further  mathematical treatment except its use in calculating mean deviation.<br />
+                  4. It does not take into account all the observations.</p>
+                <p><strong>Mode </strong><br />
+                  The mode refers to that value in a  distribution, which occur most frequently. It is an actual value, which has the  highest concentration of items in and around it. It shows the centre of  concentration of the frequency in around a given value. Therefore, where the  purpose is to know the point of the highest concentration it is preferred. It  is, thus, a positional measure.  <br />
+                  Its importance is very great in  agriculture like to find typical height of a crop variety, maximum source of  irrigation in a region, maximum disease prone paddy variety. Thus the mode is  an important measure in case of qualitative data.<br />
+                  <strong>Computation  of the mode</strong><br />
+  <strong>Ungrouped or Raw Data</strong><br />
+                  For ungrouped data or a series of  individual observations, mode is often found by mere inspection.<br />
+  <strong>Example 8</strong><br />
+                  Find the mode for the following seed weight<br />
+                  2 , 7, 10, 15, 10, 17, 8, 10, 2 gms<br />
+                  \Mode = 10<br />
+                  In some cases the mode may be absent  while in some cases there may be more than one mode.<br />
+  <strong>Example 9</strong><br />
+                  (1) 12, 10, 15, 24, 30 (no mode)<br />
+                  (2) 7, 10, 15, 12, 7, 14, 24, 10, 7, 20,  10<br />
+                  the modal values are 7 and 10 as both  occur 3 times each.</p>
+                <p><strong>Grouped Data</strong><br />
+                  For Discrete distribution, see the  highest frequency and corresponding value of x is mode.<br />
+                  Example: <br />
+                  Find the mode for the following</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        Weight of sorghum in gms (x) </td>
+                      <td valign="top"><p align="center">No. of ear head(f)</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">50</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">65</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">75</p></td>
+                      <td valign="top"><p align="center">16</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80</p></td>
+                      <td valign="top"><p align="center">8</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">95</p></td>
+                      <td valign="top"><p align="center">7</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">100</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Solution</strong><br />
+                  The maximum frequency is 16. The corresponding  x value is 75. <br />
+                  \ mode = 75 gms.<br />
+  <strong>Continuous distribution </strong><br />
+                  Locate the highest frequency the class corresponding  to that frequency is called the modal class. Then apply the formula.<br />
+                  Mode = <img width="96" height="48" src="lec04_clip_image017.gif" /><br />
+                  Where <img width="9" height="19" src="lec04_clip_image019.gif" />= lower limit of the model class<br />
+                  <img width="20" height="25" src="lec04_clip_image021.gif" />= the frequency of the class preceding the model class<br />
+                  <img width="19" height="24" src="lec04_clip_image023.gif" />= the frequency of the class succeeding the model class<br />
+                  and     c = class interval           </p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Example 10</strong><br />
+                  For the frequency distribution of weights  of sorghum ear-heads given in table below. Calculate the mode</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Weights of ear heads (g)</strong> </td>
+                      <td valign="top"><p align="center"><strong>No of ear heads (f)</strong></p></td>
+                      <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">60-80</p></td>
+                      <td valign="top"><p align="center">22</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80-100</p></td>
+                      <td valign="top"><p align="center"><img width="46" height="3" src="lec04_clip_image024_0000.gif" />38</p></td>
+                      <td valign="top"><p align="center"><img width="20" height="25" src="lec04_clip_image021_0000.gif" /> </p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"> 100-120</p></td>
+                      <td valign="top"><p align="center"><img width="46" height="3" src="lec04_clip_image024_0001.gif" />45</p></td>
+                      <td valign="top"><p align="center">f</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">120-140</p></td>
+                      <td valign="top"><p align="center"><img width="46" height="3" src="lec04_clip_image025.gif" />35</p></td>
+                      <td valign="top"><p align="center"><img width="19" height="24" src="lec04_clip_image023_0000.gif" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">140-160</p></td>
+                      <td valign="top"><p align="center">20</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                      <td valign="top"><p align="center"><strong>160</strong></p></td>
+                      <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Solution</strong><br />
+                  Mode = <img width="96" height="48" src="lec04_clip_image017_0000.gif" /><br />
+                  Here <img width="23" height="19" src="lec04_clip_image013_0000.gif" />100, f = 45, c = 20, m =60, <img width="20" height="25" src="lec04_clip_image021_0001.gif" />=38, <img width="19" height="24" src="lec04_clip_image023_0001.gif" />=35<br />
+                  Mode = <img width="120" height="43" src="lec04_clip_image028.gif" /><br />
+                  =<img width="97" height="43" src="lec04_clip_image030.gif" /><br />
+                  = 109.589<br />
+  <strong>Geometric mean</strong><br />
+                  The geometric mean of a series containing  n observations is the nth root of the product of the values. <br />
+                  If x1, x2…, xn are observations then<br />
+                  G.M=<img width="79" height="28" src="lec04_clip_image032.gif" /><br />
+                  = <img width="89" height="31" src="lec04_clip_image034.gif" /><br />
+                  Log GM = <img width="112" height="41" src="lec04_clip_image036_0000.gif" /><br />
+                  = <img width="200" height="41" src="lec04_clip_image038_0000.gif" /><br />
+                  =<img width="63" height="45" src="lec04_clip_image040_0000.gif" /><br />
+                  GM = Antilog <img width="63" height="45" src="lec04_clip_image040_0001.gif" /><br />
+                  For grouped data<br />
+                  GM = Antilog <img width="93" height="53" src="lec04_clip_image043.gif" /><br />
+                  GM is used in studies like bacterial  growth, cell division, etc.</p>
+                <p><strong>Example 11</strong><br />
+                  If the weights of sorghum ear heads  are 45, 60, 48,100, 65 gms. Find the Geometric mean for the following data</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Weight    of ear head x (g) </strong> </td>
+                      <td valign="top"><p><strong>Log    x</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>45</p></td>
+                      <td valign="top"><p>1.653</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>60</p></td>
+                      <td valign="top"><p>1.778</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>48</p></td>
+                      <td valign="top"><p>1.681</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>100</p></td>
+                      <td valign="top"><p>2.000</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>65</p></td>
+                      <td valign="top"><p>1.813</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p><strong>Total</strong></p></td>
+                      <td valign="top"><p><strong>8.925</strong></p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Solution</strong><br />
+                  Here n = 5<br />
+                  GM = Antilog <img width="63" height="45" src="lec04_clip_image040_0002.gif" /><br />
+                  = Antilog <img width="43" height="41" src="lec04_clip_image045.gif" /> <br />
+                  = Antilog <img width="39" height="19" src="lec04_clip_image047.gif" /><br />
+                  = 60.95 <br />
+  <strong>Grouped Data</strong><br />
+  <strong>Example  12</strong><br />
+                  Find the Geometric mean for the following</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        Weight of sorghum (x) </td>
+                      <td valign="top"><p align="center">No. of ear head(f)</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">50</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">65</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">75</p></td>
+                      <td valign="top"><p align="center">16</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80</p></td>
+                      <td valign="top"><p align="center">8</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">95</p></td>
+                      <td valign="top"><p align="center">7</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">100</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Solution</strong></p>
+                <table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                      Weight of sorghum (x) </td>
+                    <td valign="top"><p align="center">No. of ear head(f)</p></td>
+                    <td valign="top"><p align="center">Log x</p></td>
+                    <td valign="top"><p align="center">f x log x</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">50</p></td>
+                    <td valign="top"><p align="center">5</p></td>
+                    <td valign="top"><p align="center">1.699</p></td>
+                    <td valign="top"><p align="center">8.495</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">63</p></td>
+                    <td valign="top"><p align="center">10</p></td>
+                    <td valign="top"><p align="center">10.799</p></td>
+                    <td valign="top"><p align="center">17.99</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">65</p></td>
+                    <td valign="top"><p align="center">5</p></td>
+                    <td valign="top"><p align="center">1.813</p></td>
+                    <td valign="top"><p align="center">9.065</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">130</p></td>
+                    <td valign="top"><p align="center">15</p></td>
+                    <td valign="top"><p align="center">2.114</p></td>
+                    <td valign="top"><p align="center">31.71</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">135</p></td>
+                    <td valign="top"><p align="center">15</p></td>
+                    <td valign="top"><p align="center">2.130</p></td>
+                    <td valign="top"><p align="center">31.95</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                    <td valign="top"><p align="center"><strong>50</strong></p></td>
+                    <td valign="top"><p align="center"><strong>9.555</strong></p></td>
+                    <td valign="top"><p align="center"><strong>99.21</strong></p></td>
+                  </tr>
+                </table>
+                <p>Here n= 50<br />
+                  GM = Antilog <img width="93" height="53" src="lec04_clip_image043_0000.gif" /><br />
+                  = Antilog <img width="56" height="45" src="lec04_clip_image050_0000.gif" /></p>
+                       
+                <p>= Antilog  1.9842 = 96.43</p>
+                <p><strong>Continuous distribution </strong><br />
+                  <strong>Example 13</strong><br />
+For the frequency distribution of  weights of sorghum ear-heads given in table below. Calculate the Geometric mean</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Weights of ear heads ( in g)</strong> </td>
+                      <td valign="top"><p align="center"><strong>No of ear heads (f)</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">60-80</p></td>
+                      <td valign="top"><p align="center">22</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80-100</p></td>
+                      <td valign="top"><p align="center">38</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"> 100-120</p></td>
+                      <td valign="top"><p align="center">45</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">120-140</p></td>
+                      <td valign="top"><p align="center">35</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">140-160</p></td>
+                      <td valign="top"><p align="center">20</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                      <td valign="top"><p align="center"><strong>160</strong></p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Solution</strong></p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Weights of ear heads ( in g)</strong> </td>
+                      <td valign="top"><p align="center"><strong>No of ear heads (f)</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Mid x</strong></p></td>
+                      <td valign="top"><p align="center"><strong>Log x</strong></p></td>
+                      <td valign="top"><p align="center"><strong>f log x</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">60-80</p></td>
+                      <td valign="top"><p align="center">22</p></td>
+                      <td valign="top"><p align="center">70</p></td>
+                      <td valign="top"><p align="center">1.845</p></td>
+                      <td valign="top"><p align="center">40<br />
+                        59</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80-100</p></td>
+                      <td valign="top"><p align="center">38</p></td>
+                      <td valign="top"><p align="center">90</p></td>
+                      <td valign="top"><p align="center">1.954</p></td>
+                      <td valign="top"><p align="center">74.25</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"> 100-120</p></td>
+                      <td valign="top"><p align="center">45</p></td>
+                      <td valign="top"><p align="center">110</p></td>
+                      <td valign="top"><p align="center">2.041</p></td>
+                      <td valign="top"><p align="center">91.85</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">120-140</p></td>
+                      <td valign="top"><p align="center">35</p></td>
+                      <td valign="top"><p align="center">130</p></td>
+                      <td valign="top"><p align="center">2.114</p></td>
+                      <td valign="top"><p align="center">73.99</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">140-160</p></td>
+                      <td valign="top"><p align="center">20</p></td>
+                      <td valign="top"><p align="center">150</p></td>
+                      <td valign="top"><p align="center">2.176</p></td>
+                      <td valign="top"><p align="center">43.52</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                      <td valign="top"><p align="center"><strong>160</strong></p></td>
+                      <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                      <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                      <td valign="top"><p align="center"><strong>324.2</strong></p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p>Here <em>n </em>= 160<br />
+                  GM = Antilog <img width="93" height="53" src="lec04_clip_image002_0002.gif" /><br />
+                  = Antilog <img width="57" height="45" src="lec04_clip_image004_0000.gif" /><br />
+                  = Antilog <img width="64" height="23" src="lec04_clip_image006_0000.gif" /><br />
+                  = 106.23<br />
+  <strong>Harmonic mean (H.M)</strong><br />
+                  Harmonic mean of a set of  observations is defined as the reciprocal of the arithmetic average of the  reciprocal of the given values. If x1, x2…..xn are n observations,<br />
+  <img width="105" height="72" src="lec04_clip_image008_0000.gif" /><br />
+                  For a frequency distribution<br />
+  <img width="117" height="72" src="lec04_clip_image010_0001.gif" /><br />
+                  H.M is used when we are dealing with speed, rates, etc.</p>
+                <p>&nbsp;</p>
+                <p><strong>Example 13</strong><br />
+                  From the given data 5, 10,17,24,30 calculate  H.M.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        X </td>
+                      <td valign="top"><p align="center"><img width="16" height="41" src="lec04_clip_image012_0000.gif" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">5</p></td>
+                      <td valign="top"><p align="center">0.2000</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">10</p></td>
+                      <td valign="top"><p align="center">0.1000</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">17</p></td>
+                      <td valign="top"><p align="center">0.0588</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">24</p></td>
+                      <td valign="top"><p align="center">0.0417</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">30</p></td>
+                      <td valign="top"><p align="center">0.4338</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><img width="97" height="41" src="lec04_clip_image014_0001.gif" />= 11.526<br />
+                    <strong>Example 14</strong><br />
+                  Number of tomatoes per plant are given below.  Calculate the harmonic mean.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        Number of tomatoes per plant </td>
+                      <td valign="top"><p>20</p></td>
+                      <td valign="top"><p>21</p></td>
+                      <td valign="top"><p>22</p></td>
+                      <td valign="top"><p>23</p></td>
+                      <td valign="top"><p>24</p></td>
+                      <td valign="top"><p>25</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>Number of plants</p></td>
+                      <td valign="top"><p>4</p></td>
+                      <td valign="top"><p>2</p></td>
+                      <td valign="top"><p>7</p></td>
+                      <td valign="top"><p>1</p></td>
+                      <td valign="top"><p>3</p></td>
+                      <td valign="top"><p>1</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>Solution</strong></p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><p align="center">Number of tomatoes per plant (x)</p></td>
+                      <td valign="top"><p align="center">No of plants(f)</p></td>
+                      <td valign="top"><p align="center"><img width="16" height="41" src="lec04_clip_image012_0001.gif" /></p></td>
+                      <td valign="top"><p align="center"><img width="43" height="45" src="lec04_clip_image017_0001.gif" /></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">20</p></td>
+                      <td valign="top"><p align="center">4</p></td>
+                      <td valign="top"><p align="center">0.0500</p></td>
+                      <td valign="top"><p align="center">0.2000</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">21</p></td>
+                      <td valign="top"><p align="center">2</p></td>
+                      <td valign="top"><p align="center">0.0476</p></td>
+                      <td valign="top"><p align="center">0.0952</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">22</p></td>
+                      <td valign="top"><p align="center">7</p></td>
+                      <td valign="top"><p align="center">0.0454</p></td>
+                      <td valign="top"><p align="center">0.3178</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">23</p></td>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">0.0435</p></td>
+                      <td valign="top"><p align="center">0.0435</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">24</p></td>
+                      <td valign="top"><p align="center">3</p></td>
+                      <td valign="top"><p align="center">0.0417</p></td>
+                      <td valign="top"><p align="center">0.1251</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">25</p></td>
+                      <td valign="top"><p align="center">1</p></td>
+                      <td valign="top"><p align="center">0.0400</p></td>
+                      <td valign="top"><p align="center">0.0400</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">18</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">0.8216</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><img width="117" height="72" src="lec04_clip_image019_0000.gif" /><img width="116" height="41" src="lec04_clip_image021_0002.gif" /><br />
+                    <strong>Merits of H.M </strong><br />
+                  1. It is rigidly defined.<br />
+                  2. It is defined on all observations.<br />
+                  3. It is amenable to further algebraic  treatment.<br />
+                  4. It is the most suitable average when  it is desired to give greater weight to smaller observations and less weight to  the larger ones.<br />
+  <strong>Demerits of H.M </strong><br />
+                  1. It is not easily understood.<br />
+                  2. It is difficult to compute.<br />
+                  3. It is only a summary figure and may  not be the actual item in the series<br />
+                  4. It gives greater importance to small  items and is therefore, useful only when small items have <br />
+                  to be given greater weightage.<br />
+                  5. It is rarely used in grouped data.</p>
+                <p><strong>Percentiles </strong><br />
+                  The percentile  values divide the distribution into 100 parts each containing 1 percent of the  cases. The xth percentile is that value below which x percent of  values in the distribution fall. It may be noted that the median is the 50th  percentile.</p>
+                <p>For raw data,  first arrange the n observations in increasing order. Then the xth  percentile is given by <br />
+                    <img width="147" height="49" src="lec04_clip_image023_0002.gif" /><br />
+                  For a frequency distribution the xth  percentile is given by <br />
+  <img width="195" height="48" src="lec04_clip_image025_0000.gif" /><br />
+                  Where <br />
+                  <img width="9" height="19" src="lec04_clip_image027.gif" />= lower limit of the percentile calss which contains the xth  percentile value (x. n /100)<br />
+  <strong>            </strong><img width="20" height="21" src="lec04_clip_image029_0000.gif" />= cumulative frequency uotp <img width="9" height="19" src="lec04_clip_image027_0000.gif" /><br />
+                  <img width="16" height="21" src="lec04_clip_image031_0001.gif" />= frequency of the percentile class<br />
+                  C=  class interval<br />
+                  N=  total number of observations<br />
+  <strong>Percentile for Raw Data or Ungrouped  Data </strong><br />
+  <strong>Example 15 </strong><br />
+                  The  following are the paddy yields (kg/plot) from 14 plots: 30,32,35,38,40.42,48,49,52,55,58,60,62,and  65 ( after arranging in ascending order). The computation of 25th  percentile (Q1) and 75th  percentile (Q3) are given below: <br />
+  <img width="213" height="49" src="lec04_clip_image033_0000.gif" /><br />
+  <img width="117" height="49" src="lec04_clip_image035.gif" /><br />
+                  = 3rd item  + (4th item – 3rd item)<img width="33" height="45" src="lec04_clip_image037.gif" /><br />
+                  = 35  + (38-35) <img width="33" height="45" src="lec04_clip_image037_0000.gif" /><br />
+                  = 35  + 3<img width="33" height="45" src="lec04_clip_image037_0001.gif" /> = 37.25 kg</p>
+                <p><img width="213" height="49" src="lec04_clip_image040_0003.gif" /><br />
+                    <img width="124" height="49" src="lec04_clip_image042_0000.gif" /><br />
+                  = 11th  item + (12th item – 11th item)<img width="33" height="45" src="lec04_clip_image044_0000.gif" /><br />
+                  = 55 +(58-55) <img width="33" height="45" src="lec04_clip_image044_0001.gif" /><br />
+                  = 55 + 3<img width="33" height="45" src="lec04_clip_image044_0002.gif" /> = 55.75 kg</p>
+                <p><strong>Example 16</strong><br />
+                  The frequency distribution of  weights of 190 sorghum ear-heads are given below. Compute 25th  percentile and 75th percentile.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Weight of ear-heads (in g)</strong> </td>
+                      <td valign="top"><p align="center"><strong>No of ear heads</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">40-60</p></td>
+                      <td valign="top"><p align="center">6</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">60-80</p></td>
+                      <td valign="top"><p align="center">28</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80-100</p></td>
+                      <td valign="top"><p align="center">35</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">100-120</p></td>
+                      <td valign="top"><p align="center">55</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">120-140</p></td>
+                      <td valign="top"><p align="center">30</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">140-160</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">160-180</p></td>
+                      <td valign="top"><p align="center">12</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">180-200</p></td>
+                      <td valign="top"><p align="center">9</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                      <td valign="top"><p align="center"><strong>190</strong></p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Solution</strong></p>
+                <table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                        <strong>Weight of ear-heads (in g)</strong> </td>
+                    <td valign="top"><p align="center"><strong>No of ear heads</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Less than class</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Cumulative frequency</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">40-60</p></td>
+                    <td valign="top"><p align="center">6</p></td>
+                    <td valign="top"><p align="center">&lt; 60</p></td>
+                    <td valign="top"><p align="center">6</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">60-80</p></td>
+                    <td valign="top"><p align="center">28</p></td>
+                    <td valign="top"><p align="center">&lt; 80</p></td>
+                    <td valign="top"><p align="center">&nbsp; </p>
+                        <div>
+                          <p>47.5</p>
+                        </div>
+                       &nbsp;34
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">80-100</p></td>
+                    <td valign="top"><p align="center">35</p></td>
+                    <td valign="top"><p align="center">&lt;100</p></td>
+                    <td valign="top"><p align="center"><img width="71" height="12" src="lec04_clip_image047_0000.gif" />69</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">100-120</p></td>
+                    <td valign="top"><p align="center">55</p></td>
+                    <td valign="top"><p align="center">&lt;120</p></td>
+                    <td valign="top"><p align="center">&nbsp; </p>
+                        <div>
+                          <p>142.5</p>
+                        </div>
+                       <img width="71" height="12" src="lec04_clip_image048_0000.gif" />124
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">120-140</p></td>
+                    <td valign="top"><p align="center">30</p></td>
+                    <td valign="top"><p align="center">&lt;140</p></td>
+                    <td valign="top"><p align="center">154</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">140-160</p></td>
+                    <td valign="top"><p align="center">15</p></td>
+                    <td valign="top"><p align="center">&lt;160</p></td>
+                    <td valign="top"><p align="center">169</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">160-180</p></td>
+                    <td valign="top"><p align="center">12</p></td>
+                    <td valign="top"><p align="center">&lt;180</p></td>
+                    <td valign="top"><p align="center">181</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">180-200</p></td>
+                    <td valign="top"><p align="center">9</p></td>
+                    <td valign="top"><p align="center">&lt;200</p></td>
+                    <td valign="top"><p align="center">190</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center"><strong>Total</strong></p></td>
+                    <td valign="top"><p align="center"><strong>190</strong></p></td>
+                    <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                    <td valign="top"><p align="center"><strong>&nbsp;</strong></p></td>
+                  </tr>
+                </table>
+                <p>or P25, first find out <img width="72" height="45" src="lec04_clip_image050_0001.gif" />, and for <img width="97" height="45" src="lec04_clip_image052.gif" />, and proceed as in the case of median. For P25,  we have <img width="72" height="45" src="lec04_clip_image050_0002.gif" />= 47.5.<br />
+                  The  value 47.5 lies between 34 and 69. Therefore, the percentile class is 80-100.  Hence,<br />
+  <img width="240" height="48" src="lec04_clip_image054.gif" /><br />
+  <img width="225" height="45" src="lec04_clip_image056.gif" /><br />
+  <img width="193" height="45" src="lec04_clip_image058.gif" /><br />
+                  = 80 +7.71 or 87.71 g.<br />
+                  Similarly,<br />
+  <img width="207" height="48" src="lec04_clip_image060.gif" />Class<br />
+  <img width="244" height="45" src="lec04_clip_image062.gif" /><br />
+  <img width="203" height="45" src="lec04_clip_image064.gif" /><br />
+                  = 120 +14.33 =134.33 g.</p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Quartiles</strong><br />
+                  The quartiles  divide the distribution in four parts. There are three quartiles. The second  quartile divides the distribution into two halves and therefore is the same as  the median. The first (lower).quartile (Q1) marks off the first one-fourth, the  third (upper) quartile (Q3) marks off the three-fourth. It may be noted that  the second quartile is the value of the median and 50th percentile.</p>
+                <p><strong>Raw or ungrouped data</strong><br />
+                  First arrange  the given data in the increasing order and use the formula for Q1 and Q3 then  quartile deviation, Q.D is given by<br />
+  <img width="157" height="43" src="lec04_clip_image066.gif" /><br />
+                  Where <img width="101" height="49" src="lec04_clip_image068.gif" />item and <img width="111" height="49" src="lec04_clip_image070.gif" />item<br />
+  <strong>Example 18</strong><br />
+                  Compute quartiles for the data given  below (grains/panicles) 25, 18, 30, 8, 15, 5, 10, 35, 40, 45</p>
+                <p><strong>Solution</strong><br />
+                  5, 8, 10, 15, 18, 25, 30, 35, 40, 45 <br />
+  <img width="101" height="49" src="lec04_clip_image068_0000.gif" /><br />
+                  <img width="84" height="49" src="lec04_clip_image072.gif" /> </p>
+                <p>         = (2.75)th item <br />
+                  = 2nd item + <img width="33" height="45" src="lec04_clip_image037_0002.gif" />(3rd item – 2nd item)<br />
+                  = 8+<img width="16" height="41" src="lec04_clip_image075.gif" />(10-8)<br />
+                  = 8+<img width="16" height="41" src="lec04_clip_image075_0000.gif" />x 2<br />
+                  = 8+1.5<br />
+                  = 9.5<br />
+  <img width="111" height="49" src="lec04_clip_image070_0000.gif" /><br />
+                  = 3 x (2.75) th item <br />
+                  = (8.75)th item<br />
+                  = 8th item +<img width="33" height="45" src="lec04_clip_image044_0003.gif" />(9th item – 8th item)<br />
+                  = 35+<img width="16" height="41" src="lec04_clip_image080.gif" />(40-35)<br />
+                  = 35+1.25<br />
+                  = 36.25</p>
+                <p>&nbsp;</p>
+                <p><strong>Discrete Series</strong><br />
+Step1: Find cumulative frequencies.<br />
+Step2: Find <img width="56" height="45" src="lec04_clip_image002_0003.gif" /><br />
+Step3: See in the cumulative frequencies,  the value just greater than <img width="56" height="45" src="lec04_clip_image002_0004.gif" /> , then the  corresponding value of <em>x </em>is Q1<br />
+Step4: Find <img width="65" height="45" src="lec04_clip_image005_0000.gif" /><br />
+Step5: See in the cumulative frequencies,  the value just greater than  <img width="65" height="45" src="lec04_clip_image005_0001.gif" /> ,then the  corresponding value of x is Q3</p>
+                <p><strong>Example 19</strong><br />
+                  Compute quartiles for the data given  bellow (insects/plant).</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                        X </td>
+                      <td valign="top"><p>5</p></td>
+                      <td valign="top"><p>8</p></td>
+                      <td valign="top"><p>12</p></td>
+                      <td valign="top"><p>15</p></td>
+                      <td valign="top"><p>19</p></td>
+                      <td valign="top"><p>24</p></td>
+                      <td valign="top"><p>30</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p>f</p></td>
+                      <td valign="top"><p>4</p></td>
+                      <td valign="top"><p>3</p></td>
+                      <td valign="top"><p>2</p></td>
+                      <td valign="top"><p>4</p></td>
+                      <td valign="top"><p>5</p></td>
+                      <td valign="top"><p>2</p></td>
+                      <td valign="top"><p>4</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Solution</strong></p>
+                <table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><br />
+                        <strong>x</strong> </td>
+                    <td valign="top"><p align="center"><strong>f</strong></p></td>
+                    <td valign="top"><p align="center"><strong>cf</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">5</p></td>
+                    <td valign="top"><p align="center">4</p></td>
+                    <td valign="top"><p align="center">4</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">8</p></td>
+                    <td valign="top"><p align="center">3</p></td>
+                    <td valign="top"><p align="center">7</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">12</p></td>
+                    <td valign="top"><p align="center">2</p></td>
+                    <td valign="top"><p align="center">9</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">15</p></td>
+                    <td valign="top"><p align="center">4</p></td>
+                    <td valign="top"><p align="center">13</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">19</p></td>
+                    <td valign="top"><p align="center">5</p></td>
+                    <td valign="top"><p align="center">18</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">24</p></td>
+                    <td valign="top"><p align="center">2</p></td>
+                    <td valign="top"><p align="center">20</p></td>
+                  </tr>
+                </table>
+                <p><img width="319" height="49" src="lec04_clip_image008_0001.gif" /><br />
+                    <img width="208" height="49" src="lec04_clip_image010_0002.gif" />=18.75th item \Q1= 8; Q3=24</p>
+                <p><strong>Continuous series </strong><br />
+                  Step1: Find cumulative frequencies<br />
+                  Step2: Find <img width="37" height="45" src="lec04_clip_image012_0002.gif" /><br />
+                  Step3: See in the cumulative frequencies,  the value just greater than<img width="37" height="45" src="lec04_clip_image012_0003.gif" />, then the corresponding class interval is called first  quartile class.<br />
+                  Step4: Find <img width="43" height="45" src="lec04_clip_image015_0001.gif" />See in the  cumulative frequencies the value just greater than <img width="43" height="45" src="lec04_clip_image015_0002.gif" />then the  corresponding class interval is called 3rd quartile class. Then  apply the respective formulae<br />
+  <img width="129" height="64" src="lec04_clip_image018_0000.gif" /><br />
+  <img width="156" height="68" src="lec04_clip_image020_0001.gif" /><br />
+                  Where <em>l</em>1 = lower limit  of the first quartile class<br />
+  <em>f</em>1 = frequency of the first quartile class<br />
+  <em>c</em>1 = width of the first quartile class<br />
+  <em>m</em>1 = c.f. preceding the first quartile class<br />
+  <em>l</em>3 = 1ower limit of the 3rd quartile class<br />
+  <em>f</em>3 = frequency of the 3rd quartile class<br />
+  <em>c</em>3 = width of the 3rd quartile class<br />
+  <em>m</em>3 = c.f. preceding the 3rd quartile class</p>
+                <p><strong>Example 20: </strong>The following series relates to the marks secured by students in an  examination.</p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>Marks</strong> </td>
+                      <td valign="top"><p align="center"><strong>No. of Students</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">0-10</p></td>
+                      <td valign="top"><p align="center">11</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">10-20</p></td>
+                      <td valign="top"><p align="center">18</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">20-30</p></td>
+                      <td valign="top"><p align="center">25</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">30-40</p></td>
+                      <td valign="top"><p align="center">28</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">40-50</p></td>
+                      <td valign="top"><p align="center">30</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">50-60</p></td>
+                      <td valign="top"><p align="center">33</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">60-70</p></td>
+                      <td valign="top"><p align="center">22</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">70-80</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80-90</p></td>
+                      <td valign="top"><p align="center">12</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">90-100</p></td>
+                      <td valign="top"><p align="center">10</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p>&nbsp;</p>
+                <p>Find the quartiles<br />
+                    <strong>Solution</strong></p>
+                <div align="center">
+                  <table border="1" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top"><br />
+                          <strong>C.I</strong> </td>
+                      <td valign="top"><p align="center"><strong>f</strong></p></td>
+                      <td valign="top"><p align="center"><strong>cf</strong></p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">0-10</p></td>
+                      <td valign="top"><p align="center">11</p></td>
+                      <td valign="top"><p align="center">11</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">10-20</p></td>
+                      <td valign="top"><p align="center">18</p></td>
+                      <td valign="top"><p align="center">29</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">20-30</p></td>
+                      <td valign="top"><p align="center">25</p></td>
+                      <td valign="top"><p align="center">54</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">30-40</p></td>
+                      <td valign="top"><p align="center">28</p></td>
+                      <td valign="top"><p align="center">82</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">40-50</p></td>
+                      <td valign="top"><p align="center">30</p></td>
+                      <td valign="top"><p align="center">112</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">50-60</p></td>
+                      <td valign="top"><p align="center">33</p></td>
+                      <td valign="top"><p align="center">145</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">60-70</p></td>
+                      <td valign="top"><p align="center">22</p></td>
+                      <td valign="top"><p align="center">167</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">70-80</p></td>
+                      <td valign="top"><p align="center">15</p></td>
+                      <td valign="top"><p align="center">182</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">80-90</p></td>
+                      <td valign="top"><p align="center">12</p></td>
+                      <td valign="top"><p align="center">194</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">90-100</p></td>
+                      <td valign="top"><p align="center">10</p></td>
+                      <td valign="top"><p align="center">204</p></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                      <td valign="top"><p align="center">204</p></td>
+                      <td valign="top"><p align="center">&nbsp;</p></td>
+                    </tr>
+                  </table>
+                </div>
+                <p><img width="37" height="45" src="lec04_clip_image012_0004.gif" /><img width="92" height="45" src="lec04_clip_image023_0003.gif" /><strong></strong><br />
+                    <img width="84" height="45" src="lec04_clip_image025_0001.gif" /><strong></strong><br />
+                    <img width="253" height="137" src="lec04_clip_image027_0001.gif" /></p>
+                <img width="292" height="112" src="lec04_clip_image029_0001.gif" />
+                <p>&nbsp;                </p>
+                <table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec04.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec04.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+                <br />
+                <p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                    </map>
+                </p>
+			</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

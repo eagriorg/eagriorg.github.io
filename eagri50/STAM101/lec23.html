@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>STASTICS :: Lecture 23</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/STAM101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">STAM101 :: Lecture 23 ::</span></strong> <strong>Long term experiments – ANOVA table – guard rows  – optimum plot size – determination methods</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p align="left"><strong>Long Term Experiments</strong><br />
+				  A long term experiment is an experimental  procedure that runs through a long period of time, in order to test a  hypothesis or observe a phenomenon that takes place at an extremely slow rate.  Several agricultural field experiments have run for more than 100 years.  Experiments that are conducted at several sites or repeated over different  seasons can also be classified as long term experiments. Performance of crops varies considerably from location to location  as well as season to season. This is because of the influence of environmental  factors such as rainfall, temperature etc.   In order to determine the effects, the experiments have to be repeated  at different locations and seasons. With such repetition of experiments  practical recommendations may be made with greater confidence especially with  new crop varieties or new techniques are introduced. Here we discuss the  experiments that are conducted over different locations or different seasons.</p>
+				<h1>Layout of experiment</h1>
+				<p>Once the locations or seasons are decided upon the next step is to  select the appropriate design of experiment. The individual experiments may be  designed as CRD, RBD, split plot etc. The same design is adopted for all the  locations or seasons. However randomization of treatments should be done afresh  for each experiment.</p>
+				<h1>Analysis</h1>
+				<p>The results of repeated experiments are analysed using combined  analysis of variance method. <br />
+				  The combined analysis is aimed at </p>
+				<ol>
+				  <li>to test whether there are  significant differences between the treatments at various environments or loc  or seasons etc.</li>
+				  <li>test the consistency of the  treatment at different environments. i.e. to test the presence or absence of  interaction of the treatment with environments.</li>
+			    </ol>
+				<p>The presence of  interaction will indicate that the responses change with environment.<br />
+				  In the first stage of the combined analysis the results of the  individual locations are analysed based on the basic experimental design tried.  In the second stage of the analysis various SS are computed by combining all  the data. </p>
+				<p><strong>If the basic design adopted is RBD with t treatments  and r replications and p locations the ANOVA table will be </strong></p>
+				<table border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td valign="top"><p align="center"><strong>Sources of Variation</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Degrees of Freedom</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Sum of Squares</strong></p></td>
+                    <td valign="top"><p align="center"><strong>Mean  Squares</strong></p></td>
+                    <td valign="top"><p align="center"><strong>F-ratio</strong></p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Replication    within locations</p></td>
+                    <td valign="top"><p align="center">p(r-1)</p></td>
+                    <td valign="top"><p align="center">RSS</p></td>
+                    <td valign="top"><p align="center">RMS</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Locations</p></td>
+                    <td valign="top"><p align="center">p-1</p></td>
+                    <td valign="top"><p align="center">LSS</p></td>
+                    <td valign="top"><p align="center">LMS</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Treatments</p></td>
+                    <td valign="top"><p align="center">t-1</p></td>
+                    <td valign="top"><p align="center">TrSS</p></td>
+                    <td valign="top"><p align="center">TrMS</p></td>
+                    <td valign="top"><p align="center">TrMS    / LXTMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Location    x Treatments</p></td>
+                    <td valign="top"><p align="center">(p-1)(t-1)</p></td>
+                    <td valign="top"><p align="center">LXTSS</p></td>
+                    <td valign="top"><p align="center">LXTMS</p></td>
+                    <td valign="top"><p align="center">LXTMS    / EMS</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Combined    error</p></td>
+                    <td valign="top"><p align="center">p(r-1)(t-1)</p></td>
+                    <td valign="top"><p align="center">ESS</p></td>
+                    <td valign="top"><p align="center">EMS</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><p align="center">Total</p></td>
+                    <td valign="top"><p align="center">rtp-1</p></td>
+                    <td valign="top"><p align="center">TSS</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                    <td valign="top"><p align="center">&nbsp;</p></td>
+                  </tr>
+                </table>
+				<p>&nbsp;</p>
+				<p>But  before proceeding with the combined analysis it is necessary to test whether  the EMS of the individual experiments are homogenous and the heterogeneity of  EMS can be tested by either Bartlett’s test or Hartley’s test. <br />
+				  When the EMS are  homogenous the analysis is done as follows:<br />
+				  Rep within  location SS = Sum of replication SS of all locations<br />
+				  Pooled error SS =  sum of error SS of all locations</p>
+				<p>The treatment X location two-way table is formed. From this two way  table treatment SS, locations SS and treatment X location SS are computed.</p>
+				<p>The significance of treatment X location interaction is tested and  if it is found to be significant then the interaction mean square is used for  calculating the F value for treatments. </p>
+				<p><strong>Optimum plot size</strong></p>
+				<p>Size and shape of experimental units will affect the accuracy of the  experimental units. Select a plot with optimum plot size for this purpose. <strong>Minimum size of experimental plot for a  given degree of precision is known as optimum plot size.</strong> Optimum plot size  depends on crop, available land area, number of treatments etc.</p>
+				<p>To determine the optimum plot size two methods are available. They  are (1) Maximum curvature method and (2) Fairfield Smith’s variance law. For  determining the optimum plot size in either method data are to be collected by  conducting an Uniformity trial. </p>
+				<p>An uniformity trial is a trial conducted over an experimental  material by selecting a particular variety of a crop and for the entire  experimental unit uniform treatments are given. At harvest, the experimental  unit is divided into small basic units (depending on the crop) and yield  recorded. Then to find the optimum plot size, the basic units are combined by  adding the basic units in rows or columns. But while combining rows or columns no  row or column should be left out. Then for the new units formed we calculate  coefficient of variation and based on the CV values the optimum plot size is  determined.</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec23.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec23.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

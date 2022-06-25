@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MATHS  :: Lecture 20</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/MATH/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">MATHS  :: Lecture 20 :: </span>Second order differential equations</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p><strong>Second  order differential equations with constant coefficients</strong><br />
+The general form of linear  Second order differential equations with constant coefficients is<br />
+<img width="159" height="12" src="lec20_clip_image001.gif" />             (aD2 + bD + c ) y = X                                                (i)<br />
+Where a,b,c are constants  and X is a function of x.and D = <img width="31" height="55" src="lec20_clip_image003.gif" /><br />
+When X is equal to zero, then  the equation is said to be homogeneous.<br />
+  Let  D  = m Then equation (i) becomes<br />
+   am2 +bm +c = 0  <br />
+This is known as <strong>auxiliary  equation</strong>. This quadratic equation has two roots say m1 and m2.<br />
+The solution consists of one  part namely complementary function <br />
+(ie) y = complementary  function </p>
+ <p align="center"><a href="matvdo/sec-diffequ/Linear&#32;Second-order&#32;Equations-&#32;Fundamentals.mov" target="_blank">Linear Second-order Equations- Fundamentals</a><br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/sec-diffequ/Linear&#32;Second-order&#32;Equations-&#32;Fundamentals.mov" type="video/mov">
+</video></p>
+ <p align="center">Second order DEs1<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/sec-diffequ/Second&#32;order&#32;DEs1.mp4" type="video/mp4">
+</video></p>
+ <p align="center">Second order DEs2<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/sec-diffequ/Second&#32;order&#32;DEs2.mp4" type="video/mp4">
+</video></p>
+ <p align="center">Second order DEs3<br />
+<video width="320" height="240" controls="controls">
+  <source src="matvdo/sec-diffequ/Second&#32;order&#32;DEs3.mp4" type="video/mp4">
+</video></p>
+
+		    <p><strong>Complementary  Function</strong><br />
+                    <strong>Case (i)</strong><br />
+				  If the roots (m1 &amp; m2)  are real and distinct ,then the solution is given by <img width="136" height="32" src="lec20_clip_image005.gif" />  where A and B are the  two arbitrary constants.<br />
+  <strong>Case (ii)</strong><br />
+				  If the roots are equal say m1  = m2 = m, then the solution is given by <img width="130" height="34" src="lec20_clip_image007.gif" />where A and B are the two arbitrary constants.<br />
+  <strong>Case (iii)</strong><br />
+				  If  the roots are imaginary  say <img width="90" height="28" src="lec20_clip_image009.gif" />  and   <img width="95" height="28" src="lec20_clip_image011.gif" /><br />
+				  Where <img width="16" height="15" src="lec20_clip_image013.gif" /> and <img width="16" height="21" src="lec20_clip_image015.gif" /> are real. The solution  is given by <img width="212" height="32" src="lec20_clip_image017.gif" />   where A and B are  arbitrary constants.<br />
+  <strong>Particular integral</strong> <br />
+				  The  equation (aD2 + bD + c )y = X    is called a non homogeneous second order linear equation with constant  coefficients. Its solution consists of two terms complementary function and  particular Integral.<br />
+				  (ie)  y = complementary function + particular Integral<br />
+				  Let  the given equation is f(D) y(x) = X<br />
+				  y(x) =<img width="43" height="54" src="lec20_clip_image019.gif" /> <br />
+  <strong>Case (i)  </strong><br />
+				  Let X= <img width="33" height="32" src="lec20_clip_image021.gif" />  and f(<img width="16" height="15" src="lec20_clip_image013_0000.gif" />) <img width="24" height="21" src="lec20_clip_image024.gif" /><br />
+				  Then  P.I = <img width="35" height="44" src="lec20_clip_image026.gif" /><img width="25" height="24" src="lec20_clip_image027.gif" />  =  <img width="35" height="44" src="lec20_clip_image029.gif" /><img width="25" height="24" src="lec20_clip_image027_0000.gif" /><br />
+  <strong>Case (ii) </strong><br />
+				  Let  X = P(x)   where P(x) is a polynomial <br />
+				  Then P.I = <img width="35" height="44" src="lec20_clip_image026_0000.gif" />P(x)   =  [f(D)]-1 P(x)<br />
+				  Write  [f(D)]-1 in the form (1<img width="44" height="27" src="lec20_clip_image032.gif" /> (1<img width="45" height="27" src="lec20_clip_image034.gif" /> and proceed to find  higher order derivatives depending on the degree of the polynomial.</p>
+				<p>Newton's Law of Cooling </p>
+				<p>            Rate of  change in the temperature of an object is proportional to the difference between  the temperature of the object and the temperature of an environment. This is known as Newton's law of cooling. Thus, if <img width="13" height="19" src="lec20_clip_image036.gif" />is the temperature of the object at time <em>t</em>, then we  have </p>
+				<p>    <img width="27" height="41" src="lec20_clip_image038.gif" /> <img width="16" height="15" src="lec20_clip_image013_0001.gif" /> <img width="17" height="21" src="lec20_clip_image041.gif" /><br />
+				  <img width="27" height="41" src="lec20_clip_image038_0000.gif" /> <img width="13" height="11" src="lec20_clip_image043.gif" /> -k(<img width="17" height="21" src="lec20_clip_image041_0000.gif" />)<br />
+				  This  is a first order linear differential equation. <br />
+  <strong>Population  Growth</strong><strong> </strong><br />
+				  The  differential equation describing exponential growth is <br />
+  <img width="68" height="41" src="lec20_clip_image046.gif" /><br />
+				  This equation is called the law of growth, and the  quantity K in this equation is sometimes known as the Malthusian parameter. </p>
+				<p align="justify">&nbsp;</p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec20.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec20.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+</div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>

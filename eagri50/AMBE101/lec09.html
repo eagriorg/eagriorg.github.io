@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Communication
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20090523
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AMBE 101 :: Lecture 09</title>
+<script type="text/javascript" src="js/mootools.svn.js"></script>
+
+
+<!-- Mootools -->
+
+<link href="stylec.css" rel="stylesheet" type="text/css" media="screen" />
+<style type="text/css">
+<!--
+.button{
+	background:url(http://eagri.org/eagri50/AMBE101/button.png)  -32px right no-repeat;
+	color:#FFFFFF;
+	clear:both;
+	display:block;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	height:31px;
+	line-height:31px;
+	width:250px;
+	margin-right:30px;
+}
+	a.button {
+		text-decoration:none;
+	}
+	.button span {
+		background:url(images/button.jpg) left top no-repeat;
+		display:block;
+		height:30px;
+		width:250px;
+		line-height:31px;
+		padding-left:35px;
+		padding-right:8px;
+		margin-right:20px;
+	}
+.v-menu{
+	
+	width:250px;
+	clear:both;
+}
+	ul.v-menu, .v-menu li{
+		padding:0; 
+		margin:0;
+		line-height: normal;
+		list-style:none;
+	}
+	ul.v-menu{
+		clear:both;
+		margin-top:6px;
+		padding:6px 5px;
+	}
+		.v-menu li a{
+			color:#555555;
+			font-weight:bold;
+			display:block;
+			border-top:solid 1px #DEDEDE;
+			
+			text-decoration:none;
+		}
+		.v-menu li a:hover{
+			color:#999999;
+		}
+.style1 {
+	font-size: 14px;
+	color: #FFFFFF;
+}
+body {
+	background-color: #FFFFFF;
+}
+body,td,th {
+	color: #333333;
+}
+.style4 {color: #FFFFFF}
+-->
+</style>
+<script type="text/javascript">
+		window.addEvent('domready', function(){
+			//-vertical
+			
+			var mySlide = new Fx.Slide('v-menu2');
+			mySlide.hide(); 
+			$('toggle').addEvent('click', function(e){
+				e = new Event(e);
+				mySlide.toggle();
+				e.stop();
+			});
+
+		}); 
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1>&nbsp;	</h1>
+	  </div>
+	</div>
+	<!-- end #header -->
+  <!-- end #menu -->
+  <div id="page">
+	<div id="page-bgtop">
+	<div id="page-bgbtm">
+		<div id="content">
+			<div class="post">
+			<div class="post-bgtop">
+			<div class="post-bgbtm">
+				<h2 align="center" class="titlen style1"><strong><span class="style4">AMBE 101 :: Lecture 09 :: </span></strong><strong>VIROIDS, PRIONS</strong></h2>
+				<p align="right"><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map2">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+				</p>
+				<p>A <strong>virus</strong> is a small <a href="http://en.wikipedia.org/wiki/Pathogen" title="Pathogen">infectious  agent</a> that  can replicate only inside the living cells of organisms. Most viruses are too  small to be seen directly with a <a href="http://en.wikipedia.org/wiki/Optical_microscope" title="Optical microscope">light microscope</a>. Viruses infect all types of organisms, from <a href="http://en.wikipedia.org/wiki/Animal" title="Animal">animals</a> and <a href="http://en.wikipedia.org/wiki/Plant" title="Plant">plants</a> to <a href="http://en.wikipedia.org/wiki/Bacteria" title="Bacteria">bacteria</a> and <a href="http://en.wikipedia.org/wiki/Archaea" title="Archaea">archaea</a>. Since the initial discovery of <a href="http://en.wikipedia.org/wiki/Tobacco_mosaic_virus" title="Tobacco mosaic virus">tobacco mosaic virus</a> by <a href="http://en.wikipedia.org/wiki/Martinus_Beijerinck" title="Martinus Beijerinck">Martinus Beijerinck</a> in 1898, about 5,000 viruses have been  described in detail though there are millions of different types. Viruses are  found in almost every <a href="http://en.wikipedia.org/wiki/Ecosystem" title="Ecosystem">ecosystem</a> on Earth and are the most abundant type of  biological entity. The study of viruses is known as <a href="http://en.wikipedia.org/wiki/Virology" title="Virology">virology</a>, a sub-speciality of <a href="http://en.wikipedia.org/wiki/Microbiology" title="Microbiology">microbiology</a>.<br />
+Virus  particles (known as <em>virions</em>) consist of two or three parts: the <a href="http://en.wikipedia.org/wiki/Genetic_material" title="Genetic material">genetic material</a> made from either <a href="http://en.wikipedia.org/wiki/DNA" title="DNA">DNA</a> or <a href="http://en.wikipedia.org/wiki/RNA" title="RNA">RNA</a>, long <a href="http://en.wikipedia.org/wiki/Molecule" title="Molecule">molecules</a> that carry genetic information; a <a href="http://en.wikipedia.org/wiki/Protein" title="Protein">protein</a> coat that protects these genes; and in some  cases an <a href="http://en.wikipedia.org/wiki/Viral_envelope" title="Viral envelope">envelope</a> of lipids that surrounds the protein coat  when they are outside a cell. The shapes of viruses range from simple <a href="http://en.wikipedia.org/wiki/Helix" title="Helix">helical</a> and <a href="http://en.wikipedia.org/wiki/Icosahedron" title="Icosahedron">icosahedral</a> forms to more complex structures. The  average virus is about one one-hundredth the size of the average bacterium.</p>
+				<ul>
+				  <li>Every  virus has 2 stages</li>
+				  <ul>
+				    <li>dormant, particulate,  transmissible stage called the virion  stage</li>
+				    <li>an active, intracellular  stage called the infectious  stage</li>
+			      </ul>
+			    </ul>
+				<p><strong>Virion Stage</strong></p>
+				<ul>
+				  <li>Virions  are the transmissible state of a virus. Metabolically inert.</li>
+				  <li>Virion  = &quot;a piece of nucleic acid wrapped up in a protein coat&quot; (and/or a  membrane)</li>
+				  <li>The  nucleic acid can be either DNA  (double-stranded (ds) or  single-stranded (ss)) or RNA (ds or ss); never  both.</li>
+				  <li>The  coat (also called viral shell or capsid) can be icosahedron  (20-sided regular geometric shape common in many bacterial, animal, and plant  viruses), sphere, cylinder, bullet-shaped, or amorphous shaped particle.</li>
+				  <li>Virions  must be able to adhere and allow entry into some host cell(s). Also to survive  outside of host cell environment.</li>
+				  <li>Some  virions more hardy than others (e.g., hepatitis virus can withstand short  periods of boiling; most virions are destroyed by this).</li>
+			    </ul>
+				<p><strong>Infectious Stage</strong></p>
+				<ul>
+				  <li>When  virus infects a cell, nucleic acid must be uncoated and gain access to  metabolic machinery of cell.</li>
+				  <li>Virus  life cycle is characterized by:</li>
+				  <ul>
+				    <li>attachment </li>
+				    <li>penetration,  with entry of nucleic acid into cell</li>
+				    <li>early  expression of virus genes (either directly by  translation, if virus contains &quot;+&quot; RNA, or indirectly after  transription and then translation)</li>
+				    <li>replication  of virus nucleic acid </li>
+				    <li>synthesis  of new virion components </li>
+				    <li>packaging  and assembly of new virions </li>
+				    <li>exit  from cell</li>
+			      </ul>
+			    </ul>
+				<p><strong>Measurement of  viral growth</strong></p>
+				<ul>
+				  <li>Must  grow virus on host cells to see anything. Can't grow virus without cells.</li>
+				  <li>To  quantify viruses, need some way to get flat  surface of growing cells, allow virus-infected cells to spread radially  where present = plaque. </li>
+				  <li>In  bacterial cells this is easy. Spread &quot;lawn&quot; of bacteria on plate, add  diluted phage suspension or culture infected with phages. After 6-8 hours can  see plaques in E. coli.</li>
+				  <li>In  plant cells, can be easy. Example: Tobacco Mosaic Virus (TMV), make virus  dilution, rub over surface of tobacco leaf. After leaf growth, can observe  plaque areas.</li>
+				  <li>In  animal cells, not so easy. In 1960's, standard assay was to inoculate chicken  egg membranes of developing chick embryos, incubate for a week, cut open shell  and count plaques on membrane in the air sac. Lots of work to get statistically  reliable data!</li>
+				  <li>In  1970's tissue culture became a viable alternative. Animal cells are cultured as  microbes in glass or plastic, use special medium that contains most of  nutrients present in blood. Cells will spread as monolayer on surface, can  count plaques after staining.</li>
+			    </ul>
+				<p><strong>Taxonomy of  viruses</strong></p>
+				<ul>
+				  <li>Based  mainly on Virion and Kingdom of host</li>
+				  <li>Use  Host cell type (Animal viruses, plant viruses, etc.)</li>
+				  <li>Use  Nucleic Acid type (ds DNA, ss DNA, ds RNA, ss RNA)</li>
+				  <li>Use  + or - polarity of RNA. &quot;+&quot; is able to serve as mRNA. &quot;-&quot;  is the complement of +, must function as template to make a complementary  strand of + RNA before any translation can occur.</li>
+				  <li>Use  virus coat morphology. Enveloped vs. non-enveloped viruses.</li>
+			    </ul>
+				<p><strong>Virion Structure</strong><br />
+                    <strong>&quot;Naked&quot; viruses</strong></p>
+				<ul>
+				  <ul>
+				    <li><strong>Helical viruses</strong></li>
+				    <ul>
+				      <li>Tobacco mosaic virus (TMV)  is an example of a virus with helical symmetry.</li>
+				      <li>A helical array of identical  protein subunits surrounds an RNA molecule.</li>
+			        </ul>
+			      </ul>
+			    </ul>
+				<p><img width="334" height="232" src="lec09_clip_image001.jpg" align="left" hspace="12" alt="Description: http://student.ccbcmd.edu/courses/bio141/lecguide/unit3/viruses/images/u2fig2a.jpg" /> </p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<ul>
+				  <ul>
+				    <li><strong>Icosahedral viruses</strong></li>
+				    <ul>
+				      <li>built from icosahedral  (20-sided) assemblies of protein subunits.</li>
+				      <li>Icosahedral shape is the  minimum free energy structure for producing a shell of equivalently bonded  identical structures.</li>
+				      <li>The simplest icosahedral  capsids are built up by using 3 identical subunits to form each triangular  face, thereby requiring 60 identical subunits to form a complete capsid. A few  simple virus particles are constructed in this way, e.g. bacteriophage ØX174.</li>
+				      <li>Most icosahedral viruses  have more than 60 subunits, usually some multiple N times 60. N (called the  triangulation number) can have values of 1, 3, 4, 7, 9, 12, and more.</li>
+				      <li><img width="337" height="446" src="lec09_clip_image002.gif" align="left" hspace="12" alt="Description: http://www.triroc.com/sunnen/images/icosahedral337x446.gif" /> </li>
+			        </ul>
+			      </ul>
+			    </ul>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&quot;Enveloped&quot; viruses</strong></p>
+				<ul>
+				  <ul>
+				    <li>&quot;Naked&quot; viruses  require host death so viruses can be released. This may be wasteful, and may  cause premature death of host cell.</li>
+				    <li>Alternative strategy: shed  virus particles by budding out, continued release from cell membrane. Cell does  not die (immediately), continues to serve as factory for virus assembly and  release. Virus typically acquires a coating of host cell membrane, modified to  include virus-specific proteins. This is the &quot;envelope&quot;. Virus may  have additional protein coats (often icosahedral) inside the envelope. </li>
+				    <li>Eventually host cell is too  depleted to survive. Can see evidence of this as &quot;cytopathic effect&quot;  (CPE). Cell then dies.</li>
+				    <li>Examples of enveloped  viruses include:</li>
+				    <ul>
+				      <li>Retrovirus, including HIV</li>
+				      <li>Paramyxovirus, including  influenza</li>
+				      <li>Rhabdovirus, including  rabies</li>
+				      <li>Filovirus. Although very  &quot;hot&quot; in the news, these viruses are very poorly characterized  because of their extreme pathogenicity. They are class IV pathogens, meaning  they can only be cultured in total containment facilities, of which there are  only two in the U. S. They are thought to be enveloped viruses with - RNA  genomes. </li>
+				      <li>&nbsp;</li>
+			        </ul>
+			      </ul>
+			    </ul>
+				<p><strong>Virus Genomes</strong></p>
+				<ul>
+				  <li>Rule  of Thumb: to estimate # of virus proteins, look at size of viral DNA or RNA.  For each 1000 base pairs, can guess the existence of 1 protein</li>
+				  <ul>
+				    <li>&quot;typical&quot; gene has  300-400 amino acids = ~ 1000 base pairs = 1 kbp (= 1 protein)</li>
+				    <li>small virus: SV40 =&gt; 5000  base pairs = 5 kbp ~ 5 proteins</li>
+				    <li>large virus: T4 =&gt; 200  kbp ~ 100-200 proteins</li>
+				    <li>by comparison, E. coli: 4000 kbp</li>
+			      </ul>
+			    </ul>
+				<p>Bacterial  Viruses = Phages<br />
+				  Bacterial defenses  against infection<br />
+  <strong>Cell surfaces:  possibilities of mutation</strong></p>
+				<ul>
+				  <li>Virus must attach to some  specific cell surface protein or polysaccharide. But these are specified by  genes, and genes can mutate. In population, will always find some variant  strains with slightly different cell surfaces, may not bind virus well.</li>
+				  <li>When phage first discovered,  thought this could be effective weapon against bacterial disease. But frequency  of resistant bacterial strains was too high, any given strain of virus quickly  became useless as resistant survivors propagated.</li>
+			    </ul>
+				<p><strong>Nucleases: endo- and  exo-DNases and RNases</strong></p>
+				<ul>
+				  <li>All bacteria seem to have  nucleases that can attack DNA (called DNases) and RNA (called RNases).</li>
+				  <li>Exoenzymes attack free 5' or  3' ends of DNA, RNA molecules. Bacteria are protected since DNA (and plasmids)  are always circular. RNases are present, and in fact destroy mRNA eventually  (bacteria are always making new RNAs, very responsive to enviroment changes).</li>
+				  <li>Endonucleases are  potentially lethal weapons. Called restriction  enzymes. Attack at specific sequence: e.g., in E. coli, enzyme called EcoRI will attack any sequence with 5'  G-A-A-T-T-C 3' (cuts DNA between G and A).</li>
+				  <li>Why doesn't this kill cell?  Because cell also has a second enzyme, called modification enzyme, that protects all host DNA sequences of this  type. Typically adds a methyl (-CH3) group to one base at the  cutting site. The methylated base is modified, and protected from the  restriction enzyme. When foreign DNA comes into cell (e.g. virus DNA), if  restriction site if present it will be cut and ----- requiem for the virus.</li>
+			    </ul>
+				<p><strong>The importance  of Restriction Enzymes</strong><br />
+				  Restriction enzymes are responsible for the  genetic revolution. They make reproducible, specific cuts with surgical  precision. Major industry has emerged in biochemical supply companies to  harvest bacteria, purify restriction enzymes, and sell these to research and  applied industries. </p>
+				<p><strong>Animal Viruses</strong></p>
+				<ul>
+				  <li>Animal  viruses are different in many respects from bacterial viruses. The host cells  are more complex, with multiple compartments and more complex regulation of  replication, transcription, and translation. Animal cells are not bounded by  cell walls.</li>
+				  <li>Not  surprisingly, animal viruses have evolved to overcome these problems. They  attach and enter by different mechanisms than phages, and their intracellular  activities include the ability to move between different compartments as  needed.</li>
+				  <li>Viral  entry and exit from cells is very different from bacteriophages. Animal viruses  must enter through cell membrane, either by triggering endocytosis pathway or  by fusing viral envelope with the cell envelope.</li>
+				  <li>Modifications  are needed in both cellular and viral mRNA to allow recognition and movement  from nucleus to cytoplasm. For example:</li>
+				  <ul>
+				    <li>3' tail of poly A</li>
+				    <li>5' cap of methyl Guanosine  triphosphate</li>
+			      </ul>
+			    </ul>
+				<p><img width="720" height="477" src="lec09_clip_image004.jpg" align="left" hspace="12" alt="Description: 14_15" /> </p>
+				<p><strong>Types of infection</strong><br />
+				  Viruses in animal cells show a variety of  infection patterns:</p>
+				<ul>
+				  <li>lytic infection:  destroys host cells.</li>
+				  <li><strong>persistent infection</strong><strong>:</strong> host cell continues to shed virus over long time. Cell gradually becomes  recognizably poorer (recognized as cytopathic effect, or CPE), eventually  &quot;crumps out&quot;.</li>
+				  <li><strong>transformation</strong><strong>:</strong> infection by certain viruses causes  cells to change, become cancerous. Responsible genes are called oncogenes (tumor-producing genes).  Viral oncogenes have also been found in uninfected cells. These are genes  involved in regulation of cell cycle; when defective, normal regulatory control  is lost and cell can become cancerous.</li>
+				  <li><strong>latent infection</strong><strong>:</strong> virus genes may not be expressed for  long time (ex. many Herpes infections). Not the same as lysogeny -- genes are  not integrated into host chromosome.</li>
+			    </ul>
+				<p><a href="http://www.sumanasinc.com/webcontent/animations/content/hiv.html"><strong>Human  Immunodefiency Virus (HIV) and AIDS</strong></a><strong> </strong></p>
+				<ul>
+				  <li>AIDS  first recognized in 1981. Over 300,000 cases reported in U.S., over 8 million  in Africa, over 12 million infected world-wide.</li>
+			    </ul>
+				<ul>
+				  <li>View  AIDS in perspective: a PBS website with current data on the AIDS epidemic.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<ul>
+				  <li>Transmission:  sexual activity, especially with multiple sex partners. Also contaminated  blood, needles, hospitals. Not just a disease of homosexuals! In Africa (most #  cases) about equal # of male and female victims.</li>
+			    </ul>
+				<ul>
+				  <li>AIDS  lowers immune system's ability to respond to other infections, allows  opportunistic pathogens to invade body. Most common infection is pneumonia  (lung infection) caused by Pneumocystis  (2/3 of all AIDS patients get this at some point).</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<ul>
+				  <li>Host  cell for the virus is CD4 (T-helper) cell, needed to activate antibody  production. In normal human, CD4 cells account for 70% of total T cells -- in  AIDS, number decreases, may reach 0% of T cell pool.</li>
+			    </ul>
+				<ul>
+				  <li>Progress  of HIV infection only recently understood. Formerly thought that virus became  latent. Now discover that virus is anythig but latent: during infected period  (which can last 10 years), body is destroying ~ billion virions/day, and virus  is killing about 100 million CD4 T cells a day. HIV virus continues  replicating, and body rapidly replenishes lost T cells. Only when lymph nodes  wear out does virus gain the upper hand. See handout in class titled &quot;Huge  HIV turnover helps explain drug resistance, pathogenicity&quot;.</li>
+			    </ul>
+				<p>&nbsp;</p>
+				<ul>
+				  <li>Prognosis:  with carefully selected treatments, better than before. Virtually every  infected person dies sooner of later, usually within 10 years of infection. No  cure known, no vaccine yet available. Virus mutates rapidly, many strain  variations. Vaccines being tried, results mixed but preliminary.</li>
+			    </ul>
+				<ul>
+				  <li>Drugs:  some types of drugs offer limited success.</li>
+				  <ul>
+				    <li>AZT  (azidothymidine) is analog of thymidine, but is blocked at 3'-position, so no  further chain growth possible. These target viral reverse transcriptase enzyme.  Should reduce DNA synthesis in treated cells. But eventually, viral mutants  resistant to drug arise. Also, long term use of drug can cause toxic side  effects.</li>
+				    <li>protease  inhibitors. Like many viruses, HIV needs to cleave  large protein product into smaller products, using viral protease protein. By  inhibiting this enzyme, should block necessary stage in viral replication  cycle. Still under development, but resistant viral mutants to these type of  drugs have already been found. Still, drug offers promise. See handout article  for more details. Safe sex! Caution with sharps. Extra caution in clinical settings.</li>
+			      </ul>
+			    </ul>
+				<p><strong>HIV Life Cycle<br />
+				  (budding through plasma membrane)</strong><br />
+                  <img width="262" height="639" src="lec09_clip_image006.jpg" align="left" hspace="12" alt="Description: 14_11" /><strong> </strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>&nbsp;</strong></p>
+				<p><strong>Viroids and Prions</strong></p>
+				<ul>
+				  <li><strong>Viroids</strong> very small ss RNA genomes (~300 nucleotides). No coat, and RNA does not encode  protein. Known viroids cause diseases in plants because host cells replicate  the RNA.</li>
+				  <li><strong>Prions </strong>(protein  infectious agent) do not have a nucleic acid genome. Prion diseases are often  called spongiform encephalopathies  because of the post mortem appearance of the brain with large vacuoles in the  cortex and cerebellum.</li>
+				  <li>Pathology  of brains infected with prion diseases:</li>
+				  <ul>
+				    <li>Scrapie (sheep)</li>
+				    <li>bovine spongiform  encephalopathy (cows) = &quot;mad cow disease&quot;</li>
+				    <li>Creutzfeldt-Jakob Disease  (humans)</li>
+			      </ul>
+				  <li>Prion  diseases in humans are probably primarily a genetic neurotoxic disorder.  Transmission of the disease to humans via infectious prions is likely to be  rare.</li>
+				  <li>The  prion is a modified form of a normal cellular protein known as PrPc (for cellular), found  predominantly on the surface of neurons and thought to be involved in synaptic  function.</li>
+			    </ul>
+				<p>The modified form of PrPc (= prion) is known  as PrPsc (for scrapie) which is  relatively resistant to proteases and accumulates in cytoplasmic vesicles of  diseased individuals. Prion protein may cause normal protein to fold  abnormally. </p>
+				<table width="27%" border="0">
+                  <tr>
+                    <td><strong><a href="pdf/lec32.pdf"><img src="images/arlogo.png" alt="" width="32" height="32" border="0" /></a></strong></td>
+                    <td bgcolor="#A20807"><strong><a href="pdf/lec09.pdf" class="style4">Download this lecture as PDF here</a></strong></td>
+                  </tr>
+                </table>
+				<br />
+				<p><img src="images/back.jpg" alt="" width="167" height="30" usemap="#Map" />
+                  <map name="Map" id="Map">
+                    <area shape="rect" coords="1,1,168,30" href="index.html" alt="" />
+                  </map>
+                </p>
+			  </div>
+			</div>
+			</div>
+			</div>
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<!-- end #page -->
+</div>
+	<div id="footer">
+		<p>Copyright (c) 2011. TAMIL NADU AGRICULTURAL UNIVERSITY</p>
+</div>
+	<!-- end #footer -->
+</body>
+</html>
